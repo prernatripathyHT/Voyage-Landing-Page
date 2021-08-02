@@ -1,0 +1,214 @@
+@media screen and (min-width: 769px) {
+  #heroBanner {
+    width: 100%;
+    position: relative;
+    padding-top: 7.627vw;
+  }
+  .successState {
+    display: none;
+    color: #3f5cfb;
+    font-size: 1.665vw;
+    font-weight: 600;
+    line-height: 120%;
+  }
+  .heroBanner_innerWrapper {
+    max-width: 94.416vw;
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 52.32vw;
+  }
+  .leftBlock {
+    width: 100%;
+    /* max-width:36.018vw; */
+    max-width: 28.54vw;
+    padding-top: 2vw;
+    padding-bottom: 6.25vw;
+  }
+  .bannerTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.69vw;
+    line-height: 110%;
+    color: #000000;
+    margin-bottom: 1.735vw;
+    width: 100%;
+    max-width: 26.37vw;
+  }
+  .bannerText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.249vw;
+    line-height: 150%;
+    margin-bottom: 1.875vw;
+    /* margin-bottom: 27px; */
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "neue-haas-grotesk-text", sans-serif;
+  }
+  .rightBlock {
+    max-width: 50.037vw;
+    width: 100%;
+  }
+  
+  .btnWrapper .videoPopup {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    display: none;
+  }
+  .videoPopup svg {
+    width: 2.15vw;
+    height: 2.15vw;
+    margin-right: 1.18vw;
+  }
+  .spanText p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.11vw;
+    line-height: 150%;
+    color: #7e7e7e;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+  }
+  .spanText span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.971vw;
+    line-height: 150%;
+    color: #b3b3b3;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+  }
+
+  .rightBlock {
+    width: 100%;
+    max-width: 52.53vw;
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* position: relative; */
+  }
+
+  /* marketing css - animation */
+  .marketingBanner1 {
+    position: absolute;
+    width: 44.72vw;
+    top: 10vw;
+    right: 0;
+  }
+  .marketingBanner2 {
+    position: absolute;
+    width: 21.4722vw;
+    top: 20vw;
+    right: 29vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftBlock {
+    width: 100%;
+    max-width: 90.18vw;
+    margin: 0 auto;
+    padding-top: 30.9333vw;
+  }
+
+  .successState {
+    display: none;
+    color: #3f5cfb;
+    font-size: 5.665vw;
+    font-weight: 600;
+    line-height: 120%;
+    justify-content: center;
+  }
+  .leftBlock h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.8666vw;
+    line-height: 15.2vw;
+    color: #000000;
+    max-width: 75vw;
+    text-align: center;
+    margin:auto;
+  }
+  .leftBlock p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.73333vw;
+    line-height: 5.6vw;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    margin: 2.1333vw auto 7.479vw auto;
+    max-width: 80.1333vw;
+  }
+ 
+
+  .videoPopup {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5.54vw;
+    display: none;
+  }
+  .videoPopup svg {
+    width: 23px;
+    margin-right: 3.324vw;
+  }
+  .spanText p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.944vw;
+    line-height: 150%;
+    color: #7e7e7e;
+    margin-bottom: 0;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+  }
+  .spanText span {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.524vw;
+    line-height: 150%;
+    color: #b3b3b3;
+  }
+ 
+  .rightBlock {
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 10.6666vw;
+    overflow: hidden;
+  }
+
+  .btnWrapper .videoPopup {
+    display: none;
+  }
+    /* marketing css - animation */
+    .marketingBanner1 {
+      position: absolute;
+      width: 89.933vw;
+      height: 65.9vw;
+      top: 87vw;
+      right: 0;
+    }
+    .marketingBanner2 {
+      position: absolute;
+      width: 27.4vw;
+      height: 44.8vw;
+      top: 109vw;
+      right: 67vw;
+    }
+}
+
+@media screen and (device-width: 320px) {
+  .trialBtn {
+    padding: 14px 2vw;
+  }
+}

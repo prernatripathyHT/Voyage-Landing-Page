@@ -1,0 +1,84 @@
+@media screen and (min-width:769px){
+    .clientBlock{
+        width:100%;
+        background-color: #F3F3F3;
+        position: relative;
+    }
+    .innerClientBlock{
+        padding:5.968vw 0 6.662vw 0;
+    }
+  
+    .clientLogoWrapper{
+        width:100%;
+        margin:0 auto;
+        /* margin-top:5.760vw; */
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+    .logoBlock{
+        margin-left:4.164vw;
+        margin-bottom:3.123vw;
+        opacity: .5;
+    }
+    .logoBlock:nth-child(n + 7){
+        margin-bottom:0;
+    }
+    .logoBlock:first-child,
+    .logoBlock:nth-child(7)
+    {
+        margin-left:0;
+    }
+    .logoBlock img{
+        width:100%;
+    }
+   
+    
+}
+
+@media screen and (max-width:768px){
+    .clientBlock{
+        background-color: #F3F3F3;
+        padding:13.066vw 0 13.066vw 0;
+        position: relative;
+    }
+  
+    .innerClientBlock{
+        max-width: 100vw;
+    }
+    
+    .logoBlock img{
+        width:100%;
+    }
+    .clientLogoWrapper {
+        /* margin-top:11.634vw; */
+        position: relative;
+        z-index:2;
+    }
+    .clientThreeBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoBlock{
+        margin-bottom: 8.864vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .5;
+    }
+    .logoBlock:last-child{
+        margin-bottom:0;
+    }
+    .logoBlock img{
+        height:6.648vw;
+        width:auto;
+    }
+ 
+
+}

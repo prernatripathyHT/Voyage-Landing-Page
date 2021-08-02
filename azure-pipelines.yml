@@ -1,0 +1,80 @@
+resources:
+  repositories:
+  - repository: VoyageWebLegacy
+    type: github
+    endpoint: voyagemobile
+    name:  voyagemobile/voyage-web
+  - repository: VoyageWebNext
+    type: github
+    endpoint: voyagemobile
+    name:  voyagemobile/voyage-web-next
+
+trigger:
+- master
+
+pool:
+  # Supports case insensitive file path matching (unlike ubuntu)
+  vmImage: macOS-10.15
+
+steps:
+
+###
+# Voyage Web (Legacy)
+###
+
+- checkout: VoyageWebLegacy
+
+- task: S3Upload@1
+  inputs:
+    awsCredentials: "AWS - Travis CI 2"
+    regionName: "us-east-2"
+    bucketName: "staging.voyagesms.com"
+    sourceFolder: "voyage-web"
+    globExpressions: "**"
+
+- bash: bash ./build.sh
+  workingDirectory: $(system.defaultWorkingDirectory)/voyage-web
+
+- task: S3Upload@1
+  displayName: 'S3 Upload: Dynamic Pages'
+  inputs:
+    awsCredentials: "AWS - Travis CI 2"
+    regionName: us-east-2
+    bucketName: staging.voyagesms.com
+    sourceFolder: "voyage-web/dist"
+    filesAcl: public-read
+    contentType: "text/html"
+
+###
+# Voyage Web (Next.JS)
+###
+
+- checkout: VoyageWebNext
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '14.15.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    cd voyage-web-next
+    yarn
+    yarn build
+  displayName: 'yarn install and build'
+
+- task: S3Upload@1
+  inputs:
+    awsCredentials: "AWS - Travis CI 2"
+    regionName: "us-east-2"
+    bucketName: "staging.voyagesms.com"
+    sourceFolder: "voyage-web-next/out"
+
+- task: AmazonWebServices.aws-vsts-tools.AWSCLI.AWSCLI@1
+  inputs:
+    awsCredentials: "AWS - Travis CI 2"
+    regionName: "us-east-2"
+    awsCommand: cloudfront
+    awsSubCommand: "create-invalidation"
+    awsArguments: "--distribution-id E2HL0OUDF84Q7A --paths /*"
+    failOnStandardError: false
+

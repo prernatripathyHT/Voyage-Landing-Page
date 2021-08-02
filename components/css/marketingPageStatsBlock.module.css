@@ -1,0 +1,239 @@
+@media screen and (min-width: 769px) {
+  .statsBlock {
+    width: 100%;
+  }
+  .innerStatsBlock {
+    padding: 0 0 9.022vw 0;
+    /* padding:5.3438vw 0 9.022vw 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  .keyStats {
+    height: auto;
+    display: flex;
+    width: calc(100% / 3);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 4.36vw;
+    align-self: stretch;
+  }
+  .keyStats .upperStats {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.98vw 0 3.955vw 0;
+    border-bottom: 0.0694vw solid rgba(255, 255, 255, 0.4);
+  }
+  .upperStats p {
+    font-weight: normal;
+    font-size: 1.11vw;
+    line-height: 130%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  .keyStats:nth-child(odd) {
+    background-color: #3f5cfb;
+  }
+  .keyStats:nth-child(even) {
+    background-color: #162740;
+  }
+  .iconDataBlock {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .imgIcon {
+    margin-right: 1.041vw;
+    position: relative;
+  }
+  .imgIcon svg {
+    width: 100%;
+  }
+  .iconDataBlock span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.996vw;
+    line-height: 130%;
+    color: #fff;
+  }
+  .keyStats .statsText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.11vw;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+  }
+  .keyStats .statsReviewer {
+    margin: 2.0126vw 0 0.2vw 0;
+    font-weight: normal;
+    font-size: 0.832vw;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.138vw;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .keyStats .statsTitle {
+    font-weight: normal;
+    font-size: 0.694vw;
+    line-height: 160%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.6;
+    margin-top: 0;
+  }
+
+  .blockQuotes {
+    margin-top: 3.886vw;
+  }
+
+  .statsText,
+  .statsReviewer,
+  .statsTitle,
+  .clientLogo {
+    margin-top: 2vw;
+  }
+
+  p.statsText {
+    width: 100%;
+    max-width: 22.45vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statsBlock {
+    /* padding: 16.52vw 0; */
+  }
+  .innerStatsBlock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .keyStats {
+    width: 100%;
+    height: 482px!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* margin-bottom: 15.512vw; */
+  }
+
+  /* .swiper-slide{
+    height: 482px!important;
+  } */
+  .keyStats .upperStats {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10.6666vw 0 7.2vw 0;
+    border-bottom: 0.0159vw solid rgba(255, 255, 255, 0.4);
+   
+  }
+  .keyStats:nth-child(n + 3) {
+    margin-bottom: 0;
+  }
+
+  .upperStats p {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-weight: normal;
+    font-size: 3.2vw;
+    line-height: 4.2666vw;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+
+  .keyStats:nth-child(odd) {
+    background-color: #3f5cfb;
+  }
+  .keyStats:nth-child(even) {
+    background-color: #162740;
+  }
+  .iconDataBlock {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  .iconDataBlock .imgIcon {
+    width: 9.69vw !important;
+  }
+  .iconDataBlock span {
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9.6vw;
+    line-height: 12.5333vw;
+    color: #fff;
+    margin-left: 11px;
+  }
+  .keyStats .statsText {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2vw;
+    line-height: 5.0666vw;
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    margin-top: 4.2666vw;
+  }
+
+  .keyStats .statsReviewer {
+    font-family: Helvetica, sans-serif;
+    margin: 13.6vw 0 2px 0;
+    font-weight: normal;
+    font-size: 2.6666vw;
+    line-height: 4.2666vw;
+    text-align: center;
+    letter-spacing: 0.318vw;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .keyStats .statsTitle {
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 2.6666vw;
+    line-height: 4.2666vw;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.6;
+    margin-top: 0;
+  }
+
+  .blockQuotes {
+    margin-top: 6.4vw;
+    width: 8vw;
+  }
+
+  .statsText,
+  .statsReviewer,
+  .statsTitle,
+  .clientLogo {
+    margin-top: 2vw;
+  }
+
+  .clientLogo{
+    margin-top: 4.2666vw;
+    margin-bottom: 6.4vw;
+  }
+
+  p.statsText {
+    width: 100%;
+    max-width: 56vw;
+  }
+}
