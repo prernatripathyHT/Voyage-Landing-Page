@@ -190,10 +190,16 @@ html.has-scroll-dragging {
   form.registration_m .form-group .error-response {
     position: absolute;
     font-family: "neue-haas-grotesk-text", sans-serif;
-    top: 52px;
-    left: 0;
-    font-size: 10px;
-    color: red;
+    top: 19px;
+    right: 17px;
+    color: #AE2B2B;
+    font-size: 0.8333vw;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.111vw;
+    letter-spacing: 0em;
+    text-align: right;
+    
   }
   form.registration_m input {
     -webkit-appearance: none;
@@ -313,10 +319,10 @@ html.has-scroll-dragging {
   form.registration_m .form-group .error-response {
     position: absolute;
     font-family: "neue-haas-grotesk-text", sans-serif;
-    top: 40px;
-    left: 0;
+    top: 14px;
+    right: 12px;
     font-size: 10px;
-    color: red;
+    color: #AE2B2B;
   }
   form.registration_m input {
     -webkit-appearance: none;

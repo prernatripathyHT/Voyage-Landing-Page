@@ -6,10 +6,35 @@
   }
   .successState {
     display: none;
-    color: #3f5cfb;
-    font-size: 1.665vw;
-    font-weight: 600;
-    line-height: 120%;
+  }
+  .requestFormSuccessImage{
+    width: 10vw;
+    margin-top: 3.3333vw;
+  }
+  .requestFormSuccessImage img{
+    width: 100%;
+  }
+  .requestFormSuccessHeader1{
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 3.888vw;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 4.4vw;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1.1111vw;
+  }
+  .requestFormSuccessHeader2{
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 1.666vw;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.8vw;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #969696; 
+    margin-top: 4px;   
+
   }
   .heroBanner_innerWrapper {
     max-width: 94.416vw;
@@ -116,14 +141,6 @@
     padding-top: 30.9333vw;
   }
 
-  .successState {
-    display: none;
-    color: #3f5cfb;
-    font-size: 5.665vw;
-    font-weight: 600;
-    line-height: 120%;
-    justify-content: center;
-  }
   .leftBlock h1 {
     font-style: normal;
     font-weight: normal;
@@ -145,6 +162,41 @@
     margin: 2.1333vw auto 7.479vw auto;
     max-width: 80.1333vw;
   }
+
+  .successState {
+    display: none;
+  }
+  .requestFormSuccessImage{
+    width: 38.4vw;
+    margin: auto;
+    margin-top: 80vw;
+  }
+  .requestFormSuccessImage img{
+    width: 100%;
+  }
+  h1.requestFormSuccessHeader1{
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 8.8666vw;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 12.2vw;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 1.1111vw;
+  }
+  p.requestFormSuccessHeader2{
+    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-size: 2.73333vw;
+    line-height: 4.6vw;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #969696; 
+    margin-top: 4px;   
+
+  }
+
  
 
   .videoPopup {

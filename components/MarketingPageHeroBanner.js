@@ -105,7 +105,7 @@ export default function MarketingPageHeroBanner() {
     // const { email } = formData;
     const { email, phone, firstName, lastName, website } = formData;
     if (email.length == 0) {
-      emailErrorRef.current.textContent = "Please enter your work email";
+      emailErrorRef.current.textContent = "Required";
       gsap.to("#email-error", { opacity: 1, display: "block" });
       hasError = true;
     } else {
@@ -113,19 +113,19 @@ export default function MarketingPageHeroBanner() {
       gsap.to("#email-error", { opacity: 0, display: "none" });
     }
     if (!ePattern.test(email)) {
-      emailErrorRef.current.textContent = "Please enter a valid work email";
+      emailErrorRef.current.textContent = "Invalid";
       gsap.to("#email-error", { opacity: 1, display: "block" });
       hasError = true;
     }
 
     if (phone.length == 0) {
       phoneErrorRef.current.textContent =
-        "Please enter a valid US phone number";
+        "Required";
       gsap.to("#phone_error", { opacity: 1, display: "block" });
       hasError = true;
     } else if (phone.length !== 12) {
       phoneErrorRef.current.textContent =
-        "Please enter a valid US phone number";
+        "Invalid";
       gsap.to("#phone_error", { opacity: 1, display: "block" });
       hasError = true;
     } else {
@@ -134,7 +134,7 @@ export default function MarketingPageHeroBanner() {
     }
 
     if (firstName.length == 0) {
-      firstnameErrorRef.current.textContent = "Please enter your first name";
+      firstnameErrorRef.current.textContent = "Required";
       gsap.to("#firstname_error", { opacity: 1, display: "block" });
       hasError = true;
     } else {
@@ -142,7 +142,7 @@ export default function MarketingPageHeroBanner() {
       gsap.to("#firstname_error", { opacity: 0, display: "none" });
     }
     if (lastName.length == 0) {
-      lastnameErrorRef.current.textContent = "Please enter your last name";
+      lastnameErrorRef.current.textContent = "Required";
       gsap.to("#lastname_error", { opacity: 1, display: "block" });
       hasError = true;
     } else {
@@ -151,7 +151,7 @@ export default function MarketingPageHeroBanner() {
     }
 
     if (website.length == 0) {
-      webErrorRef.current.textContent = "Please enter E-commerce website";
+      webErrorRef.current.textContent = "Required";
       gsap.to("#website-error", { opacity: 1, display: "block" });
       hasError = true;
     } else {
@@ -159,7 +159,7 @@ export default function MarketingPageHeroBanner() {
       gsap.to("#website-error", { opacity: 0, display: "none" });
     }
     if (!urlPattern.test(website) && website.length != 0) {
-      webErrorRef.current.textContent = "Please enter a valid website";
+      webErrorRef.current.textContent = "Invalid";
       gsap.to("#website-error", { opacity: 1, display: "block" });
       hasError = true;
     }
@@ -171,7 +171,7 @@ export default function MarketingPageHeroBanner() {
           .getElementsByClassName("registration-wrapper")[0]
           .classList.remove("extra-margin");
       }
-      document.getElementById("greeting-block").style.display = "flex";
+      document.getElementById("greeting-block").style.display = "block";
       subscribePhone(phone);
       createOrUpdateRegistration(formData).then(() =>
         createOrUpdateRegistration(formData)
@@ -202,7 +202,11 @@ export default function MarketingPageHeroBanner() {
             {/* step 1 */}
 
             <div id="greeting-block" className={`${styles.successState}`}>
-              Thank you for contacting!
+              <div className={styles.requestFormSuccessImage}>
+                <img src={`/images/${MarketingPageHeroBannerData.requestFormSuccessImage}`} alt="success-state-img" />
+              </div>
+              <h1 className={styles.requestFormSuccessHeader1}>Thanks!</h1>
+              <p className={styles.requestFormSuccessHeader2}>We’ll reach out to you soon</p>
             </div>
             <div className="email-check-wrapper" id="form-container-s1">
               <form id="email-check-form" className="registration_m">
