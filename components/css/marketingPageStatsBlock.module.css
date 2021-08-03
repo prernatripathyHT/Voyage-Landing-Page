@@ -172,6 +172,9 @@
   }
   .iconDataBlock .imgIcon {
     width: 9.69vw !important;
+    height: 12vw!important;
+    display: flex;
+    align-items: center;
   }
   .iconDataBlock span {
     font-family: "neue-haas-grotesk-text", sans-serif;

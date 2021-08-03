@@ -238,12 +238,10 @@
     width: 100%;
     /* height: 66.1333vw; */
     height: auto;
-    background-color: #162740;
+    /* background-color: #162740; */
     border-radius: 5.41159px;
   }
-  .mobileImageBlock:nth-of-type(2){
-    background-color: #3F5CFB;
-  }
+ 
   .serviceBlock {
     background-color: #f3f4f6;
     padding: 9.695vw 0 0 0;
@@ -281,6 +279,7 @@
     justify-content: center;
     padding: 7.756vw 0;
     margin-bottom: 9.141vw;
+    height: 67.2vw;
   }
   .serviceBox:nth-child(3) .imageWrap {
     padding: 2.5vw 0;
@@ -290,7 +289,8 @@
     margin: 0 auto;
   }
 
-  .serviceBox:nth-child(3) .rightImageBlock .mainImage {
+
+  .marketingBlock:nth-child(3) .mobileImageBlock .mobileImageWrap .mobileMainImage {
     width: 100%;
   }
   .cornerImage {
@@ -299,9 +299,9 @@
     left: -4.9vw;
     bottom: -5.54vw;
   }
-  .serviceBox:nth-child(2) .cornerImage {
+  .marketingBlock:nth-child(2) .cornerImage {
     left: unset;
-    right: -5.54vw;
+    right: -4.94vw;
   }
   p.mobileOnly {
     font-weight: normal;

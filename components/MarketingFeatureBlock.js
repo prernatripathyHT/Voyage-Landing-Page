@@ -194,6 +194,7 @@ export default function MarketingPageServiceBlock() {
                   <h1 className={styles.mobileTitle}>{service.mobileTitle}</h1>
                   <div
                   className={`${styles.mobileImageBlock} ${styles.mobileImageBlock}-${index}`}
+                  style={{background : service.bgColor }}
                   >
                      <div className={styles.mobileImageWrap}>
                   <img

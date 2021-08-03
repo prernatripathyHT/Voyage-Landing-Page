@@ -199,7 +199,10 @@ html.has-scroll-dragging {
     line-height: 1.111vw;
     letter-spacing: 0em;
     text-align: right;
-    
+    align-items: center;
+  }
+  .error-response svg{
+    margin-left: 4px;
   }
   form.registration_m input {
     -webkit-appearance: none;
@@ -320,9 +323,14 @@ html.has-scroll-dragging {
     position: absolute;
     font-family: "neue-haas-grotesk-text", sans-serif;
     top: 14px;
-    right: 12px;
+    right: 8px;
     font-size: 10px;
     color: #AE2B2B;
+    align-items: center;
+  }
+
+  .error-response svg{
+    margin-left: 2px;
   }
   form.registration_m input {
     -webkit-appearance: none;

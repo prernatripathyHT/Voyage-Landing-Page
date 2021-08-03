@@ -11,7 +11,7 @@ export const marketingFeatureBlockData = [
     bgColor: "#162740",
     mobileTitle: "Build customer relationships and focus on performance",
     mobileDescription: "We power personalized micro-marketing at scale. This means you can feel confident sending the right message to the right customer at the right time with the right CTA. Our hands-on client success team is focused on your account’s performance, including maximizing your ROAs, not how many messages you send.",
-    mobileBanner: "customer-relation-mobile-banner.png"
+    mobileBanner: "customer-relation-mobile-banner.png",
   },
   {
     title: "View Customer Journey",
