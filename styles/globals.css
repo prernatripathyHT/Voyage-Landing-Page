@@ -454,12 +454,13 @@ html.has-scroll-dragging {
   .statAnimate{
     transition:all .3s;
   }
+
   .statsContainer .slick-slide:nth-child(odd) .statAnimate{
-    background-color: #3f5cfb;
+    background-color: #162740;
 
   }
   .statsContainer .slick-slide:nth-child(even) .statAnimate{
-    background-color: #162740;
+    background-color: #3f5cfb;
 
   }
 }
