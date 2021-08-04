@@ -142,7 +142,17 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px ) and (max-width: 1024px){
+  .leftBlock {
+    width: 100%;
+    /* max-width:36.018vw; */
+    max-width: 35vw;
+    padding-top: 2vw;
+    padding-bottom: 6.25vw;
+  }
+}
+
+@media screen and (max-width: 768px)  {
   .leftBlock {
     width: 100%;
     max-width: 90.18vw;
