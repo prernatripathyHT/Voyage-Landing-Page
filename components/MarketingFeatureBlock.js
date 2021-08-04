@@ -21,6 +21,66 @@ const { MediaContextProvider, Media } = createMedia({
 });
 
 export default function MarketingPageServiceBlock() {
+
+  const myBlock = useRef();
+
+  const featureBlockClick = (e, index) => {
+    e.preventDefault();
+    // console.log(`index${index +1} clicked! inside function`);
+    // console.log("myContainer..", myBlock.current );
+    // myBlock.current.classList.add('active');
+
+    //set all to 0
+      gsap.to(".image0", {
+        opacity: 0,
+        y: 7,
+      });
+      gsap.to(".image1", {
+        opacity: 0,
+        y: 7,
+      });
+      gsap.to(".image2", {
+        opacity: 0,
+        y: 7,
+      });
+      gsap.to(".slide0 .animateIndex", {
+        color: "#9a9a9a",
+        backgroundColor: "white",
+        borderColor: "#d7d7d7",
+      });
+      gsap.to(".slide1 .animateIndex", {
+        color: "#9a9a9a",
+        backgroundColor: "white",
+        borderColor: "#d7d7d7",
+      });
+      gsap.to(".slide2 .animateIndex", {
+        color: "#9a9a9a",
+        backgroundColor: "white",
+        borderColor: "#d7d7d7",
+      });
+     
+  //current selected image
+    gsap.to(`.image${index}`, {
+      opacity: 1,
+        y: 0,
+    });
+    gsap.to(`.slide${index} .animateIndex`, {
+      color: "#fff",
+      backgroundColor: "#3f5cfb",
+      borderColor: "#3f5cfb",
+    });
+
+    if(index == 1){
+      gsap.to(".rightImageContainer", { backgroundColor: "#3F5CFB" });
+    }
+    else{
+      gsap.to(".rightImageContainer", { backgroundColor: "#162740" });
+    }
+
+
+  }
+
+
   useEffect(() => {}, []);
 
   if (typeof window !== "undefined") {
@@ -37,14 +97,14 @@ export default function MarketingPageServiceBlock() {
       color: "#9a9a9a",
       backgroundColor: "white",
       borderColor: "#d7d7d7",
-      duration: 0.3,
-      delay: 5,
+      duration: 0.2,
+      delay: 7,
     })
       .to(".slide1 .animateIndex", {
         color: "#fff",
         backgroundColor: "#3f5cfb",
         borderColor: "#3f5cfb",
-        duration: 0.3,
+        duration: 0.2,
       })
       .to(".image0", {
         opacity: 0,
@@ -59,14 +119,14 @@ export default function MarketingPageServiceBlock() {
         color: "#9a9a9a",
         backgroundColor: "white",
         borderColor: "#d7d7d7",
-        duration: 0.3,
-        delay: 5,
+        duration: 0.2,
+        delay: 7,
       })
       .to(".slide2 .animateIndex", {
         color: "#fff",
         backgroundColor: "#3f5cfb",
         borderColor: "#3f5cfb",
-        duration: 0.3,
+        duration: 0.2,
       })
       .to(".image1", {
         opacity: 0,
@@ -81,14 +141,14 @@ export default function MarketingPageServiceBlock() {
         color: "#9a9a9a",
         backgroundColor: "white",
         borderColor: "#d7d7d7",
-        duration: 0.3,
-        delay: 5,
+        duration: 0.2,
+        delay: 7,
       })
       .to(".slide0 .animateIndex", {
         color: "#fff",
         backgroundColor: "3f5cfb",
         borderColor: "#3f5cfb",
-        duration: 0.3,
+        duration: 0.2,
       })
       .to(".image2", {
         opacity: 0,
@@ -146,7 +206,7 @@ export default function MarketingPageServiceBlock() {
                     styles.serviceBox
                   } ${index == 0 ? "active" : ""}`}
                 >
-                  <div className={`animateIndex ${styles.indexNumber}`}>
+                  <div className={`animateIndex ${styles.indexNumber}`} onClick={(e)=>featureBlockClick(e, index)}>
                     0{index + 1}
                   </div>
                   <div className={styles.lefttextBox}>
@@ -163,6 +223,7 @@ export default function MarketingPageServiceBlock() {
             >
               {marketingFeatureBlockData.map((service, index) => (
                 <div
+                  ref={myBlock}
                   className={`${styles.rightImageBlock} image${index} ${
                     index == 0 ? "active" : ""
                   }`}

@@ -187,9 +187,9 @@ export default function MarketingPageHeroBanner() {
   useEffect(() => {
     const timeline = gsap.timeline();
     timeline
-      .from("#marketingBanner-1", { duration: 0.5, y: "30%", opacity: 0 })
-      .from("#marketingBanner-2", { duration: 1, y: "30%", opacity: 0 })
-      .from("#leftHomeBanner", { duration: 0.4, y: "30%", opacity: 0 });
+      .from("#marketingBanner-1", { duration: 0.5, y: "30%", opacity: 0})
+      .from("#marketingBanner-2", { duration: 0.5, y: "30%", opacity: 0})
+      .from("#leftHomeBanner", { duration: 0.3, y: "10%", opacity: 0 });
   }, []);
 
   return (
@@ -216,11 +216,14 @@ export default function MarketingPageHeroBanner() {
               <form id="email-check-form" className="registration_m">
                 <div className="form-group common-name">
                   <input
-                    onChange={(e) =>
+                    onChange={(e) =>{
                       setRegisterData({
                         ...registerData,
                         firstname: e.target.value,
-                      })
+                      });
+                      firstnameErrorRef.current.innerHTML = "";
+                      gsap.to("#firstname_error", { opacity: 0, display: "none" });
+                    }
                     }
                     ref={firstnameRef}
                     type="text"
@@ -239,11 +242,14 @@ export default function MarketingPageHeroBanner() {
 
                 <div className="form-group common-name">
                   <input
-                    onChange={(e) =>
+                    onChange={(e) =>{
                       setRegisterData({
                         ...registerData,
                         lastname: e.target.value,
-                      })
+                      });
+                      lastnameErrorRef.current.innerHTML = "";
+                      gsap.to("#lastname_error", { opacity: 0, display: "none" });
+                    }
                     }
                     ref={lastnameRef}
                     type="text"
@@ -262,11 +268,14 @@ export default function MarketingPageHeroBanner() {
 
                 <div className="form-group">
                   <input
-                    onChange={(e) =>
+                    onChange={(e) =>{
                       setRegisterData({
                         ...registerData,
                         email: e.target.value,
-                      })
+                      });
+                      emailErrorRef.current.innerHTML = "";
+                      gsap.to("#email-error", { opacity: 0, display: "none" });
+                    }
                     }
                     value={registerData.email}
                     ref={emailRef}
@@ -285,7 +294,10 @@ export default function MarketingPageHeroBanner() {
 
                 <div className="form-group">
                   <input
-                    onChange={updatePhone}
+                    onChange={(e) => {updatePhone(e);
+                      phoneErrorRef.current.innerHTML = "";
+                      gsap.to("#phone_error", { opacity: 0, display: "none" });
+                    }}
                     ref={phoneRef}
                     type="text"
                     value={registerData.phone}
@@ -304,11 +316,14 @@ export default function MarketingPageHeroBanner() {
 
                 <div className="form-group">
                   <input
-                    onChange={(e) =>
+                    onChange={(e) =>{
                       setRegisterData({
                         ...registerData,
                         website: e.target.value,
-                      })
+                      });
+                      webErrorRef.current.innerHTML = "";
+                      gsap.to("#website-error", { opacity: 0, display: "none" });
+                    }
                     }
                     ref={webRef}
                     type="text"

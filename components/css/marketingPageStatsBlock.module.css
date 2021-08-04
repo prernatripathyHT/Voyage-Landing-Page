@@ -130,6 +130,7 @@
     justify-content: flex-start;
     align-items: center;
     /* margin-bottom: 15.512vw; */
+
   }
 
   /* .swiper-slide{
@@ -165,6 +166,8 @@
   .keyStats:nth-child(even) {
     background-color: #162740;
   }
+
+  
   .iconDataBlock {
     display: flex;
     align-items: center;
@@ -194,6 +197,7 @@
     color: #fff;
     opacity: 0.8;
     font-family: "neue-haas-grotesk-text", sans-serif;
+    margin: auto;
     margin-top: 4.2666vw;
   }
 
@@ -220,6 +224,7 @@
   }
 
   .blockQuotes {
+    margin: auto;
     margin-top: 6.4vw;
     width: 8vw;
   }
@@ -232,6 +237,7 @@
   }
 
   .clientLogo{
+    text-align: center;
     margin-top: 4.2666vw;
     margin-bottom: 6.4vw;
   }

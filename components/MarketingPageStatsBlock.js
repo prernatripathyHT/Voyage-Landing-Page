@@ -5,9 +5,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
 import { createMedia } from "@artsy/fresnel";
 
-import {Swiper, SwiperSlide} from 'swiper/react';
-import SwiperCore from 'swiper';
-import 'swiper/swiper-bundle.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -20,6 +20,19 @@ const { MediaContextProvider, Media } = createMedia({
     xl: 1192,
   },
 });
+
+
+const settings = {
+  dots: false,
+  infinite: true,
+  autoplay: false,
+  autoplaySpeed: 2000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode:true,
+  centerPadding: "0px",
+  cssEase:`cubic-bezier(.51,.11,.44,.96)`,
+};
 
 export default function MarketingPageStatsBlock() {
   useEffect(() => {
@@ -75,12 +88,13 @@ export default function MarketingPageStatsBlock() {
       </div>
     </Media>
     <Media lessThan="md">
-      <Swiper id="main-swiper">
-      <div className={`statsContainer ${styles.innerStatsBlock}`} data-scroll>
+      <div id="main-swiper">
+      <Slider {...settings} className={`statsContainer ${styles.innerStatsBlock}`} data-scroll >
+   
 
         {marketingPageStats.map((stats, index) => (
        
-          <SwiperSlide key={index} className={`statAnimate ${styles.keyStats}`}>
+          <div key={index} className={`statAnimate ${styles.keyStats}`} style={{ background:stats.bgColor }}>
             <div className={styles.upperStats}>
               <div className={styles.iconDataBlock}>
                 <div
@@ -106,11 +120,12 @@ export default function MarketingPageStatsBlock() {
               className={styles.clientLogo}
               dangerouslySetInnerHTML={{ __html: stats.clientLogo }}
             ></div>
-          </SwiperSlide>
+          </div>
           
         ))}
-        </div>
-      </Swiper>
+      
+        </Slider>
+      </div>
     </Media>
     </section>
 

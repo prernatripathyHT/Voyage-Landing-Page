@@ -2,6 +2,7 @@ export const marketingPageStats = [
     {
         statTitle: "Deliverability Rate",
         // icon: "deliverability_rate.svg",
+        bgColor: "#3F5CFB",
         data: "99%+",
         iconWidth: "3.1924vw",
         iconData: `<svg viewBox="0 0 46 54" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,6 +34,7 @@ export const marketingPageStats = [
       {
         statTitle: "Clickthrough Rates",
         // icon: "clickthrough_rates.svg",
+        bgColor: "#162740",
         data: "30%+",
         iconWidth: "4.302vw",
         iconData: `<svg viewBox="0 0 63 79" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,6 +68,7 @@ export const marketingPageStats = [
     {
       statTitle: "Average Return on Ad Spend",
       // icon: "average_return.svg",
+      bgColor: "#3F5CFB",
       data: "50x",
       iconWidth: "3.955vw",
       iconData: `<svg  viewBox="0 0 58 51" fill="none" xmlns="http://www.w3.org/2000/svg">

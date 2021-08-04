@@ -5,7 +5,7 @@ import MarketingPageHeroBanner from "../../components/MarketingPageHeroBanner";
 import MarketingPageStatsBlock from "../../components/MarketingPageStatsBlock";
 
 import MarketingFeatureBlock from "../../components/MarketingFeatureBlock";
-import HomePageIntegrationBlock from "../../components/HomePageIntegrationBlock";
+import MarketingPageIntegrationBlock from "../../components/MarketingPageIntegrationBlock";
 
 import MarketingPageSignupBlock from "../../components/MarketingPageSignupBlock";
 import Head from "next/head";
@@ -43,7 +43,7 @@ export default function Home() {
         <MarketingPageHeroBanner />
         <MarketingPageClientBlock />
         <MarketingPageStatsBlock />
-        <HomePageIntegrationBlock />
+        <MarketingPageIntegrationBlock />
         <MarketingFeatureBlock />
         <MarketingPageSignupBlock />
         <Footer setFormState={setFormState} />

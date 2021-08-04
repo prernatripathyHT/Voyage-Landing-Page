@@ -168,6 +168,9 @@ html.has-scroll-dragging {
     opacity: 1;
     transform: translateY(0);
   }
+  .animateIndex{
+    cursor: pointer;
+  }
   .active .animateIndex {
     background-color: #3f5cfb;
     color: #fff;
@@ -204,6 +207,9 @@ html.has-scroll-dragging {
   .error-response svg{
     margin-left: 4px;
   }
+  /* .error-response.remove-error{
+    display: none!important;
+  } */
   form.registration_m input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -227,6 +233,9 @@ html.has-scroll-dragging {
     box-sizing: border-box;
     margin-bottom: 16px;
   }
+  /* form.registration_m input:focus + .error-response{
+   display: none!important;
+  } */
   form.registration_m input::-webkit-input-placeholder {
     color: #737d8c;
     font-size: 16px;
@@ -355,6 +364,7 @@ html.has-scroll-dragging {
     box-sizing: border-box;
     margin-bottom: 16px;
   }
+ 
   form.registration_m input::-webkit-input-placeholder {
     color: #737d8c;
     font-size: 14px;
@@ -408,5 +418,19 @@ html.has-scroll-dragging {
     border: none;
     cursor: pointer;
     margin-top: 9px;
+  }
+
+
+  /* marketing stats */
+
+  .statsContainer .slick-slide{
+    width: 77.6vw!important;
+    transform: translateX(44.4vw);
+  }
+  .statsContainer .slick-slide:nth-child(odd) .statAnimate{
+    background-color: #3f5cfb;
+  }
+  .statsContainer .slick-slide:nth-child(even) .statAnimate{
+    background-color: #162740;
   }
 }
