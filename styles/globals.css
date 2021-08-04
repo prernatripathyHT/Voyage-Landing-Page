@@ -195,8 +195,8 @@ html.has-scroll-dragging {
   form.registration_m .form-group .error-response {
     position: absolute;
     font-family: "neue-haas-grotesk-text", sans-serif;
-    top: 19px;
-    right: 17px;
+    top: 1.319vw;
+    right: 1.180vw;
     color: #AE2B2B;
     font-size: 0.8333vw;
     font-style: normal;
@@ -207,7 +207,7 @@ html.has-scroll-dragging {
     align-items: center;
   }
   .error-response svg{
-    margin-left: 4px;
+    margin-left: 0.277vw;
   }
   /* .error-response.remove-error{
     display: none!important;
