@@ -190,7 +190,7 @@ export default function MarketingPageHeroBanner() {
       // .from("#right-animation-banner", { duration: 1, y: "50%", opacity: 0})
       // .from("#leftHomeBanner", { duration: 0.3, y: "10%", opacity: 0 });
 
-      gsap.from( "#right-animation-banner", { duration: 2, y: "10%", opacity: 0});
+      gsap.from( "#right-animation-banner", { duration: 1.5, y: "10%", opacity: 0});
 
 
   }, []);
