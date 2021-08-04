@@ -188,7 +188,7 @@ export default function MarketingPageHeroBanner() {
     const timeline = gsap.timeline();
     timeline
       // .from("#marketingBanner-1", { duration: 0.5, y: "30%", opacity: 0})
-      .from("#right-animation-banner", { duration: 0.5, y: "70%", opacity: 0})
+      .from("#right-animation-banner", { duration: 0.5, y: "50%", opacity: 0})
       // .from("#leftHomeBanner", { duration: 0.3, y: "10%", opacity: 0 });
   }, []);
 
