@@ -34,6 +34,7 @@ export default function Home() {
           property="og:title"
           content="SMS Marketing for Ecommerce | Voyage Mobile"
         ></meta>
+        <meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0, viewport-fit=cover" name="viewport"/>
         <title>Voyage SMS: Text Marketing for eCommerce</title>
       </Head>
       <div className="main" id="main-target" data-scroll-container>
