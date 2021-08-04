@@ -29,8 +29,7 @@ const settings = {
   autoplaySpeed: 2000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  centerMode:true,
-  centerPadding: "0px",
+  variableWidth:true,
   cssEase:`cubic-bezier(.51,.11,.44,.96)`,
 };
 

@@ -3,6 +3,7 @@
     width: 100%;
     position: relative;
     padding-top: 7.627vw;
+    display: flex;
   }
   .successState {
     display: none;
@@ -38,7 +39,8 @@
   }
   .heroBanner_innerWrapper {
     max-width: 94.416vw;
-    margin: 0 0 0 auto;
+    /* margin: 0 0 0 auto; */
+    margin-left: 5.41666vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -116,19 +118,26 @@
     justify-content: flex-start;
     align-items: flex-end;
     /* position: relative; */
+    position: absolute;
+    right: 0;
+    opacity: 1;
   }
 
   /* marketing css - animation */
   .marketingBanner1 {
-    position: absolute;
+
+    /* position: absolute;
     width: 44.72vw;
     top: 10vw;
-    right: 0;
+    right: 0; */
+
+    position: relative;
+    width: 44.72vw;
   }
   .marketingBanner2 {
     position: absolute;
     width: 21.4722vw;
-    top: 20vw;
+    top: 14vw;
     right: 29vw;
   }
 }
@@ -237,24 +246,31 @@
     align-items: flex-end;
     margin-top: 10.6666vw;
     overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 72.666vw;
   }
 
   .btnWrapper .videoPopup {
     display: none;
   }
     /* marketing css - animation */
+  
     .marketingBanner1 {
-      position: absolute;
+      /* position: absolute;
       width: 89.933vw;
       height: 65.9vw;
       top: 87vw;
-      right: 0;
+      right: 0; */
+      position: relative;
+      height: 70.9vw;
+      width: 93.933vw;
     }
     .marketingBanner2 {
       position: absolute;
       width: 27.4vw;
       height: 44.8vw;
-      top: 109vw;
+      top: 27vw;
       right: 67vw;
     }
 }

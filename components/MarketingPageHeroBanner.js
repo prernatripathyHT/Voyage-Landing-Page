@@ -187,9 +187,9 @@ export default function MarketingPageHeroBanner() {
   useEffect(() => {
     const timeline = gsap.timeline();
     timeline
-      .from("#marketingBanner-1", { duration: 0.5, y: "30%", opacity: 0})
-      .from("#marketingBanner-2", { duration: 0.5, y: "30%", opacity: 0})
-      .from("#leftHomeBanner", { duration: 0.3, y: "10%", opacity: 0 });
+      // .from("#marketingBanner-1", { duration: 0.5, y: "30%", opacity: 0})
+      .from("#right-animation-banner", { duration: 0.5, y: "70%", opacity: 0})
+      // .from("#leftHomeBanner", { duration: 0.3, y: "10%", opacity: 0 });
   }, []);
 
   return (
@@ -355,7 +355,7 @@ export default function MarketingPageHeroBanner() {
         </div>
       </div>
 
-      <div className={styles.rightBlock}>
+      <div className={styles.rightBlock} id="right-animation-banner">
         <img
           data-scroll
           id="marketingBanner-1"

@@ -83,7 +83,7 @@
       font-family: "neue-haas-grotesk-text", sans-serif;
     }
     #inputWrapper button {
-        font-family: Helvetica, sans-serif;
+        /* font-family: Helvetica, sans-serif; */
       font-style: normal;
       font-weight: 500;
       font-size: 1.111vw;

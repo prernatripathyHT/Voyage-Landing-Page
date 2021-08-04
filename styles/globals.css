@@ -220,11 +220,11 @@ html.has-scroll-dragging {
     border: 1px solid #bebebe;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: "neue-haas-grotesk-text", sans-serif;
-    font-size: 16px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 1.458vw;
     letter-spacing: 0em;
     text-align: left;
     box-shadow: none;
@@ -238,21 +238,21 @@ html.has-scroll-dragging {
   } */
   form.registration_m input::-webkit-input-placeholder {
     color: #737d8c;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 400;
     font-family: "neue-haas-grotesk-text", sans-serif;
   }
   form.registration_m input::-moz-input-placeholder {
     color: #737d8c;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 400;
     font-family: "neue-haas-grotesk-text", sans-serif;
   }
   form.registration_m input::-ms-input-placeholder {
     color: #737d8c;
-    font-size: 16px;
+    font-size: 1.111vw;
     font-style: normal;
     font-weight: 400;
     font-family: "neue-haas-grotesk-text", sans-serif;
@@ -262,7 +262,7 @@ html.has-scroll-dragging {
     width: 100%;
   }
   form.registration_m .form_group span.error_response {
-    font-family: "neue-haas-grotesk-text", sans-serif;
+    font-family: "neue-haas-grotesk-display", sans-serif;
     position: absolute;
     top: 64px;
     left: 0;
@@ -271,17 +271,18 @@ html.has-scroll-dragging {
     display: none;
   }
   form.registration_m button[type="submit"] {
-    padding: 14px 15px 14px 15px;
+    /* padding: 14px 15px 14px 15px; */
     color: #fff;
     width: 13.1944vw;
     background-color: #3f5cfb;
+    border: 1px solid #3f5cfb;
     border-radius: 4px;
     text-transform: uppercase;
-    font-family: "neue-haas-grotesk-text", sans-serif;
-    font-size: 16px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-size: 1.111vw;
     font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
+    font-weight: 600;
+    line-height: 1.458vw;
     letter-spacing: 0.05em;
     text-align: center;
     box-shadow: none;
@@ -289,6 +290,14 @@ html.has-scroll-dragging {
     border: none;
     cursor: pointer;
     margin-top: 9px;
+    transition: .3s;
+    height: 3.402vw;
+    /* padding: 0.902vw 1.665vw; */
+  }
+  form.registration_m button[type="submit"]:hover{
+    background-color: #fff;
+    border: 1px solid #3f5cfb;
+    color: #3f5cfb;
   }
 }
 
@@ -409,7 +418,7 @@ html.has-scroll-dragging {
     font-family: "neue-haas-grotesk-text", sans-serif;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.05em;
     text-align: center;
@@ -425,12 +434,19 @@ html.has-scroll-dragging {
 
   .statsContainer .slick-slide{
     width: 77.6vw!important;
-    transform: translateX(44.4vw);
+    /* transform: translateX(44.4vw); */
+    /* max-width: 80%!important; */
+  }
+
+  .statAnimate{
+    transition:all .3s;
   }
   .statsContainer .slick-slide:nth-child(odd) .statAnimate{
     background-color: #3f5cfb;
+
   }
   .statsContainer .slick-slide:nth-child(even) .statAnimate{
     background-color: #162740;
+
   }
 }

@@ -246,7 +246,7 @@ export default function MarketingPageServiceBlock() {
         </div>
         </Media>
         <Media lessThan="md">
-            <div class="marketingContainerMobile container">
+            <div className="marketingContainerMobile container">
             {marketingFeatureBlockData.map((service, index) => (
                 <div
                   className={styles.marketingBlock}
