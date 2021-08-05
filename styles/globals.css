@@ -446,21 +446,39 @@ html.has-scroll-dragging {
   /* marketing stats */
 
   .statsContainer .slick-slide{
-    width: 77.6vw!important;
+    /* width: 77.6vw!important; */
     /* transform: translateX(44.4vw); */
     /* max-width: 80%!important; */
+  }
+
+  .statsContainer .slick-dots{
+    bottom: 6px;
+  }
+
+  .statsContainer .slick-dots li{
+    margin: 0 3px;;
+  }
+
+  .statsContainer .slick-dots li button:before{
+    opacity: .2;
+    color: white;
+  }
+  .statsContainer .slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: white;
   }
 
   .statAnimate{
     transition:all .3s;
   }
 
+
   .statsContainer .slick-slide:nth-child(odd) .statAnimate{
-    background-color: #162740;
+    background-color: #3f5cfb;
 
   }
   .statsContainer .slick-slide:nth-child(even) .statAnimate{
-    background-color: #3f5cfb;
+    background-color: #162740;
 
   }
 }

@@ -23,13 +23,13 @@ const { MediaContextProvider, Media } = createMedia({
 
 
 const settings = {
-  dots: false,
-  infinite: true,
+  dots: true,
+  infinite: false,
   autoplay: false,
   autoplaySpeed: 2000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  variableWidth:true,
+  variableWidth:false,
   cssEase:`cubic-bezier(.51,.11,.44,.96)`,
 };
 
