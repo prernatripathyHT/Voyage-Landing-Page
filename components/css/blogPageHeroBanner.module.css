@@ -1,0 +1,164 @@
+@media screen and (min-width: 769px) {
+    #heroBanner {
+        width: 100%;
+        position: relative;
+        padding-top: 7.627vw;
+        background-color: #1C345C;
+        z-index: -1;
+      }
+
+      .heroBannerBgElements svg:nth-child(1){
+        /* width: 6.736vw; */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+    }
+    .heroBannerBgElements svg:nth-child(2){
+        /* width: 32.43vw; */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+      .heroBannerContainer{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 4.51388vw;
+          padding-bottom: 5.208333vw;
+          z-index: 1;
+      }
+
+
+      .leftBlock{
+          width: 40%;
+      }
+
+      .rightBlock{
+          width: 60%;
+          background-color: #365180;
+      
+          padding: 1.6666vw;
+      }
+
+      .featuredLink{
+        display: flex;
+      }
+
+
+      .bannerText {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.111vw;
+        line-height: 1.6666vw;
+        margin-bottom: 1.52777vw;
+        margin-top: 5.208333vw;
+        color: #fff;
+        opacity: .5;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      }
+
+      .bannerTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 4.30555vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 4.7222vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+      }
+
+      .featuredImage{
+          width: 24.5833vw;
+          height: 21.9444vw;
+          background-color: #405CFB;
+          margin-right: 1.6666vw;
+        
+      }
+      .featuredImage img{
+        object-fit: cover;
+      }
+
+      .featuredBlogDetails{
+          width: 20.625vw;
+      }
+
+      .featuredTagAndTime{
+          display: flex;
+          margin-top: 2.36111vw;
+          align-items: center;
+      }
+
+      .featuredTagAndTime p{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: .8333vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.25vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        opacity: .8;
+    }
+
+    .featuredTagAndTime svg{
+        margin-left: .555vw;
+        margin-right: .555vw;
+    }
+
+    .featuredTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 1.666vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 2.3611vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        margin-top: 1.111vw;
+    }
+
+    .featuredExcerpt{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: .97222vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1.458vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        opacity: .5;
+        margin-top: 0.555vw;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .featuredReadMore{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: .8333vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.25vw;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #fff;
+        opacity: .5;
+        margin-top: .7638vw;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+    }
+    .featuredReadMore svg{
+        margin-left: 4px;
+    }
+
+   
+
+
+}

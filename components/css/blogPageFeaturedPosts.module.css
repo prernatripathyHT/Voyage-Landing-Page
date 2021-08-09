@@ -1,0 +1,13 @@
+@media screen and (min-width: 769px) {
+    .featuredPosts{
+        margin-top: 3.26388vw;
+        margin-bottom: 3.888vw;
+    }
+    
+    .featuredPostsContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap:1.9444vw;
+        grid-row-gap:3.125vw ;
+    }
+}
