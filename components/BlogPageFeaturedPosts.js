@@ -6,14 +6,13 @@ import BlogItem from "./BlogItem"
 export default function BlogPageFeaturedPosts({posts}) {
 
     const featuredPosts = {posts};
-    //console.log("featured posts", featuredPosts)
-    // const featuredPost = post.posts.posts[2];
+ 
     return (
         <section id={styles.featuredPosts} className={styles.featuredPosts}>
             <div className="container">
              <div className={styles.featuredPostsContainer}>
-                {featuredPosts.posts.posts.map(post => (
-                <BlogItem post={post} /> 
+                {featuredPosts.posts.posts.slice(0, 6).map(post => (
+                <BlogItem key={post.id} post={post} /> 
                 ))}
             </div>
             </div>
@@ -22,5 +21,3 @@ export default function BlogPageFeaturedPosts({posts}) {
     )
 }
 
-
-//send a key for this  (IMPORTANT!)

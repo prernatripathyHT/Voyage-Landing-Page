@@ -4,6 +4,7 @@ import MarketingPageClientBlock from "../../components/MarketingPageClientBlock"
 import BlogPageHeroBanner from "../../components/BlogPageHeroBanner";
 import BlogPageFeaturedPosts from "../../components/BlogPageFeaturedPosts";
 import BlogPageSignupBlock from "../../components/BlogPageSignupBlock";
+import BlogPageAllPosts from "../../components/BlogPageAllPosts";
 
 import Head from "next/head";
 import RequestForm from "../../components/RequestForm";
@@ -23,7 +24,7 @@ const {CONTENT_API_KEY, BLOG_URL} = process.env;
 
 export const getStaticProps = async () => {
  
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&limit=6`);
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
   const posts = await res.json();
 
 
@@ -58,7 +59,8 @@ export default function Home({posts}) {
 
         <BlogPageHeroBanner posts={posts} />
         <BlogPageFeaturedPosts posts={posts} />
-        {/* <BlogPageSignupBlock /> */}
+        <BlogPageSignupBlock />
+        <BlogPageAllPosts posts={posts} />
       
         <Footer setFormState={setFormState} />
       </div>

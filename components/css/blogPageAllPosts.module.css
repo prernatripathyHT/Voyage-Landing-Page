@@ -1,0 +1,32 @@
+@media screen and (min-width: 769px) {
+    .allPosts{
+        margin-top: 3.26388vw;
+        /* margin-bottom: 3.888vw; */
+    }
+    .sectionContainer{
+        text-align: center;
+    }
+
+    .allPostsContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap:1.9444vw;
+        grid-row-gap:3.125vw ;
+    }
+
+    .showMoreButton{
+        margin-top: 3.888vw;
+        background-color: rgba(64, 92, 251, 0.1);
+        border-radius: 5px;
+        padding: .97222vw 1.875vw;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #405CFB;
+        text-transform: uppercase;
+    }
+}

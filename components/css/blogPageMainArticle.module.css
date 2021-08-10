@@ -1,0 +1,89 @@
+@media screen and (min-width: 769px) {
+    .articlePage{
+        padding-top: 7.627vw;
+        width: 100%;
+    }
+
+    .mainArticleImage{
+        background-color: #405CFB;
+        height: 31.875vw;
+    }
+
+    .mainArticleData{
+        width: 58.472vw;
+        margin: auto;
+    }
+
+    .topBar{
+        display: flex;
+        align-items: center;
+        margin-top: 3.194vw;
+    }
+
+    .topBar p{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+        opacity: 0.5;
+
+    }
+
+    .topBar p:nth-child(1){
+        opacity: 1;
+        background-color: #F2F2F2;
+        border-radius: 100px;
+        padding: .555vw 1.111vw;
+        margin-right: 2.43vw;
+    }
+
+    .topBar svg{
+        margin: 0 .555vw;
+    }
+
+    .bodyContent{
+        margin-top: 2.222vw;
+    }
+
+    .bodyTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 62px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+    }
+
+    .bodyHTML{
+        margin-top: 1.666vw;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .bodyHTML p, .bodyHTML ul li{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+        opacity: .7;
+        margin-bottom: 1.111vw;
+    }
+    .bodyHTML h3{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+        margin-bottom: 1.111vw;
+    }
+}

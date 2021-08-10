@@ -4,7 +4,7 @@ import styles from "./css/blogItem.module.css";
 
 const BlogItem  = ({post}) =>{
     return(
-        <Link href="/blog/[slug]" as={`/blog/${post.slug}`}><a className={styles.blogItemLink}>
+        <Link href="/blog/[slug]" as={`/blog/${post.slug}`}><a className={`aos-init ${styles.blogItemLink}`} data-aos="fade-up" data-aos-duration="1000">
             <div className={styles.blogItemImage}>
                 <img src={post.feature_image} />
             </div>

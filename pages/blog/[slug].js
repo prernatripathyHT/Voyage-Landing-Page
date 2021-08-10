@@ -1,13 +1,18 @@
-import Link from 'next/link';
-import {useRouter} from 'next/router';
-import styles from '../../styles/Home.module.css'
+
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Head from "next/head";
+import RequestForm from "../../components/RequestForm";
+import BlogPageMainArticle from "../../components/BlogPageMainArticle";
+import BlogPageBottomBlock from "../../components/BlogPageBottomBlock";
+import { useState } from "react";
 
 const {CONTENT_API_KEY, BLOG_URL} = process.env;
 
 
 async function getPost(slug){
     const res = await fetch(
-        `${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&fields=title,slug,html`
+        `${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&fields=title,slug,html,feature_image,reading_time,published_at`
         ).then((res) => res.json())
     
         const posts = res.posts;
@@ -45,16 +50,34 @@ export const getStaticPaths = async () => {
 export default function BlogPostPage({currentPost}) {
 
 
-    const post = {currentPost};
-
-    //console.log("current post object is", post);
+    const [formState, setFormState] = useState("close");
+   
 
 
     return (
-        <div style={{marginTop:'50vh', textAlign:'center'}} className="aos-init" data-aos="fade-up" data-aos-duration="1000">
-            <h1  data-aos="fade-up" data-aos-duration="1000">{post.currentPost.title}</h1>
-            <div dangerouslySetInnerHTML={{__html: post.currentPost.html }} data-aos="fade-up" data-aos-duration="1000"></div>
+        <>
+         <Head>
+            <meta
+            name="description"
+            content="SMS marketing and text messaging for your ecommerce business. Get 40%+ CTR and 90%+ open rates. Get a demo today!"
+            />
+            <meta name="robots" content="index, follow" />
+            <meta
+            property="og:title"
+            content="SMS Marketing for Ecommerce | Voyage Mobile"
+            ></meta>
+            <title>Voyage SMS: Text Marketing for eCommerce</title>
+        </Head>
+
+
+        <div className="main" id="main-target" data-scroll-container>
+            <RequestForm formState={formState} setFormState={setFormState} />
+            <Header setFormState={setFormState} />
+            <BlogPageMainArticle currentPost={currentPost} />
+            <BlogPageBottomBlock />
+            <Footer setFormState={setFormState} />
         </div>
+        </>
     )
 
 }

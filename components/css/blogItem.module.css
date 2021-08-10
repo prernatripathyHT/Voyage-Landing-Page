@@ -6,11 +6,12 @@
         box-sizing: border-box;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
         border-radius: 5px;
-        transition: .4s;
+        transition: .5s;
+        width: 28.54vw;
     }
     .blogItemLink:hover{
         transform: scale(1.008);
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
     }
 
     .blogItemImage{
