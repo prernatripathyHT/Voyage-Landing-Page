@@ -11,6 +11,10 @@ input {
   outline: none;
 }
 
+html{
+  overflow-x: hidden
+}
+
 button {
   border: unset;
   background-color: transparent;

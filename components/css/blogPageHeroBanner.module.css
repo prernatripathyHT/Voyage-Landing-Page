@@ -4,7 +4,7 @@
         position: relative;
         padding-top: 7.627vw;
         background-color: #1C345C;
-        z-index: -1;
+        /* z-index: -1; */
       }
 
       .heroBannerBgElements svg:nth-child(1){
