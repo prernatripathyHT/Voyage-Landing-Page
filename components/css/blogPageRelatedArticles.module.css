@@ -1,0 +1,63 @@
+@media screen and (min-width: 769px) {
+    .blogPageRelatedArticles{
+        margin-top: 8.680vw;
+        /* margin-bottom: 3.888vw; */
+     
+    }
+    .sectionContainer{
+        text-align: center;
+        padding-bottom: 4.444vw;
+        border-bottom: 1px solid #E7E7E7;
+    }
+
+    .relatedPostsContainer{
+        display: block;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap:1.9444vw;
+        grid-row-gap:3.125vw ;
+    }
+
+    .relatedArticlesHeading{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 3.333vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 3.68vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 2.222vw;
+    }
+
+ 
+}
+
+
+@media screen and (max-width: 768px) {
+    .blogPageRelatedArticles{
+        margin-top: 8.680vw;
+        /* margin-bottom: 3.888vw; */
+     
+    }
+    .sectionContainer{
+        text-align: center;
+        padding-bottom: 19.2vw;
+        border-bottom: 1px solid #E7E7E7;
+    }
+
+    .relatedPostsContainer{
+        display: block;
+    }
+
+    .relatedArticlesHeading{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 9.6vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 10.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 6.4vw;
+    }
+
+ 
+}

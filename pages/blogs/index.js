@@ -8,13 +8,6 @@ import BlogPageAllPosts from "../../components/BlogPageAllPosts";
 
 import Head from "next/head";
 import RequestForm from "../../components/RequestForm";
-// import { SmoothScrollProvider } from '../utils/smooth-scroll';
-import dynamic from "next/dynamic";
-// const RequestForm = dynamic(() => import("../components/RequestForm"), {
-//   loading: () => null,
-//   ssr: false,
-// });
-
 import { useState } from "react";
 
 const {CONTENT_API_KEY, BLOG_URL} = process.env;
@@ -36,7 +29,11 @@ export const getStaticProps = async () => {
 
 
 export default function Home({posts}) {
+  const [filteredPosts, setFilteredPosts] = useState(posts);
   const [formState, setFormState] = useState("close");
+  const myPosts = {posts}
+
+  //console.log("current filtered posts are: ", filteredPosts);
 
   return (
     <>
@@ -57,10 +54,17 @@ export default function Home({posts}) {
         <RequestForm formState={formState} setFormState={setFormState} />
         <Header setFormState={setFormState} />
 
-        <BlogPageHeroBanner posts={posts} />
-        <BlogPageFeaturedPosts posts={posts} />
+        <BlogPageHeroBanner posts={filteredPosts} />
+        {/* <div>
+          {myPosts.posts.posts.map((post,index) => (
+        <div key={index}>  {post.tags.map((tag, index)=> (
+              <p key={index}>{tag.name}</p>
+            ))}</div>
+          ))}
+        </div> */}
+        <BlogPageFeaturedPosts posts={filteredPosts} />
         <BlogPageSignupBlock />
-        <BlogPageAllPosts posts={posts} />
+        <BlogPageAllPosts posts={filteredPosts} />
       
         <Footer setFormState={setFormState} />
       </div>

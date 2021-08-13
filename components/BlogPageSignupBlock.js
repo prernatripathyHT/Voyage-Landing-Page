@@ -51,7 +51,7 @@ export default function BlogPageSignupBlock() {
            
         </div>
         <div className={styles.blogPageSignupBox} data-scroll>
-          <h3>Subscribe to the SMS Marketing <br /> Resources news letter</h3>
+          <h3>Subscribe to the SMS Marketing Resources news letter</h3>
           <div className={styles.blogPageInputBox}>
             {isSubmitted && (
               <p className={styles.thankYou}>

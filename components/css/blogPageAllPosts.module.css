@@ -30,3 +30,35 @@
         text-transform: uppercase;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .allPosts{
+        margin-top: 6.4vw;
+        /* margin-bottom: 3.888vw; */
+    }
+    .sectionContainer{
+        text-align: center;
+    }
+
+    .allPostsContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:6.4vw ;
+    }
+
+    .showMoreButton{
+        margin-top: 6.4vw;
+        background-color: rgba(64, 92, 251, 0.1);
+        border-radius: 5px;
+        padding: 3.7333vw 7.2vw;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 4.2666vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 5.6x;
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #405CFB;
+        text-transform: uppercase;
+    }
+}

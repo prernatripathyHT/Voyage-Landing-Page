@@ -6,7 +6,7 @@ const BlogItem  = ({post}) =>{
     return(
         <Link href="/blog/[slug]" as={`/blog/${post.slug}`}><a className={`aos-init ${styles.blogItemLink}`} data-aos="fade-up" data-aos-duration="1000">
             <div className={styles.blogItemImage}>
-                <img src={post.feature_image} />
+                <img src={`https://sms-marketing-resources.ghost.io/${post.feature_image}`} />
             </div>
             <div className={styles.blogItemDetails}>
                 <div className={styles.blogItemTagAndTime}>

@@ -482,3 +482,73 @@ html.has-scroll-dragging {
 
   }
 }
+
+
+
+/* Blog Article Page Slick Slider */
+
+.blogPageRelatedItemsContainer .slick-slide .relatedArticleItem{
+        /* height: auto;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        transition: .5s; */
+        /* width: 27.54vw!important; */
+        height: 30.54vw!important;
+        display: flex!important;
+}
+
+.blogPageRelatedItemsContainer .slick-arrow{
+  display: block !important;
+  top: -58px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+  border-radius: 50%;
+  width: 3.333vw;
+  height: 3.333vw;
+  transition: .3s;
+
+}
+
+.blogPageRelatedItemsContainer .slick-prev::before{
+  content: url("/images/article-slider-left-button.png");
+  color: #000;
+  opacity: 1;
+  display: inline-block;
+  transform: scale(.5);
+}
+.blogPageRelatedItemsContainer .slick-next::before{
+  content: url("/images/article-slider-right-button.png");
+  color: #000;
+  opacity: 1;
+  display: inline-block;
+  transform: scale(.5);
+}
+
+.blogPageRelatedItemsContainer .slick-arrow.slick-prev{
+  left: 76.3888vw;
+}
+
+.blogPageRelatedItemsContainer .slick-arrow.slick-next{
+  right: 1.111vw;
+}
+
+.blogPageRelatedItemsContainer .slick-arrow:hover {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.14);
+}
+
+
+@media screen and (max-width: 768px) {
+  .blogPageRelatedItemsContainer .slick-arrow{
+    display: none!important;
+  }
+
+  .blogPageRelatedItemsContainer .slick-slide .relatedArticleItem{
+    height: 89.333vw!important;
+    display: flex!important;
+}
+
+}

@@ -78,6 +78,8 @@
         
       }
       .featuredImage img{
+        width: 100%;
+        height: 100%;
         object-fit: cover;
       }
 
@@ -160,5 +162,173 @@
 
    
 
+
+}
+
+
+@media screen and (max-width:768px){
+    #heroBanner {
+        width: 100%;
+        /* position: relative; */
+        padding-top:32.925vw;
+        background-color: #1C345C;
+        z-index: -1;
+      }
+
+      .heroBannerBgElements svg:nth-child(1){
+        /* width: 6.736vw; */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: none;
+    
+    }
+    .heroBannerBgElements svg:nth-child(2){
+        /* width: 32.43vw; */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        display: none;
+    }
+
+      .heroBannerContainer{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-top: 4.51388vw;
+          padding-bottom: 8.5333vw;
+          z-index: 1;
+      }
+
+
+      .leftBlock{
+          width: 100%;
+      }
+
+      .rightBlock{
+          width: 100%;
+          background-color: #365180;
+          padding: 6.4vw;
+      }
+
+      .featuredLink{
+        display: flex;
+        flex-direction: column;
+      }
+
+
+      .bannerText {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4.2666vw;
+        line-height: 6.4vw;
+        margin-bottom: 4.2666vw;
+        color: #fff;
+        opacity: .5;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      }
+
+      .bannerTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 11.7333vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 12.8vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        margin-bottom: 8.5333vw;
+      }
+
+      .featuredImage{
+          width: 100%;
+          height: 68.2666vw;
+          background-color: #405CFB;
+          margin-right: 0;
+        
+      }
+      .featuredImage img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .featuredBlogDetails{
+          width: 100%;
+      }
+
+      .featuredTagAndTime{
+          display: flex;
+          margin-top: 6.4vw;
+          align-items: center;
+      }
+
+      .featuredTagAndTime p{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 3.2vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 4.8vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        opacity: .8;
+    }
+
+    .featuredTagAndTime svg{
+        margin-left: 2.1333vw;
+        margin-right: 2.1333vw;
+    }
+
+    .featuredTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 6.4vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 9.0666vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        margin-top: 4.2666vw;
+    }
+
+    .featuredExcerpt{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 3.7333vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+        opacity: .5;
+        margin-top: 2.1333vw;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .featuredReadMore{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 3.2vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 4.8vw;
+        letter-spacing: 0em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #fff;
+        opacity: .5;
+        margin-top: 2.1333vw;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+    }
+    .featuredReadMore svg{
+        margin-left: 4px;
+    }
 
 }

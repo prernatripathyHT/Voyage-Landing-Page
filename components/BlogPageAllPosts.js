@@ -8,7 +8,7 @@ export default function BlogPageAllPosts({posts}) {
     const [items, setItems] = useState([]);
     const [visible, setVisible] = useState(9);
     const featuredPosts = {posts};
-   
+
     const showMoreItems = () => {
         setVisible(prevValue => prevValue + 9);
     }   
@@ -17,6 +17,8 @@ export default function BlogPageAllPosts({posts}) {
         setItems(featuredPosts.posts.posts);
        
     }, []);
+
+    //console.log("no. of visibke blogs",visible)
  
     return (
         <section id={styles.allPosts} className={styles.allPosts}>
@@ -26,7 +28,7 @@ export default function BlogPageAllPosts({posts}) {
                 <BlogItem key={post.id} post={post} /> 
                 ))}        
             </div>
-            <button className={styles.showMoreButton} onClick={showMoreItems}>Load More</button>
+           {visible < 18 && <button className={styles.showMoreButton} onClick={showMoreItems}>Load More</button>}
             </div>
             <BlogPageBottomBlock />
         </section>

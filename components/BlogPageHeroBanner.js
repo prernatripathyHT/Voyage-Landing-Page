@@ -29,7 +29,7 @@ export default function BlogPageHeroBanner({posts}) {
       <div className={styles.rightBlock}>
      <Link href="/blog/[slug]" as={`/blog/${featuredPost.slug}`}><a className={styles.featuredLink}>
         <div className={styles.featuredImage}>
-            <img src={featuredPost.feature_image} />
+            <img src={`https://sms-marketing-resources.ghost.io/${featuredPost.feature_image}`} />
         </div>
         <div className={styles.featuredBlogDetails}>
             <div className={styles.featuredTagAndTime}>
@@ -56,22 +56,20 @@ export default function BlogPageHeroBanner({posts}) {
       
     </div>
     <div className={styles.heroBannerBgElements}>
-    <svg width="50" height="110" viewBox="0 0 50 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0.583553 2.70299e-06L-47.9998 55L49.1669 55L0.583553 2.70299e-06Z" fill="#02D9FC"/>
-      <path d="M0.583553 55L-47.9998 110L49.1669 110L0.583553 55Z" fill="#02D9FC"/>
-    </svg>
-    <svg width="467" height="504" viewBox="0 0 467 504" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g opacity="0.5">
-      <rect x="86" y="403" width="381" height="101" fill="#405CFB"/>
-      <path d="M85.9946 429V504.246H-0.000244141L85.9946 429Z" fill="white"/>
-      <path d="M404.618 156.88L466.402 207.598V-5H212V156.88H404.618Z" fill="#02D9FC"/>
-      <rect width="169.601" height="50.1637" transform="matrix(-1 0 0 1 255.591 322.435)" fill="#162740"/>
-      <ellipse rx="26.8734" ry="26.2762" transform="matrix(-1 0 0 1 136.75 296.159)" fill="#5BEBC1"/>
-      <rect width="76.4399" height="15.5269" transform="matrix(-1 0 0 1 160.041 254.355)" fill="#02D9FC"/>
-      </g>
-    </svg>
-
-
+      <svg width="50" height="110" viewBox="0 0 50 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.583553 2.70299e-06L-47.9998 55L49.1669 55L0.583553 2.70299e-06Z" fill="#02D9FC"/>
+        <path d="M0.583553 55L-47.9998 110L49.1669 110L0.583553 55Z" fill="#02D9FC"/>
+      </svg>
+      <svg width="467" height="504" viewBox="0 0 467 504" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.5">
+        <rect x="86" y="403" width="381" height="101" fill="#405CFB"/>
+        <path d="M85.9946 429V504.246H-0.000244141L85.9946 429Z" fill="white"/>
+        <path d="M404.618 156.88L466.402 207.598V-5H212V156.88H404.618Z" fill="#02D9FC"/>
+        <rect width="169.601" height="50.1637" transform="matrix(-1 0 0 1 255.591 322.435)" fill="#162740"/>
+        <ellipse rx="26.8734" ry="26.2762" transform="matrix(-1 0 0 1 136.75 296.159)" fill="#5BEBC1"/>
+        <rect width="76.4399" height="15.5269" transform="matrix(-1 0 0 1 160.041 254.355)" fill="#02D9FC"/>
+        </g>
+      </svg>
     </div>
     </section>
   );

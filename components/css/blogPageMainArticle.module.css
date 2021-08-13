@@ -4,9 +4,51 @@
         width: 100%;
     }
 
+    .mainArticle{
+        position: relative;
+    }
+
+    .socialIcons{
+        position: absolute;
+        top: 55.5555vw;
+        left: 6.25vw;
+    }
+
+    .socialIcon{
+        transition: .3s;
+    }
+
+    .socialIcon:hover{
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+    }
+
+    .socialIcon_fb, .socialIcon_tw, .socialIcon_li{
+        background: #FFFFFF;
+        border: 1px solid #F2F2F2;
+        box-sizing: border-box;
+        border-radius: 50%;
+        width: 3.3333vw;
+        height: 3.3333vw;
+        margin-bottom: 1.1vw;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socialIcons img{
+        width: 1.3888vw;
+        height: 1.3888vw;
+    }
+
     .mainArticleImage{
         background-color: #405CFB;
         height: 31.875vw;
+    }
+    .mainArticleImage img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .mainArticleData{
@@ -22,10 +64,10 @@
 
     .topBar p{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 12px;
+        font-size: .8333vw;
         font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
+        font-weight: normal;
+        line-height: 1.25vw;
         letter-spacing: 0em;
         text-align: left;
         color: #000000;
@@ -51,10 +93,10 @@
 
     .bodyTitle{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 56px;
+        font-size: 3.888vw;
         font-style: normal;
-        font-weight: 400;
-        line-height: 62px;
+        font-weight: normal;
+        line-height: 4.3055vw;
         letter-spacing: 0em;
         text-align: left;
         color: #000;
@@ -66,24 +108,209 @@
     }
 
     .bodyHTML p, .bodyHTML ul li{
-        font-size: 16px;
+        font-size: 1.111vw;
         font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
+        font-weight: normal;
+        line-height: 1.666vw;
         letter-spacing: 0em;
         text-align: left;
         color: #000;
         opacity: .7;
-        margin-bottom: 1.111vw;
+        margin-bottom: 2.777vw;
+    }
+    .bodyHTML ul li{
+        margin-bottom: 1.111vw; 
     }
     .bodyHTML h3{
-        font-size: 20px;
+        font-size: 1.3888vw;
         font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
+        font-weight: normal;
+        line-height: 1.666vw;
         letter-spacing: 0em;
         text-align: left;
         color: #000;
         margin-bottom: 1.111vw;
+        /* opacity: .8; */
     }
+
+    .bodyHTML img{
+        width: 100%;
+        margin-bottom: 2.77vw;
+    }
+
+    /* .bodyHTML p em{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        opacity: .7;
+    } */
+
+}
+
+@media screen and (max-width: 768px) {
+    .articlePage{
+        padding-top: 27.627vw;
+        width: 100%;
+    }
+
+    .mainArticle{
+        position: relative;
+    }
+
+    .socialIcons{
+        /* position: absolute;
+        top: 55.5555vw;
+        left: 6.25vw; */
+        width: 46vw;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        padding-top: 4.2666vw;
+        border-top: 1px solid #E7E7E7;
+        margin-bottom: 19.2vw;
+    }
+
+    .socialIcon{
+        transition: .3s;
+    }
+
+    .socialIcon:hover{
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+    }
+
+    .socialIcon_fb, .socialIcon_tw, .socialIcon_li{
+        background: #FFFFFF;
+        border: 1px solid #F2F2F2;
+        box-sizing: border-box;
+        border-radius: 50%;
+        width: 12.8vw;
+        height: 12.8vw;
+        margin-bottom: 1.1vw;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socialIcons img{
+        width: 5.333vw;
+        height: 5.333vw;
+    }
+
+    .mainArticleImage{
+        background-color: #405CFB;
+        height: 42.9333vw;
+    }
+    .mainArticleImage img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mainArticleData{
+        width: 100%;
+        margin: auto;
+    }
+
+    .topBar{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 8.5333vw;
+    }
+
+    .topBar p{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 3.2vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 4.8vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+        opacity: 0.5;
+    }
+
+    .topBar p:nth-child(1){
+        opacity: 1;
+        text-align: center;
+        background-color: #F2F2F2;
+        border-radius: 100px;
+        padding: .555vw 1.111vw;
+        width: 36.8vw;
+    }
+
+    .topBar p:nth-child(2){
+        margin-top: 16px;
+    }
+
+  
+    .topBar svg{
+        margin: 0 2.1333vw;
+    }
+
+    .bodyContent{
+        margin-top: 6.4vw;
+    }
+
+    .bodyTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 9.333vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1.2vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+    }
+
+    .bodyHTML{
+        margin-top: 6.4vw;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .bodyHTML p, .bodyHTML ul li{
+        font-size: 4.2666vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 6.4vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+        opacity: .7;
+        margin-bottom: 8.666vw;
+    }
+    .bodyHTML ul li{
+        font-size: 4.2666vw;
+    }
+    .bodyHTML h3{
+        font-size: 5.333vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 6.4vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+        margin-bottom: 4.2666vw;
+        /* opacity: .8; */
+    }
+
+    .bodyHTML img{
+        width: 100%;
+        margin-bottom: 2.77vw;
+    }
+
+    /* .bodyHTML p em{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        opacity: .7;
+    } */
+
 }

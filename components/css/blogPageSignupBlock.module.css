@@ -43,7 +43,7 @@
     }
 
     .blogPageSignupBox h3{
-        /* width: 50%; */
+        width: 50%;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         font-size: 2.638vw;
         font-style: normal;
@@ -139,6 +139,159 @@
         font-weight: 600;
         color: #405CFB;
       }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .signupWrapper{
+      background-color: #F6F6F6;
+      padding: 6.4vw;
+      position: relative;
+      border-radius: 5px;
+  }
+
+  .signupBlockBgElements{
+      /* position: absolute; */
+  }
+
+  .signupBlockBgElements svg:nth-child(1){
+    display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  }
+  .signupBlockBgElements svg:nth-child(2){
+    display: none;
+      position: absolute;
+      top: .9vw;
+      right: 1.1805vw;
+  }
+  .signupBlockBgElements svg:nth-child(3){
+    display: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
+
+  .signupBlockBgElements img:nth-of-type(1){
+    display: none;
+      position: absolute;
+      bottom: 0;
+      left: 23.472vw;
+  }
+  .signupBlockBgElements img:nth-of-type(2){
+    display: none;
+    position: absolute;
+    top: 0.9722vw;
+    left: 0.9722vw;
+}
+
+  .blogPageSignupBox{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .blogPageSignupBox h3{
+      width: 99%;
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      font-size: 6.4vw;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 9.6666vw;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #000;
+  }
+
+  .blogPageInputBox{
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+      margin-top: 31.73px;
+  }
+  .emailError {
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      position: absolute;
+      left: 0;
+      top: -4.362vw;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 3.2vw;
+      line-height: 4.8vw;
+      color: #f41818;
+    }
+
+    #inputWrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid rgba(64, 92, 251, 0.4);
+      border-radius: 5px;
+      padding: 3.7333vw 5.333vw 3.7333vw 5.333vw;
+    }
+
+    #inputWrapper input {  
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3.7333vw;
+      line-height: 4.8vw;
+      letter-spacing: 0.05em;
+      color: rgba(0, 0, 0, 1);
+      border: none;
+      flex-grow: 1;
+      padding-right: 0.7vw;
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      background-color: transparent;
+    }
+    #inputWrapper input::-webkit-placeholder,
+    #inputWrapper input::-moz-placeholder,
+    #inputWrapper input::-ms-placeholder {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3.7333vw;
+      line-height: 4.8vw;
+      letter-spacing: 0.05em;
+      color: rgba(0, 0, 0, 0.2);
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+  }
+
+  #inputWrapper button {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3.7333vw;
+      line-height: 4.8vw;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      padding: 3.2vw 1.873vw;
+      border-radius: 5px;
+      background-color: #405CFB;
+      border: 1px solid #405CFB;
+      transition: all 0.3s;
+      text-transform: uppercase;
+    }
+    #inputWrapper button:hover {
+      background-color: #fff;
+      color: #405CFB;
+    }
+
+    p.thankYou {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 3.7333vw;
+      line-height: 4.8vw;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 1.388vw;
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+    p.thankYou span {
+      font-weight: 600;
+      color: #405CFB;
+    }
 
 
 }
