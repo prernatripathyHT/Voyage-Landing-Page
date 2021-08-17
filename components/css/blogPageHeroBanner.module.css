@@ -38,8 +38,9 @@
       .rightBlock{
           width: 60%;
           background-color: #365180;
-      
           padding: 1.6666vw;
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.16);
+          border-radius: 5px;
       }
 
       .featuredLink{
@@ -210,6 +211,8 @@
           width: 100%;
           background-color: #365180;
           padding: 6.4vw;
+          box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.16);
+          border-radius: 5px;
       }
 
       .featuredLink{

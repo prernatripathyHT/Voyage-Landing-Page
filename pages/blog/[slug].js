@@ -101,7 +101,7 @@ export default function BlogPostPage({allPosts, currentPost}) {
                 </div>
             }
             </div> */}
-            <BlogPageRelatedArticles allPosts={allPosts} />
+            {/* <BlogPageRelatedArticles allPosts={allPosts} /> */}
             <BlogArticlePageSignupBlock />
             <BlogPageBottomBlock />
             <Footer setFormState={setFormState} />

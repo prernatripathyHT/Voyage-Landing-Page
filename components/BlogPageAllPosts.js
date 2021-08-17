@@ -18,7 +18,9 @@ export default function BlogPageAllPosts({posts}) {
        
     }, []);
 
-    //console.log("no. of visibke blogs",visible)
+   
+
+    // console.log("no. of visibke blogs",visible)
  
     return (
         <section id={styles.allPosts} className={styles.allPosts}>

@@ -25,8 +25,8 @@ export default function BlogPostPage({currentPost}) {
                        
                         </div>
                         <div className={styles.bodyContent}>
-                            <div className={` ${styles.bodyTitle}`}>{currentPost[0].title}</div>
-                            <div dangerouslySetInnerHTML={{__html: currentPost[0].html }} className={`${styles.bodyHTML}`}>
+                            <div className={` aos-init ${styles.bodyTitle}`} data-aos="fade-up" data-aos-duration="1000">{currentPost[0].title}</div>
+                            <div dangerouslySetInnerHTML={{__html: currentPost[0].html }} className={`${styles.bodyHTML}`} data-aos="fade-up" data-aos-duration="1500">
                         </div>
                         </div>
                     </div>
