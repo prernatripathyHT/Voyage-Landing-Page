@@ -32,7 +32,7 @@ export const marketingPageStats = [
         `,
       },
       {
-        statTitle: "Clickthrough Rates",
+        statTitle: "CTR",
         // icon: "clickthrough_rates.svg",
         bgColor: "#162740",
         data: "30%+",
@@ -66,7 +66,7 @@ export const marketingPageStats = [
 
       },
     {
-      statTitle: "Average Return on Ad Spend",
+      statTitle: "Average ROAS",
       // icon: "average_return.svg",
       bgColor: "#3F5CFB",
       data: "50x",

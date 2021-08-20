@@ -7,9 +7,15 @@ import BlogPageRelatedArticles from "../../components/BlogPageRelatedArticles";
 import BlogArticlePageSignupBlock from "../../components/BlogArticlePageSignupBlock";
 import BlogPageBottomBlock from "../../components/BlogPageBottomBlock";
 import { useState } from "react";
+import {useQueries, useQuery, useQueryClient} from 'react-query';
 
 
-const {CONTENT_API_KEY, BLOG_URL} = process.env;
+//const {CONTENT_API_KEY, BLOG_URL} = process.env;
+const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
+const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
+
+
+
 function getPost(slug){
     const urls = [
         `${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&include=authors,tags`,
@@ -29,7 +35,7 @@ export const getStaticProps = async ({params}) => {
 
     return {
       props: {
-          allPosts: allPosts[1].posts,
+          posts: allPosts[1].posts,
           currentPost: allPosts[0].posts
         }
     }
@@ -46,34 +52,52 @@ export const getStaticPaths = async () => {
         fallback:false,
     }
 }
+
+
+const getRelatedPosts = async(key) => {
+    const currentPostTags = key.queryKey[1].tags;
+    console.log("current tag names : ", currentPostTags);
+  
+
+        
+      //create a URL looping through all the tags
+      const tagURL = currentPostTags.map(tag=>`filter=tag:${tag}`);
+      const tagQueryString = tagURL.join('&');
+      const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&${tagQueryString}`;
+      const res = await fetch(myURL);
+      const newRes = res.json();
+      return newRes;
+ 
+  
+  }
   
 
 
-export default function BlogPostPage({allPosts, currentPost}) {
-   
-    const [formState, setFormState] = useState("close");
+export default function BlogPostPage({posts, currentPost}) {
+
+        const [allRelatedPosts, setAllPosts] = useState({posts})
+        const [formState, setFormState] = useState("close");
 
   
 
        //filter the posts based on the tag/category
-       var currentPostTags = currentPost[0].tags.map((tag) => {return tag.name});
-      // console.log("current post tags", currentPostTags);
+       var currentPostTags = currentPost[0].tags.map((tag) => {return tag.slug});
 
-    
 
-    // const relatedPosts = allPosts.filter(post => post.tags.length > 0  );
-    // const relatedPosts = allPosts.filter((post) => currentPostTags.some(r => post.tags.map(tag=>tag.name.includes(r))));
-    const relatedPosts = allPosts.filter((post) => 
-        {   if(post.tags.length > 0){
-            return currentPostTags.some(r => {
-                return  post.tags.map(tag=>tag.name.includes(r))})
-        }
-        }
-    
-    );
+       //create a query to fetch Related posts based on tags
+       const queryClient = useQueryClient();
+       const {isLoading, data:relatedPosts, status} = useQuery(['filtered posts', {tags: currentPostTags}], getRelatedPosts, {initialData:allRelatedPosts})
 
-    // console.log("related posts to this blog", relatedPosts.length);
+       //console.log("related Posts are", relatedPosts, "status", status)
 
+
+    if(isLoading){
+        return (
+        <div className="App">
+           <h2 style={{width:"100vw",height:"100vh",opacity:".5",display:"flex", alignItems:"center", justifyContent:"center"}}>Loading Blog...</h2>
+        </div>
+        )
+      }
    
     return (
         <>
@@ -93,15 +117,7 @@ export default function BlogPostPage({allPosts, currentPost}) {
             <RequestForm formState={formState} setFormState={setFormState} />
             <Header setFormState={setFormState} />
             <BlogPageMainArticle currentPost={currentPost} />
-             {/* <div>
-            current page tags
-            {<div> {currentPost[0].tags.map((tag, index)=> (
-                <p key={index}>{tag.name}</p>
-                ))}
-                </div>
-            }
-            </div> */}
-            {/* <BlogPageRelatedArticles allPosts={allPosts} /> */}
+            {/* <BlogPageRelatedArticles relatedPosts={relatedPosts} /> */}
             <BlogArticlePageSignupBlock />
             <BlogPageBottomBlock />
             <Footer setFormState={setFormState} />

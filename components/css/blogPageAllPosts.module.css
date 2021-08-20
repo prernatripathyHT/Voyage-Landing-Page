@@ -1,6 +1,6 @@
 @media screen and (min-width: 769px) {
     .allPosts{
-        margin-top: 3.26388vw;
+        /* margin-top: 3.26388vw; */
         /* margin-bottom: 3.888vw; */
     }
     .sectionContainer{
@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 768px) {
     .allPosts{
-        margin-top: 6.4vw;
+        /* margin-top: 6.4vw; */
         /* margin-bottom: 3.888vw; */
     }
     .sectionContainer{

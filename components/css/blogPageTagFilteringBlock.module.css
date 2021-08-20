@@ -1,0 +1,192 @@
+@media screen and (min-width: 769px) {
+    .tagFilteringSection{
+        margin-top: 1.9444vw;
+        padding-bottom: 1.9444vw;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .filterSearchDiv{
+        display: flex;
+    }
+
+    .SearchDiv{
+        width: 30%;
+        padding-right: 1.666vw;
+        border-right: 1px solid #EAEAEA;
+        position: relative;
+    }
+
+    .SearchDiv .searchIcon{
+        position: absolute;
+        top: .8333vw;
+        left: 1.666vw;
+    }
+
+    .SearchDiv button.closeIcon{
+        position: absolute;
+        top: .8333vw;
+        right: 3.666vw;
+    }
+
+    .SearchDiv input{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 6.9444vw;
+        width: 100%;
+        background: transparent;
+        border: 1px solid #DEDEDE;
+        padding: .6999vw 1.666vw .6999vw 3.75vw;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.666vw;
+        letter-spacing: 0em;
+    }
+
+    .FilterDiv{
+        padding-left: 1.666vw;
+        width: 70%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .FilterDiv::-webkit-scrollbar{
+        display: none;
+    }
+
+    .postTags{
+        display: flex;
+    }
+
+    .postTags p{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.666vw;
+        letter-spacing: 0em;
+        text-align: left;
+        white-space: nowrap;
+        cursor: pointer;
+        padding: .6999vw 1.666vw;
+        background-color: transparent;
+        margin-right: 1.666vw;
+        border-radius: 6.9444vw;
+        border: 1px solid #DEDEDE;
+        color: rgba(0,0,0,.6);
+        transition: .3s ease-in;
+    }
+
+    .postTags p:hover{
+        background-color: #405CFB;
+        border: 1px solid #405CFB;
+        color: #fff;
+    }   
+
+    .FilterDiv .postTags:nth-child(1) p{
+        background-color: #405CFB;
+        border: 1px solid #405CFB;
+        color: #fff;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .tagFilteringSection{
+        margin-top: 4.2666vw;
+        padding-bottom: 4.2666vw;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .filterSearchDiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .SearchDiv{
+        width: 100%;
+        position: relative;
+        padding-bottom: 4.2666vw;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .SearchDiv .searchIcon{
+        position: absolute;
+        top: 3.8333vw;
+        left: 4.666vw;
+    }
+
+    .SearchDiv button.closeIcon{
+        position: absolute;
+        top: 3.8333vw;
+        right: 4.666vw;
+    }
+
+    .SearchDiv input{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 26.666vw;
+        width: 100%;
+        background: transparent;
+        border: 1px solid #DEDEDE;
+        padding: 2.666vw 6.4vw 2.666vw 14.4vw;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 4.2666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0em;
+    }
+
+    .FilterDiv{
+        width: 100%;
+        display: flex;
+        padding-top: 4.2666vw;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .FilterDiv::-webkit-scrollbar{
+        display: none;
+    }
+
+    .postTags{
+        display: flex;
+    }
+
+    .postTags p{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 4.2666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0em;
+        text-align: left;
+        white-space: nowrap;
+        cursor: pointer;
+        padding: 2.666vw 6.4vw;
+        background-color: transparent;
+        margin-right: 4.2666vw;
+        border-radius: 26.666vw;
+        border: 1px solid #DEDEDE;
+        color: rgba(0,0,0,.6);
+        transition: .3s ease-in;
+    }
+
+    .postTags p:hover{
+        background-color: #405CFB;
+        border: 1px solid #405CFB;
+        color: #fff;
+    }   
+
+    .FilterDiv .postTags:nth-child(1) p{
+        background-color: #405CFB;
+        border: 1px solid #405CFB;
+        color: #fff;
+    }
+}
+

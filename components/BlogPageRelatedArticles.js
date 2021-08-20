@@ -4,12 +4,11 @@
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
-// import {useEffect} from 'react';
 
 
 
 
-// export default function BlogPageRelatedArticles({allPosts}) {
+// export default function BlogPageRelatedArticles({relatedPosts}) {
 
 
 
@@ -53,22 +52,22 @@
 
 
 
-//   //console.log("all posts", allPosts)
+//   //console.log("all posts", relatedPosts)
  
 //     return (
 //       <section id={styles.blogPageRelatedArticles} className={styles.blogPageRelatedArticles}>
 //             <div className={`container blogPageRelatedItemsContainer ${styles.sectionContainer}`}>
-//               <h1 className={`${styles.relatedArticlesHeading}`}>Related Articles</h1>
+//               <h1 className={`aos-init ${styles.relatedArticlesHeading}`} data-aos="fade-up" data-aos-duration="500" >Related Articles</h1>
 //              <Slider {...settings}  className={styles.relatedPostsContainer}>
-//                 {allPosts.map(post => (
+//                 {relatedPosts.posts.map(post => (
 //                   <div key={post.id} className="relatedArticleItem">
 //                 <BlogItem  post={post} /> 
 //                 </div>        
-//                 ))}    
-                 
-//             </Slider>
+//                 ))}      
+//               </Slider>
 //             </div>
 //         </section>
 //     )
 // }
+
 

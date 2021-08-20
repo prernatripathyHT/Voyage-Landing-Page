@@ -10,7 +10,7 @@ export default function BlogPageHeroBanner({posts}) {
   //console.log("voyage posts", {posts})
   const post = {posts};
   const featuredPost = post.posts.posts[1];
-  //console.log("post", featuredPost)
+  //console.log("featured post", featuredPost)
 
 
   return (

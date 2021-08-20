@@ -3,6 +3,8 @@
         background-color: #F6F6F6;
         padding: 4.866vw;
         position: relative;
+        margin-bottom: 3.26388vw;
+       
     }
 
     .signupBlockBgElements{
@@ -149,6 +151,7 @@
       padding: 6.4vw;
       position: relative;
       border-radius: 5px;
+      margin-bottom: 6.4vw;
   }
 
   .signupBlockBgElements{

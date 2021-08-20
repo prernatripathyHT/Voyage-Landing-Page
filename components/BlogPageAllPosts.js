@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import styles from "./css/blogPageAllPosts.module.css";
 import BlogItem from "./BlogItem";
-import BlogPageBottomBlock from "./BlogPageBottomBlock";
+
 
 
 export default function BlogPageAllPosts({posts}) {
@@ -14,7 +14,7 @@ export default function BlogPageAllPosts({posts}) {
     }   
 
     useEffect(() => {
-        setItems(featuredPosts.posts.posts);
+        setItems(featuredPosts.posts);
        
     }, []);
 
@@ -32,7 +32,6 @@ export default function BlogPageAllPosts({posts}) {
             </div>
            {visible < 18 && <button className={styles.showMoreButton} onClick={showMoreItems}>Load More</button>}
             </div>
-            <BlogPageBottomBlock />
         </section>
     )
 }

@@ -4,7 +4,11 @@ import '../styles/requestForm.css';
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {QueryClient, QueryClientProvider } from 'react-query';
+import {ReactQueryDevTools} from 'react-query/devtools';
 
+
+const client = new QueryClient();   //to modify the query cache in react
 
 function MyApp({ Component, pageProps }) {
 
@@ -18,10 +22,12 @@ function MyApp({ Component, pageProps }) {
 
   
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <QueryClientProvider client={client}>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
       
+    </QueryClientProvider>
   )
 }
 
