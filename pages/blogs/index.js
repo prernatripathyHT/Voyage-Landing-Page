@@ -42,14 +42,13 @@ const getFeaturedPosts = () => {
 
 const getFilteredPosts = async(key) => {
   const tagName = key.queryKey[1].tag;
-  //console.log("current tag name : ", tagName);
+  //console.log("current tag name : ", key);
   if(tagName){   //if tags are present - this is where we are going to filter the posts
     const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:${tagName}`;
     const res = await fetch(myURL);
     const newRes = res.json();
     return newRes;
   }
-
 
   const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
   return res.json();
@@ -58,21 +57,21 @@ const getFilteredPosts = async(key) => {
 
 
 
-// const getFilteredPostsWithSearch = async(key) => {
-//   console.log("current Key", key);
-//   const searchTerm = key.queryKey[1].search;
+const getFilteredPostsWithSearch = async(key) => {
+  console.log("current Key", key);
+  const searchTitle = key.queryKey[1].search;
 
-//   if(searchTerm){   
-//     const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=title:'${searchTerm}'`;
-//     const res = await fetch(myURL);
-//     const newRes = res.json();
-//     return newRes;
-//   }
+  if(searchTitle){   
+    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=slug:'${searchTitle}'`;
+    const res = await fetch(myURL);
+    const newRes = res.json();
+    return newRes;
+  }
 
 
-//   const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
-//   return res.json();
-// }
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
+  return res.json();
+}
 
 
 
@@ -80,11 +79,9 @@ const getFilteredPosts = async(key) => {
 
 export default function Home({posts}) {
   const [formState, setFormState] = useState("close");
-  const [tagName, setTagName] = useState(null);
+  const [tagName, setTagName] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
 
-
-  console.log("current search term", searchTerm);
 
 
     //REACT - QUERY : Featured Posts in the Hero Banner
@@ -101,21 +98,22 @@ export default function Home({posts}) {
 
 
     //For filtering with SEARCH
-    // const {data:filteredPostsWithSearch} = useQuery(['search filter', {search: searchTerm},], getFilteredPostsWithSearch)
-    // console.log("search posts", filteredPostsWithSearch);
+    // const {data:filteredPostsWithSearch} = useQuery(['search filter', {search: searchTitle},], getFilteredPostsWithSearch)
+    // console.log("search posts with new search", filteredPostsWithSearch);
 
 
     
     var allPosts = filteredPosts;
-    //Filter the posts based on SEARCH-TERM
-     allPosts = filteredPosts.posts.filter(val => {
-      if(searchTerm === ""){
-        return val
-      } else if(val.title.toLowerCase().includes(searchTerm.toLowerCase())){
-        return val
-      }
-    })
+    // Filter the posts based on SEARCH-TERM
+    //  allPosts = filteredPosts.posts.filter(val => {
+    //   if(searchTerm === ""){
+    //     return val
+    //   } else if(val.title.toLowerCase().includes(searchTerm.toLowerCase())){
+    //     return val
+    //   }
+    // })
      //console.log("all posts after search", allPosts);
+
 
     
 
@@ -151,10 +149,10 @@ export default function Home({posts}) {
         <RequestForm formState={formState} setFormState={setFormState} />
         <Header setFormState={setFormState} />
         <BlogPageHeroBanner posts={posts} />
-        <BlogPageTagFilteringBlock posts={posts} handleTagClick={setTagName} handleSearch={setSearchTerm} />
+        <BlogPageTagFilteringBlock posts={posts} handleTagClick={setTagName} handleSearch={setSearchTerm}/>
         <BlogPageFeaturedPosts posts={allPosts} />
         <BlogPageSignupBlock />
-        {allPosts.length > 6 && <BlogPageAllPosts posts={allPosts} />}
+        {allPosts.posts.length > 6 && <BlogPageAllPosts posts={allPosts} />}
         <BlogPageBottomBlock />
         <Footer setFormState={setFormState} />
       </div>

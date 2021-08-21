@@ -13,7 +13,7 @@ export default function BlogPageFeaturedPosts({posts}) {
         <section id={styles.featuredPosts} className={styles.featuredPosts}>
             <div className="container">
              <div className={styles.featuredPostsContainer}>
-                {featuredPosts.posts.slice(0, 6).map(post => (
+                {featuredPosts.posts.posts.slice(0, 6).map(post => (
                 <BlogItem key={post.id} post={post} /> 
                 ))}
             </div>

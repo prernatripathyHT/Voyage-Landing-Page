@@ -1,7 +1,37 @@
 import styles from "./css/blogPageTagFilteringBlock.module.css";
+import Link from 'next/link';
+import {useCallback, useState} from 'react';
+import debounce from 'lodash.debounce';
 
 
 export default function BlogPageFilteringBlock({posts, handleTagClick, handleSearch}) {
+
+    const [filteredTitles, setFilteredTitles] = useState([]);
+    const [searchValue, setSearchValue] = useState('');
+
+    //debouncing the search term displayed 
+    // const debouncedSave = debounce(() => setSearchValue(searchVal), 1000 )
+    const debouncedSave = useCallback(debounce((searchVal) => setSearchValue(searchVal), 500 ), [])
+
+    const filterTitles = (searchVal) => {
+        //console.log("search val is", searchVal);
+
+
+        
+        debouncedSave(searchVal);
+
+
+        const filteredTitles = posts.posts.filter((val) => {
+           return val.title.toLowerCase().includes(searchVal.toLowerCase());
+        });
+
+        if(searchVal == ""){
+            setFilteredTitles([]);
+        }else{
+        setFilteredTitles(filteredTitles);
+        }
+    }
+
     return (
         <section className={styles.tagFilteringSection}> 
              <div className={`container ${styles.filterSearchDiv}`}>
@@ -13,8 +43,15 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
                         <path d="M19.7617 18.6121L15.1005 13.9509C14.7829 13.6332 14.2685 13.6332 13.9509 13.9509C13.6332 14.2682 13.6332 14.7831 13.9509 15.1005L18.6121 19.7617C18.7709 19.9205 18.9788 19.9999 19.1869 19.9999C19.3948 19.9999 19.6029 19.9205 19.7617 19.7617C20.0794 19.4444 20.0794 18.9295 19.7617 18.6121Z" fill="black"/>
                     </svg>
                     </div>
-                    <input type="text" placeholder="Search by title or any keyword" onChange={(e) => handleSearch(e.target.value)}/>
-                    {/* {searchTerm.length > 0 && <button className={styles.closeIcon}  onClick={handleClearInput}>X</button>} */}
+                    <input type="text" placeholder="Search by title or any keyword" onChange={(e) => filterTitles(e.target.value)}/>
+                    { filteredTitles.length !=0 &&(
+                    <div className={styles.searchBoxTitles}>
+                        <p className={styles.searchBoxHeader}>Showing Blogs related to <span>"{searchValue}"</span></p>
+                        {filteredTitles.slice(0,10).map((post,index) => {
+                            return <Link href="/blog/[slug]" as={`/blog/${post.slug}`} key={index}><a><div  className={styles.postTitles}>{post.title}</div></a></Link>
+                        })}
+                    </div>
+                    )}      
                 </div>
 
                 <div className={styles.FilterDiv}>

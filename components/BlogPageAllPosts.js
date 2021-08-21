@@ -14,7 +14,7 @@ export default function BlogPageAllPosts({posts}) {
     }   
 
     useEffect(() => {
-        setItems(featuredPosts.posts);
+        setItems(featuredPosts.posts.posts);
        
     }, []);
 
