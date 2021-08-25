@@ -90,7 +90,7 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
 
                 <div className={styles.FilterDiv}>
                     {/* <Slider {...settings}> */}
-                        <div className={styles.postTags}><p className={isCategoryActive == "all" ? styles.categoryActive : null} onClick={()=> {handleTagClick(null); toggleCategoryClass("all")}}>All</p></div>
+                        <div className={styles.postTags}><p className={isCategoryActive == "all" ? styles.categoryActive : null} onClick={()=> {handleTagClick(null); toggleCategoryClass("all");setSubTagsVisible(false) }}>All</p></div>
                         {BlogPageCategoriesData.map((category,index) => (
                             category.subcategories.length > 1 ?
                             <div key={index} className={` ${styles.postTags} ${styles.subTag}`}>
@@ -115,7 +115,7 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
                             </div> 
                             : 
                             <div key={index} className={styles.postTags}>
-                                <p className={isCategoryActive === `${category.slug}` ? styles.categoryActive : null} onClick={()=> {handleTagClick(category.slug); toggleCategoryClass(category.slug)}} >{category.title}</p>
+                                <p className={isCategoryActive === `${category.slug}` ? styles.categoryActive : null} onClick={()=> {handleTagClick(category.slug); toggleCategoryClass(category.slug);setSubTagsVisible(false) }} >{category.title}</p>
                             </div> 
                         ))}
                         {/* </Slider> */}
