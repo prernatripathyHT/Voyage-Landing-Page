@@ -2,12 +2,30 @@ import styles from "./css/blogPageTagFilteringBlock.module.css";
 import Link from 'next/link';
 import {useCallback, useState} from 'react';
 import debounce from 'lodash.debounce';
+import { BlogPageCategoriesData } from "../data/BlogPageTagFilteringBlock";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+const settings = {
+    dots: true,
+    infinite: false,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth:true,
+    cssEase:`cubic-bezier(.51,.11,.44,.96)`,
+  };
 
 
 export default function BlogPageFilteringBlock({posts, handleTagClick, handleSearch}) {
-
     const [filteredTitles, setFilteredTitles] = useState([]);
+    const [isCategoryActive, setCategoryActive] = useState(false);
+    const [isSubCategoryActive, setSubCategoryActive] = useState(false);
     const [searchValue, setSearchValue] = useState('');
+    const [subTagsVisible, setSubTagsVisible] = useState(false);
 
     //debouncing the search term displayed 
     // const debouncedSave = debounce(() => setSearchValue(searchVal), 1000 )
@@ -30,6 +48,22 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
         }else{
         setFilteredTitles(filteredTitles);
         }
+    }
+
+    const toggleCategoryClass = (slugName) => {
+        //console.log("slug clicked", slugName)
+        setCategoryActive(slugName);
+      };
+
+      const toggleSubCategoryClass = (slugName) => {
+        console.log("slug clicked subcategory", slugName)
+        setSubCategoryActive(slugName);
+      };
+
+
+
+    const handleSubTags = () =>{
+        setSubTagsVisible(!subTagsVisible);
     }
 
     return (
@@ -55,12 +89,36 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
                 </div>
 
                 <div className={styles.FilterDiv}>
-                        <div className={styles.postTags}><p onClick={()=>handleTagClick(null)}>All</p></div>
-                        {posts.posts.map((post,index) => (
-                            <div key={index} className={styles.postTags}>{post.tags.map((tag, index)=> (
-                                <p key={index} onClick={()=>handleTagClick(tag.slug)}>{tag.name}</p>
-                            ))}</div>
+                    {/* <Slider {...settings}> */}
+                        <div className={styles.postTags}><p className={isCategoryActive == "all" ? styles.categoryActive : null} onClick={()=> {handleTagClick(null); toggleCategoryClass("all")}}>All</p></div>
+                        {BlogPageCategoriesData.map((category,index) => (
+                            category.subcategories.length > 1 ?
+                            <div key={index} className={` ${styles.postTags} ${styles.subTag}`}>
+                                <p className={isCategoryActive === "voyage-sms-news" ? styles.categoryActive : null}  onClick={() => {handleSubTags(); toggleCategoryClass("voyage-sms-news")}}>
+                                    {category.title} 
+                                    <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.08838 1.12041L0.169625 8.05835C-0.0569267 8.28566 -0.0565459 8.65369 0.170797 8.88062C0.398111 9.10738 0.766342 9.10679 0.993069 8.87945L7.50003 2.35448L14.007 8.87969C14.2337 9.107 14.6017 9.10759 14.8291 8.88086C14.943 8.7671 15 8.61807 15 8.46903C15 8.32038 14.9434 8.17193 14.8302 8.05838L7.91165 1.12041C7.80272 1.01093 7.65448 0.94949 7.50003 0.94949C7.34558 0.94949 7.19751 1.0111 7.08838 1.12041Z" fill="black"/>
+                                    </svg>
+                                    </p>
+
+                                { subTagsVisible &&
+                                <div className={styles.subCategoryBox}>  
+                                {category.subcategories.map((subcategory, index) => (
+                                    <div  key={index} className={`${styles.subCategories} ${isSubCategoryActive === subcategory.slug ? styles.subCategoryActive : null}`} onClick={()=> {handleTagClick(subcategory.slug); toggleSubCategoryClass(subcategory.slug)}} >
+                                      <input type="checkbox" id={`${subcategory.id}`} name="subcategiry" value={subcategory.title} />
+                                      <label htmlFor={`${subcategory.id}`}> {subcategory.title}</label><br></br>
+                                    </div>
+                                ))}
+                                </div>
+                                }
+
+                            </div> 
+                            : 
+                            <div key={index} className={styles.postTags}>
+                                <p className={isCategoryActive === `${category.slug}` ? styles.categoryActive : null} onClick={()=> {handleTagClick(category.slug); toggleCategoryClass(category.slug)}} >{category.title}</p>
+                            </div> 
                         ))}
+                        {/* </Slider> */}
                  </div>
 
             </div>
