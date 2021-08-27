@@ -7,6 +7,7 @@
 
     .filterSearchDiv{
         display: flex;
+        justify-content: space-between;
     }
 
     .SearchDiv{
@@ -33,7 +34,7 @@
         border: 1px solid #DEDEDE;
         padding: .6999vw 1.666vw .6999vw 3.611vw;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 1.111vw;
+        font-size: 1vw;
         font-style: normal;
         font-weight: 400;
         line-height: 1.666vw;
@@ -42,7 +43,7 @@
 
      .SearchDiv input::-webkit-input-placeholder {
         color: #666666;
-        font-size: 1.111vw;
+        font-size: 1vw;
         font-style: normal;
         font-weight: 400;
         line-height: 1.666vw;
@@ -51,7 +52,7 @@
     }
      .SearchDiv input::-moz-input-placeholder {
         color: #666666;
-        font-size: 1.111vw;
+        font-size: 1vw;
         font-style: normal;
         font-weight: 400;
         line-height: 1.666vw;
@@ -60,7 +61,7 @@
     }
      .SearchDiv input::-ms-input-placeholder {
         color: #666666;
-        font-size: 1.111vw;
+        font-size: 1vw;
         font-style: normal;
         font-weight: 400;
         line-height: 1.666vw;
@@ -220,7 +221,7 @@
 
     .postTags p{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 1.111vw;
+        font-size: 1vw;
         font-style: normal;
         font-weight: 400;
         line-height: 1.666vw;
@@ -289,7 +290,6 @@
     } */
 }
 
-
 @media screen and (max-width: 768px) {
     .tagFilteringSection{
         margin-top: 4.2666vw;
@@ -303,22 +303,17 @@
     }
 
     .SearchDiv{
+        /* width: 30%; */
         width: 100%;
-        position: relative;
         padding-bottom: 4.2666vw;
         border-bottom: 1px solid #EAEAEA;
+        position: relative;
     }
 
     .SearchDiv .searchIcon{
         position: absolute;
-        top: 3.8333vw;
-        left: 4.666vw;
-    }
-
-    .SearchDiv button.closeIcon{
-        position: absolute;
-        top: 3.8333vw;
-        right: 4.666vw;
+        top: 3.2vw;
+        left: 6.4vw;
     }
 
     .SearchDiv input{
@@ -335,47 +330,140 @@
         font-style: normal;
         font-weight: 400;
         line-height: 6.4vw;
-        letter-spacing: 0em;
+        letter-spacing:0px;
     }
 
-
-    .FilterDiv{
-        width: 100%;
-        display: flex;
-        padding-top: 4.2666vw;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+     .SearchDiv input::-webkit-input-placeholder {
+        color: #666666;
+        font-size: 4.2666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0px;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
     }
-    .FilterDiv .subCategoryBox{
+     .SearchDiv input::-moz-input-placeholder {
+        color: #666666;
+        font-size: 4.2666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0px;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+     .SearchDiv input::-ms-input-placeholder {
+        color: #666666;
+        font-size: 4.2666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0px;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .SearchDiv .searchBoxTitles{
         position: absolute;
         z-index: 1;
-        width: 315px;
-        height: 264px;
+        width: 100%;
+        height: 70.4vw;
         background-color: #fff;
         box-shadow: 0px 11px 18px rgba(0, 0, 0, 0.2);
-        border-radius: 5px;
+        border-radius: 1.333vw;
         overflow:hidden;
         overflow-y: auto;
-        margin-top: 52px;
-        padding-top: 24px;
-        margin-left: -72px;
+        /* padding: 1.3888vw; */
+        margin-top: 1.333vw;
+        padding-top: 6.4vw;
+    }
+
+    .searchBoxTitles::-webkit-scrollbar{
+        display: none;
+    }
+
+    .searchBoxHeader{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 2.666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0.05em;
+        text-align: left;
+        text-transform: uppercase;
+        color: #BBBBBB;
+        margin-bottom: 8px;
+        padding-left: 5.333vw;
+    }
+
+
+    .postTitles{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 5.333vw;
+        padding-right: 5.333vw;
+        cursor: pointer;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 4.266vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.4vw;
+        letter-spacing: 0em;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .postTitles:hover{
+        background-color:rgba(220,220,220,.5);
+    }
+
+    .FilterDiv{
+        padding-top: 4.2666vw;
+        /* width: 70%; */
+        /* width: 57.7777vw; */
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-y: visible;
+        overflow-x: scroll;
+    }
+
+    .FilterDiv .subTag{
+        /* position: relative; */
+    }
+
+    .FilterDiv .subCategoryBox{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+        width: 84vw;
+        height: 70.4vw;
+        background-color: #fff;
+        box-shadow: 0px 11px 18px rgba(0, 0, 0, 0.2);
+        border-radius: 1.333vw;
+        overflow:hidden;
+        overflow-y: auto;
+        margin-top: 13.61vw;
+        padding-top: 6.4vw;
     }
     .FilterDiv .subCategoryBox .subCategories{ 
         display: flex;
         align-items: center;
-        padding: 16px;
+        padding: 4.2666vw;
         padding-top: 12px;
         padding-bottom: 12px;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
 
     .FilterDiv .subCategoryBox .subCategories:hover{ 
-        background-color:  rgba(0, 0, 0, 0.04);
+        /* background-color:  rgba(0, 0, 0, 0.04); */
     }
 
     .FilterDiv .subCategoryBox .subCategories.subCategoryActive{ 
-        background-color:  rgba(0, 0, 0, 0.04);
+        /* background-color:  rgba(0, 0, 0, 0.04); */
     }
+
 
     .FilterDiv .subCategoryBox input{
         appearance: unset;
@@ -383,11 +471,25 @@
         height: 24px;
         border: 2px solid #DDDDDD;
         border-radius: 5px;
+        position: relative;
     }
     .FilterDiv .subCategoryBox input:checked{
        
-        /* background-color: #DDDDDD; */
-  
+        background-color: #405CFB;
+        border: 2px solid #405CFB;
+    }
+
+    .FilterDiv .subCategoryBox input:checked::before{
+        content : url("/images/checkbox-tick.svg");
+        position: absolute;
+        top: 4px;
+        left: 2px;
+        width: 16px;
+        height: 11px;
+    }
+    .FilterDiv .subCategoryBox input:checked ~ label{
+      color: #405CFB;
+      opacity: 1;
     }
 
     .FilterDiv .subCategoryBox label{
@@ -418,7 +520,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 6.4vw;
-        letter-spacing: 0em;
+        letter-spacing: 0px;
         text-align: left;
         white-space: nowrap;
         cursor: pointer;
@@ -431,16 +533,42 @@
         transition: .3s ease-in;
     }
 
+    .FilterDiv .subTag p{
+        margin-right: 0;
+    }
+
+    /* .postTags p:last-child{
+        margin-right: 0;
+    } */
+
+    .postTags p.categoryActive{
+        background-color: #405CFB;
+        border: 1px solid #405CFB;
+        color: #fff;
+    }
+
     .postTags p:hover{
         background-color: #405CFB;
         border: 1px solid #405CFB;
         color: #fff;
-    }   
+    }  
+    
+    .postTags p svg{
+        margin-left: 2.6964vw;
+        transform: rotate(180deg);
+        transition: .3s;
+    }
 
-    /* .FilterDiv .postTags:nth-child(1) p{
-        background-color: #405CFB;
-        border: 1px solid #405CFB;
-        color: #fff;
-    } */
+    .postTags p:hover svg path{
+        fill: white;
+    }
+    
+
+    .postTags p.categoryActive svg{
+        transform: rotate(0deg);
+    }
+    .postTags p.categoryActive svg path{
+        fill: white;
+    }
 }
 
