@@ -1,7 +1,36 @@
 export const BlogPageCategoriesData = [
     {
         id: '1',
+        title: "SMS Marketing Best Practices",
+        display_title: "SMS Best Practices",
+        slug: "sms-ecommerce",
+        subcategories: []
+    },
+    {
+        id: '2',
+        title: "eCommerce Digital Marketing 101",
+        display_title: "Digital Marketing 101",
+        slug: "text-marketing",
+        subcategories: []
+    },
+    {
+        id: '3',
+        title: "SMS Marketing Industry News",
+        display_title: "Industry News",
+        slug: "live-conversions",
+        subcategories: []
+    },
+    {
+        id: '4',
+        title: "SMS Template Creative Library",
+        display_title: "Creative Library",
+        slug: "voyage-sms",
+        subcategories: []
+    },
+    {
+        id: '5',
         title: "Voyage SMS News",
+        display_title: "Voyage News",
         slug: "",
         subcategories: [
             {
@@ -30,29 +59,5 @@ export const BlogPageCategoriesData = [
                 slug: "sms-marketing"
             },
         ]
-    },
-    {
-        id: '2',
-        title: "SMS Marketing Best Practices",
-        slug: "sms-ecommerce",
-        subcategories: []
-    },
-    {
-        id: '3',
-        title: "eCommerce Digital Marketing 101",
-        slug: "text-marketing",
-        subcategories: []
-    },
-    {
-        id: '4',
-        title: "SMS Marketing Industry News",
-        slug: "live-conversions",
-        subcategories: []
-    },
-    {
-        id: '5',
-        title: "SMS Template Creative Library",
-        slug: "voyage-sms",
-        subcategories: []
     }
 ]

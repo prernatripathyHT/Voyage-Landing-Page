@@ -10,22 +10,17 @@
     }
 
     .SearchDiv{
-        width: 30%;
-        padding-right: 1.666vw;
+        /* width: 30%; */
+        width: 20.2777vw;
+        padding-right: 1.111vw;
         border-right: 1px solid #EAEAEA;
         position: relative;
     }
 
     .SearchDiv .searchIcon{
         position: absolute;
-        top: .8333vw;
+        top: .902vw;
         left: 1.666vw;
-    }
-
-    .SearchDiv button.closeIcon{
-        position: absolute;
-        top: .8333vw;
-        right: 3.666vw;
     }
 
     .SearchDiv input{
@@ -36,13 +31,41 @@
         width: 100%;
         background: transparent;
         border: 1px solid #DEDEDE;
-        padding: .6999vw 1.666vw .6999vw 3.75vw;
+        padding: .6999vw 1.666vw .6999vw 3.611vw;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         font-size: 1.111vw;
         font-style: normal;
         font-weight: 400;
         line-height: 1.666vw;
-        letter-spacing: 0em;
+        letter-spacing:0px;
+    }
+
+     .SearchDiv input::-webkit-input-placeholder {
+        color: #666666;
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.666vw;
+        letter-spacing: 0px;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+     .SearchDiv input::-moz-input-placeholder {
+        color: #666666;
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.666vw;
+        letter-spacing: 0px;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+     .SearchDiv input::-ms-input-placeholder {
+        color: #666666;
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.666vw;
+        letter-spacing: 0px;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
     }
 
     .SearchDiv .searchBoxTitles{
@@ -55,7 +78,7 @@
         border-radius: .555vw;
         overflow:hidden;
         overflow-y: auto;
-        padding: 1.3888vw;
+        /* padding: 1.3888vw; */
         margin-top: .555vw;
         padding-top: 1.666vw;
     }
@@ -66,29 +89,35 @@
 
     .searchBoxHeader{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 10px;
+        font-size: .694vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.66vw;
         letter-spacing: 0.05em;
         text-align: left;
         text-transform: uppercase;
         color: #BBBBBB;
+        margin-bottom: 8px;
+        padding-left: 1.3888vw;
     }
 
 
     .postTitles{
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 1.3888vw;
+        padding-right: 1.3888vw;
         cursor: pointer;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 16px;
+        font-size: 1.111vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.666vw;
         letter-spacing: 0em;
         text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         transition: .3s;
     }
     .postTitles:hover{
@@ -96,29 +125,31 @@
     }
 
     .FilterDiv{
-        padding-left: 1.666vw;
-        width: 70%;
+        padding-left: 1.111vw;
+        /* width: 70%; */
+        /* width: 57.7777vw; */
         display: flex;
         flex-wrap: nowrap;
-        overflow-x: scroll;
+        /* overflow-x: scroll; */
     }
 
     .FilterDiv .subTag{
-        /* position: relative; */
+        position: relative;
     }
 
     .FilterDiv .subCategoryBox{
         position: absolute;
+        right: 0;
         z-index: 1;
-        width: 315px;
-        height: 264px;
+        width: 21.875vw;
+        height: 18.333vw;
         background-color: #fff;
         box-shadow: 0px 11px 18px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         overflow:hidden;
         overflow-y: auto;
-        margin-top: 52px;
-        padding-top: 24px;
+        margin-top: 3.61vw;
+        padding-top: 1.666vw;
     }
     .FilterDiv .subCategoryBox .subCategories{ 
         display: flex;
@@ -126,15 +157,15 @@
         padding: 16px;
         padding-top: 12px;
         padding-bottom: 12px;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
 
     .FilterDiv .subCategoryBox .subCategories:hover{ 
-        background-color:  rgba(0, 0, 0, 0.04);
+        /* background-color:  rgba(0, 0, 0, 0.04); */
     }
 
     .FilterDiv .subCategoryBox .subCategories.subCategoryActive{ 
-        background-color:  rgba(0, 0, 0, 0.04);
+        /* background-color:  rgba(0, 0, 0, 0.04); */
     }
 
 
@@ -144,11 +175,25 @@
         height: 24px;
         border: 2px solid #DDDDDD;
         border-radius: 5px;
+        position: relative;
     }
     .FilterDiv .subCategoryBox input:checked{
        
         background-color: #405CFB;
-  
+        border: 2px solid #405CFB;
+    }
+
+    .FilterDiv .subCategoryBox input:checked::before{
+        content : url("/images/checkbox-tick.svg");
+        position: absolute;
+        top: 4px;
+        left: 2px;
+        width: 16px;
+        height: 11px;
+    }
+    .FilterDiv .subCategoryBox input:checked ~ label{
+      color: #405CFB;
+      opacity: 1;
     }
 
     .FilterDiv .subCategoryBox label{
@@ -179,18 +224,26 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.666vw;
-        letter-spacing: 0em;
+        letter-spacing: 0px;
         text-align: left;
         white-space: nowrap;
         cursor: pointer;
         padding: .6999vw 1.666vw;
         background-color: transparent;
-        margin-right: 1.666vw;
+        margin-right: 1.111vw;
         border-radius: 6.9444vw;
         border: 1px solid #DEDEDE;
         color: rgba(0,0,0,.6);
         transition: .3s ease-in;
     }
+
+    .FilterDiv .subTag p{
+        margin-right: 0;
+    }
+
+    /* .postTags p:last-child{
+        margin-right: 0;
+    } */
 
     .postTags p.categoryActive{
         background-color: #405CFB;
