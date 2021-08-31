@@ -9,13 +9,13 @@ export default function BlogPageHeroBanner({posts}) {
 
   //console.log("voyage posts", {posts})
   const post = {posts};
-  const featuredPost = post.posts.posts[1];
+  const featuredPost = post.posts.posts[0];
   //console.log("featured post", featuredPost)
 
 
   return (
     <section id={styles.heroBanner}>
-   
+      <div className={styles.mainDiv}>
     <div className={`container ${styles.heroBannerContainer}`}>
       <div className={styles.leftBlock}>
         <p id="homePageSubtext" className={styles.bannerText} data-scroll>
@@ -29,11 +29,11 @@ export default function BlogPageHeroBanner({posts}) {
       <div className={styles.rightBlock}>
      <Link href="/blog/[slug]" as={`/blog/${featuredPost.slug}`}><a className={styles.featuredLink}>
         <div className={styles.featuredImage}>
-            <img src={`https://sms-marketing-resources.ghost.io/${featuredPost.feature_image}`} />
+            <img src={`${featuredPost.feature_image}`} />
         </div>
         <div className={styles.featuredBlogDetails}>
             <div className={styles.featuredTagAndTime}>
-                <p>Thought Leadership</p>
+                <p>{featuredPost.tags.length > 0 ? featuredPost.tags[0].name : "Voyage"}</p>
                 <svg width="3" height="4" viewBox="0 0 3 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="1.5" cy="2" r="1.5" fill="#CBCBCB"/>
                 </svg>
@@ -70,6 +70,7 @@ export default function BlogPageHeroBanner({posts}) {
         <rect width="76.4399" height="15.5269" transform="matrix(-1 0 0 1 160.041 254.355)" fill="#02D9FC"/>
         </g>
       </svg>
+    </div>
     </div>
     </section>
   );

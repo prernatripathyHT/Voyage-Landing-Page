@@ -13,10 +13,12 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
     const [isSubCategoryActive, setSubCategoryActive] = useState(false);
     const [searchValue, setSearchValue] = useState('');
     const [subTagsVisible, setSubTagsVisible] = useState(false);
-    const [subTagsChecked, setSubTagsChecked] = useState([]);
+    const [subTagsChecked, setSubTagsChecked] = useState(
+        [false, false, false, false, false]
+    );
+    const subCategoryTags = BlogPageCategoriesData[4].subcategories.map((slug) => slug);
 
-    // console.log("subTagsChecked Array : ", subTagsChecked);
-    // console.log("subTagsChecked Parsed Array : ", subTagsChecked.join());
+
    
 
     //debouncing the search term displayed 
@@ -60,9 +62,32 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
 
 
     //create an array from the checked subcategories for API call
-    const handleCheckedTags = (checkedTag) => {
+    const handleCheckedTags = (position, checkedTagSlug) => {
         //console.log("checked tag is", checkedTag);
-        setSubTagsChecked(subTagsChecked => [...subTagsChecked, checkedTag] );
+        //setSubTagsChecked(subTagsChecked => [...subTagsChecked, checkedTag] );
+
+        const updatedTagsState = subTagsChecked.map((item, index) => 
+            index === position ? !item : item
+        )
+        //console.log("current checked tags", updatedTagsState);
+        setSubTagsChecked(updatedTagsState);
+
+
+        //Array Reduce method to map the checked values to the tag Slugs
+        const tagURL = updatedTagsState.reduce(
+            (url, currentState, index) => {
+                if(currentState == true){
+                    return url + ` ${subCategoryTags[index].slug} ,`
+                }
+
+                return url
+            },
+            ""
+        );
+
+        //console.log("current Tag URL", (tagURL).replace(/,\s*$/, "").replaceAll(" ", ""))
+       
+        handleTagClick((tagURL).replace(/,\s*$/, "").replaceAll(" ", ""));
 
     }
 
@@ -91,11 +116,11 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
 
                 <div className={styles.FilterDiv}>
                  
-                        <div className={styles.postTags}><p className={`${isCategoryActive == "all" ? styles.categoryActive : null}`} onClick={()=> {handleTagClick(null); toggleCategoryClass("all");setSubTagsVisible(false); setSubTagsChecked([]) }}>All</p></div>
+                        <div className={styles.postTags}><p className={`${isCategoryActive == "all" ? styles.categoryActive : null}`} onClick={()=> {handleTagClick(null); toggleCategoryClass("all");setSubTagsVisible(false); setSubTagsChecked([false, false, false, false, false]) }}>All</p></div>
                         {BlogPageCategoriesData.map((category,index) => (
                             category.subcategories.length < 1 ?
                             <div key={index} className={styles.postTags}>
-                            <p className={isCategoryActive === `${category.slug}` ? styles.categoryActive : null} onClick={()=> {handleTagClick(category.slug); toggleCategoryClass(category.slug);setSubTagsVisible(false);setSubTagsChecked([]) }} >{category.display_title}</p>
+                                <p className={isCategoryActive === `${category.slug}` ? styles.categoryActive : null} onClick={()=> {handleTagClick(category.slug); toggleCategoryClass(category.slug);setSubTagsVisible(false);setSubTagsChecked([false, false, false, false, false]) }} >{category.display_title}</p>
                             </div> 
                             : 
                             <div key={index} className={` ${styles.postTags} ${styles.subTag}`}>
@@ -110,9 +135,9 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
                              <OutsideClickHandler onOutsideClick={() => {setSubTagsVisible(false)}}>
                             <div className={styles.subCategoryBox}>  
                             {category.subcategories.map((subcategory, index) => (
-                                <div  key={index} className={`${styles.subCategories} ${isSubCategoryActive === subcategory.slug ? styles.subCategoryActive : null}`} onClick={()=> {toggleSubCategoryClass(subcategory.slug)}} >
-                                  <input type="checkbox" id={`${subcategory.id}`} name="subcategory" value={subcategory.title} onChange={()=> {handleCheckedTags(subcategory.slug) }} onClick={() => {handleTagClick(subTagsChecked.join())}} />
-                                  <label htmlFor={`${subcategory.id}`}> {subcategory.title}</label><br></br>
+                                <div  key={index} className={`${styles.subCategories} ${isSubCategoryActive === subcategory.slug ? styles.subCategoryActive : null}`}>
+                                  <input type="checkbox" id={`${subcategory.id}`} name={subcategory.title} value={subcategory.title} checked={subTagsChecked[index]} onChange={()=> {handleCheckedTags(index, subcategory.slug);}} />
+                                  <label htmlFor={`${subcategory.id}`}> {subcategory.title}</label>
                                 </div>
                             ))}
                             </div>

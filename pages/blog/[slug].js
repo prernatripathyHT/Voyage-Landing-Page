@@ -88,7 +88,7 @@ export default function BlogPostPage({posts, currentPost}) {
        const queryClient = useQueryClient();
        const {isLoading, data:relatedPosts, status} = useQuery(['filtered posts', {tags: currentPostTags}], getRelatedPosts, {initialData:allRelatedPosts})
 
-       //console.log("related Posts are", relatedPosts, "status", status)
+       //console.log("related Posts are", relatedPosts.posts.filter(post => post.id != currentPost[0].id), "status", status)
 
 
     if(isLoading){
@@ -117,7 +117,7 @@ export default function BlogPostPage({posts, currentPost}) {
             <RequestForm formState={formState} setFormState={setFormState} />
             <Header setFormState={setFormState} />
             <BlogPageMainArticle currentPost={currentPost} />
-            {/* <BlogPageRelatedArticles relatedPosts={relatedPosts} /> */}
+            <BlogPageRelatedArticles relatedPosts={relatedPosts.posts.filter(post => post.id != currentPost[0].id)} />
             <BlogArticlePageSignupBlock />
             <BlogPageBottomBlock />
             <Footer setFormState={setFormState} />

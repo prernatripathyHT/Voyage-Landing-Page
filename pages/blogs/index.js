@@ -45,7 +45,7 @@ const getFilteredPosts = async(key) => {
  // console.log("current tag name : ", tagName);
   if(tagName){   //if tags are present - this is where we are going to filter the posts
     const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[${tagName}]`;
-    // console.log("URL ", myURL)
+     console.log("URL ", myURL)
     const res = await fetch(myURL);
     const newRes = res.json();
     return newRes;
@@ -94,7 +94,7 @@ export default function Home({posts}) {
     //For filtering with TAGS
     const queryClient = useQueryClient();
     const {isLoading, data:filteredPosts, status} = useQuery(['filtered posts', {tag: tagName}], getFilteredPosts, {initialData:posts}) //to remove the loading page add the initialdata value here
-    //console.log("filteredPosts are", filteredPosts.posts.length, "status", status);
+    // console.log("filteredPosts are", filteredPosts, "status", status);
 
 
 
@@ -154,7 +154,7 @@ export default function Home({posts}) {
          {/* <div>
           {{posts}.posts.posts.map((post,index) => (
         <div key={index}>  {post.tags.map((tag, index)=> (
-              <p key={index}>{tag.name}</p>
+              <p key={index}>{tag.name} : {tag.slug}</p>
             ))}</div>
           ))}
         </div> */}

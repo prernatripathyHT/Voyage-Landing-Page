@@ -26,6 +26,9 @@
         bottom: 0;
         right: 0;
     }
+    .signupBlockBgElements svg:nth-child(4){
+        display: none;
+    }
 
     .signupBlockBgElements img:nth-of-type(1){
         position: absolute;
@@ -159,35 +162,33 @@
   }
 
   .signupBlockBgElements svg:nth-child(1){
-    display: none;
-      position: absolute;
-      bottom: 0;
-      left: 0;
+      display: none;
   }
   .signupBlockBgElements svg:nth-child(2){
-    display: none;
+
       position: absolute;
-      top: .9vw;
-      right: 1.1805vw;
-  }
-  .signupBlockBgElements svg:nth-child(3){
-    display: none;
-      position: absolute;
-      bottom: 0;
+      top: 0;
       right: 0;
   }
+  .signupBlockBgElements svg:nth-child(3){
+      width: 4.2666vw;
+      position: absolute;
+      bottom: 42.133vw;
+      right: 0;
+  }
+  .signupBlockBgElements svg:nth-child(4){
+    position: absolute;
+    bottom: 42.133vw;
+    left: 0;
+}
 
   .signupBlockBgElements img:nth-of-type(1){
     display: none;
-      position: absolute;
-      bottom: 0;
-      left: 23.472vw;
+  
   }
   .signupBlockBgElements img:nth-of-type(2){
     display: none;
-    position: absolute;
-    top: 0.9722vw;
-    left: 0.9722vw;
+
 }
 
   .blogPageSignupBox{
@@ -230,25 +231,27 @@
     #inputWrapper {
       width: 100%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      border: 1px solid rgba(64, 92, 251, 0.4);
-      border-radius: 5px;
-      padding: 3.7333vw 5.333vw 3.7333vw 5.333vw;
     }
 
     #inputWrapper input {  
+      width: 100%;
+      padding: 3.7333vw 5.333vw 3.7333vw 5.333vw;
+      border-radius: 5px;
+      border: 1px solid #B4BDC0;
       font-style: normal;
       font-weight: 500;
       font-size: 3.7333vw;
       line-height: 4.8vw;
       letter-spacing: 0.05em;
       color: rgba(0, 0, 0, 1);
-      border: none;
       flex-grow: 1;
-      padding-right: 0.7vw;
+      /* padding-right: 0.7vw; */
       font-family: "neue-haas-grotesk-display-pro", sans-serif;
       background-color: transparent;
+      margin-bottom: 4.2666vw;
     }
     #inputWrapper input::-webkit-placeholder,
     #inputWrapper input::-moz-placeholder,
@@ -263,10 +266,12 @@
   }
 
   #inputWrapper button {
+      width: 100%;
+      height: 12.66vw;
       font-style: normal;
       font-weight: 500;
-      font-size: 3.7333vw;
-      line-height: 4.8vw;
+      font-size: 4.2666vw;
+      line-height: 5.6vw;
       letter-spacing: 0.05em;
       color: #ffffff;
       padding: 3.2vw 1.873vw;

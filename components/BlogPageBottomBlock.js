@@ -13,9 +13,10 @@ const { MediaContextProvider, Media } = createMedia({
 export default function SignupBottomBlock() {
     return (
         <MediaContextProvider>
-                <Media greaterThanOrEqual="md">
+                {/* <Media greaterThanOrEqual="md"> */}
+                <section id={styles.blogPageBottomBlock} className={styles.blogPageBottomBlock}>
                 <div className={styles.shapeBox}>
-                    <div className={styles.shapeBox2}>
+                    <div className={styles.boxWrapper}>
                         <svg width="1184" height="600" viewBox="0 0 1184 600" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="74.8376" y="122.275" width="187.302" height="218.811" transform="rotate(20 74.8376 122.275)" fill="#3F5CFB"/>
                         <ellipse cx="400.185" cy="351.792" rx="247.949" ry="247.542" fill="#219AFB"/>
@@ -28,7 +29,8 @@ export default function SignupBottomBlock() {
                         </svg>
                     </div>
                 </div>
-                 </Media>
+                </section>
+                 {/* </Media> */}
                 
         </MediaContextProvider>
     )

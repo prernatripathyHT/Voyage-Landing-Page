@@ -7,6 +7,11 @@
         /* z-index: -1; */
       }
 
+      .mainDiv{
+          position: relative;
+          z-index: 1;
+      }
+
       .heroBannerBgElements svg:nth-child(1){
         /* width: 6.736vw; */
         position: absolute;
@@ -15,7 +20,7 @@
     
     }
     .heroBannerBgElements svg:nth-child(2){
-        /* width: 32.43vw; */
+        /* width: 32.43vw;   */
         position: absolute;
         right: 0;
         bottom: 0;
@@ -173,15 +178,21 @@
         /* position: relative; */
         padding-top:32.925vw;
         background-color: #1C345C;
-        z-index: -1;
+        /* z-index: -1; */
       }
+
+      .mainDiv{
+        position: relative;
+        z-index: 1;
+    }
 
       .heroBannerBgElements svg:nth-child(1){
         /* width: 6.736vw; */
         position: absolute;
         left: 0;
         bottom: 0;
-        display: none;
+        z-index: -1;
+        /* display: none; */
     
     }
     .heroBannerBgElements svg:nth-child(2){
@@ -190,7 +201,7 @@
         right: 0;
         bottom: 0;
         z-index: -1;
-        display: none;
+        /* display: none; */
     }
 
       .heroBannerContainer{

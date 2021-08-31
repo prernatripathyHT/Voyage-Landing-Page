@@ -10,7 +10,7 @@
 
     .socialIcons{
         position: absolute;
-        top: 55.5555vw;
+        top: 48.5555vw;
         left: 6.25vw;
     }
 
@@ -62,6 +62,11 @@
         margin-top: 3.194vw;
     }
 
+    .topRight{
+        display: flex;
+        align-items: center;
+    }
+
     .topBar p{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         font-size: .8333vw;
@@ -75,7 +80,7 @@
 
     }
 
-    .topBar p:nth-child(1){
+    .topBar p.articleTag{
         opacity: 1;
         background-color: #F2F2F2;
         border-radius: 100px;
@@ -135,6 +140,7 @@
 
     .bodyHTML img{
         width: 100%;
+        height: auto;
         margin-bottom: 2.77vw;
     }
 
@@ -222,6 +228,12 @@
         margin-top: 8.5333vw;
     }
 
+    .topRight{
+        display: flex;
+        align-items: center;
+        margin-top: 4.2666vw;
+    }
+
     .topBar p{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         font-size: 3.2vw;
@@ -234,7 +246,7 @@
         opacity: 0.5;
     }
 
-    .topBar p:nth-child(1){
+    .topBar p.articleTag{
         opacity: 1;
         text-align: center;
         background-color: #F2F2F2;
@@ -300,6 +312,7 @@
 
     .bodyHTML img{
         width: 100%;
+        height: auto;
         margin-bottom: 2.77vw;
     }
 

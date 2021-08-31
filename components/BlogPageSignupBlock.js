@@ -46,6 +46,13 @@ export default function BlogPageSignupBlock() {
             <svg width="66" height="34" viewBox="0 0 66 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-0.000122137 33.2474L33.2474 -7.66688e-05L66.4936 33.2461L-0.000122137 33.2474Z" fill="#58EDC0"/>
             </svg>
+            <svg width="18" height="41" viewBox="0 0 18 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M-11.7335 12.2614L0.0978747 0.429981L11.9288 12.2609L-11.7335 12.2614Z" fill="#02D9FC"/>
+              <path d="M-11.9198 24.035L-0.0884046 12.2037L11.7425 24.0346L-11.9198 24.035Z" fill="#02D9FC"/>
+              <circle cx="0.427297" cy="36.2486" r="12.2623" fill="#5AEBC0"/>
+            </svg>
+
+
             <img src={`/images/blog-signup-vector-2.svg`}/>
             <img src={`/images/blog-signup-vector-1.svg`}/>
            

@@ -123,6 +123,8 @@
   @media screen and (max-width: 768px) {
     .signupBlock {
       width: 100%;
+      margin-top: 12.8vw;
+      padding-bottom: 5.444vw;
     }
     .signupWrapper {
       width: 100%;
@@ -135,11 +137,11 @@
       flex-direction: column;
     }
     .signupBox h3 {
-   font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
       font-style: normal;
       font-weight: normal;
-      font-size: 9.3vw;
-      line-height: 12.5vw;
+      font-size: 6.4vw;
+      line-height: 7.466vw;
       text-align: center;
       color: #000000;
       /* max-width: calc(100% - 12.54vw); */
@@ -153,8 +155,8 @@
       text-align: center;
       color: #000000;
       opacity: 0.5;
-      margin: 5.333vw auto 18.9333vw auto;
-   font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      margin: 2.1333vw auto 6.4vw auto;
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
       /* max-width: calc(100% - 3.54vw); */
       max-width: 100%;
     }
@@ -166,7 +168,7 @@
     .emailError {
    font-family: "neue-haas-grotesk-display-pro", sans-serif;
       position: absolute;
-      left: 0;
+      left: 6.666vw;
       top: -5.362vw;
       font-style: normal;
       font-weight: normal;
@@ -177,25 +179,25 @@
     #inputWrapper {
       width: 100%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      border: 0.277vw solid #3f5cfb;
-      border-radius: 1.385vw;
-      padding: 1.385vw 1.385vw 1.385vw 4.432vw;
+    
     }
     #inputWrapper input {
-      width: calc(100% - 47.414vw);
+      width: 76.53vw;
+      border: 1px solid #B4BDC0;
+      border-radius: 1.385vw;
+      padding: 3.7333vw 3.7333vw 3.7333vw 4.432vw;
       font-style: normal;
       font-weight: 500;
       font-size: 3.7333vw;
       line-height: 4.8vw;
       letter-spacing: 0.05em;
       color: rgba(0, 0, 0, 1);
-      border: none;
       flex-grow: 1;
-      padding-right: 0.7vw;
-   font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
     }
     #inputWrapper input::-webkit-placeholder,
     #inputWrapper input::-moz-placeholder,
@@ -210,19 +212,20 @@
       opacity: .2;
     }
     #inputWrapper button {
-      width: 30.999vw;
+      width: 76.53vw;
       white-space: nowrap;
       font-style: normal;
       font-weight: 500;
-      font-size: 3.7333vw;
-      line-height: 4.8vw;
+      font-size: 4.2666vw;
+      line-height: 5.6vw;
       letter-spacing: 0.05em;
       color: #ffffff;
       padding: 3.878vw 5.479vw;
-      border-radius: 1.385vw;
+      border-radius: 5px;
       background-color: #3f5cfb;
       text-transform: uppercase;
       font-family: Helvetica, sans-serif;
+      margin-top: 4.2666vw;
     }
     p.extraInfo {
       font-style: normal;
