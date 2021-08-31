@@ -98,14 +98,14 @@
         text-align: left;
         text-transform: uppercase;
         color: #BBBBBB;
-        margin-bottom: 8px;
+        margin-bottom: .555vw;
         padding-left: 1.3888vw;
     }
 
 
     .postTitles{
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: .8333vw;
+        padding-bottom: .8333vw;
         padding-left: 1.3888vw;
         padding-right: 1.3888vw;
         cursor: pointer;
@@ -155,9 +155,9 @@
     .FilterDiv .subCategoryBox .subCategories{ 
         display: flex;
         align-items: center;
-        padding: 16px;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding: 1.111vw;
+        padding-top: .8333vw;
+        padding-bottom: .8333vw;
         /* cursor: pointer; */
     }
 
@@ -200,15 +200,15 @@
     .FilterDiv .subCategoryBox label{
         cursor: pointer;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 16px;
+        font-size: 1.11vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 1.66vw;
         letter-spacing: 0em;
         text-align: left;
         color: #000000;
         opacity: 0.6;
-        padding-left: 16px;
+        padding-left: 1.111vw;
     }
 
     .FilterDiv::-webkit-scrollbar{
@@ -281,14 +281,6 @@
         fill: white;
     }
 
-    
-    
-/* 
-    .FilterDiv .postTags:nth-child(1) p{
-        background-color: #405CFB;
-        border: 1px solid #405CFB;
-        color: #fff;
-    } */
 }
 
 @media screen and (max-width: 768px) {
@@ -397,8 +389,8 @@
 
 
     .postTitles{
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 3.2vw;
+        padding-bottom: 3.2vw;
         padding-left: 5.333vw;
         padding-right: 5.333vw;
         cursor: pointer;
@@ -452,8 +444,8 @@
         display: flex;
         align-items: center;
         padding: 4.2666vw;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 3.2vw;
+        padding-bottom: 3.2vw;
         /* cursor: pointer; */
     }
 
@@ -496,15 +488,15 @@
     .FilterDiv .subCategoryBox label{
         cursor: pointer;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 16px;
+        font-size: 4.266vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 6.4vw;
         letter-spacing: 0em;
         text-align: left;
         color: #000000;
         opacity: 0.6;
-        padding-left: 16px;
+        padding-left: 4.266vw;
     }
 
     .FilterDiv::-webkit-scrollbar{

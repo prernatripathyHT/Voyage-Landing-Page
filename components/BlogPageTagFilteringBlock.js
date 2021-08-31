@@ -10,7 +10,6 @@ import OutsideClickHandler from 'react-outside-click-handler';
 export default function BlogPageFilteringBlock({posts, handleTagClick, handleSearch}) {
     const [filteredTitles, setFilteredTitles] = useState([]);
     const [isCategoryActive, setCategoryActive] = useState("all");
-    const [isSubCategoryActive, setSubCategoryActive] = useState(false);
     const [searchValue, setSearchValue] = useState('');
     const [subTagsVisible, setSubTagsVisible] = useState(false);
     const [subTagsChecked, setSubTagsChecked] = useState(
@@ -45,13 +44,12 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
     }
 
     const toggleCategoryClass = (slugName) => {
-        //console.log("slug clicked", slugName)
         setCategoryActive(slugName);
 
         if(slugName === "voyage-sms-news"){
 
         let allSubTagsUnchecked1 = subTagsChecked.every(v => v === false);
-        console.log("are all subtags unchecked ?", allSubTagsUnchecked1)
+       // console.log("are all subtags unchecked ?", allSubTagsUnchecked1)
         
         if(allSubTagsUnchecked1)
         setCategoryActive(null);
@@ -61,12 +59,6 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
 
         }
       };
-
-      const toggleSubCategoryClass = (slugName) => {
-        //console.log("slug clicked subcategory", slugName)
-        setSubCategoryActive(slugName);
-      };
-
 
     //open and close the subcategory section
     const handleSubTags = () =>{
@@ -169,7 +161,7 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
                             { subTagsVisible &&
                             <div className={styles.subCategoryBox}>  
                             {category.subcategories.map((subcategory, index) => (
-                                <div  key={index} className={`${styles.subCategories} ${isSubCategoryActive === subcategory.slug ? styles.subCategoryActive : null}`}>
+                                <div  key={index} className={`${styles.subCategories}`}>
                                   <input type="checkbox" id={`${subcategory.id}`} name={subcategory.title} value={subcategory.title} checked={subTagsChecked[index]} onChange={()=> {handleCheckedTags(index, subcategory.slug);}} />
                                   <label htmlFor={`${subcategory.id}`}> {subcategory.title}</label>
                                 </div>

@@ -11,7 +11,7 @@ import RequestForm from "../../components/RequestForm";
 import { useState } from "react";
 import {useQueries, useQuery, useQueryClient, useQueryErrorResetBoundary} from 'react-query';
 
-//const {CONTENT_API_KEY, BLOG_URL} = process.env;
+// const {CONTENT_API_KEY, BLOG_URL} = process.env;
 
 const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
 const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
@@ -151,13 +151,6 @@ export default function Home({posts}) {
         <Header setFormState={setFormState} />
         <BlogPageHeroBanner posts={posts} />
         <BlogPageTagFilteringBlock posts={posts} handleTagClick={setTagName} handleSearch={setSearchTerm}/>
-         {/* <div>
-          {{posts}.posts.posts.map((post,index) => (
-        <div key={index}>  {post.tags.map((tag, index)=> (
-              <p key={index}>{tag.name} : {tag.slug}</p>
-            ))}</div>
-          ))}
-        </div> */}
         <BlogPageFeaturedPosts posts={allPosts} />
         <BlogPageSignupBlock />
         {allPosts.posts.length > 6 && <BlogPageAllPosts posts={allPosts} />}

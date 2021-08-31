@@ -34,6 +34,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/blogs.js"
     ],
+    "/marketing": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/marketing.js"
+    ],
     "/next/dist/pages/_error": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

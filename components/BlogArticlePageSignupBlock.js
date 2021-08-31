@@ -37,7 +37,7 @@ export default function BlogArticlePageSignupBlock() {
         <div className={styles.signupBox} data-scroll>
           <h3>Subscribe to the SMS Marketing Resources news letter</h3>
           <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sollicitudin purus sed odio dignissim tincidunt.
+          Sign up now to get access to the most powerful full-stack text message commerce platform in the world. We will get back to you in less than 1 business day. Your first 30 days of text messages are on us!
           </p>
           <div className={styles.inputBox}>
             {isSubmitted && (

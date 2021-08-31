@@ -56,7 +56,7 @@ export const getStaticPaths = async () => {
 
 const getRelatedPosts = async(key) => {
     const currentPostTags = key.queryKey[1].tags;
-    console.log("current tag names : ", currentPostTags);
+    //console.log("current tag names : ", currentPostTags);
   
 
         

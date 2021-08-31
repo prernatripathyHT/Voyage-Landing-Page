@@ -83,7 +83,7 @@
     .topBar p.articleTag{
         opacity: 1;
         background-color: #F2F2F2;
-        border-radius: 100px;
+        border-radius: 6.944vw;
         padding: .555vw 1.111vw;
         margin-right: 2.43vw;
     }
@@ -250,13 +250,13 @@
         opacity: 1;
         text-align: center;
         background-color: #F2F2F2;
-        border-radius: 100px;
+        border-radius: 26.66vw;
         padding: .555vw 1.111vw;
         width: 36.8vw;
     }
 
     .topBar p:nth-child(2){
-        margin-top: 16px;
+        margin-top: 4.266vw;
     }
 
   
