@@ -3,9 +3,11 @@ import dateFormat from 'dateformat';
 
 
 
+
 export default function BlogPostPage({currentPost}) {
 
     //console.log("currentPost", currentPost[0])
+
 
     return (
             <section className={styles.articlePage}>
@@ -33,9 +35,9 @@ export default function BlogPostPage({currentPost}) {
                         </div>
                     </div>
                     <div className={styles.socialIcons}>
-                        <div className={`${styles.socialIcon_fb} ${styles.socialIcon}`}><a href={`https://www.facebook.com/sharer/sharer.php?u=https://voyagesms.com/blog/${currentPost[0].slug}`} target="_blank"><img src={`/images/voyage-blog-fb-icon.png`} /></a></div>
-                        <div className={`${styles.socialIcon_tw} ${styles.socialIcon}`}><a href={`https://www.twitter.com/sharer/sharer.php?u=https://voyagesms.com/blog/${currentPost[0].slug}`} target="_blank"><img src={`/images/voyage-blog-tw-icon.png`} /></a></div>
-                        <div className={`${styles.socialIcon_li} ${styles.socialIcon}`}><a href={`https://www.linkedin.com/sharer/sharer.php?u=https://voyagesms.com/blog/${currentPost[0].slug}`} target="_blank"><img src={`/images/voyage-blog-li-icon.png`} /></a></div>
+                        <div className={`${styles.socialIcon_fb} ${styles.socialIcon}`}><a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank"><img src={`/images/voyage-blog-fb-icon.png`} /></a></div>
+                        <div className={`${styles.socialIcon_tw} ${styles.socialIcon}`}><a href={`http://twitter.com/share?url=${window.location.href}`} target="_blank"><img src={`/images/voyage-blog-tw-icon.png`} /></a></div>
+                        <div className={`${styles.socialIcon_li} ${styles.socialIcon}`}><a href={`http://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}`} target="_blank"><img src={`/images/voyage-blog-li-icon.png`} /></a></div>
                     </div>
                 </div>
             </section>
