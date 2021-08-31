@@ -16,8 +16,8 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
     const [subTagsChecked, setSubTagsChecked] = useState(
         [false, false, false, false, false]
     );
+    const [subTagSVG, setSubTagSVG] = useState('180deg');
     const subCategoryTags = BlogPageCategoriesData[4].subcategories.map((slug) => slug);
-
 
    
 
@@ -47,6 +47,19 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
     const toggleCategoryClass = (slugName) => {
         //console.log("slug clicked", slugName)
         setCategoryActive(slugName);
+
+        if(slugName === "voyage-sms-news"){
+
+        let allSubTagsUnchecked1 = subTagsChecked.every(v => v === false);
+        console.log("are all subtags unchecked ?", allSubTagsUnchecked1)
+        
+        if(allSubTagsUnchecked1)
+        setCategoryActive(null);
+        else{
+            setCategoryActive(slugName);
+        }
+
+        }
       };
 
       const toggleSubCategoryClass = (slugName) => {
@@ -58,6 +71,10 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
     //open and close the subcategory section
     const handleSubTags = () =>{
         setSubTagsVisible(!subTagsVisible);
+
+        subTagSVG  === "180deg" ? setSubTagSVG("0deg") : setSubTagSVG("180deg");
+
+       
     }
 
 
@@ -91,6 +108,22 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
 
     }
 
+
+    const handleOutsideClick = () => {
+        setSubTagsVisible(false); 
+       
+        setSubTagSVG("180deg");
+
+        let allSubTagsUnchecked = subTagsChecked.every(v => v === false);
+        //console.log("are all subtags unchecked ?", allSubTagsUnchecked)
+
+        if(allSubTagsUnchecked)
+        setCategoryActive(null);
+        else{
+            setCategoryActive("voyage-sms-news");
+        }
+    }
+
     return (
         <section className={styles.tagFilteringSection}> 
              <div className={`container ${styles.filterSearchDiv}`}>
@@ -116,23 +149,24 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
 
                 <div className={styles.FilterDiv}>
                  
-                        <div className={styles.postTags}><p className={`${isCategoryActive == "all" ? styles.categoryActive : null}`} onClick={()=> {handleTagClick(null); toggleCategoryClass("all");setSubTagsVisible(false); setSubTagsChecked([false, false, false, false, false]) }}>All</p></div>
+                        <div className={styles.postTags}><p className={`${isCategoryActive == "all" ? styles.categoryActive : null}`} onClick={()=> {handleTagClick(null); toggleCategoryClass("all");setSubTagsVisible(false); setSubTagsChecked([false, false, false, false, false]); setSubTagSVG("180deg"); }}>All</p></div>
                         {BlogPageCategoriesData.map((category,index) => (
                             category.subcategories.length < 1 ?
                             <div key={index} className={styles.postTags}>
-                                <p className={isCategoryActive === `${category.slug}` ? styles.categoryActive : null} onClick={()=> {handleTagClick(category.slug); toggleCategoryClass(category.slug);setSubTagsVisible(false);setSubTagsChecked([false, false, false, false, false]) }} >{category.display_title}</p>
+                                <p className={isCategoryActive === `${category.slug}` ? styles.categoryActive : null} onClick={()=> {handleTagClick(category.slug); toggleCategoryClass(category.slug);setSubTagsVisible(false);setSubTagsChecked([false, false, false, false, false]); setSubTagSVG("180deg"); }} >{category.display_title}</p>
                             </div> 
                             : 
                             <div key={index} className={` ${styles.postTags} ${styles.subTag}`}>
+                            <OutsideClickHandler onOutsideClick={handleOutsideClick}>
                             <p className={isCategoryActive === "voyage-sms-news" ? styles.categoryActive : null}  onClick={() => {handleSubTags(); toggleCategoryClass("voyage-sms-news")}}>
                                 {category.display_title} 
-                                <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg style={{ transform: `rotate(${subTagSVG})`}} width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M7.08838 1.12041L0.169625 8.05835C-0.0569267 8.28566 -0.0565459 8.65369 0.170797 8.88062C0.398111 9.10738 0.766342 9.10679 0.993069 8.87945L7.50003 2.35448L14.007 8.87969C14.2337 9.107 14.6017 9.10759 14.8291 8.88086C14.943 8.7671 15 8.61807 15 8.46903C15 8.32038 14.9434 8.17193 14.8302 8.05838L7.91165 1.12041C7.80272 1.01093 7.65448 0.94949 7.50003 0.94949C7.34558 0.94949 7.19751 1.0111 7.08838 1.12041Z" fill="black"/>
                                 </svg>
                                 </p>
 
+                            
                             { subTagsVisible &&
-                             <OutsideClickHandler onOutsideClick={() => {setSubTagsVisible(false)}}>
                             <div className={styles.subCategoryBox}>  
                             {category.subcategories.map((subcategory, index) => (
                                 <div  key={index} className={`${styles.subCategories} ${isSubCategoryActive === subcategory.slug ? styles.subCategoryActive : null}`}>
@@ -141,8 +175,9 @@ export default function BlogPageFilteringBlock({posts, handleTagClick, handleSea
                                 </div>
                             ))}
                             </div>
-                             </OutsideClickHandler>
+                            
                             }
+                            </OutsideClickHandler>
 
                         </div> 
                         ))}

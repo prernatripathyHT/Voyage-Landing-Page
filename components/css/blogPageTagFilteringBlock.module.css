@@ -149,7 +149,7 @@
         border-radius: 5px;
         overflow:hidden;
         overflow-y: auto;
-        margin-top: 3.61vw;
+        margin-top: 1vw;
         padding-top: 1.666vw;
     }
     .FilterDiv .subCategoryBox .subCategories{ 
@@ -264,7 +264,7 @@
 
     .postTags p svg{
         margin-left: .69444vw;
-        transform: rotate(180deg);
+        /* transform: rotate(180deg); */
         transition: .3s;
     }
 
@@ -274,8 +274,9 @@
     
 
     .postTags p.categoryActive svg{
-        transform: rotate(0deg);
+        /* transform: rotate(0deg); */
     }
+
     .postTags p.categoryActive svg path{
         fill: white;
     }
@@ -444,7 +445,7 @@
         border-radius: 1.333vw;
         overflow:hidden;
         overflow-y: auto;
-        margin-top: 13.61vw;
+        margin-top: 2.61vw;
         padding-top: 6.4vw;
     }
     .FilterDiv .subCategoryBox .subCategories{ 
