@@ -4,7 +4,21 @@ import dateFormat from 'dateformat';
 
 
 
+
+
 export default function BlogPostPage({currentPost}) {
+
+    //var location = "";
+  
+
+    const getPath = () => {
+        if(!(typeof window === "undefined")){
+            var location = window.location.href;
+            console.log(location)
+            return location;
+       }
+    }
+
 
     //console.log("currentPost", currentPost[0])
 
@@ -35,9 +49,9 @@ export default function BlogPostPage({currentPost}) {
                         </div>
                     </div>
                     <div className={styles.socialIcons}>
-                        <div className={`${styles.socialIcon_fb} ${styles.socialIcon}`}><a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank"><img src={`/images/voyage-blog-fb-icon.png`} /></a></div>
-                        <div className={`${styles.socialIcon_tw} ${styles.socialIcon}`}><a href={`http://twitter.com/share?url=${window.location.href}`} target="_blank"><img src={`/images/voyage-blog-tw-icon.png`} /></a></div>
-                        <div className={`${styles.socialIcon_li} ${styles.socialIcon}`}><a href={`http://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}`} target="_blank"><img src={`/images/voyage-blog-li-icon.png`} /></a></div>
+                        <div className={`${styles.socialIcon_fb} ${styles.socialIcon}`}><a href={`https://www.facebook.com/sharer/sharer.php?u=${getPath()}`} target="_blank"><img src={`/images/voyage-blog-fb-icon.png`} /></a></div>
+                        <div className={`${styles.socialIcon_tw} ${styles.socialIcon}`}><a href={`http://twitter.com/share?url=${getPath()}`} target="_blank"><img src={`/images/voyage-blog-tw-icon.png`} /></a></div>
+                        <div className={`${styles.socialIcon_li} ${styles.socialIcon}`}><a href={`http://www.linkedin.com/shareArticle?mini=true&url=${getPath()}`} target="_blank"><img src={`/images/voyage-blog-li-icon.png`} /></a></div>
                     </div>
                 </div>
             </section>
