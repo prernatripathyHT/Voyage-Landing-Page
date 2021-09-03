@@ -1,0 +1,50 @@
+@media screen and (min-width: 769px) {
+    .aboutPageSignupBlock{
+        margin-top: 102px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .signupContainer{
+        background-color: #53ecbf;
+        width: 60%;
+        margin:auto;
+        padding: 80px;
+    }
+
+    .signupContainer h1{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .signupContainer p{
+        opacity: .8;
+        margin-bottom: 30px;
+    }
+
+    .buttonBlock{
+        border: 1px solid #fff;
+        padding: 10px;
+        width: 220px;
+        margin: auto;
+        transition: transform .3s;
+    }
+
+    .buttonBlock:hover{
+        transform:scale(1.01);
+    }
+
+    .buttonBlock .signupButton{
+        width: 200px;
+        height: 40px;
+        background-color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}

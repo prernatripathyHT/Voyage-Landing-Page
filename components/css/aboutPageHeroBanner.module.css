@@ -1,0 +1,43 @@
+@media screen and (min-width: 769px) {
+    .aboutPageHeroBanner {
+        width: 100%;
+        position: relative;
+        padding-top: 7.627vw;
+      }
+
+      .heroBanner_innerWrapper{
+          display: flex;
+          margin-top: 70px;
+          margin-bottom: 40px;
+      }
+
+      .leftBlock{
+          width: 50%;
+      }
+
+      .aboutPageTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 88px;
+        letter-spacing: 0em;
+        text-align: left; 
+        margin-bottom: 40px;
+      }
+
+      .aboutPageSubText{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .6;
+      }
+
+      .aboutPageSubText:first-of-type{
+        margin-bottom: 40px;
+      }
+}
