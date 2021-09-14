@@ -1,22 +1,205 @@
 @media screen and (min-width: 769px) {
 
     .aboutPageTeamMembers{
-        margin-top: 100px;
+        margin-top: 5.555vw;
     }
-    .memberDetails{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 24px;
+
+    .aboutPageMembersData{
+        display: flex;
     }
 
     .teamHeading{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 40px;
+        font-size: 4.3055vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 44px;
+        line-height: 4.722vw;
         letter-spacing: 0em;
         text-align: left;
-        margin-bottom: 40px;
+        width: 25%;
     }
+
+    .memberDetails{
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.666vw;
+        grid-row-gap: 2.777vw;
+    }
+
+    .memberCard{
+        /* width: 296px; */
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        color: #000;
+    }
+
+    .memberCard:after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px #41E2FD;  
+        transform: scaleX(1);  
+        transition: transform 250ms ease-in-out;
+    }
+    .memberCard:hover:after { 
+        transform: scaleX(0); 
+    }
+
+
+    .memberImage{
+        width: 100%;
+        height: 18.055vw;
+        background-color: #F6F6F6;
+        margin-bottom: 1.111vw;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .memberImage img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 68%;
+    }
+
+
+    .memberData .memberDesignation{
+        font-size: .9722vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.45833vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: .555vw;
+    }
+
+    .memberData .memberName{
+        font-size: 1.597vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.0833vw;
+        letter-spacing: 0.02em;
+        text-align: left;
+        margin-bottom: 1.1805vw;
+    }
+
+    .memberData .memberDescription{
+        width: 90%;
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.666vw;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .5;
+        margin-bottom: 3.888vw;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .aboutPageTeamMembers{
+        margin-top: 12.0277vw;
+    }
+
+    .aboutPageMembersData{
+        /* display: flex; */
+    }
+
+    .teamHeading{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 7.756vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5vw;
+    }
+
+    .memberDetails{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8.777vw;
+    }
+
+    .memberCard{
+        width: 90%;
+        margin: auto;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        color: #000;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 8%);
+    }
+
+    .memberCard:after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px #41E2FD;  
+        transform: scaleX(1);  
+        border-radius: 100px ;
+        transition: transform 250ms ease-in-out;
+    }
+    /* .memberCard:hover:after { 
+        transform: scaleX(0); 
+    } */
+
+
+    .memberImage{
+        width: 100%;
+        /* height: 18.055vw; */
+        background-color: #F6F6F6;
+        /* margin-bottom: 1.111vw; */
+        display: flex;
+        align-items: flex-end;
+        border-radius: 5px 5px 0 0 ;
+    }
+
+    .memberImage img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 68%;
+    }
+
+    .memberData{
+        padding: 6.4vw;
+    }
+
+
+    .memberData .memberDesignation{
+        font-size: 3.878vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: .555vw;
+    }
+
+    .memberData .memberName{
+        font-size: 5.333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 9vw;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin-bottom: 1.666vw;
+    }
+
+    .memberData .memberDescription{
+        width: 95%;
+        font-size: 3.7333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .5;
+        margin-bottom:  3.1333vw;
+    }
+    
 }

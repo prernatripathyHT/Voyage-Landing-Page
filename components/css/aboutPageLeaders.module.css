@@ -1,0 +1,309 @@
+@media screen and (min-width: 769px) {
+
+    .aboutPageLeaders{
+        margin-top: 9.0277vw;
+        position: relative;
+    }
+
+    .aboutPageLeadersData{
+        display: flex;
+    }
+
+    .teamHeading{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 4.3055vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.722vw;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 25%;
+    }
+
+    .designElements img:nth-of-type(1){
+        width: 6.8055vw;
+        position: absolute;
+        left: 0;
+        top: -34px;
+        z-index: -1;
+    }
+    .designElements img:nth-of-type(2){
+        width: 8.6111vw;
+        position: absolute;
+        right: 0;
+        top: -75px;
+        z-index: -1;
+    }
+    .designElements img:nth-of-type(3){
+        width: 6.6111vw;
+        position: absolute;
+        right: 0;
+        bottom: 75px;
+        z-index: -1;
+    }
+
+
+    .memberDetails{
+        width: 75%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2.777vw;
+    }
+
+    .memberCard{
+        /* width: 448px; */
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        color: #000;
+    }
+
+    .memberCard:after {
+        display:block;
+        content: '';
+        border-bottom: solid 3px #41E2FD;  
+        transform: scaleX(1);  
+        transition: transform 250ms ease-in-out;
+    }
+    .memberCard:hover:after { 
+        transform: scaleX(0); 
+    }
+
+
+    .memberImage{
+        width: 100%;
+        height: 22.91vw;
+        background-color: #F6F6F6;
+        margin-bottom: 1.666vw;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .memberImage img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        width: 62%;
+        height: 100%;
+    }
+
+    .memberData .memberDesignation{
+        font-size: .9722vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4583vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: .555vw;
+    }
+
+    .memberData .memberName{
+        font-size: 1.666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.1527vw;
+        letter-spacing: 0.02em;
+        text-align: left;
+        margin-bottom: 1.666vw;
+    }
+
+    .memberData .memberDescription{
+        width: 90%;
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.666vw;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .5;
+        margin-bottom: 1.666vw;
+    }
+
+    .memberSocials{
+        display: flex;
+    }
+
+    .memberSocials .socialLink{
+        background-color: #fff;
+        border: 1px solid #F2F2F2;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        margin-bottom: 2.222vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        margin-right: 1.25vw;
+    }
+
+    .memberSocials .socialLink:hover{
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .aboutPageLeaders{
+        margin-top: 14.0277vw;
+        position: relative;
+    }
+
+    .aboutPageLeadersData{
+        /* display: flex;
+        flex-direction: row; */
+    }
+
+    .teamHeading{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 7.756vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 5vw;
+    }
+
+    .designElements img:nth-of-type(1){
+        width: 14.8055vw;
+        position: absolute;
+        left: 0;
+        top: -22px;
+        z-index: -1;
+    }
+    .designElements img:nth-of-type(2){
+        width: 16.6111vw;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        z-index: -1;
+    }
+    .designElements img:nth-of-type(3){
+        width: 9.6111vw;
+        position: absolute;
+        right: 0;
+        bottom: 75px;
+        z-index: -1;
+    }
+
+
+    .memberDetails{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8.777vw;
+    }
+
+    .memberCard{
+        width: 90%;
+        margin: auto;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        color: #000;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 8%);
+    }
+
+    .memberCard:after {
+        display:block;
+        content: '';
+        border-bottom: solid 2px #41E2FD;  
+        transform: scaleX(1);  
+        border-radius: 100px ;
+        transition: transform 250ms ease-in-out;
+    }
+    /* .memberCard:hover:after { 
+        transform: scaleX(0); 
+    } */
+
+
+    .memberImage{
+        width: 100%;
+        /* height: 22.91vw; */
+        background-color: #F6F6F6;
+        /* margin-bottom: 3.666vw; */
+        display: flex;
+        align-items: flex-end;
+        border-radius: 5px 5px 0 0 ;
+    }
+
+    .memberImage img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        width: 62%;
+        height: 100%;
+    }
+
+    .memberData{
+        padding: 6.4vw;
+    }
+
+    .memberData .memberDesignation{
+        font-size: 3.878vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: .555vw;
+    }
+
+    .memberData .memberName{
+        font-size: 5.333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 9vw;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin-bottom: 1.666vw;
+    }
+
+    .memberData .memberDescription{
+        width: 95%;
+        font-size: 3.7333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .5;
+        margin-bottom:  3.1333vw;
+    }
+
+    .memberSocials{
+        display: flex;
+        justify-content: center;
+    }
+
+    .memberSocials .socialLink{
+        background-color: #fff;
+        border: 1px solid #F2F2F2;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        /* margin-bottom: 5.222vw; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        margin-right: 4.25vw;
+    }
+
+    .memberSocials .socialLink:hover{
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+    }
+
+    .memberSocials .socialLink a{
+        display: flex;
+    }
+
+    .memberSocials .socialLink a svg{
+        width: 70%;
+        margin: auto;
+    }
+    
+}

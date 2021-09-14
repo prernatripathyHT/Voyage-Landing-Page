@@ -7,8 +7,8 @@
 
       .heroBanner_innerWrapper{
           display: flex;
-          margin-top: 70px;
-          margin-bottom: 40px;
+          margin-top: 4.8611vw;
+          /* margin-bottom: 40px; */
       }
 
       .leftBlock{
@@ -17,27 +17,186 @@
 
       .aboutPageTitle{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 80px;
+        font-size: 5.555vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 88px;
+        line-height: 6.111vw;
         letter-spacing: 0em;
         text-align: left; 
-        margin-bottom: 40px;
+        margin-bottom: 2.777vw;
       }
 
       .aboutPageSubText{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 18px;
+        font-size: 1.25vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 27px;
+        line-height: 1.875vw;
         letter-spacing: 0em;
         text-align: left;
         opacity: .6;
       }
 
       .aboutPageSubText:first-of-type{
-        margin-bottom: 40px;
+        margin-bottom: 2.77vw;
       }
+
+      .staticAssets svg:nth-of-type(1){
+        width: 29.444vw;
+        position: absolute;
+        right: 137px;
+      }
+
+      .staticAssets svg:nth-of-type(2){
+        width: 7.847vw;
+        position: absolute;
+        right: 152px;
+        bottom: -60px;
+      }
+      .staticAssets img:nth-of-type(1){
+        width: 6.805vw;
+        position: absolute;
+        right: 310px;
+        top: 147px;
+      }
+
+      .staticAssets img:nth-of-type(2){
+        width: 7.986vw;
+        position: absolute;
+        right: 0;
+      }
+
+      .animmateDown{
+        width: 3.819vw;
+        position: absolute;
+        right: 598px;
+        bottom: 170px;
+      }
+
+      .animateLeft{
+        width: 20.277vw;
+        height: 3.19vw;
+        position: absolute;
+        right: 0;
+        bottom: 66px;
+      }
+
+      .animateRight{
+        width: 4.8611vw;
+        position: absolute;
+        right: 53px;
+        bottom: 107px;
+        z-index: -1;
+      }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .aboutPageHeroBanner {
+      width: 100%;
+      position: relative;
+      padding-top: 30.9333vw;
+      overflow: hidden;
+    }
+
+    .heroBanner_innerWrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4.8611vw;
+        /* margin-bottom: 40px; */
+    }
+
+    .leftBlock{
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+
+    .aboutPageTitle{
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      font-size: 13.8666vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15.2vw;
+      letter-spacing: 0em;
+      text-align: left; 
+      margin-bottom: 2.777vw;
+    }
+
+    .aboutPageSubText{
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      font-size: 3.73333vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 5.6vw;
+      letter-spacing: 0em;
+      text-align: left;
+      opacity: .6;
+    }
+
+    .aboutPageSubText:first-of-type{
+      margin-bottom: 2.77vw;
+    }
+
+    .rightBlock{
+      position: relative;
+    }
+
+
+    .staticAssets svg:nth-of-type(1){
+      width: 79.444vw;
+      position: relative;
+      right: 0;
+    }
+
+    .staticAssets svg:nth-of-type(2){
+      width: 67.847vw;
+      position: absolute;
+      right: -100px;
+      bottom: 0px;
+    }
+    .staticAssets img:nth-of-type(1){
+      width: 16.805vw;
+      position: absolute;
+      left: 18%;
+      top: 55px;
+    }
+
+    .staticAssets img:nth-of-type(2){
+      width: 17.986vw;
+      position: absolute;
+      right: -16px;
+    }
+
+    .animmateDown{
+      width: 53.819vw;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .animateLeft{
+      position: absolute;
+      right: -18px;
+      bottom: 90px;
+    }
+
+    .animateLeft svg{
+      width: 100%;
+      height: 6.19vw;
+    }
+
+
+    .animateRight{
+      position: absolute;
+      right: 53px;
+      bottom: 107px;
+      z-index: -1;
+    }
+
+    .animateRight svg{
+      width: 12.8611vw;
+    }
+
+
 }

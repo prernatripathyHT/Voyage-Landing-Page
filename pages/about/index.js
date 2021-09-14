@@ -1,9 +1,10 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import AboutPageHeroBanner from "../../components/AboutPageHeroBanner";
+import AboutPageLeaders from "../../components/AboutPageLeaders";
 import AboutPageTeamMembers from "../../components/AboutPageTeamMembers";
 import AboutPageSignupBlock from "../../components/AboutPageSignupBlock";
-import SignupBottomBlock from "../../components/SignupBottomBlock";
+import AboutPageBottomBlock from "../../components/AboutPageBottomBlock";
 import Head from "next/head";
 import RequestForm from "../../components/RequestForm";
 import { useState } from "react";
@@ -38,9 +39,10 @@ export default function Home({posts}) {
         <RequestForm formState={formState} setFormState={setFormState} />
         <Header setFormState={setFormState} />
         <AboutPageHeroBanner />
+        <AboutPageLeaders />
         <AboutPageTeamMembers />
         <AboutPageSignupBlock setFormState={setFormState} />
-        <SignupBottomBlock />
+        <AboutPageBottomBlock />
         <Footer setFormState={setFormState} />
       </div>
     </>

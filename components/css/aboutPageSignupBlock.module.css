@@ -1,50 +1,189 @@
 @media screen and (min-width: 769px) {
     .aboutPageSignupBlock{
-        margin-top: 102px;
-        padding: 40px;
+        margin-top: 6.944vw;
+        margin-bottom: 2.777vw;
+        /* padding: 40px; */
         text-align: center;
     }
 
     .signupContainer{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
         background-color: #53ecbf;
-        width: 60%;
+        width: 73.95vw;
         margin:auto;
-        padding: 80px;
+        padding: 4.0277vw 0 2.777vw 0;
+        position: relative;
+    }
+
+    .signupContainer:after {
+        content: "";
+        position: absolute;
+        width: 19.65vw;
+        height: 13.333vw;
+        border: solid 1px #49edbf;
+        bottom: -2.8033vw;
+        left: -2.4305vw;
+        z-index: -1;
     }
 
     .signupContainer h1{
-        font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 40px;
+        font-size: 2.9166vw;
+        font-weight: 500;
+        font-stretch: normal;
         font-style: normal;
-        font-weight: 400;
-        line-height: 44px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-bottom: 20px;
+        line-height: 1.43;
+        letter-spacing: 0.72px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: .6944vw;
     }
 
     .signupContainer p{
-        opacity: .8;
-        margin-bottom: 30px;
+        opacity: 0.64;
+        font-size: 1.041vw;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.6;
+        letter-spacing: 0.79px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 2.0833vw;
     }
 
     .buttonBlock{
         border: 1px solid #fff;
-        padding: 10px;
-        width: 220px;
+        padding: .694vw;
+        width: 25.20vw;
         margin: auto;
         transition: transform .3s;
     }
 
     .buttonBlock:hover{
-        transform:scale(1.01);
+        /* transform:scale(1.01); */
     }
 
     .buttonBlock .signupButton{
-        width: 200px;
-        height: 40px;
+        width: 23.68vw;
+        /* height: 40px; */
         background-color: #fff;
         cursor: pointer;
         text-transform: uppercase;
+        text-align: center;
+        font-size: .8333vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        color: #152641;
+        padding: 1.041vw;
+        position: relative;
     }
+
+    .buttonBlock .signupButton:after {
+        content: '\2192';
+        font-size: 20px;
+        color: #000000;
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .buttonBlock:hover .signupButton:after {
+        opacity: 1;
+        right: 25%;
+      }
+}
+
+
+@media screen and (max-width: 768px) {
+    .aboutPageSignupBlock{
+        margin-top: 10.944vw;
+        margin-bottom: 2.777vw;
+        /* padding: 40px; */
+        text-align: center;
+    }
+
+    .signupContainer{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        background-color: #53ecbf;
+        border-radius: 5px ;
+        width: 87vw;
+        margin:auto;
+        padding: 12.5333vw 8.266vw 10.666vw 8.266vw;
+        position: relative;
+    }
+
+    .signupContainer:after {
+        content: "";
+        position: absolute;
+        width: 47.466vw;
+        height: 38.9333vw;
+        border: solid 1px #49edbf;
+        bottom: -3.8033vw;
+        left: -2.4305vw;
+        z-index: -1;
+    }
+
+    .signupContainer h1{
+        width: 80%;
+        margin: auto;
+        font-size: 9.6vw;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: 0.62px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 4.2666vw;
+    }
+
+    .signupContainer p{
+        opacity: 0.64;
+        font-size: 4vw;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: 0.79px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 8vw;
+    }
+
+    .buttonBlock{
+        border: 1px solid #fff;
+        padding: 10px 7px;
+        width: 100%;
+        margin: auto;
+        transition: transform .3s;
+    }
+
+    .buttonBlock:hover{
+        /* transform:scale(1.01); */
+    }
+
+    .buttonBlock .signupButton{
+        width: 85%;
+        /* height: 40px; */
+        background-color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 3.2vw;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 2px;
+        color: #152641;
+        padding: 4vw;
+    }
+
+    
 }
