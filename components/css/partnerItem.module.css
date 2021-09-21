@@ -1,0 +1,92 @@
+@media screen and (min-width: 769px) {
+    .partnerItemLink{
+        width: 100%;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        transition: .5s;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .partnerItemLink:hover{
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .partnerItemImage{
+        width: 30%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid #EEEEEE;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .partnerItemImage img{
+        width: 198px;
+        height: 48px;
+        object-fit: cover;
+    }
+
+    .partnerItemDetails{
+        width: 70%;
+        padding: 30px 67px 30px 55px;
+    }
+
+    .partnerItemTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000;
+        transition: color .5s;
+        position: relative;
+    }
+
+    .partnerItemTitle:after {
+        /* content: '\2192'; */
+        content: url('/images/partners-arrow.svg');
+        font-size: 20px;
+        color: #000000;
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 55%;
+        transition: 0.5s;
+      }
+
+    .partnerItemTitle:hover{
+        color: #3F5CFB;
+    }
+
+    .partnerItemDetails:hover .partnerItemTitle:after {
+        opacity: 1;
+        right: 70%;
+      }
+
+    .partnerItemExcerpt{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #000;
+        opacity: .5;
+        margin-top: 0.555vw;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+
+}

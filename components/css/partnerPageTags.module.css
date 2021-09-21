@@ -1,0 +1,63 @@
+@media screen and (min-width: 769px) {
+    .sectionContainer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .tagContainer{
+        width: 59.8611vw;
+        align-self: self-end;
+        display: flex;
+        border-bottom: 1px solid #EAEAEA;
+        padding-bottom: 10px;
+    }
+    
+    .tagContainer .partnerTag{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #666666;
+        margin-right: 53px;
+        cursor: pointer;
+        position: relative;
+        transition: .3s;
+            
+    }
+
+    .partnerTag::before{
+        content: '';
+        background-color: #3F5CFB;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: -11px;
+        left: 0;
+        transition: .3s;
+        transform: scale(0,1);
+        transform-origin: 0% 100%;
+    }
+
+    .partnerTag.tagActive{
+        color: #3F5CFB;
+        font-weight: 600;
+    }
+
+    .partnerTag.tagActive::before{
+        content: '';
+        background-color: #3F5CFB;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: -11px;
+        left: 0;
+        transform: scale(1,1);
+    }
+
+  
+}

@@ -1,0 +1,72 @@
+@media screen and (min-width: 769px) {
+    #heroBanner {
+        width: 100%;
+        position: relative;
+        margin-top: 7.627vw;
+        margin-bottom: 2.08333vw;
+        background-color: #1C345C;
+        /* z-index: -1; */
+      }
+
+      .mainDiv{
+          position: relative;
+          z-index: 1;
+      }
+
+      .heroBannerBgElements svg:nth-child(1){
+        /* width: 6.736vw; */
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+    }
+    .heroBannerBgElements svg:nth-child(2){
+        /* width: 32.43vw;   */
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+      .heroBannerContainer{
+          display: flex;
+          justify-content: space-between;
+          padding-top: 3.888vw;
+          padding-bottom: 3.888vw;
+          z-index: 1;
+      }
+
+
+      .leftBlock{
+          width: 40%;
+      }
+
+     
+
+      .bannerText {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.111vw;
+        line-height: 1.6666vw;
+        letter-spacing: 0.03em;
+        margin-bottom: 1.3888vw;
+        color: #fff;
+        opacity: .5;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      }
+
+      .bannerTitle{  
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 4.30555vw;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 4.7222vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+      }
+
+
+}
+
+

@@ -1,0 +1,35 @@
+@media screen and (min-width: 769px) {
+    .allPosts{
+        margin-top: 28px;
+        margin-bottom: 57px;
+    }
+    .sectionContainer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .allPostsContainer, .buttonContainer{
+        width: 59.8611vw;
+        align-self: self-end;
+    }
+
+    .showMoreButton{
+        margin-top: 12px;
+        background-color: rgba(64, 92, 251, 0.1);
+        border-radius: 5px;
+        /* padding: .97222vw 1.875vw; */
+        width: 157px;
+        height: 49px;
+        box-sizing: border-box;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #405CFB;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,205 @@
+@media screen and (min-width: 769px) {
+    .careersPageOpeningsBlock{
+        margin-top: 6.666vw;
+    }
+
+    .careersPageTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 3.888vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 4.3055vw;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin-bottom: 1.666vw;
+    }
+
+    .currentOpening{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr .5fr;
+        padding-top: 2.777vw;
+        padding-bottom: 2.777vw;
+        border-bottom: 1px solid #DDDDDD;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .currentOpenings{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .currentOpenings:last-child{
+        border-bottom: none;
+    }
+
+    .currentJobs .jobs{
+        border-bottom: 1px solid #DDDDDD;
+        padding-top: 2.777vw;
+        padding-bottom: 2.777vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .currentJobs .jobs:last-child{
+        border-bottom: none;
+    }
+
+    .currentOpening h3, .currentOpenings h3{
+        font-size: 2.222vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.4305vw;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .currentOpenings h3{
+        padding-top: 2.777vw;
+    }
+
+    .openingDetails p:nth-child(1){
+        font-size: 1.3888vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5277vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1.111vw;
+    }
+    .openingDetails p:nth-child(2){
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3888vw;
+        letter-spacing: 0.01em;
+        text-align: left;
+        opacity: .5;
+    }
+
+     .detailsBtn{
+        justify-self: right;
+        font-size: .8333vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: .97222vw;
+        letter-spacing: 2px;
+        text-align: right;
+        color: #405CFB;
+        text-transform: uppercase;
+        width: 10.2777vw;
+        height: 2.777vw;
+        background-color: rgba(63, 92, 251, 0.1);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .careersPageOpeningsBlock{
+        margin-top: 6.666vw;
+    }
+
+    .careersPageTitle{
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      font-size: 8.8666vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14.2vw;
+      letter-spacing: 0em;
+      text-align: left; 
+      margin-bottom: 6.4vw;
+    }
+
+    .currentOpening{
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1.5fr .5fr; */
+        padding-top: 4.777vw;
+        padding-bottom: 4.777vw;
+        border-bottom: 1px solid #DDDDDD;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .currentOpenings{
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 2fr; */
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .currentOpenings:last-child{
+        border-bottom: none;
+    }
+
+    .currentJobs .jobs{
+        /* border-bottom: 1px solid #DDDDDD; */
+        padding-top: 2.777vw;
+        padding-bottom: 2.777vw;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+
+    .currentJobs .jobs:last-child{
+        border-bottom: none;
+    }
+
+    .currentOpening h3, .currentOpenings h3{
+      font-size: 6.8666vw;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 6.8666vw;
+      letter-spacing: 0em;
+      text-align: left; 
+      margin-bottom: 4.4vw;
+    }
+
+    .currentOpenings h3{
+        padding-top: 4.777vw;
+    }
+
+    .openingDetails p:nth-child(1){
+        font-size: 3.8666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.2vw;
+        letter-spacing: 0em;
+        text-align: left; 
+        /* margin-bottom: 1.111vw; */
+    }
+    .openingDetails p:nth-child(2){
+        font-size: 3.8666vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.2vw;
+        letter-spacing: 0em;
+        text-align: left; 
+        opacity: .5;
+    }
+
+     .detailsBtn{
+        font-size: 3.8666vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 6.2vw;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #405CFB;
+        text-transform: uppercase;
+        width: 32.2777vw;
+        height: 9.777vw;
+        background-color: rgba(63, 92, 251, 0.1);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.777vw;
+        margin-top: 2.777vw;
+    }
+}

@@ -58,7 +58,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 68%;
+        width: 72%;
+        height: 100%;
     }
 
 
@@ -162,7 +163,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 68%;
+        width: 62%;
+        height: 100%;
     }
 
     .memberData{

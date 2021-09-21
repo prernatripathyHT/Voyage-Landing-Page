@@ -1,0 +1,246 @@
+@media screen and (min-width: 769px) {
+    .tncPageHeroBanner {
+        width: 100%;
+        position: relative;
+        padding-top: 7.627vw;
+      }
+
+      .heroBanner_innerWrapper{
+          display: flex;
+          margin-top: 4.8611vw;
+          margin-bottom: 2.777vw;
+      }
+
+      .leftBlock{
+          width: 70%;
+          font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      }
+
+      .designElements img{
+        /* width: 6.8055vw; */
+        position: absolute;
+        left: 0;
+        top: 32.638vw;
+        z-index: -1;
+      }
+
+      .tncPageTitle{
+        width: 46.25vw;
+        font-size: 5.555vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.111vw;
+        letter-spacing: 0em;
+        text-align: left; 
+        margin-bottom: 2.777vw;
+      }
+
+      .lastRevised p, .termsOfUse p, .tncPageSubText, .termsDetails p{
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1.6666vw;
+      }
+
+      .termsOfUse p, .termsDetails span{
+        opacity: .6;
+      } 
+
+      .termsDetails.highlight span{
+          opacity: 1;
+      }
+
+      .termsDetails span ul{
+          margin: 1.666vw auto;
+          margin-left: 30px;
+      }
+
+      .termsDetails span ul li{
+        margin-bottom: 1.666vw;
+      }
+
+      .termsDetails address{
+        margin-bottom: 1.666vw;
+        margin-top: 1.666vw;
+      }
+
+
+
+      .staticAssets svg:nth-of-type(1){
+        width: 29.444vw;
+        position: absolute;
+        right: -4.8611vw;
+        top: 24.3055vw;
+      }
+
+      .staticAssets svg:nth-of-type(2){
+        /* width: 29.444vw; */
+        position: absolute;
+        right: 0;
+        top: 34.444vw;
+        z-index: 1;
+      }
+
+      .staticAssets svg:nth-of-type(3){
+        position: absolute;
+        right: 10.1388vw;
+        top: 38.95833vw;
+        z-index: 1;
+      }
+
+      .staticAssets svg:nth-of-type(4){
+        width: 6.3194vw;
+        height: 2.01388vw;
+        position: absolute;
+        right: 25.76388vw;
+        top: 19.444vw;
+        z-index: -1;
+      }
+
+
+      .staticAssets img:nth-of-type(1){
+        width: 7.986vw;
+        position: absolute;
+        right: 14.30555vw;
+        top: 25.625vw;
+      }
+
+      .staticAssets img:nth-of-type(2){
+        width: 4vw;
+        position: absolute;
+        right: -18px;
+        top: 634px;
+        z-index: 1;
+      }
+
+      .animmateDown{
+        width: 3.75vw;
+        position: absolute;
+        right: 11.9444vw;
+        top: 11.25vw;
+      }
+
+      .animmateUp{
+        /* width: 5.347vw; */
+        position: absolute;
+        right: 0;
+        top: 15.625vw;
+      }
+
+      .animateLeft svg:nth-of-type(1){
+        position: absolute;
+        right: -1.4583vw;
+        top: 5.977vw;
+        z-index: 1;
+      }
+
+      .animateRight{
+        position: absolute;
+        right: 0;
+        top: 40.9722vw;
+      }
+      .animateRight svg{
+        width: 28.81944vw;
+      }
+
+      .animateStagger svg:nth-of-type(1){
+        position: absolute;
+        top: 49.65277vw;
+        right: 7.70833vw;
+        z-index: 1;
+      }
+      .animateStagger svg:nth-of-type(2){
+        position: absolute;
+        top: 51.111vw;
+        right: 7.70833vw;
+        z-index: 1;
+      }
+      .animateStagger svg:nth-of-type(3){
+        position: absolute;
+        top: 52.5vw;
+        right: 7.84722vw;
+        z-index: 1;
+      }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .tncPageHeroBanner {
+      width: 100%;
+      position: relative;
+      padding-top: 30.9333vw;
+      overflow: hidden;
+    }
+
+    .heroBanner_innerWrapper{
+        display: flex;
+        margin-top: 4.8611vw;
+        margin-bottom: 2.777vw;
+    }
+
+    .leftBlock{
+        width: 100%;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .designElements img{
+      width: 6.8055vw;
+      position: absolute;
+      left: 0;
+      top: 30.638vw;
+      z-index: -1;
+    }
+
+    .tncPageTitle{
+      font-size: 13.8666vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15.2vw;
+      letter-spacing: 0em;
+      text-align: left; 
+      margin-bottom: 2.777vw;
+    }
+
+    .lastRevised p, .termsOfUse p, .tncPageSubText, .termsDetails p{
+      font-size: 3.73333vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 5.6vw;
+      letter-spacing: 0em;
+      text-align: left;
+      margin-bottom: 6.4vw;
+    }
+
+    .termsOfUse p, .termsDetails span{
+      opacity: .6;
+    } 
+
+    .termsDetails.highlight span{
+        opacity: 1;
+    }
+
+    .termsDetails span ul{
+        margin: 6.4vw auto;
+        margin-left: 30px;
+    }
+
+    .termsDetails span ul li{
+      margin-bottom:6.4vw;
+    }
+
+    .termsDetails address{
+      margin-bottom:6.4vw;
+      margin-top:6.4vw;
+    }
+
+    .rightBlock{
+      display: none;
+    }
+
+
+}
+

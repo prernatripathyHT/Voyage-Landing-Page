@@ -1,0 +1,229 @@
+@media screen and (min-width: 769px) {
+    .careersPageHeroBanner {
+        width: 100%;
+        position: relative;
+        padding-top: 7.627vw;
+      }
+
+      .heroBanner_innerWrapper{
+          display: flex;
+          margin-top: 4.8611vw;
+          /* margin-bottom: 40px; */
+      }
+
+      .leftBlock{
+          width: 50%;
+      }
+
+      .designElements img{
+        /* width: 6.8055vw; */
+        position: absolute;
+        left: 0;
+        bottom: -1.0245vw;
+        z-index: -1;
+      }
+
+      .careersPageTitle{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 5.555vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.111vw;
+        letter-spacing: 0em;
+        text-align: left; 
+        margin-bottom: 2.777vw;
+      }
+
+      .careersPageSubText{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875vw;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .6;
+      }
+
+      .careersPageSubText:first-of-type{
+        margin-bottom: 2.77vw;
+      }
+
+      .staticAssets svg:nth-of-type(1){
+        width: 29.444vw;
+        position: absolute;
+        right: -3.1vw;
+        bottom: -5.233vw;
+      }
+
+      .staticAssets img:nth-of-type(1){
+        width: 7.986vw;
+        position: absolute;
+        right: 15.3472vw;
+        bottom: 8.958vw;
+      }
+
+      .staticAssets img:nth-of-type(2){
+        width: 4vw;
+        position: absolute;
+        right: 0;
+        bottom: -10.4166vw;
+      }
+
+      .animmateDown svg:nth-of-type(1){
+        position: absolute;
+        right: 11.9444vw;
+        bottom: 24.1666vw;
+      }
+      .animmateDown svg:nth-of-type(2){
+        position: absolute;
+        right: 11.9444vw;
+        bottom: 22.15277vw;
+      }
+      .animmateDown svg:nth-of-type(3){
+        position: absolute;
+        right: 12.0833vw;
+        bottom: 19.0277vw;
+      }
+
+      .animmateUp{
+        /* width: 5.347vw; */
+        position: absolute;
+        right: 0;
+      }
+
+      .animateLeft svg{
+        width: 6.319vw;
+        height: 2.01388vw;
+        position: absolute;
+        right: 25.763vw;
+        bottom: 17.63888vw;
+        z-index: -1;
+      }
+
+      .animateRight{
+        width: 4.8611vw;
+        position: absolute;
+        right: 29.930vw;
+        bottom: 16.25vw;
+      }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .careersPageHeroBanner {
+      width: 100%;
+      position: relative;
+      padding-top: 30.9333vw;
+      overflow: hidden;
+    }
+
+    .heroBanner_innerWrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4.8611vw;
+        /* margin-bottom: 40px; */
+    }
+
+    .leftBlock{
+        width: 100%;
+        margin-bottom: 4vw;
+    }
+
+    .designElements img{
+      display: none;
+    }
+
+    .careersPageTitle{
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      font-size: 13.8666vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 15.2vw;
+      letter-spacing: 0em;
+      text-align: left; 
+      margin-bottom: 2.777vw;
+    }
+
+    .careersPageSubText{
+      font-family: "neue-haas-grotesk-display-pro", sans-serif;
+      font-size: 3.73333vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 5.6vw;
+      letter-spacing: 0em;
+      text-align: left;
+      opacity: .6;
+    }
+
+    .careersPageSubText:first-of-type{
+      margin-bottom: 2.77vw;
+    }
+
+    .rightBlock{
+      position: relative;
+    }
+
+    .staticAssets svg:nth-of-type(1){
+      width: 57.444vw;
+      position: relative;
+      right: -38vw;
+    }
+
+    .staticAssets img:nth-of-type(1){
+      width: 16.805vw;
+      position: absolute;
+      left: 41%;
+      top: 55px;
+    }
+
+    .staticAssets img:nth-of-type(2){
+      width: 11.986vw;
+      position: absolute;
+      right: -22px;
+      bottom: 0;
+    }
+
+    .animmateDown svg:nth-of-type(1){
+      position: absolute;
+      left: 17.9444vw;
+      top: 8.1666vw;
+    }
+    .animmateDown svg:nth-of-type(2){
+      position: absolute;
+      left: 17.9444vw;
+      top: 16.1666vw;
+    }
+    .animmateDown svg:nth-of-type(3){
+      position: absolute;
+      left: 18.9444vw;
+      top: 24.1666vw;
+    }
+
+    .animmateUp{
+      display: none;
+      /* width: 5.347vw; */
+      position: absolute;
+      right: 0;
+    }
+
+    .animateLeft svg{
+      width: 32.319vw;
+      height: 6.01388vw;
+      position: absolute;
+      right: 45.763vw;
+      bottom: 17.63888vw;
+      z-index: -1;
+    }
+
+    .animateRight{
+      width: 4.8611vw;
+      position: absolute;
+      left: 7.93vw;
+      bottom: 11.25vw;
+    }
+
+
+}
+
