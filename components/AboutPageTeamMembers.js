@@ -12,7 +12,7 @@ export default function AboutPageTeamMembers() {
                 <div className={styles.memberDetails}>
                     {AboutPageMembersData.map((member, index) => (
                         <div key={index}>
-                          <div className={`aos-init ${styles.memberCard}`} data-aos="fade-up" data-aos-duration="1000">
+                          <div className={`animate ${styles.memberCard}`}>
                               <div className={styles.memberImage}>
                                   <img src={`/images/${member.image}`} alt={member.name}/>
                               </div>
