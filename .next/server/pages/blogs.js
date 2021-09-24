@@ -812,7 +812,8 @@ function Home({
   //console.log("featuredPosts", featuredPosts);
   //For filtering with TAGS
 
-  const queryClient = (0,external_react_query_.useQueryClient)();
+  const queryClient = (0,external_react_query_.useQueryClient)(); //QueryClientProvider
+
   const {
     isLoading,
     data: filteredPosts,

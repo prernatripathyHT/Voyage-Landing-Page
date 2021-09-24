@@ -111,15 +111,22 @@
         appearance: none;
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 21px;
         letter-spacing: 0.05em;
         text-align: left;
         color: #fff;
         text-transform: uppercase;
         background-color: #3F5CFB;
+        border: 1px solid #3F5CFB;
         border-radius: 5px;
         padding: 14px 27px;
+        transition: .3s;
+      }
+
+      .partnerDetails .contactBtn:hover{
+        background-color: #fff;
+        color: #3F5CFB;
       }
 
 }

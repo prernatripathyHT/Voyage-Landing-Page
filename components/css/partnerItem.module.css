@@ -62,11 +62,11 @@
         transition: 0.5s;
       }
 
-    .partnerItemTitle:hover{
+    .partnerItemLink:hover .partnerItemTitle{
         color: #3F5CFB;
     }
 
-    .partnerItemDetails:hover .partnerItemTitle:after {
+    .partnerItemLink:hover .partnerItemTitle:after {
         opacity: 1;
         right: 70%;
       }

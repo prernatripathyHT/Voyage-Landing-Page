@@ -93,6 +93,7 @@ export default function Home({posts}) {
 
     //For filtering with TAGS
     const queryClient = useQueryClient();
+    //QueryClientProvider
     const {isLoading, data:filteredPosts, status} = useQuery(['filtered posts', {tag: tagName}], getFilteredPosts, {initialData:posts}) //to remove the loading page add the initialdata value here
     // console.log("filteredPosts are", filteredPosts, "status", status);
 

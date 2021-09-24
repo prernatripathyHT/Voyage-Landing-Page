@@ -2,7 +2,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PartnersPageHeroBanner from "../../components/PartnersPageHeroBanner";
 import PartnersPageFeaturedPosts from "../../components/PartnersPageFeaturedPosts";
-import PartnerPageTags from "../../components/PartnerPageTags";
+import PartnersPageTags from "../../components/PartnersPageTags";
+import PartnersPageFilterSection from "../../components/PartnersPageFilterSection";
 import Head from "next/head";
 import RequestForm from "../../components/RequestForm";
 import { useState } from "react";
@@ -117,7 +118,8 @@ export default function Home({posts}) {
         <RequestForm formState={formState} setFormState={setFormState} />
         <Header setFormState={setFormState} />
         <PartnersPageHeroBanner />
-        <PartnerPageTags />
+        <PartnersPageFilterSection />
+        <PartnersPageTags />
         <PartnersPageFeaturedPosts posts={posts} />
         <Footer setFormState={setFormState} />
       </div>

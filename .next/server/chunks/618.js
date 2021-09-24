@@ -20,9 +20,7 @@ function AboutPageSignupBlock({
   setFormState
 }) {
   return /*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-    className: `aos-init ${(_components_css_aboutPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_1___default().aboutPageSignupBlock)}`,
-    "data-aos": "fade-up",
-    "data-aos-duration": "1000",
+    className: `${(_components_css_aboutPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_1___default().aboutPageSignupBlock)}`,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: `container ${(_components_css_aboutPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_1___default().signupContainer)}`,
       children: [/*#__PURE__*/react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {

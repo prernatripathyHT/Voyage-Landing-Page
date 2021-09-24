@@ -4,7 +4,7 @@ exports.id = 195;
 exports.ids = [195];
 exports.modules = {
 
-/***/ 4125:
+/***/ 3973:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -207,7 +207,7 @@ function PartnersPageFeaturedPosts({
 // EXTERNAL MODULE: ./components/css/partnerPageTags.module.css
 var partnerPageTags_module = __webpack_require__(7767);
 var partnerPageTags_module_default = /*#__PURE__*/__webpack_require__.n(partnerPageTags_module);
-;// CONCATENATED MODULE: ./components/PartnerPageTags.js
+;// CONCATENATED MODULE: ./components/PartnersPageTags.js
 
 
 
@@ -241,6 +241,85 @@ function PartnerPageTags() {
     })
   });
 }
+// EXTERNAL MODULE: ./components/css/partnersPageFilterSection.module.css
+var partnersPageFilterSection_module = __webpack_require__(9664);
+var partnersPageFilterSection_module_default = /*#__PURE__*/__webpack_require__.n(partnersPageFilterSection_module);
+;// CONCATENATED MODULE: ./components/PartnersPageFilterSection.js
+
+
+
+function PartnersPageFilterSection() {
+  return /*#__PURE__*/jsx_runtime_.jsx("section", {
+    className: (partnersPageFilterSection_module_default()).filterSection,
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: `container ${(partnersPageFilterSection_module_default()).sectionContainer}`,
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (partnersPageFilterSection_module_default()).topSection,
+        children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+          className: (partnersPageFilterSection_module_default()).filterHeader,
+          children: [/*#__PURE__*/jsx_runtime_.jsx("h2", {
+            children: "Filter"
+          }), /*#__PURE__*/jsx_runtime_.jsx("button", {
+            className: (partnersPageFilterSection_module_default()).filterResetBtn,
+            children: "Reset"
+          })]
+        }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+          className: (partnersPageFilterSection_module_default()).searchDiv,
+          children: [/*#__PURE__*/jsx_runtime_.jsx("svg", {
+            width: "18",
+            height: "19",
+            viewBox: "0 0 18 19",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/jsx_runtime_.jsx("path", {
+              d: "M17.8594 16.7383L13.6055 12.4844C13.5 12.4141 13.3945 12.3438 13.2891 12.3438H12.832C13.9219 11.0781 14.625 9.39062 14.625 7.5625C14.625 3.55469 11.3203 0.25 7.3125 0.25C3.26953 0.25 0 3.55469 0 7.5625C0 11.6055 3.26953 14.875 7.3125 14.875C9.14062 14.875 10.793 14.207 12.0938 13.1172V13.5742C12.0938 13.6797 12.1289 13.7852 12.1992 13.8906L16.4531 18.1445C16.6289 18.3203 16.9102 18.3203 17.0508 18.1445L17.8594 17.3359C18.0352 17.1953 18.0352 16.9141 17.8594 16.7383ZM7.3125 13.1875C4.18359 13.1875 1.6875 10.6914 1.6875 7.5625C1.6875 4.46875 4.18359 1.9375 7.3125 1.9375C10.4062 1.9375 12.9375 4.46875 12.9375 7.5625C12.9375 10.6914 10.4062 13.1875 7.3125 13.1875Z",
+              fill: "black"
+            })
+          }), /*#__PURE__*/jsx_runtime_.jsx("input", {
+            type: "text",
+            placeholder: "Search by title or any keyword",
+            onChange: e => filterTitles(e.target.value)
+          })]
+        }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+          className: (partnersPageFilterSection_module_default()).categoryDiv,
+          children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
+            children: "Category"
+          }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+            className: (partnersPageFilterSection_module_default()).filterCategories,
+            children: [/*#__PURE__*/jsx_runtime_.jsx("input", {
+              id: "test",
+              type: "checkbox",
+              name: "test",
+              value: "test"
+            }), /*#__PURE__*/jsx_runtime_.jsx("label", {
+              htmlFor: "test",
+              children: " E-commerce Platform "
+            })]
+          })]
+        })]
+      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (partnersPageFilterSection_module_default()).bottomSection,
+        children: [/*#__PURE__*/jsx_runtime_.jsx("p", {
+          children: "Can't find the integration you're looking for?"
+        }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
+          children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
+            children: "Request an Integration"
+          }), /*#__PURE__*/jsx_runtime_.jsx("svg", {
+            width: "25",
+            height: "12",
+            viewBox: "0 0 25 12",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/jsx_runtime_.jsx("path", {
+              d: "M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z",
+              fill: "#3F5CFB"
+            })
+          })]
+        })]
+      })]
+    })
+  });
+}
 // EXTERNAL MODULE: external "next/head"
 var head_ = __webpack_require__(701);
 var head_default = /*#__PURE__*/__webpack_require__.n(head_);
@@ -249,6 +328,7 @@ var RequestForm = __webpack_require__(7081);
 // EXTERNAL MODULE: external "react-query"
 var external_react_query_ = __webpack_require__(2585);
 ;// CONCATENATED MODULE: ./pages/partners/index.js
+
 
 
 
@@ -380,7 +460,7 @@ function Home({
         setFormState: setFormState
       }), /*#__PURE__*/jsx_runtime_.jsx(Header/* default */.Z, {
         setFormState: setFormState
-      }), /*#__PURE__*/jsx_runtime_.jsx(PartnersPageHeroBanner, {}), /*#__PURE__*/jsx_runtime_.jsx(PartnerPageTags, {}), /*#__PURE__*/jsx_runtime_.jsx(PartnersPageFeaturedPosts, {
+      }), /*#__PURE__*/jsx_runtime_.jsx(PartnersPageHeroBanner, {}), /*#__PURE__*/jsx_runtime_.jsx(PartnersPageFilterSection, {}), /*#__PURE__*/jsx_runtime_.jsx(PartnerPageTags, {}), /*#__PURE__*/jsx_runtime_.jsx(PartnersPageFeaturedPosts, {
         posts: posts
       }), /*#__PURE__*/jsx_runtime_.jsx(Footer/* default */.Z, {
         setFormState: setFormState
@@ -430,6 +510,24 @@ module.exports = {
 	"allPostsContainer": "partnersPageFeaturedPosts_allPostsContainer__BvkiW",
 	"buttonContainer": "partnersPageFeaturedPosts_buttonContainer__BB92h",
 	"showMoreButton": "partnersPageFeaturedPosts_showMoreButton__11ZuJ"
+};
+
+
+/***/ }),
+
+/***/ 9664:
+/***/ (function(module) {
+
+// Exports
+module.exports = {
+	"filterSection": "partnersPageFilterSection_filterSection__1_QJV",
+	"topSection": "partnersPageFilterSection_topSection__39Cqt",
+	"filterHeader": "partnersPageFilterSection_filterHeader__fAMPy",
+	"filterResetBtn": "partnersPageFilterSection_filterResetBtn__32uEu",
+	"searchDiv": "partnersPageFilterSection_searchDiv__3UdWp",
+	"categoryDiv": "partnersPageFilterSection_categoryDiv__LBgRW",
+	"filterCategories": "partnersPageFilterSection_filterCategories__14KTM",
+	"bottomSection": "partnersPageFilterSection_bottomSection__2RZb0"
 };
 
 
@@ -531,7 +629,7 @@ module.exports = require("react/jsx-runtime");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, [664,472,482,81], function() { return __webpack_exec__(4125); });
+var __webpack_exports__ = __webpack_require__.X(0, [664,472,482,81], function() { return __webpack_exec__(3973); });
 module.exports = __webpack_exports__;
 
 })();
