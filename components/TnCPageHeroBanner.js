@@ -18,34 +18,6 @@ export default function TnCPageHeroBanner(){
     });
 
 
-    const tocData = TermsAndConditionsData.terms.map((term, index) => (
-        <div key={index} className={`${styles.termsDetails} ${term.highlight ? styles.highlight : null }`}>
-           <p>
-                {term.id}. {term.title}
-                <span> {term.text}</span>
-                {term.bullets &&
-                    <span>
-                        <ul>
-                            {term.bullets.map((bullet, index) => (
-                                <li>{bullet}</li>
-                            ))}
-                        </ul>
-                    </span>
-                }
-                {term.address &&
-                <>
-                    { term.address.subText && <p>{term.address.subText}</p> }
-                    <address>{term.address.address}</address>
-                    { term.address.note && <p>*NOTE: <span>{term.address.note}</span></p>}
-                </>
-                }
-            </p>
-        </div>
-    ));
-
-    //console.log("toc data", tocData)
-
-
 
     return (
         <section className={styles.tncPageHeroBanner}>
@@ -74,7 +46,8 @@ export default function TnCPageHeroBanner(){
                             <div key={index} className={`${styles.termsDetails} ${term.highlight ? styles.highlight : null }`}>
                                <p>
                                     {term.id}. {term.title}
-                                    <span> {term.text}</span>
+                                    {/* <span> {term.text}</span> */}
+                                    {<span dangerouslySetInnerHTML={{ __html: term.text }} />}
                                     {term.bullets &&
                                         <span>
                                             <ul>
@@ -87,15 +60,15 @@ export default function TnCPageHeroBanner(){
                                     {term.address &&
                                     <>
                                         { term.address.subText && <p>{term.address.subText}</p> }
-                                        <address>{term.address.address}</address>
-                                        { term.address.note && <p>*NOTE: <span>{term.address.note}</span></p>}
+                                        {/* <address>{term.address.address}</address> */}
+                                       {<address dangerouslySetInnerHTML={{ __html: term.address.address }} />}
+                                        {/* { term.address.note && <p>*NOTE: <span>{term.address.note}</span></p>} */}
+                                        { term.address.note && <p>*NOTE: {<span dangerouslySetInnerHTML={{ __html: term.address.note }} />}</p>}
                                     </>
                                     }
                                 </p>
                             </div>
                         ))}
-
-                        {/* {<div dangerouslySetInnerHTML={{ __html: tocData }} />} */}
                     </div>
 
                    

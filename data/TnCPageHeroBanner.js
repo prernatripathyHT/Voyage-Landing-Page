@@ -156,12 +156,12 @@ export const TermsAndConditionsData = {
             ],
             address: {
                 subText: "Our designated agent to receive DMCA notices is:",
-                address: `Rev Reddy
-                1209 Orange Street
-                Wilmington, DE 19801
+                address: `Rev Reddy <br />
+                1209 Orange Street <br />
+                Wilmington, DE 19801 <br />
                 Email: rev@voyagesms.com`,
-                note: `This contact information is for inquiries regarding potential copyright infringement only.
-                If you fail to comply with all of the requirements of Section 512(c)(3) of the DMCA, your DMCA notice may not be effective.
+                note: `This contact information is for inquiries regarding potential copyright infringement only. <br />
+                If you fail to comply with all of the requirements of Section 512(c)(3) of the DMCA, your DMCA notice may not be effective. <br />
                 Please be aware that if you knowingly materially misrepresent that Content on the Site is infringing your copyright, you may be held liable for damages (including costs and attorneys’ fees) under Section 512(f) of the DMCA.`
             }
         },
@@ -185,11 +185,11 @@ export const TermsAndConditionsData = {
             id:"16.1",
             title: "Dispute Resolution.",
             text: `You and we agree that any dispute or claim relating in any way to the interpretation, applicability, enforceability, or formation of these terms of use or your use of the services and/or content will be resolved exclusively though final and binding arbitration, rather than in court. This agreement to arbitrate is intended to be broadly interpreted and includes any dispute, claim, or controversy between you and voyage mobile regarding any aspect of your relationship with us or any conduct or failure to act on our part, including claims based on breach of contract, tort (for example, a negligence or product liability claim), violation of law or any claims based on any other theory, and including those based on events that occurred prior to the date of this agreement, with the following exceptions: 
-            
+            <br /><br />
             You may assert claims in your local small claims court if its rules permit it;
-            
+            <br /><br />
             Any claim regarding the validity, protection or enforcement of a party’s intellectual property rights (such as its patent, copyright, trademark, trade secret, or moral rights, but not including its privacy or publicity rights) must be brought in court; and
-            
+            <br /><br />
             In the event this agreement to arbitrate is for any reason held to be unenforceable, any dispute or claim against us (except for small-claims court actions) may be commenced only in a federal or state court located in Los Angeles County, California, and we both consent to the jurisdiction of and venue in those courts for such purposes. We both also consent to the jurisdiction of and venue in those courts for purposes of any claim regarding the validity, protection or enforcement of a party’s intellectual property rights (excluding its privacy or publicity rights). You agree to waive any and all objections to the exercise of jurisdiction over you by such courts and to venue in such courts. This agreement to arbitrate is governed by the Federal Arbitration Act, including its procedural provisions, in all respects.`
         },
         {
@@ -207,10 +207,10 @@ export const TermsAndConditionsData = {
             title: "Demand for Arbitration.",
             text: `A party who intends to arbitrate (“Claimant”) must first send to the other party (“Respondent”) a written notice, entitled “Demand for Arbitration” (“Demand”). The Demand must: (1) briefly explain the dispute; (2) provide the Claimant’s name and address, the address of the Claimant’s representative (if the Claimant has one), and the Respondent’s name and address (for Voyage Mobile, see below); (3) specify the amount of money in dispute, if applicable; (4) if the Claimant is requesting an in-person hearing, identify the requested location for the hearing; and (5) include a statement of what the Claimant wants. The Claimant must send one copy of the Demand to AAA at the same time the Claimant sends it to the Respondent. When sending a copy of the Demand to AAA, the Claimant must also include a copy of this arbitration agreement and any amendments to it (see Section 19.7) and the then current filing fee required by the AAA. The Demand must be sent to the AAA at the following address:`,
             address: {
-                address: `American Arbitration Association
-                Case Filing Services
-                1101 Laurel Oak Road, Suite 100
-                Voorhees, NJ 08043
+                address: `American Arbitration Association <br />
+                Case Filing Services <br />
+                1101 Laurel Oak Road, Suite 100 <br />
+                Voorhees, NJ 08043 <br />
                 Alternatively, the Demand may be filed with the AAA online using : AAA WebFile: https://www.adr.org. Any Demand to Voyage Mobile should be addressed to:`
             }
         },
@@ -228,7 +228,7 @@ export const TermsAndConditionsData = {
         {
             id:"16.7",
             title: "Amendment to Arbitration Provisions.",
-            text: `Notwithstanding any provision in this Agreement to the contrary, you and we agree that if we make any amendment to the arbitration provisions in this Section 16 in the future (other than an amendment to any notice address or site link provided herein), that amendment shall not apply to any claim that was filed in a legal proceeding against Voyage Mobile prior to the effective date of the amendment. The amendment shall apply to all other disputes or claims that have arisen or may arise between you and Voyage Mobile. We will notify you of amendments to the arbitration provisions of this Section 16 by posting the amended terms on <a href="https://voyagesms.com/terms-and-conditions">www.voyagesms.com/terms-and-conditions</a>, and/or by providing notice to you by email, at least 30 days before the effective date of the amendments. If you do not agree to the amended terms, you may cancel your Services and close your account with Voyage Mobile within the 30-day period and you will not be bound by the amended terms.`
+            text: `Notwithstanding any provision in this Agreement to the contrary, you and we agree that if we make any amendment to the arbitration provisions in this Section 16 in the future (other than an amendment to any notice address or site link provided herein), that amendment shall not apply to any claim that was filed in a legal proceeding against Voyage Mobile prior to the effective date of the amendment. The amendment shall apply to all other disputes or claims that have arisen or may arise between you and Voyage Mobile. We will notify you of amendments to the arbitration provisions of this Section 16 by posting the amended terms on <a href="/terms-and-conditions">www.voyagesms.com/terms-and-conditions</a>, and/or by providing notice to you by email, at least 30 days before the effective date of the amendments. If you do not agree to the amended terms, you may cancel your Services and close your account with Voyage Mobile within the 30-day period and you will not be bound by the amended terms.`
         },
         {
             id:"16.8",
@@ -282,9 +282,9 @@ export const TermsAndConditionsData = {
             title: "Questions.",
             text: `If you have any questions about the Services or these Terms of Use, please call us at <a href="tel:(877) 886-9243">(877) 886-9243</a>, email us at <a href="mailto:service@voyagesms.com">service@voyagesms.com</a> or write to us at:`,
             address: {
-                address: `Voyage Mobile, Inc.
-                1209 Orange Street
-                Wilmington, DE 19801
+                address: `Voyage Mobile, Inc. <br />
+                1209 Orange Street <br />
+                Wilmington, DE 19801 <br />
                 Attention: Client Support Team`
             }
         },

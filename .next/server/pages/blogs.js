@@ -747,7 +747,9 @@ var external_react_query_ = __webpack_require__(2585);
  // const {CONTENT_API_KEY, BLOG_URL} = process.env;
 
 const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
-const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
+const BLOG_URL = 'https://sms-marketing-resources.ghost.io/'; // const CONTENT_API_KEY = process.env.CONTENT_API_KEY;
+// const BLOG_URL = process.env.BLOG_URL;
+
 const getStaticProps = async () => {
   const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
   const posts = await res.json();
@@ -763,7 +765,7 @@ const getFeaturedPosts = () => {
 };
 
 const getFilteredPosts = async key => {
-  const tagName = key.queryKey[1].tag; // console.log("current tag name : ", tagName);
+  const tagName = key.queryKey[1].tag; //  console.log("current tag name : ", tagName);
 
   if (tagName) {
     //if tags are present - this is where we are going to filter the posts

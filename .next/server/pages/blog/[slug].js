@@ -338,7 +338,8 @@ var external_react_query_ = __webpack_require__(2585);
  //const {CONTENT_API_KEY, BLOG_URL} = process.env;
 
 const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
-const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
+const BLOG_URL = 'https://sms-marketing-resources.ghost.io/'; // const CONTENT_API_KEY = process.env.CONTENT_API_KEY;
+// const BLOG_URL = process.env.BLOG_URL;
 
 function getPost(slug) {
   const urls = [`${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&include=authors,tags`, `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`];

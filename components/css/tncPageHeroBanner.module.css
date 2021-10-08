@@ -15,6 +15,10 @@
           width: 70%;
           font-family: "neue-haas-grotesk-display-pro", sans-serif;
       }
+      .leftBlock a{
+        color:#3F5CFB;
+        opacity: 1;
+      }
 
       .designElements img{
         /* width: 6.8055vw; */
@@ -65,6 +69,7 @@
       .termsDetails address{
         margin-bottom: 1.666vw;
         margin-top: 1.666vw;
+        font-style: normal;
       }
 
 
@@ -186,6 +191,10 @@
         width: 100%;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
     }
+    .leftBlock a{
+      color:#3F5CFB;
+      opacity: 1;
+    }
 
     .designElements img{
       width: 6.8055vw;
@@ -235,6 +244,7 @@
     .termsDetails address{
       margin-bottom:6.4vw;
       margin-top:6.4vw;
+      font-style: normal;
     }
 
     .rightBlock{

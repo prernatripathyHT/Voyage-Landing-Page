@@ -44,118 +44,22 @@ function PartnerPageMainArticle({
     className: (partnerPageMainArticle_module_default()).articlePage,
     children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
       className: ` container ${(partnerPageMainArticle_module_default()).mainArticle}`,
-      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
         className: (partnerPageMainArticle_module_default()).leftBlock,
-        children: [/*#__PURE__*/jsx_runtime_.jsx("h1", {
-          className: (partnerPageMainArticle_module_default()).partnerTitle,
-          children: "About Emarsys"
-        }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-          className: (partnerPageMainArticle_module_default()).partnerDesc,
-          children: "Emarsys delivers the only omnichannel customer engagement platform built to accelerate business outcomes. With our platform you can reduce time to value, deliver superior 1:1 experiences and produce measurable results ... fast. We are the partner of choice for more than 2,500 companies around the world."
-        }), /*#__PURE__*/jsx_runtime_.jsx("div", {
-          className: (partnerPageMainArticle_module_default()).partnerQuote,
-          children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("figure", {
-            children: [/*#__PURE__*/jsx_runtime_.jsx("blockquote", {
-              cite: "",
-              children: "With all our data in Emarsys, we have all the segmentation that plugs straight into our Ad strategy. Automatically matching content to every audience has seriously boosted our revenue, especially with the increased reach and new streams."
-            }), /*#__PURE__*/jsx_runtime_.jsx("figcaption", {
-              children: "Alexandra Simion, Digital Marketing Manager at BrandAlley"
-            })]
-          })
-        }), /*#__PURE__*/jsx_runtime_.jsx("h1", {
-          className: (partnerPageMainArticle_module_default()).integrationTitle,
-          children: "Emarsys and Voyage"
-        }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-          className: (partnerPageMainArticle_module_default()).integrationDesc,
-          children: "Voyage focuses on growing a net new channel, and creating enhanced personalized experiences in one of the most used apps on a mobile device - the text messaging app. Emarsys builds on that channel and adds to it email, web, social and mobile push delivering the only omnichannel customer engagement platform built to accelerate business outcomes."
-        })]
-      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        children: /*#__PURE__*/jsx_runtime_.jsx("div", {
+          dangerouslySetInnerHTML: {
+            __html: currentPost[0].html
+          },
+          className: `${(partnerPageMainArticle_module_default()).mainArticleBody}`
+        })
+      }), /*#__PURE__*/jsx_runtime_.jsx("div", {
         className: (partnerPageMainArticle_module_default()).rightBlock,
-        children: [/*#__PURE__*/jsx_runtime_.jsx("h4", {
-          className: (partnerPageMainArticle_module_default()).partnerCategoryTitle,
-          children: "Categories"
-        }), /*#__PURE__*/jsx_runtime_.jsx("p", {
-          className: (partnerPageMainArticle_module_default()).partnerCategories,
-          children: "Customer Relationship Management, Email Service Provider, Customer Data Platform, Customer Service Platform, Loyalty"
-        }), /*#__PURE__*/jsx_runtime_.jsx("h4", {
-          className: (partnerPageMainArticle_module_default()).partnerResourceTitle,
-          children: "Resources"
-        }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-          className: (partnerPageMainArticle_module_default()).partnerResourceList,
-          children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
-            href: "",
-            children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", {
-              width: "18",
-              height: "18",
-              viewBox: "0 0 18 18",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg",
-              children: [/*#__PURE__*/jsx_runtime_.jsx("path", {
-                d: "M12.5251 1.25949H15.8482L8.25092 8.86047C8.0049 9.10649 8.0049 9.50673 8.25092 9.75276C8.3721 9.87393 8.53366 9.93636 8.69523 9.93636C8.8568 9.93636 9.01836 9.87393 9.13954 9.75276L16.7405 2.15178V5.47491C16.7405 5.82375 17.0233 6.10649 17.3684 6.10649C17.7173 6.10649 18 5.82375 18 5.47491V0.631579C18 0.282742 17.7173 0 17.3684 0H12.5251C12.1763 0 11.8935 0.282742 11.8935 0.631579C11.8972 0.976744 12.1763 1.25949 12.5251 1.25949Z",
-                fill: "#3F5CFB"
-              }), /*#__PURE__*/jsx_runtime_.jsx("path", {
-                d: "M3.77846 18H14.2179C16.3036 18 17.9963 16.3035 17.9963 14.2215V9.30477C17.9963 8.95594 17.7136 8.67687 17.3647 8.67687C17.0159 8.67687 16.7368 8.95961 16.7368 9.30477V14.2179C16.7368 15.6059 15.6059 16.7368 14.2179 16.7368H3.77846C2.39045 16.7368 1.25949 15.6059 1.25949 14.2179V5.92656V3.78213C1.25949 2.39412 2.39045 1.26316 3.77846 1.26316H8.65116C9 1.26316 9.27907 0.980416 9.27907 0.631579C9.27907 0.282742 8.99633 0 8.65116 0H3.77846C1.69278 0 0 1.69645 0 3.77846V5.92289V14.2179C0 16.3036 1.69645 18 3.77846 18Z",
-                fill: "#3F5CFB"
-              })]
-            }), /*#__PURE__*/jsx_runtime_.jsx("span", {
-              children: "Community Intelligence Marketing Report: Deconstructing the Consumer Engagement Gap"
-            })]
-          }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
-            href: "",
-            children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", {
-              width: "18",
-              height: "18",
-              viewBox: "0 0 18 18",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg",
-              children: [/*#__PURE__*/jsx_runtime_.jsx("path", {
-                d: "M12.5251 1.25949H15.8482L8.25092 8.86047C8.0049 9.10649 8.0049 9.50673 8.25092 9.75276C8.3721 9.87393 8.53366 9.93636 8.69523 9.93636C8.8568 9.93636 9.01836 9.87393 9.13954 9.75276L16.7405 2.15178V5.47491C16.7405 5.82375 17.0233 6.10649 17.3684 6.10649C17.7173 6.10649 18 5.82375 18 5.47491V0.631579C18 0.282742 17.7173 0 17.3684 0H12.5251C12.1763 0 11.8935 0.282742 11.8935 0.631579C11.8972 0.976744 12.1763 1.25949 12.5251 1.25949Z",
-                fill: "#3F5CFB"
-              }), /*#__PURE__*/jsx_runtime_.jsx("path", {
-                d: "M3.77846 18H14.2179C16.3036 18 17.9963 16.3035 17.9963 14.2215V9.30477C17.9963 8.95594 17.7136 8.67687 17.3647 8.67687C17.0159 8.67687 16.7368 8.95961 16.7368 9.30477V14.2179C16.7368 15.6059 15.6059 16.7368 14.2179 16.7368H3.77846C2.39045 16.7368 1.25949 15.6059 1.25949 14.2179V5.92656V3.78213C1.25949 2.39412 2.39045 1.26316 3.77846 1.26316H8.65116C9 1.26316 9.27907 0.980416 9.27907 0.631579C9.27907 0.282742 8.99633 0 8.65116 0H3.77846C1.69278 0 0 1.69645 0 3.77846V5.92289V14.2179C0 16.3036 1.69645 18 3.77846 18Z",
-                fill: "#3F5CFB"
-              })]
-            }), /*#__PURE__*/jsx_runtime_.jsx("span", {
-              children: " Why WE tv Prioritizes Brand Community"
-            })]
-          }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
-            href: "",
-            children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", {
-              width: "18",
-              height: "18",
-              viewBox: "0 0 18 18",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg",
-              children: [/*#__PURE__*/jsx_runtime_.jsx("path", {
-                d: "M12.5251 1.25949H15.8482L8.25092 8.86047C8.0049 9.10649 8.0049 9.50673 8.25092 9.75276C8.3721 9.87393 8.53366 9.93636 8.69523 9.93636C8.8568 9.93636 9.01836 9.87393 9.13954 9.75276L16.7405 2.15178V5.47491C16.7405 5.82375 17.0233 6.10649 17.3684 6.10649C17.7173 6.10649 18 5.82375 18 5.47491V0.631579C18 0.282742 17.7173 0 17.3684 0H12.5251C12.1763 0 11.8935 0.282742 11.8935 0.631579C11.8972 0.976744 12.1763 1.25949 12.5251 1.25949Z",
-                fill: "#3F5CFB"
-              }), /*#__PURE__*/jsx_runtime_.jsx("path", {
-                d: "M3.77846 18H14.2179C16.3036 18 17.9963 16.3035 17.9963 14.2215V9.30477C17.9963 8.95594 17.7136 8.67687 17.3647 8.67687C17.0159 8.67687 16.7368 8.95961 16.7368 9.30477V14.2179C16.7368 15.6059 15.6059 16.7368 14.2179 16.7368H3.77846C2.39045 16.7368 1.25949 15.6059 1.25949 14.2179V5.92656V3.78213C1.25949 2.39412 2.39045 1.26316 3.77846 1.26316H8.65116C9 1.26316 9.27907 0.980416 9.27907 0.631579C9.27907 0.282742 8.99633 0 8.65116 0H3.77846C1.69278 0 0 1.69645 0 3.77846V5.92289V14.2179C0 16.3036 1.69645 18 3.77846 18Z",
-                fill: "#3F5CFB"
-              })]
-            }), /*#__PURE__*/jsx_runtime_.jsx("span", {
-              children: "Wolverine: Why a Footwear Brand Recommends AspireIQ to Manage Influencer Marketing"
-            })]
-          }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
-            href: "",
-            children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", {
-              width: "18",
-              height: "18",
-              viewBox: "0 0 18 18",
-              fill: "none",
-              xmlns: "http://www.w3.org/2000/svg",
-              children: [/*#__PURE__*/jsx_runtime_.jsx("path", {
-                d: "M12.5251 1.25949H15.8482L8.25092 8.86047C8.0049 9.10649 8.0049 9.50673 8.25092 9.75276C8.3721 9.87393 8.53366 9.93636 8.69523 9.93636C8.8568 9.93636 9.01836 9.87393 9.13954 9.75276L16.7405 2.15178V5.47491C16.7405 5.82375 17.0233 6.10649 17.3684 6.10649C17.7173 6.10649 18 5.82375 18 5.47491V0.631579C18 0.282742 17.7173 0 17.3684 0H12.5251C12.1763 0 11.8935 0.282742 11.8935 0.631579C11.8972 0.976744 12.1763 1.25949 12.5251 1.25949Z",
-                fill: "#3F5CFB"
-              }), /*#__PURE__*/jsx_runtime_.jsx("path", {
-                d: "M3.77846 18H14.2179C16.3036 18 17.9963 16.3035 17.9963 14.2215V9.30477C17.9963 8.95594 17.7136 8.67687 17.3647 8.67687C17.0159 8.67687 16.7368 8.95961 16.7368 9.30477V14.2179C16.7368 15.6059 15.6059 16.7368 14.2179 16.7368H3.77846C2.39045 16.7368 1.25949 15.6059 1.25949 14.2179V5.92656V3.78213C1.25949 2.39412 2.39045 1.26316 3.77846 1.26316H8.65116C9 1.26316 9.27907 0.980416 9.27907 0.631579C9.27907 0.282742 8.99633 0 8.65116 0H3.77846C1.69278 0 0 1.69645 0 3.77846V5.92289V14.2179C0 16.3036 1.69645 18 3.77846 18Z",
-                fill: "#3F5CFB"
-              })]
-            }), /*#__PURE__*/jsx_runtime_.jsx("span", {
-              children: "Purple Mattress: How a Home Brand Differentiates Itself by Leveraging a Community of Diverse Content Creators"
-            })]
-          })]
-        })]
+        children: /*#__PURE__*/jsx_runtime_.jsx("div", {
+          dangerouslySetInnerHTML: {
+            __html: currentPost[0].codeinjection_foot
+          },
+          className: `${(partnerPageMainArticle_module_default()).codeInjectionFoot}`
+        })
       })]
     })
   });
@@ -173,6 +77,7 @@ var next_link = __webpack_require__(1664);
 function PartnerPageHeroBanner({
   currentPost
 }) {
+  //console.log("partner hero banner post: ", currentPost)
   return /*#__PURE__*/jsx_runtime_.jsx("section", {
     id: (partnerPageHeroBanner_module_default()).heroBanner,
     children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
@@ -209,30 +114,14 @@ function PartnerPageHeroBanner({
             }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
               className: (partnerPageHeroBanner_module_default()).partnerDetails,
               children: [/*#__PURE__*/jsx_runtime_.jsx("p", {
-                children: "Emarsys"
-              }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
-                href: "",
-                target: "_blank",
-                className: (partnerPageHeroBanner_module_default()).partnerLink,
-                children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
-                  children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", {
-                    width: "16",
-                    height: "16",
-                    viewBox: "0 0 16 16",
-                    fill: "none",
-                    xmlns: "http://www.w3.org/2000/svg",
-                    children: [/*#__PURE__*/jsx_runtime_.jsx("path", {
-                      d: "M11.1332 1.11954H14.0871L7.33394 7.87597C7.11525 8.09466 7.11525 8.45043 7.33394 8.66912C7.44165 8.77683 7.58526 8.83232 7.72888 8.83232C7.87249 8.83232 8.01611 8.77683 8.12382 8.66912L14.8802 1.91269V4.86659C14.8802 5.17666 15.1316 5.42799 15.4384 5.42799C15.7485 5.42799 15.9998 5.17666 15.9998 4.86659V0.561404C15.9998 0.251326 15.7485 0 15.4384 0H11.1332C10.8231 0 10.5718 0.251326 10.5718 0.561404C10.5751 0.868217 10.8231 1.11954 11.1332 1.11954Z",
-                      fill: "white"
-                    }), /*#__PURE__*/jsx_runtime_.jsx("path", {
-                      d: "M3.35863 16H12.6381C14.492 16 15.9967 14.492 15.9967 12.6414V8.27091C15.9967 7.96083 15.7454 7.71277 15.4353 7.71277C15.1253 7.71277 14.8772 7.9641 14.8772 8.27091V12.6381C14.8772 13.8719 13.8719 14.8772 12.6381 14.8772H3.35863C2.12485 14.8772 1.11954 13.8719 1.11954 12.6381V5.26805V3.36189C1.11954 2.12811 2.12485 1.12281 3.35863 1.12281H7.68992C8 1.12281 8.24806 0.871481 8.24806 0.561404C8.24806 0.251326 7.99674 0 7.68992 0H3.35863C1.50469 0 0 1.50796 0 3.35863V5.26479V12.6381C0 14.492 1.50796 16 3.35863 16Z",
-                      fill: "white"
-                    })]
-                  })
-                }), "emarsys.com"]
-              }), /*#__PURE__*/jsx_runtime_.jsx("button", {
-                className: (partnerPageHeroBanner_module_default()).contactBtn,
-                children: "Contact Tech Partner"
+                children: currentPost[0].title
+              }), /*#__PURE__*/jsx_runtime_.jsx("div", {
+                dangerouslySetInnerHTML: {
+                  __html: currentPost[0].codeinjection_head
+                },
+                className: `${(partnerPageHeroBanner_module_default()).codeInjectionHead}`,
+                "data-aos": "fade-up",
+                "data-aos-duration": "1500"
               })]
             })]
           })]
@@ -313,9 +202,12 @@ var external_react_query_ = __webpack_require__(2585);
 
 
  //const {CONTENT_API_KEY, BLOG_URL} = process.env;
+// const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
+// const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
+//partners - test....
 
-const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
-const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
+const CONTENT_API_KEY = 'aaa306c021fcc68977d6d9b03f';
+const BLOG_URL = 'https://yash-dev-2k21.ghost.io/';
 
 function getPost(slug) {
   const urls = [`${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&include=authors,tags`, `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`];
@@ -461,8 +353,7 @@ module.exports = {
 	"partnerInfo": "partnerPageHeroBanner_partnerInfo__2O8Dr",
 	"partnerLogo": "partnerPageHeroBanner_partnerLogo__24bXf",
 	"partnerDetails": "partnerPageHeroBanner_partnerDetails__Kjkc3",
-	"partnerLink": "partnerPageHeroBanner_partnerLink__2U6WZ",
-	"contactBtn": "partnerPageHeroBanner_contactBtn__OcG-C"
+	"codeInjectionHead": "partnerPageHeroBanner_codeInjectionHead__29JuB"
 };
 
 
@@ -475,16 +366,9 @@ module.exports = {
 module.exports = {
 	"mainArticle": "partnerPageMainArticle_mainArticle__GnBaI",
 	"leftBlock": "partnerPageMainArticle_leftBlock__1EkKH",
-	"partnerTitle": "partnerPageMainArticle_partnerTitle__3WunB",
-	"integrationTitle": "partnerPageMainArticle_integrationTitle__27Lzy",
-	"partnerDesc": "partnerPageMainArticle_partnerDesc__27ca6",
-	"integrationDesc": "partnerPageMainArticle_integrationDesc__18UDx",
-	"partnerQuote": "partnerPageMainArticle_partnerQuote__1SnCo",
+	"mainArticleBody": "partnerPageMainArticle_mainArticleBody__2DmbC",
 	"rightBlock": "partnerPageMainArticle_rightBlock__3Ihsv",
-	"partnerCategoryTitle": "partnerPageMainArticle_partnerCategoryTitle__dlegP",
-	"partnerResourceTitle": "partnerPageMainArticle_partnerResourceTitle__22K91",
-	"partnerCategories": "partnerPageMainArticle_partnerCategories__15Q-y",
-	"partnerResourceList": "partnerPageMainArticle_partnerResourceList__hLnrm"
+	"codeInjectionFoot": "partnerPageMainArticle_codeInjectionFoot__2ptZ4"
 };
 
 

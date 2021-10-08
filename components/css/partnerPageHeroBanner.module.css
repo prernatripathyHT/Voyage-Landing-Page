@@ -90,7 +90,7 @@
         margin-bottom: 16px;
       }
 
-      .partnerDetails .partnerLink{
+      .codeInjectionHead a{
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -99,13 +99,20 @@
         text-align: left;
         text-decoration: underline;
         color: #fff;
+        margin-left: 30px;
+        position: relative;
       }
 
-      .partnerDetails .partnerLink svg{
-          margin-right: 10px;
+    
+
+      .codeInjectionHead a:nth-of-type(1)::before{
+        content: url('/images/partner-link-white.svg');
+        position: absolute;
+        left: -30px;
+        top: 0;
       }
 
-      .partnerDetails .contactBtn{
+      .codeInjectionHead button{
         margin-top: 24px;
         display: block;
         appearance: none;
@@ -124,10 +131,14 @@
         transition: .3s;
       }
 
-      .partnerDetails .contactBtn:hover{
+      .codeInjectionHead button a:nth-of-type(1)::before{
+        content: '';
+      }
+
+      /* .codeInjectionHead button:hover {
         background-color: #fff;
         color: #3F5CFB;
-      }
+      } */
 
 }
 

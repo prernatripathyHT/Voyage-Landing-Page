@@ -37,11 +37,9 @@
         display:block;
         content: '';
         border-bottom: solid 2px #41E2FD;  
-        transform: scaleX(1);  
-        transition: transform 250ms ease-in-out;
     }
     .memberCard:hover:after { 
-        transform: scaleX(0); 
+        /* transform: scaleX(0);  */
     }
 
 

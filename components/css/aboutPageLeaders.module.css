@@ -54,17 +54,24 @@
         /* width: 448px; */
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         color: #000;
+        height: 48.958333vw;
+        position: relative;
     }
 
     .memberCard:after {
         display:block;
         content: '';
-        border-bottom: solid 3px #41E2FD;  
-        transform: scaleX(1);  
-        transition: transform 250ms ease-in-out;
+        /* border-bottom: solid 3px #41E2FD;   */
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #41E2FD;
+        bottom: 0;
+        left: 0;
+
     }
     .memberCard:hover:after { 
-        transform: scaleX(0); 
+        /* transform: scaleX(0);  */
     }
 
 
@@ -119,16 +126,18 @@
 
     .memberSocials{
         display: flex;
+        position: absolute;
+        bottom: 2.0833vw;
     }
 
     .memberSocials .socialLink{
         background-color: #fff;
         border: 1px solid #F2F2F2;
         border-radius: 50%;
-        width: 48px;
-        height: 48px;
+        width: 3.333vw;
+        height: 3.333vw;
         cursor: pointer;
-        margin-bottom: 2.222vw;
+        /* margin-bottom: 2.222vw; */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -139,6 +148,8 @@
     .memberSocials .socialLink:hover{
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
     }
+
+   
 
     
 }

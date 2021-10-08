@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function PartnerPageHeroBanner({currentPost}) {
 
-
+  //console.log("partner hero banner post: ", currentPost)
 
   return (
     <section id={styles.heroBanner}>
@@ -27,8 +27,8 @@ export default function PartnerPageHeroBanner({currentPost}) {
                 <img src={`${currentPost[0].feature_image}`} />
             </div>
             <div className={styles.partnerDetails}>
-                <p>Emarsys</p>
-                <a href="" target="_blank" className={styles.partnerLink}>
+                <p>{currentPost[0].title}</p>
+                {/* <a href="" target="_blank" className={styles.partnerLink}>
                     <span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.1332 1.11954H14.0871L7.33394 7.87597C7.11525 8.09466 7.11525 8.45043 7.33394 8.66912C7.44165 8.77683 7.58526 8.83232 7.72888 8.83232C7.87249 8.83232 8.01611 8.77683 8.12382 8.66912L14.8802 1.91269V4.86659C14.8802 5.17666 15.1316 5.42799 15.4384 5.42799C15.7485 5.42799 15.9998 5.17666 15.9998 4.86659V0.561404C15.9998 0.251326 15.7485 0 15.4384 0H11.1332C10.8231 0 10.5718 0.251326 10.5718 0.561404C10.5751 0.868217 10.8231 1.11954 11.1332 1.11954Z" fill="white"/>
@@ -37,7 +37,9 @@ export default function PartnerPageHeroBanner({currentPost}) {
                     </span>
                     emarsys.com
                 </a>
-                <button className={styles.contactBtn}>Contact Tech Partner</button>
+                <button className={styles.contactBtn}>Contact Tech Partner</button> */}
+                <div dangerouslySetInnerHTML={{__html: currentPost[0].codeinjection_head }} className={`${styles.codeInjectionHead}`} data-aos="fade-up" data-aos-duration="1500"></div>
+
             </div>
         </div>
       </div> 
@@ -62,6 +64,9 @@ export default function PartnerPageHeroBanner({currentPost}) {
 
     </div>
     </div>
+
     </section>
+
+  
   );
 }

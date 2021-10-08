@@ -30,7 +30,7 @@
         border-bottom: 1px solid #DDDDDD;
     }
 
-    .currentOpenings:last-child{
+    .currentOpening:last-child{
         border-bottom: none;
     }
 
@@ -133,7 +133,7 @@
         border-bottom: 1px solid #DDDDDD;
     }
 
-    .currentOpenings:last-child{
+    .currentOpening:last-child{
         border-bottom: none;
     }
 
@@ -200,6 +200,6 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 2.777vw;
-        margin-top: 2.777vw;
+        margin-top: 6.777vw;
     }
 }

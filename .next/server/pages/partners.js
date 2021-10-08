@@ -341,9 +341,12 @@ var external_react_query_ = __webpack_require__(2585);
 
 
  // const {CONTENT_API_KEY, BLOG_URL} = process.env;
+// const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
+// const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
+//partners - test....
 
-const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
-const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
+const CONTENT_API_KEY = 'aaa306c021fcc68977d6d9b03f';
+const BLOG_URL = 'https://yash-dev-2k21.ghost.io/';
 const getStaticProps = async () => {
   const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
   const posts = await res.json();

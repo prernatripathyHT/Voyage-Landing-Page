@@ -4,7 +4,7 @@
   "/api/hello": "pages/api/hello.js",
   "/blog/[slug]": "pages/blog/[slug].js",
   "/blogs": "pages/blogs.js",
-  "/careers": "pages/careers.html",
+  "/careers": "pages/careers.js",
   "/": "pages/index.html",
   "/marketing": "pages/marketing.html",
   "/partner/[slug]": "pages/partner/[slug].js",

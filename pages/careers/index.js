@@ -11,13 +11,33 @@ import { useState } from "react";
 
 
 
+const LEVER_URL = 'https://api.lever.co/v0/postings/voyagesms/';
+const LEVER_API_KEY = '1KQ3RBR5ho7sqEJAuFeJ';
+
+
+
+export const getStaticProps = async () => {
+ 
+  const res = await fetch(`${LEVER_URL}?key=${LEVER_API_KEY}`);
+  const openings = await res.json();
+
+
+
+  return {
+    props: {openings}
+  }
+}
 
 
 
 
 
-export default function Home({posts}) {
+
+
+export default function Home({openings}) {
   const [formState, setFormState] = useState("close");
+
+  console.log("job openings", {openings});
 
   return (
     <>
@@ -38,7 +58,7 @@ export default function Home({posts}) {
         <RequestForm formState={formState} setFormState={setFormState} />
         <Header setFormState={setFormState} />
         <CareersPageHeroBanner />
-        <CareersPageOpeningsBlock />
+        <CareersPageOpeningsBlock openings={openings} />
         <AboutPageSignupBlock setFormState={setFormState} />
         <AboutPageBottomBlock />
         <Footer setFormState={setFormState} />
