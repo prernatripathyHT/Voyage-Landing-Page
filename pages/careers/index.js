@@ -34,10 +34,10 @@ export const getStaticProps = async () => {
 
 
 
-export default function Home({openings}) {
+export default function Careers({openings}) {
   const [formState, setFormState] = useState("close");
 
-  console.log("job openings", {openings});
+  //console.log("job openings", {openings});
 
   return (
     <>
@@ -60,7 +60,7 @@ export default function Home({openings}) {
         <CareersPageHeroBanner />
         <CareersPageOpeningsBlock openings={openings} />
         <AboutPageSignupBlock setFormState={setFormState} />
-        <AboutPageBottomBlock />
+        <AboutPageBottomBlock  />
         <Footer setFormState={setFormState} />
       </div>
     </>
