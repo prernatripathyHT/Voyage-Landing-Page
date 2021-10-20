@@ -31,7 +31,8 @@
         /* width: 296px; */
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         color: #000;
-        height: 700px;
+        /* height: 700px; */
+        height: 48.6111vw;
         position: relative;
     }
 
