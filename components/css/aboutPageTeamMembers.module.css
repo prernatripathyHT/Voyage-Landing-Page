@@ -31,12 +31,20 @@
         /* width: 296px; */
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         color: #000;
+        height: 700px;
+        position: relative;
     }
 
     .memberCard:after {
         display:block;
         content: '';
-        border-bottom: solid 2px #41E2FD;  
+        /* border-bottom: solid 2px #41E2FD;   */
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #41E2FD;
+        bottom: 0;
+        left: 0;
     }
     .memberCard:hover:after { 
         /* transform: scaleX(0);  */
@@ -56,7 +64,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 72%;
+        width: 100%;
         height: 100%;
     }
 

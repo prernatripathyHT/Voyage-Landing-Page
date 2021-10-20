@@ -17,7 +17,7 @@ import { useState } from "react";
 
 
 
-export default function Home({posts}) {
+export default function About() {
   const [formState, setFormState] = useState("close");
 
   return (
@@ -43,7 +43,7 @@ export default function Home({posts}) {
         <AboutPageTeamMembers />
         <AboutPageSignupBlock setFormState={setFormState} />
         <AboutPageBottomBlock />
-        <Footer setFormState={setFormState} />
+        <Footer setFormState={setFormState} />  
       </div>
     </>
   );

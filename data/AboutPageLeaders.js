@@ -2,34 +2,34 @@ export const AboutPageLeadersData = [
     {
         name: "Rev Reddy",
         designation: "CEO and Head of Product",
-        description: `Rev is our CEO here at Voyage. He attended Warton business school and previously founded WaveAudio and was on the founding board for Appriza Pay. In his free time, Rev's hobbies include photography and music. He is very passionate about music and feels that it gets his "creative engine running".`,
+        description: `Rev Reddy brings his experience as a founder at WaveAudio and on the founding board of Appriza Pay to his leadership of Voyage SMS. His greatest motivation at Voyage is helping our clients engage, convert and delight their customers through smarter SMS marketing. Rev is a graduate of Wharton Business School and gets his creative engine running through music and photography.`,
         linkedin: "https://www.linkedin.com/in/rev-reddy/",
         email: "rev@voyagesms.com",
-        image: "about-rev.png"
+        image: "about-rev@2x.png"
     },
     {
         name: "Corey Epstein",
         designation: "Founder and Chief Innovation Officer",
-        description: `Corey attended UCLA, and is the Founder and CIO of Voyage SMS. He previously worked at DSTLD and Deloitte. Some of Corey's hobbies include spending time outdoors, traveling and making music.`,
+        description: `Voyage founder Corey Epstein is no stranger to startup success, having previously founded and served as CMO and Creative Director at DSTLD (NASDAQ: DBGI). A former consultant at Deloitte, Corey graduated with an MBA in Strategy from the UCLA Anderson School of Management. As a musician and photographer as well, Corey loves to travel and play music in his off-time.`,
         linkedin: "https://www.linkedin.com/in/coreyepstein/",
         email: "corey@voyagesms.com",
-        image: "about-corey.png"
+        image: "about-corey@2x.png"
     },
     {
         name: "Sean Milliken",
         designation: "CTO",
-        description: `Sean Milliken is our CTO here at Voyage. He attended UCSB, and prior to joining our team he has worked at RPA and Onestop. Outside of work, Sean has many different hobbies including AI, Surfing, Backpacking and being outdoors.`,
+        description: `Prior to joining Voyage SMS as Chief Technology Officer, Sean honed his eCommerce development expertise at places like RPA and Onestop. A graduate of UC Santa Barbara, Sean thrives on leading the cutting-edge eCommerce technological innovations at Voyage, which enable us to maintain and grow our best-in-class SMS marketing SaaS platform. Outside of work, Sean's hobbies include outdoor mainstays like surfing and backpacking, as well as an avid interest in the latest in AI.`,
         linkedin: "https://www.linkedin.com/in/milliken/",
         email: "sean@voyagesms.com",
-        image: "about-sean.png"
+        image: "about-sean@2x.png"
     },
     {
         name: "Scott Cooperstein",
         designation: "VP Sales",
-        description: `Scott grew up in Cold Springs Harbor, NY, and attended college at University of Wisconsin. Previously he worked in partnerships at Breas, Sales/Strategy at Wunderkind, and Digital Marketing at Vitamin Shoppe. In his free time he enjoys reading, writing, and cooking. One day he hopes to see a baseball game at all 30 MLB stadiums- only 10 to go!`,
+        description: `With deep experience in sales, strategy, partnerships and overall digital marketing; after stints at Wunderkind, Breas, and Vitamin Shoppe, Scott's mission at Voyage is to lead clients current and new to a deeper understanding of the power of optimized SMS. After growing up in Cold Springs Harbor, NY, he attended college at the University of Wisconsin. Scott is more than two-thirds of the way through his goal to watch a game in all 30 MLB ballparks across the US and Canada.`,
         linkedin: "",
         email: "",
-        image: "about-scott.png"
+        image: "about-scott@2x.png"
     },
   
   

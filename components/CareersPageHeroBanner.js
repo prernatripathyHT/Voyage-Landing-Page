@@ -30,8 +30,8 @@ export default function CareersPageHeroBanner(){
                 <div className={styles.rightBlock}>
                     <div className={styles.staticAssets}>
                         <svg width="306" height="299" viewBox="0 0 306 299" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="149.708" cy="149.5" r="149.5" fill="#3F5CFB" fill-opacity="0.83"/>
-                            <path d="M285.3 220.418L321 250V126H174V220.418H285.3Z" fill="#5BEBC1" fill-opacity="0.8"/>
+                            <circle cx="149.708" cy="149.5" r="149.5" fill="#3F5CFB" fillOpacity="0.83"/>
+                            <path d="M285.3 220.418L321 250V126H174V220.418H285.3Z" fill="#5BEBC1" fillOpacity="0.8"/>
                             <ellipse rx="26.8734" ry="26.2762" transform="matrix(-1 0 0 1 116.334 221.803)" fill="#5BEBC1"/>
                         </svg>
 
@@ -57,7 +57,7 @@ export default function CareersPageHeroBanner(){
                     </div>
                     <div className={`anim-left ${styles.animateLeft}`}>
                         <svg width="92" height="29" viewBox="0 0 92 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M67.9306 29H91.2076V0H0.207642V29H67.9306Z" fill="#405CFB"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M67.9306 29H91.2076V0H0.207642V29H67.9306Z" fill="#405CFB"/>
                         </svg>
                     </div>
                     <div className={`anim-right ${styles.animateRight}`}>

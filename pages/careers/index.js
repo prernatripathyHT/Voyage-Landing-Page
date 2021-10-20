@@ -8,11 +8,8 @@ import Head from "next/head";
 import RequestForm from "../../components/RequestForm";
 import { useState } from "react";
 
-
-
-
-const LEVER_URL = 'https://api.lever.co/v0/postings/voyagesms/';
-const LEVER_API_KEY = '1KQ3RBR5ho7sqEJAuFeJ';
+const LEVER_URL = process.env.LEVER_URL;
+const LEVER_API_KEY = process.env.LEVER_API_KEY;
 
 
 
@@ -27,7 +24,6 @@ export const getStaticProps = async () => {
     props: {openings}
   }
 }
-
 
 
 

@@ -2,34 +2,34 @@ export const AboutPageMembersData = [
     {
         name: "Patrick Migliaccio",
         designation: "VP of Engineering",
-        description: `Pat is our VP of engineering. He attended Rutgers University and formerly worked at Newscheck and IEEE. In his free time, Pat enjoys Jiu Jitsu, skating and reading.`,
+        description: `Vice President of Engineering Pat Migliaccio previously worked at NewsCheck and IEEE before joining the Voyage crew. In addition to his dedications to engineering architectures, development, and bespoke client solutions, Pat also loves to spend his spare time practicing Jiu-Jitsu, skating, and reading. A graduate of Rutgers University, he additionally makes sure to volunteer in his local communities when not working or pursuing his other hobbies.`,
         linkedin: "",
         email: "",
-        image: "about-patrick.png"
+        image: "about-patrick@2x.png"
     },
     {
         name: "Alice Pai",
         designation: "Head of Client Success",
-        description: `A champion of the client-first mindset, has nearly a decade of experience in wireless, working with industry mainstays such as Motorola and HTC. On the SMS side, she most recently oversaw national sales and partnerships at healthcare/SMS engagement firm mPulse Mobile. Alice additionally served on the sales leadership team for Chariot/Ford, helping to develop go-to-market enterprise strategy and execute regional marketing initiatives. An avid outdoorswoman, she enjoys cooking (when inside) and adventuring with her two pups.`,
+        description: `A champion of the client-first mindset, Alice has deep experience in wireless, having worked with industry mainstays such as Motorola and HTC. Prior to joining Voyage, she oversaw national sales and partnerships at healthcare/SMS engagement firm mPulse Mobile. She also served on the sales leadership team for Chariot/Ford, helping develop enterprise strategy and execute regional marketing initiatives. Alice enjoys spending time outdoors when she's off the clock.`,
         linkedin: "",
         email: "",
-        image: "about-alice.png"
+        image: "about-alice@2x.png"
     },
     {
         name: "Max Wardaki",
         designation: "Director of Operations",
-        description: `Max is our director of Operations. He attended Princeton University, and previously worked at Alphasights and L.E.K consulting. Max now brings his additional experience with strategy, analytics, and financial modeling to Voyage SMS. When he isn't optimizing business structures, his hobbies include sports, traveling and reading.`,
+        description: `Max previously worked at Alphasights and L.E.K. Consulting before starting his Voyage as our Director of Operations. He brings his expertise in strategy, analytics, and financial modeling to his role as facilitator of the Voyage team. When he isn't optimizing business structures and helping steer the ship, Max's hobbies include sports, traveling and reading. Max is a graduate of Princeton University.`,
         linkedin: "",
         email: "",
-        image: "about-max.png"
+        image: "about-max@2x.png"
     },
     {
         name: "Michael DiBiasio",
         designation: "Head of Marketing",
-        description: `With parallel career experience in both B2C and B2B marketing, Michael feels at the top of his game when helping stakeholders and brands find the sweet spot between audience needs and values – and their own sales and service goals. He joined Voyage after several years at an NYC consulting firm, where he worked with organizations like BMW, the University of California, and L3Harris. Michael is a graduate of Columbia University and directs independent films in his "spare time."`,
+        description: `With parallel career experience in both B2C and B2B marketing, Michael feels at the top of his game when helping stakeholders and brands find the sweet spot between audience needs and values, and their own sales and service goals. He joined Voyage after several years at an NYC consulting firm, where he worked with organizations such as BMW, the University of California, and L3Harris. Michael is a graduate of Columbia University and directs independent films in his spare time.`,
         linkedin: "",
         email: "",
-        image: "about-michael.png"
+        image: "about-michael@2x.png"
     },
 
     // {
@@ -131,10 +131,10 @@ export const AboutPageMembersData = [
     {
         name: "Shreya Gulati",
         designation: "Art Director",
-        description: `Shreya is our Art Director here at Voyage SMS. She attended the Institute of Design, Pune in India. Previously, Shreya has worked at Upstox, Trip Creative, and Channel V. When Shreya isn't designing and creating art, she enjoys reading and illustration in her free time.`,
+        description: `Voyage Art Director Shreya Gulati graduated from the Institute of Design in Pune, India, before kicking off her career in graphic design and design implementation. Previously, Shreya has worked at Upstox, Trip Creative, and Channel V. When Shreya isn't creating art and managing her design team, she uses her free time to catch up on some reading and to practice some hand-drawn illustration.`,
         linkedin: "",
         email: "",
-        image: "about-shreya.png"
+        image: "about-shreya@2x.png"
     },
  
 ]
