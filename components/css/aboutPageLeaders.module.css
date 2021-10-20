@@ -54,9 +54,17 @@
         /* width: 448px; */
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         color: #000;
-        height: 51.6vw;
+        height: 52.1vw;
         /* height: 750px; */
         position: relative;
+    }
+
+    /* .memberCard:nth-child(1), .memberCard:nth-child(2){
+        height: 49.513888vw;
+    } */
+
+    .memberDetails div:nth-child(1) .memberCard, .memberDetails div:nth-child(2) .memberCard{
+        height: 48.8vw;
     }
 
     .memberCard:after {
@@ -127,8 +135,9 @@
 
     .memberSocials{
         display: flex;
-        position: absolute;
-        bottom: 2.0833vw;
+        /* position: absolute;
+        bottom: 2.0833vw; */
+        margin-bottom: 32px;
     }
 
     .memberSocials .socialLink{

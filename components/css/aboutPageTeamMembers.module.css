@@ -32,9 +32,14 @@
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
         color: #000;
         /* height: 700px; */
-        height: 48.6111vw;
+        height: 49.6vw;
         position: relative;
     }
+
+    .memberDetails div:nth-child(1) .memberCard, .memberDetails div:nth-child(2) .memberCard{
+        height: 49.6vw;
+    }
+
 
     .memberCard:after {
         display:block;
@@ -99,7 +104,8 @@
         letter-spacing: 0em;
         text-align: left;
         opacity: .5;
-        margin-bottom: 3.888vw;
+        /* margin-bottom: 3.888vw; */
+        margin-bottom: 40px;
     }
     
 }
