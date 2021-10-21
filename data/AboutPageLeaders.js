@@ -27,8 +27,8 @@ export const AboutPageLeadersData = [
         name: "Scott Cooperstein",
         designation: "VP Sales",
         description: `With deep experience in sales, strategy, partnerships and overall digital marketing; after stints at Wunderkind, Breas, and Vitamin Shoppe, Scott's mission at Voyage is to lead clients current and new to a deeper understanding of the power of optimized SMS. After growing up in Cold Springs Harbor, NY, he attended college at the University of Wisconsin. Scott is more than two-thirds of the way through his goal to watch a game in all 30 MLB ballparks across the US and Canada.`,
-        linkedin: "",
-        email: "",
+        linkedin: "https://www.linkedin.com/in/scott-cooperstein-9592b170/",
+        email: "scott@voyagesms.com",
         image: "about-scott@2x.png"
     },
   
