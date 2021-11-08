@@ -23,9 +23,10 @@ const BLOG_URL = process.env.BLOG_URL;
 
 
 
+
 export const getStaticProps = async () => {
  
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog]`);
   const posts = await res.json();
 
 
@@ -46,10 +47,10 @@ const getFeaturedPosts = () => {
 
 const getFilteredPosts = async(key) => {
   const tagName = key.queryKey[1].tag;
-//  console.log("current tag name : ", tagName);
+  console.log("current tag name : ", tagName);
   if(tagName){   //if tags are present - this is where we are going to filter the posts
-    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[${tagName}]`;
-     //console.log("URL ", myURL)
+    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]`;
+     console.log("URL ", myURL)
     const res = await fetch(myURL);
     const newRes = res.json();
     return newRes;
@@ -96,29 +97,14 @@ export default function Home({posts}) {
 
 
     //For filtering with TAGS
-    const queryClient = useQueryClient();
-    //QueryClientProvider
     const {isLoading, data:filteredPosts, status} = useQuery(['filtered posts', {tag: tagName}], getFilteredPosts, {initialData:posts}) //to remove the loading page add the initialdata value here
     // console.log("filteredPosts are", filteredPosts, "status", status);
 
 
 
-    //For filtering with SEARCH
-    // const {data:filteredPostsWithSearch} = useQuery(['search filter', {search: searchTitle},], getFilteredPostsWithSearch)
-    // console.log("search posts with new search", filteredPostsWithSearch);
-
-
     
     var allPosts = filteredPosts;
-    // Filter the posts based on SEARCH-TERM
-    //  allPosts = filteredPosts.posts.filter(val => {
-    //   if(searchTerm === ""){
-    //     return val
-    //   } else if(val.title.toLowerCase().includes(searchTerm.toLowerCase())){
-    //     return val
-    //   }
-    // })
-     //console.log("all posts after search", allPosts);
+
 
 
     
@@ -156,13 +142,6 @@ export default function Home({posts}) {
         <Header setFormState={setFormState} />
         <BlogPageHeroBanner posts={posts} />
         <BlogPageTagFilteringBlock posts={posts} handleTagClick={setTagName} handleSearch={setSearchTerm}/>
-        {/* <div>
-          {allPosts.posts.map((post,index) => (
-        <div key={index}>  {post.tags.map((tag, index)=> (
-              <p key={index}>{tag.name}</p>
-            ))}</div>
-          ))}
-        </div>  */}
         <BlogPageFeaturedPosts posts={allPosts} />
         <BlogPageSignupBlock />
         {allPosts.posts.length > 6 && <BlogPageAllPosts posts={allPosts} />}

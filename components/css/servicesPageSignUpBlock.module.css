@@ -1,0 +1,142 @@
+@media screen and (min-width: 769px) {
+    .ServicesPageSignupBlock{
+        text-align: center;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+
+    }
+
+    .signupContainer{
+        margin:auto;
+        position: relative;
+    }
+
+    .topBlock{
+        background-color: #162740;
+        padding: 7.569vw 6.9444vw 11.1111vw;
+        margin-bottom: 6.666vw;
+        position: relative;
+    }
+
+    .topBlock .designBlock svg:first-child{
+        position: absolute;
+        top: -350px;
+        left: 9px;
+    }
+
+    .topBlock .designBlock svg:nth-child(2){
+        position: absolute;
+        top: -520px;
+        right: 23px;
+    }
+
+    .topBlock .designBlock svg:nth-child(3){
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+    }
+
+    .topBlock .designBlock svg:nth-child(4){
+        position: absolute;
+        bottom: 84px;
+        left: -320px;
+    }
+
+    .topBlock .designBlock svg:nth-child(5){
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+    }
+
+    .textBlock{
+        color: #fff;
+        display: flex;
+    }
+
+    .leftSegment{
+        width: 45%;
+    }
+    .rightSegment{
+        width: 55%;
+    }
+
+    .leftSegment h4{
+        font-size: 2.777vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.75vw;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .rightSegment p{
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 2.222vw;
+    }
+    .rightSegment p span{
+        opacity: .7;
+    }
+
+    .bottomBlock{
+        width: 43.6111vw;
+        margin: auto;
+    }
+
+    .bottomBlock h1{
+        font-size: 2.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.26888vw;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 1.666vw;
+    }
+
+    .bottomBlock p{
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875vw;
+        letter-spacing: 0em;
+        text-align: center;
+        opacity: .5;
+        padding: 0 1.3888vw;
+        margin-bottom: 2.777vw;
+    }
+
+    .buttonBlock{
+        text-align: center;
+        margin-bottom: 3.47222vw;
+    }
+
+    .buttonBlock .signupButton{
+        margin: auto;
+        width: 16.875vw;
+        height: 3.40277vw;
+        background-color: #3C55FF;
+        color: white;
+        border-radius: 5px;
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.45333vw;
+        letter-spacing: 0.05em;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: 1px solid #3C55FF;
+        transition: all .3s;
+    }
+
+    .buttonBlock .signupButton:hover{
+        color: #3C55FF;
+        background-color: #fff;
+    }
+  
+}

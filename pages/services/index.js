@@ -1,0 +1,54 @@
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import ServicesPageHeroBanner from "../../components/ServicesPageHeroBanner";
+import ServicesPageConsultingBlock from "../../components/ServicesPageConsultingBlock";
+import ServicesPageStrategyGuideBlock from "../../components/ServicesPageStrategyGuideBlock";
+import ServicesPageManagedServiceBlock from "../../components/ServicesPageManagedServiceBlock";
+import ServicesPageCreativeServicesBlock from "../../components/ServicesPageCreativeServicesBlock";
+import ServicesPageSignupBlock from "../../components/ServicesPageSignUpBlock";
+import AboutPageBottomBlock from "../../components/AboutPageBottomBlock";
+import Head from "next/head";
+import RequestForm from "../../components/RequestForm";
+import { useState } from "react";
+
+
+
+
+
+
+
+
+
+export default function About() {
+  const [formState, setFormState] = useState("close");
+
+  return (
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="SMS marketing and text messaging for your ecommerce business. Get 40%+ CTR and 90%+ open rates. Get a demo today!"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="SMS Marketing for Ecommerce | Voyage Mobile"
+        ></meta>
+        <meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0, viewport-fit=cover" name="viewport"/>
+        <title>Voyage SMS: Text Marketing for eCommerce</title>
+      </Head>
+      <div className="main" id="main-target" data-scroll-container>
+        <RequestForm formState={formState} setFormState={setFormState} />
+        <Header setFormState={setFormState} />
+        <ServicesPageHeroBanner />
+        <ServicesPageConsultingBlock />
+        <ServicesPageStrategyGuideBlock />
+        <ServicesPageManagedServiceBlock />
+        <ServicesPageCreativeServicesBlock />
+        <ServicesPageSignupBlock setFormState={setFormState}  />
+        <AboutPageBottomBlock />
+        <Footer setFormState={setFormState} />  
+      </div>
+    </>
+  );
+}

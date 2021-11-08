@@ -1,0 +1,48 @@
+@media screen and (min-width: 769px) {
+    .servicesPageConsultingBlock{
+        padding-top: 11.944vw;
+        padding-bottom: 7.222vw;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .consultingBlock_innerWrapper{
+        display: flex;
+    }
+
+    .leftBlock{
+        width: 45%;
+    }
+
+    .leftBlock h2{
+        font-size: 4.444vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.97222vw;
+        letter-spacing: 0em;
+        text-align: left;
+        position: relative;
+        padding-left: 2.43055vw;
+    }
+
+    .leftBlock h2::before{
+        position: absolute;
+        content: url(/images/services-consulting-arrow.svg);
+        left: 2.43055vw;
+        top: -5.20833vw;
+    }
+
+    .rightBlock{
+        width: 55%;
+    }
+
+    .rightBlock p{
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875vw;
+        letter-spacing: 0em;
+        text-align: left; 
+        margin-bottom: 1.3888vw;
+        opacity: .8;
+    }
+}

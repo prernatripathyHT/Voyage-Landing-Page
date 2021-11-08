@@ -1,0 +1,282 @@
+@media screen and (min-width: 769px) {
+    .servicesPageStrategyGuideBlock{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .section_1{
+        background-color: #3F5CFB;
+        padding-top: 7.3611vw;
+        padding-bottom: 7.3611vw;
+        position: relative;
+        color: #fff;
+    }
+
+    .section_1::before{
+        content: url(/images/voyage-strategy-guide-1.svg);
+        position: absolute;
+        right: 0;
+        top: -1.5277vw;
+        z-index: 2;
+    }
+
+    .section_1::after{
+        position: absolute;
+        content: '';
+        background:  linear-gradient(270deg, #3F5CFA -96.42%, rgba(63, 92, 250, 0) 42.99%);
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 20.8333vw;
+        height: 100%;
+    }
+    .leftBlock, .rightBlock{
+        width: 50%;
+    }
+
+   
+
+    .section_1 h3{
+        font-size: 3.888vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.069vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 2.222vw;
+    }
+
+    .section_1 p{
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1.111vw;
+    }
+
+    .section_1 p span{
+        opacity: .7;
+    }
+
+    .section_1 img{
+        width: 48%;
+        position: absolute;
+        right: 0;
+        top: 3.26vw;
+    }
+
+    .section_2, .section_3{
+        padding-top: 7.222vw;
+        padding-bottom: 7.222vw;
+    }
+
+    .section_3{
+        padding-top: 3.47222vw;
+        position: relative;
+    }
+
+    .section_2_innerWrapper{
+        display: flex;
+    }
+
+    .section_2_innerWrapper .leftBlock{
+        background-color: #1C345C;
+        border-radius: 10px;
+        width: 41.9444vw;
+        height: 28.6111vw;
+        position: relative;
+    }
+
+
+    .section_2_innerWrapper .leftBlock img{
+        width: 115%;
+        position: relative;
+        left: -3.0555vw;
+    }
+
+    .section_2_innerWrapper .leftBlock::before{
+        position: absolute;
+        content: url(/images/services-page-strategy-guide-arrows.svg);
+        left: -4.30555vw;
+        top: 4.86111vw;
+        z-index: 10;
+    }
+
+    .section_2_innerWrapper .rightBlock{
+        padding-left: 5vw;
+    }
+
+    .section_2 h4{
+        font-size: 2.777vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.75vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1.111vw;
+    }
+
+    .section_2 p, .section_2 ul li{
+        font-size: 1.25vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.01388vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1.111vw;
+    }
+
+    .section_2 p, .section_2 ul li span{
+        opacity: .5;
+    }
+
+    .section_2 ul li{
+        list-style: none;
+        padding-left: 26px;
+        position: relative;
+    }
+
+    .section_2 ul li::before{
+        position: absolute;
+        content: '';
+        background-color: #3F5CFB;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        left: 0;
+        top: 40%;
+        opacity: 1;
+    }
+
+    .section_3::before{
+        content: url(/images/voyage-strategy-guide-2.svg);
+        position: absolute;
+        right: -1px;
+        top: -40px;
+        z-index: 2;
+    }
+
+    .section_3::after{
+        content: url(/images/voyage-strategy-guide-3.svg);
+        position: absolute;
+        right: 0;
+        top: 10px;
+        z-index: 2;
+    }
+
+    .section_3 .section_3_innerWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+  
+
+    .section_3 h4{
+        width: 32.222vw;
+        font-size: 2.777vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.75vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1.666vw;
+    }
+
+    .section_3 .leftBlock{
+        width: 41.666vw;
+    }
+
+    .section_3 .rightBlock{
+        position: relative;
+        width: 41.944vw;
+        height: 28.611vw;
+        background-color: #1C345C;
+        border-radius: 10px;
+        top: 1.111vw;
+    }
+
+    .section_3 .rightBlock::after{
+        content: url(/images/services-dots-dark-blue.svg);
+        position: absolute;
+        right: -21px;
+        bottom: -31px;
+        z-index: -1;
+    }
+
+
+    .accordianItem{
+        padding-top: 1.3888vw;
+        padding-bottom: 1.3888vw;
+        border-bottom: 1px solid #DDDDDD;
+    }
+    .accordianItem:last-child{
+        border: none;
+    }
+
+    .accordianItem.selected{
+        border-bottom: 2px solid #405CFB;
+    }
+    .accordianItem.selected:last-child{
+        border: none;
+    }
+    .itemTitle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.319vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.222vw;
+        letter-spacing: 0.01em;
+        text-align: left;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.5);
+        transition:color .1s cubic-bezier(1, 0, 0, 1);
+    }
+
+    .itemTitle.selected{
+        margin-bottom: .0555vw;
+        color: #3F5CFB;
+    }
+
+    .itemText{
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s cubic-bezier(0,1,0,1);
+        font-size: 1.111vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.666vw;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .5;
+    }
+
+    .itemText.show{
+        height: auto;
+        max-height: 9999px;
+        transition: all .5s cubic-bezier(1, 0, 1, 0);
+    }
+
+    .accordianImage{
+        opacity: 0;
+        position: absolute;
+        top: 1.111vw;
+        right: 0;
+        width: 100%;
+        transform: translateY(10px);
+        transition: all .1s ease-in;
+    }
+    .accordianImage img{
+        width: 100%;
+    }
+
+    .accordianImage.show{
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all .5s ease-in;
+    }
+
+}
