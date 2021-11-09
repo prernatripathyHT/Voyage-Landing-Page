@@ -15,6 +15,9 @@
         padding: 7.569vw 6.9444vw 11.1111vw;
         margin-bottom: 6.666vw;
         position: relative;
+        background: url(/images/signup-block-bg-image.png);
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .topBlock .designBlock svg:first-child{

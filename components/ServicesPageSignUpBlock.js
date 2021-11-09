@@ -33,7 +33,7 @@ export default function ServicesPageSignupBlock({setFormState}) {
                 <div className={styles.topBlock}>
                     <Media greaterThanOrEqual="md">
                     <div className={styles.designBlock}>
-                    <svg width="1046" height="129" viewBox="0 0 1046 129" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* <svg width="1046" height="129" viewBox="0 0 1046 129" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="438.277" cy="23.4213" r="5.64008" fill="#5BEBC1"/>
                         <circle cx="694.64" cy="46.6401" r="5.64008" fill="#5BEBC1"/>
                         <circle cx="4.43149" cy="124.431" r="4.43149" fill="#5BEBC1"/>
@@ -59,7 +59,7 @@ export default function ServicesPageSignupBlock({setFormState}) {
 
                     <svg width="1280" height="95" viewBox="0 0 1280 95" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 21.5179L212.989 43.6346C452.954 68.5523 697.979 63.3277 934.953 28.2405C1170.76 -6.67419 1415.07 -9.24332 1652.48 20.6951L1659 21.5179V298H0V21.5179Z" fill="#3F5CFB"/>
-                    </svg>
+                    </svg> */}
 
                     </div>
                     </Media>
