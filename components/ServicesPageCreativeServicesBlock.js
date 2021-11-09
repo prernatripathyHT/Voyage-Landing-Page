@@ -7,6 +7,36 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+      className={`${className} custom-arrow-next`}
+        style={{ ...style, display: "flex!important", background: "#fff", width:"32px", height: "32px", boxShadow: "0px 0px 12px rgba(0, 0, 0, 0.08)", borderRadius: "50%", alignItems:"center", justifyContent:"center", cursor:"pointer" }}
+        onClick={onClick}
+      >
+          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.727273 13.8814L0.0948615 13.2802C-0.031621 13.122 -0.031621 12.8689 0.0948615 12.7424L5.81818 6.98418L0.0948615 1.25763C-0.031621 1.13107 -0.031621 0.877966 0.0948615 0.719774L0.727273 0.118644C0.885375 -0.039548 1.10672 -0.039548 1.26482 0.118644L7.90514 6.73107C8.03162 6.88927 8.03162 7.11073 7.90514 7.26893L1.26482 13.8814C1.10672 14.0395 0.885375 14.0395 0.727273 13.8814Z" fill="black"/>
+          </svg>
+      </div>
+    );
+  }
+
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} custom-arrow-prev`}
+        style={{ ...style, display: "flex!important", background: "#fff", width:"32px", height: "32px", boxShadow: "0px 0px 12px rgba(0, 0, 0, 0.08)", borderRadius: "50%", alignItems:"center", justifyContent:"center", cursor:"pointer" }}
+        onClick={onClick}
+        >
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.27273 13.8814L7.90514 13.2802C8.03162 13.122 8.03162 12.8689 7.90514 12.7424L2.18182 6.98418L7.90514 1.25763C8.03162 1.13107 8.03162 0.877966 7.90514 0.719774L7.27273 0.118644C7.11462 -0.039548 6.89328 -0.039548 6.73518 0.118644L0.0948617 6.73107C-0.0316206 6.88927 -0.0316206 7.11073 0.0948617 7.26893L6.73518 13.8814C6.89328 14.0395 7.11462 14.0395 7.27273 13.8814Z" fill="black"/>
+            </svg>
+      </div>
+    );
+  }
+
 const { MediaContextProvider, Media } = createMedia({
     breakpoints: {
       sm: 0,
@@ -26,6 +56,8 @@ const settings = {
     slidesToScroll: 1,
     variableWidth:false,
     cssEase:`cubic-bezier(.51,.11,.44,.96)`,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   };
 
 export default function ServicesPageCreativeServicesBlock(){

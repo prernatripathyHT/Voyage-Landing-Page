@@ -20,7 +20,25 @@ button {
 }
 
 .slick-arrow {
-  display: none !important;
+  display: none ;
+}
+
+.custom-arrow-prev.slick-prev{
+  left: -16px;
+  transform: translate(-0,-154px);
+  z-index: 1;
+  display: flex;
+}
+
+.custom-arrow-next.slick-next{
+  right: -16px;
+  transform: translate(-0,-154px);
+  z-index: 1;
+  display: flex;
+}
+
+.custom-arrow-prev.slick-prev::before, .custom-arrow-next.slick-next::before{
+  content: unset;
 }
 @media screen and (min-width: 769px) {
   .slideIn {
