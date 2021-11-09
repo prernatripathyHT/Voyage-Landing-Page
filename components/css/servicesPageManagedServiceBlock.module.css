@@ -89,18 +89,18 @@
     }
     .section_1{
         background-color: #FAFAFA;
-        padding-top: 6.5277vw;
-        padding-bottom: 6.5277vw;
+        padding-top: 8.5333vw;
+        padding-bottom: 5.333vw;
         position: relative;
         overflow: hidden;
     }
 
-    .section_1::before{
+    /* .section_1::before{
         content: url(/images/voyage-managed-service-dots.svg);
         position: absolute;
         bottom: -36px;
         left: -36px;
-    }
+    } */
 
     .managedService_innerWrapper{
         display: flex;
@@ -112,23 +112,23 @@
     }
 
     .managedService_innerWrapper h3{
-        font-size: 6.5vw;
+        font-size: 7.4666vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 7.97vw;
+        line-height: 10.1333vw;
         letter-spacing: 0em;
         text-align: left;
-        margin-bottom: 8.5333vw;
+        margin-bottom: 0.5333vw;
     }
 
     .managedService_innerWrapper p, .managedService_innerWrapper ul li{
         font-size: 3.73333vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 5.6vw;
+        line-height: 5.8666vw;
         letter-spacing: 0em;
         text-align: left;
-        margin-bottom: 4.2666vw;
+        margin-bottom: 3.2vw;
     }
 
     .managedService_innerWrapper p, .managedService_innerWrapper ul li span{
@@ -137,7 +137,7 @@
 
     .managedService_innerWrapper  ul li{
         list-style: none;
-        padding-left: 20px;
+        padding-left: 16px;
         position: relative;
     }
 
@@ -162,7 +162,7 @@
     .managedService_innerWrapper img{
         width: 100%;
         position: relative;
-        left: -20px;
+        /* left: -20px; */
        
     }
 

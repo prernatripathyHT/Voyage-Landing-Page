@@ -73,22 +73,23 @@ export default function ServicesPageHeroBanner(){
                 </Media>
                 <Media lessThan="md">
                     <div className={styles.designBlock}>
-                        <svg width="100" height="182" viewBox="0 0 345 482" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle r="167.076" transform="matrix(0.359412 -0.933179 -0.933179 -0.359412 235 216.37)" fill="#1C345C"/>
-                            <path d="M304.032 308.268L264.825 203.622L220.05 234.545L304.032 308.268Z" fill="#5BEBC1"/>
-                            <path d="M171.243 119.69L255.226 193.413L210.451 224.337L171.243 119.69Z" fill="#02D9FC"/>
-                            <ellipse rx="46" ry="44.5" transform="matrix(0.359412 -0.933179 -0.933179 -0.359412 126.059 360.92)" fill="#3F5CFB"/>
+                        <svg width="206" height="262" viewBox="0 0 206 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="94.3515" transform="matrix(0.359412 -0.933179 -0.933179 -0.359412 128.816 122.149)" fill="#1C345C"/>
+                            <path d="M167.799 174.047L145.657 114.95L120.372 132.413L167.799 174.047Z" fill="#5BEBC1"/>
+                            <path d="M92.8104 67.5523L140.237 109.185L114.952 126.649L92.8104 67.5523Z" fill="#02D9FC"/>
+                            <ellipse rx="21.4566" ry="20.757" transform="matrix(0.359412 -0.933179 -0.933179 -0.359412 63.083 194.483)" fill="#3F5CFB"/>
                         </svg>
-                        <svg width="75" height="70" viewBox="0 0 159 177" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.775391" y="79.4914" width="157.252" height="96.5799" fill="#162740"/>
-                            <path d="M0.775391 79.119L79.2912 32.7709L158.027 79.4911L79.5115 125.839L0.775391 79.119Z" fill="#5BEBC1"/>
+                        <img src="/images/services-dots-circle.svg" alt="services-dots-1" />
+                        <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.6797 16.5594L18.9332 -3.59115e-06L18.9332 33.1188L37.6797 16.5594Z" fill="#02D9FC"/>
+                            <path d="M18.9346 16.5594L0.188068 -3.59115e-06L0.188068 33.1188L18.9346 16.5594Z" fill="#5BEBC1"/>
                         </svg>
-                        <svg width="40" height="52" viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M57.8672 25.5594L28.932 -3.46965e-06L28.932 51.1188L57.8672 25.5594Z" fill="#02D9FC"/>
-                            <path d="M28.9355 25.5594L0.000365601 -3.46965e-06L0.000366211 51.1188L28.9355 25.5594Z" fill="#5BEBC1"/>
+                        <img src="/images/services-dots-light-blue-mob.svg" alt="services-dots-2" />
+                        <svg width="32" height="66" viewBox="0 0 32 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.0324 18.249L0.0648419 9.77715e-07L32 3.8147e-06L16.0324 18.249Z" fill="#5BEBC1"/>
+                            <path d="M16.0324 37.1154L0.0648419 18.8665L32 18.8665L16.0324 37.1154Z" fill="#3F5CFA"/>
+                            <ellipse cx="15.694" cy="52.9049" rx="13.4075" ry="13.0452" transform="rotate(-180 15.694 52.9049)" fill="#162740"/>
                         </svg>
-                        <img src="/images/services-dots-dark-blue.svg" alt="services-dots-2" />
-
                     </div>
                 </Media>
             </div>

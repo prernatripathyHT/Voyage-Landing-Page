@@ -57,20 +57,41 @@ export default function ServicesPageStrategyGuideBlock(){
                           {<div className={styles.mainBlockData} dangerouslySetInnerHTML={{ __html:ServicesPageStrategyGuideBlockData.mainBlockData}} />}
                       </div>
                       <div className={styles.rightBlock}>
+                      <Media greaterThanOrEqual="md">
                           <img src={ServicesPageStrategyGuideBlockData.mainBlockImage} alt={ServicesPageStrategyGuideBlockData.mainBlockTitle}/>
+                      </Media>
+                      <Media lessThan="md">
+                          <img src={ServicesPageStrategyGuideBlockData.mainBlockImage_mob} alt={ServicesPageStrategyGuideBlockData.mainBlockTitle}/>
+                      </Media>
                       </div>
                   </div>
               </div>
 
               <div className={styles.section_2}>
                 <div className={`container ${styles.section_2_innerWrapper}`}>
+                    <Media greaterThanOrEqual="md">
                     <div className={styles.leftBlock}>
                         <img src={ServicesPageStrategyGuideBlockData.subBlockImage_1} alt={ServicesPageStrategyGuideBlockData.subBlockTitle_1}/>
                     </div>
+                         
                     <div className={styles.rightBlock}>
                         <h4>{ServicesPageStrategyGuideBlockData.subBlockTitle_1}</h4>
                         {<div className={styles.subBlockData_1} dangerouslySetInnerHTML={{ __html:ServicesPageStrategyGuideBlockData.subBlockData_1}} />}
                     </div>
+                    </Media>
+                    <Media lessThan="md">
+                    <div className={styles.leftBlock}>
+                        <h4>{ServicesPageStrategyGuideBlockData.subBlockTitle_1}</h4>
+                        <div className={styles.imageWrapper}>
+                            <img src={ServicesPageStrategyGuideBlockData.subBlockImage_1_mob} alt={ServicesPageStrategyGuideBlockData.subBlockTitle_1}/>
+                        </div>
+                    </div>
+                         
+                    <div className={styles.rightBlock}>
+                   
+                        {<div className={styles.subBlockData_1} dangerouslySetInnerHTML={{ __html:ServicesPageStrategyGuideBlockData.subBlockData_1}} />}
+                    </div>
+                    </Media>
                 </div>
               </div>
               <Media greaterThanOrEqual="md">

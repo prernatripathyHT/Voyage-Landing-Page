@@ -49,8 +49,8 @@
 
 @media screen and (max-width: 768px) {
     .servicesPageConsultingBlock{
-        padding-top: 20.944vw;
-        padding-bottom: 10.222vw;
+        padding-top: 12.8vw;
+        padding-bottom: 11.7333vw;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
     }
 
@@ -64,21 +64,14 @@
     }
 
     .leftBlock h2{
-        font-size: 8vw;
+        font-size: 10.1333vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 8.97vw;
+        line-height: 13.6vw;
         letter-spacing: 0em;
         text-align: left;
         position: relative;
-        margin-bottom: 8.5333vw;
-    }
-
-    .leftBlock h2::before{
-        position: absolute;
-        content: url(/images/services-consulting-arrow-mob.svg);
-        left: 0;
-        top: -14.20833vw;
+        margin-bottom: 5.333vw;
     }
 
     .rightBlock{
@@ -89,10 +82,10 @@
         font-size: 3.73333vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 5.6vw;
+        line-height: 5.8666vw;
         letter-spacing: 0em;
         text-align: left; 
-        margin-bottom: 5.3333vw;
-        opacity: .8;
+        margin-bottom: 4.2666vw;
+        opacity: .5;
     }
 }

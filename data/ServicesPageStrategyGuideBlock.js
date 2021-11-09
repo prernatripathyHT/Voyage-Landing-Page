@@ -7,6 +7,7 @@ export const ServicesPageStrategyGuideBlockData = {
      <p><span>When you partner through Voyage Compass with our industry-proven, award-winning team of</span> strategists, engineers and creatives,<span> you gain the entirety of our digital marketing and SMS strategic expertise.</span></p>
     `,
     mainBlockImage: "images/services-strategy-guide-main.png",
+    mainBlockImage_mob: "images/services-strategy-guide-main-mob.png",
 
 
     subBlockTitle_1: "Course Setting: 360° Digital Marketing Audit",
@@ -21,6 +22,7 @@ export const ServicesPageStrategyGuideBlockData = {
      <p>From this baseline, our SMS and eCommerce consulting team can help your brand formulate an incisive strategy for smarter SMS marketing.</p>
     `,
     subBlockImage_1: "images/service-strategy-guide-sub-1.png",
+    subBlockImage_1_mob: "images/service-strategy-guide-sub-1-mob.png",
     
 
     subBlockTitle_2: "SMS Strategy: Foundational to Advanced",

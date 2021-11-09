@@ -11,4 +11,5 @@ export const ServicesPageManagedServiceBlockData = {
      <p>Prefer a more flexible approach? Break out whatever services you might need by choosing from the below options.</p>
     `,
     mainBlockImage: "images/services-managed-service-main.png",
+    mainBlockImage_mob: "images/services-managed-service-main-mob.png"
 }

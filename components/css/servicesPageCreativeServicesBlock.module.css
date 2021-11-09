@@ -199,16 +199,16 @@
     }
 
     .section_1{
-        padding-top: 12.3611vw;
-        padding-bottom: 6.45833vw;
+        padding-top: 16vw;
+        padding-bottom: 16vw;
         position: relative;
     }
 
     .section_1::before{
         position: absolute;
-        content: url(/images/voyage-creative-service-1-mob.svg);
-        top: 76px;
-        right: 30px;
+        content: url(/images/voyage-creative-service-1-mob-new.svg);
+        top: -14px;
+        right: 16px;
     }
 
     /* .section_1::after{
@@ -229,55 +229,55 @@
     }
 
     .section_1 h3{
-        font-size: 6.5vw;
+        font-size: 7.4666vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 7.97vw;
+        line-height: 10.1333vw;
         letter-spacing: 0em;
         text-align: left;
-        margin-bottom: 8.5333vw;
+        margin-bottom: 6.4vw;
     }
 
     .section_1 p{
         font-size: 3.73333vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 5.6vw;
-        letter-spacing: 0em;
+        line-height: 5.8666vw;
+        letter-spacing: 0.01em;
         text-align: left;
-        margin-bottom: 4.2666vw;
+        margin-bottom: 6.4vw;
         opacity: .5;
     }
 
      /* SECTION 2,3 MOBILE */
 
      .section_3{
-         padding-top: 15vw;
+         padding-top: 17vw;
      }
 
      .section_2 h4, .section_3 h4{
-        font-size: 5vw;
+        font-size: 6.4vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 6.75vw;
+        line-height: 8.5333vw;
         letter-spacing: 0em;
-        text-align: center;
-        margin-bottom: 2.5333vw;
+        text-align: left;
+        margin-bottom: 6.4vw;
     }
 
      .section_2 img, .section_3 img{
         width: 100%;
-        margin-bottom: 4.2666vw;
+        margin-bottom: 6.4vw;
     }
 
     .section_2 h5, .section_3 h5{
-        font-size: 4.55vw;
+        font-size: 5.333vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 5.75vw;
+        line-height: 8vw;
         letter-spacing: 0em;
         text-align: left;
-        margin-bottom: 1.5333vw;
+        margin-bottom: 4.2666vw;
         color: #3F5CFB;
     }
 
@@ -285,12 +285,27 @@
         font-size: 3.73333vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 5.6vw;
-        letter-spacing: 0em;
+        line-height: 5.8666vw;
+        letter-spacing: 0.01em;
         text-align: left;
         opacity: .5;
+        margin-bottom: 4.2666vw;
     }
 
+    .section_2 p:last-of-type, .section_3 p:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .section_2{
+        position: relative;
+    }
+
+    .section_2::before{
+        position: absolute;
+        content: url(/images/voyage-creative-service-2-mob-new.svg);
+        bottom: -50px;
+        left: 0;
+    }
 
 
 }

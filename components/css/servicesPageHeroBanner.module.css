@@ -121,18 +121,18 @@
     .servicesPageHeroBanner {
         width: 100%;
         position: relative;
-        padding-top: 30.9333vw;
-        border-bottom: 40px solid #3F5CFB;  
-        padding-bottom: 15.625vw;
+        padding-top: 46.1333vw;
+        border-bottom: 53px solid #3F5CFB;  
+        padding-bottom: 76vw;
       }
 
       .servicesPageHeroBanner::after {
         position: absolute;
         content: '';
         background-color: #02D9FC;
-        width: 22.6388vw;
-        height: 40px;
-        bottom:-40px;
+        width: 50%;
+        height: 53px;
+        bottom:-53px;
         right: 0;
       }
 
@@ -141,14 +141,13 @@
 
       .heroTitle{
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
-        font-size: 10vw;
+        font-size: 18.1333vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 10.97vw;
+        line-height: 20vw;
         letter-spacing: 0em;
         text-align: center;
         position: relative;
-        width: 50%;
         margin: auto;
         z-index: 1;
       }
@@ -156,10 +155,11 @@
         position: absolute;
         content: '';
         background-color: #5BEBC1;
-        width: 100%;
-        height: 3px;
+        width: 75%;
+        height: 2px;
         bottom:-12px;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       /* .designBlock svg:first-child{
@@ -172,23 +172,22 @@
       .designBlock svg:nth-of-type(1){
         position: absolute;
         right: 0;
-        bottom: -61px;
+        bottom: -81px;
         z-index: 1;
     }
 
     .designBlock img:nth-of-type(1){
         position: absolute;
-        left: 23%;
-        width: 56px;
-        top: 111px;
-        z-index: -1;
-        opacity: .5;
+        left: 0%;
+        width: 22%;
+        bottom: -25px;
+        z-index: 1;
     }
 
     .designBlock img:nth-of-type(2){
         position: absolute;
-        left: 200px;
-        bottom: 356px;
+        right: 0;
+        top: 130px;
         z-index: 1;
     }
 
@@ -201,15 +200,16 @@
 
     .designBlock svg:nth-of-type(2){
         position: absolute;
-        left: 68px;
-        bottom: -39px;
+        left: 33px;
+        top: 114px;
         z-index: 1;
     }
 
     .designBlock svg:nth-of-type(3){
         position: absolute;
-        left: 30px;
-        top: 69px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 156px;
         z-index: 1;
     }
 
