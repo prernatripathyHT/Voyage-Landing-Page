@@ -30,7 +30,7 @@ export const ServicesPageStrategyGuideBlockData = {
        {
           title: "List Building",
           text:  `Our List Building consultations through Voyage Compass takes the sort of service you see with our custom, on-brand modals to the next logical step. With assists from our teams of developers and creatives, we'll set you up with A/B tests, benchmarks, and best practices to optimize your SMS lists.`,
-          image: "images/service-strategy-guide-sub-2.1.png"
+          image: "images/service-strategy-guide-sub-2.1-new.png"
        },
        {
          title: "Keyword Campaigns",
