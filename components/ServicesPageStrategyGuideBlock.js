@@ -67,9 +67,10 @@ export default function ServicesPageStrategyGuideBlock(){
                   </div>
               </div>
 
-              <div className={styles.section_2}>
-                <div className={`container ${styles.section_2_innerWrapper}`}>
+        
                     <Media greaterThanOrEqual="md">
+                    <div className={styles.section_2}>
+                <div className={`container ${styles.section_2_innerWrapper}`}>
                     <div className={styles.leftBlock}>
                         <img src={ServicesPageStrategyGuideBlockData.subBlockImage_1} alt={ServicesPageStrategyGuideBlockData.subBlockTitle_1}/>
                     </div>
@@ -78,8 +79,12 @@ export default function ServicesPageStrategyGuideBlock(){
                         <h4>{ServicesPageStrategyGuideBlockData.subBlockTitle_1}</h4>
                         {<div className={styles.subBlockData_1} dangerouslySetInnerHTML={{ __html:ServicesPageStrategyGuideBlockData.subBlockData_1}} />}
                     </div>
+                    </div>
+              </div>
                     </Media>
                     <Media lessThan="md">
+                    <div className={styles.section_2}>
+                <div className={`container ${styles.section_2_innerWrapper}`}>
                     <div className={styles.leftBlock}>
                         <h4>{ServicesPageStrategyGuideBlockData.subBlockTitle_1}</h4>
                         <div className={styles.imageWrapper}>
@@ -91,9 +96,10 @@ export default function ServicesPageStrategyGuideBlock(){
                    
                         {<div className={styles.subBlockData_1} dangerouslySetInnerHTML={{ __html:ServicesPageStrategyGuideBlockData.subBlockData_1}} />}
                     </div>
+                    </div>
+                    </div>
                     </Media>
-                </div>
-              </div>
+               
               <Media greaterThanOrEqual="md">
               <div className={styles.section_3}>
               <div className={`container ${styles.section_3_innerWrapper}`}>

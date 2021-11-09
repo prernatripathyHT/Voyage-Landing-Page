@@ -17,9 +17,10 @@ export default function ServicesPageManagedServiceBlock(){
     return (
         <MediaContextProvider>
         <section className={styles.servicesPageManagedServiceBlock}>
-                  <div className={`${styles.section_1}`}>
-                      <div className={`container ${styles.managedService_innerWrapper}`}>
+                 
                         <Media greaterThanOrEqual="md">
+                        <div className={`${styles.section_1}`}>
+                      <div className={`container ${styles.managedService_innerWrapper}`}>
                         <div className={styles.leftBlock}>
                             <img src={ServicesPageManagedServiceBlockData.mainBlockImage} alt={ServicesPageManagedServiceBlockData.mainBlockTitle}/>
                         </div>
@@ -27,8 +28,12 @@ export default function ServicesPageManagedServiceBlock(){
                             <h3>{ServicesPageManagedServiceBlockData.mainBlockTitle}</h3>
                             {<div className={styles.mainBlockData} dangerouslySetInnerHTML={{ __html:ServicesPageManagedServiceBlockData.mainBlockData}} />}                      
                         </div>
+                        </div>
+                  </div>
                         </Media>
                         <Media lessThan="md">
+                        <div className={`${styles.section_1}`}>
+                      <div className={`container ${styles.managedService_innerWrapper}`}>
                         <div className={styles.leftBlock}>
                             <h3>{ServicesPageManagedServiceBlockData.mainBlockTitle}</h3>
                             <img src={ServicesPageManagedServiceBlockData.mainBlockImage_mob} alt={ServicesPageManagedServiceBlockData.mainBlockTitle}/>
@@ -36,9 +41,10 @@ export default function ServicesPageManagedServiceBlock(){
                         <div className={styles.rightBlock}>
                             {<div className={styles.mainBlockData} dangerouslySetInnerHTML={{ __html:ServicesPageManagedServiceBlockData.mainBlockData}} />}                      
                         </div>
+                        </div>
+                        </div>
                         </Media>
-                      </div>
-                  </div>
+                    
         </section>
         </MediaContextProvider>
     )

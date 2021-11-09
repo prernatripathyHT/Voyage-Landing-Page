@@ -80,6 +80,11 @@
         display: flex;
     }
 
+    .section_2_innerWrapper .fresnel-container.fresnel-greaterThanOrEqual-md{
+        display: flex;
+    }
+
+
     .section_2_innerWrapper .leftBlock{
         background-color: #1C345C;
         border-radius: 10px;
