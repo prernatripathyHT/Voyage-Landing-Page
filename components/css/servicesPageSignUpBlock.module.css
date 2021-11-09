@@ -1,5 +1,5 @@
 @media screen and (min-width: 769px) {
-    .ServicesPageSignupBlock{
+    .servicePageSignupBlock{
         text-align: center;
         font-family: "neue-haas-grotesk-display-pro", sans-serif;
 
@@ -62,6 +62,7 @@
     }
 
     .leftSegment h4{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
         font-size: 2.777vw;
         font-style: normal;
         font-weight: 400;
@@ -71,6 +72,7 @@
     }
 
     .rightSegment p{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
         font-size: 1.25vw;
         font-style: normal;
         font-weight: 400;
@@ -84,11 +86,12 @@
     }
 
     .bottomBlock{
-        width: 43.6111vw;
+        width: 47.6111vw;
         margin: auto;
     }
 
     .bottomBlock h1{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
         font-size: 2.5vw;
         font-style: normal;
         font-weight: 400;
@@ -99,6 +102,7 @@
     }
 
     .bottomBlock p{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
         font-size: 1.25vw;
         font-style: normal;
         font-weight: 400;
@@ -127,6 +131,154 @@
         font-weight: 700;
         line-height: 1.45333vw;
         letter-spacing: 0.05em;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: 1px solid #3C55FF;
+        transition: all .3s;
+    }
+
+    .buttonBlock .signupButton:hover{
+        color: #3C55FF;
+        background-color: #fff;
+    }
+  
+}
+
+
+@media screen and (max-width: 768px) {
+    .servicePageSignupBlock{
+        text-align: center;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        margin-top: 50px;
+    }
+
+    .signupContainer{
+        margin:auto;
+        position: relative;
+    }
+
+    .topBlock{
+        background-color: #162740;
+        padding: 15.569vw 6.9444vw 29.1111vw;
+        margin-bottom: 10.666vw;
+        position: relative;
+    }
+
+    .topBlock .designBlock svg:first-child{
+        position: absolute;
+        top: 8px;
+        left: 9px;
+    }
+
+    .topBlock .designBlock svg:nth-child(2){
+        position: absolute;
+        top: 8px;
+        right: 0;
+    }
+
+    .topBlock .designBlock svg:nth-child(3){
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+    }
+
+    .topBlock .designBlock svg:nth-child(4){
+        position: absolute;
+        bottom: -34px;
+        left: 41px;
+    }
+
+    .topBlock .designBlock svg:nth-child(5){
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+    }
+
+    .textBlock{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftSegment{
+        width: 100%;
+    }
+    .rightSegment{
+        width: 100%;
+    }
+
+    .leftSegment h4{
+        font-size: 4.55vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.75vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 8.5333vw;
+    }
+
+    .rightSegment p{
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 4.2666vw;
+    }
+    .rightSegment p span{
+        opacity: .7;
+    }
+
+    .bottomBlock{
+        /* width: 47.6111vw; */
+        margin: auto;
+    }
+
+    .bottomBlock h1{
+        font-size: 4.55vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.75vw;
+        letter-spacing: 0em;
+        text-align: center;    
+        margin-bottom: 5.666vw;
+    }
+
+    .bottomBlock p{
+        width: 80%;
+        margin: auto;
+        opacity: .5;
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 6.2666vw;
+    }
+
+    .buttonBlock{
+        text-align: center;
+        margin-bottom: 3.47222vw;
+    }
+
+    .buttonBlock .signupButton{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+        margin: auto;
+        width: 50.875vw;
+        height: 10.40277vw;
+        background-color: #3C55FF;
+        color: white;
+        border-radius: 5px;
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
         text-align: center;
         text-transform: uppercase;
         cursor: pointer;

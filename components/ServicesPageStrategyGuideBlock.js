@@ -1,6 +1,33 @@
 import { ServicesPageStrategyGuideBlockData } from '../data/ServicesPageStrategyGuideBlock';
 import styles from './css/servicesPageStrategyGuideBlock.module.css';
 import {useState} from 'react';
+import { createMedia } from "@artsy/fresnel";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const { MediaContextProvider, Media } = createMedia({
+    breakpoints: {
+      sm: 0,
+      md: 769,
+      lg: 1024,
+      xl: 1192,
+    },
+  });
+
+
+const settings = {
+    dots: true,
+    infinite: false,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth:false,
+    cssEase:`cubic-bezier(.51,.11,.44,.96)`,
+  };
+
 
 export default function ServicesPageStrategyGuideBlock(){
     const [selected, setSelected] = useState(ServicesPageStrategyGuideBlockData.subBlockData_2[0]);
@@ -20,6 +47,7 @@ export default function ServicesPageStrategyGuideBlock(){
     
     
     return (
+        <MediaContextProvider>
         <section className={styles.servicesPageStrategyGuideBlock}>
 
               <div className={styles.section_1}>
@@ -45,7 +73,7 @@ export default function ServicesPageStrategyGuideBlock(){
                     </div>
                 </div>
               </div>
-
+              <Media greaterThanOrEqual="md">
               <div className={styles.section_3}>
               <div className={`container ${styles.section_3_innerWrapper}`}>
                     <div className={styles.leftBlock}>
@@ -71,7 +99,27 @@ export default function ServicesPageStrategyGuideBlock(){
                     </div>
                 </div>
               </div>
+              </Media>
+              <Media lessThan="md">
+              <div className={styles.section_3}>
+              <h4 className="container">{ServicesPageStrategyGuideBlockData.subBlockTitle_2}</h4>
+                <Slider {...settings} className={`container ${styles.innerStatsBlock}`} data-scroll >
+                    {/* <div className={`container ${styles.section_3_innerWrapper}`}>   */}
+                            {ServicesPageStrategyGuideBlockData.subBlockData_2.map((item, index) => (
+                                <div className={styles.accordianItem} key={index}>
+                                
+                                    <img src={item.image} alt={item.title}/>
+                                    <h5>{item.title}</h5>
+                                    <p>{item.text}</p>
+                                </div>
+                            ))}
+                    {/* </div> */}
+                </Slider>
+              </div>
+              </Media>
+
  
         </section>
+        </MediaContextProvider>
     )
 }

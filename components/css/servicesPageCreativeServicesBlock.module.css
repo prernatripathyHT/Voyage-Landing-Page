@@ -191,3 +191,106 @@
 
 
 }
+
+
+@media screen and (max-width: 768px) {
+    .servicesPageCreativeServicesBlock{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .section_1{
+        padding-top: 12.3611vw;
+        padding-bottom: 6.45833vw;
+        position: relative;
+    }
+
+    .section_1::before{
+        position: absolute;
+        content: url(/images/voyage-creative-service-1-mob.svg);
+        top: 76px;
+        right: 30px;
+    }
+
+    /* .section_1::after{
+        position: absolute;
+        content: url(/images/voyage-creative-service-2.svg);
+        bottom: 122px;
+        left: 41.04vw;
+    } */
+
+    .section_1_innerWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .leftBlock, .rightBlock{
+        width: 100%;
+    }
+
+    .section_1 h3{
+        font-size: 6.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 7.97vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 8.5333vw;
+    }
+
+    .section_1 p{
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 4.2666vw;
+        opacity: .5;
+    }
+
+     /* SECTION 2,3 MOBILE */
+
+     .section_3{
+         padding-top: 15vw;
+     }
+
+     .section_2 h4, .section_3 h4{
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.75vw;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 2.5333vw;
+    }
+
+     .section_2 img, .section_3 img{
+        width: 100%;
+        margin-bottom: 4.2666vw;
+    }
+
+    .section_2 h5, .section_3 h5{
+        font-size: 4.55vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.75vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1.5333vw;
+        color: #3F5CFB;
+    }
+
+    .section_2 p, .section_3 p{
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .5;
+    }
+
+
+
+}

@@ -168,7 +168,7 @@
     .section_3 .section_3_innerWrapper{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        /* align-items: center; */
     }
 
   
@@ -191,10 +191,10 @@
     .section_3 .rightBlock{
         position: relative;
         width: 41.944vw;
-        height: 28.611vw;
+        /* height: 28.611vw;
         background-color: #1C345C;
         border-radius: 10px;
-        top: 1.111vw;
+        top: 1.111vw; */
     }
 
     .section_3 .rightBlock::after{
@@ -263,11 +263,11 @@
     .accordianImage{
         opacity: 0;
         position: absolute;
-        top: 1.111vw;
+        top: 8.111vw;
         right: 0;
         width: 100%;
         transform: translateY(10px);
-        transition: all .1s ease-in;
+        /* transition: all .1s ease-in; */
     }
     .accordianImage img{
         width: 100%;
@@ -277,6 +277,214 @@
         opacity: 1;
         transform: translateY(0px);
         transition: all .5s ease-in;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .servicesPageStrategyGuideBlock{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .section_1{
+        background-color: #3F5CFB;
+        padding-top: 7.3611vw;
+        padding-bottom: 1.3611vw;
+        position: relative;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    /* .section_1::before{
+        content: url(/images/voyage-strategy-guide-1.svg);
+        position: absolute;
+        right: 0;
+        top: -1.5277vw;
+        z-index: 2;
+    } */
+
+    /* .section_1::after{
+        position: absolute;
+        content: '';
+        background:  linear-gradient(270deg, #3F5CFA -96.42%, rgba(63, 92, 250, 0) 42.99%);
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 20.8333vw;
+        height: 100%;
+    } */
+    .leftBlock, .rightBlock{
+        width: 100%;
+    }
+
+    .section_1 h3{
+        font-size: 6.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 7.97vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 8.5333vw;
+    }
+
+    .section_1 p{
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 4.2666vw;
+    }
+
+    .section_1 p span{
+        opacity: .7;
+    }
+
+    .section_1 img{
+        width: 100%;
+        position: relative;
+        right: -20px;
+    }
+
+    .section_2, .section_3{
+        padding-top: 12.222vw;
+        padding-bottom: 7.222vw;
+    }
+
+    .section_3{
+        padding-top: 3.47222vw;
+        position: relative;
+    }
+
+    .section_2_innerWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_2_innerWrapper .leftBlock{
+        background-color: #1C345C;
+        border-radius: 10px;
+        width: 100%;
+        height: 58.6111vw;
+        position: relative;
+        margin-bottom: 16.5333vw;
+    }
+
+
+    .section_2_innerWrapper .leftBlock img{
+        width: 115%;
+        position: relative;
+        left: -6.0555vw;
+    }
+
+    .section_2_innerWrapper .leftBlock::before{
+        position: absolute;
+        content: url(/images/services-page-strategy-guide-arrows-mob.svg);
+        left: -8.30555vw;
+        top: 3.86111vw;
+        z-index: 10;
+    }
+
+    .section_2_innerWrapper .rightBlock{
+        /* padding-left: 5vw; */
+    }
+
+    .section_2 h4{
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.75vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 8.5333vw;
+    }
+
+    .section_2 p, .section_2 ul li{
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 4.2666vw;
+    }
+
+    .section_2 p, .section_2 ul li span{
+        opacity: .5;
+    }
+
+    .section_2 ul li{
+        list-style: none;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .section_2 ul li::before{
+        position: absolute;
+        content: '';
+        background-color: #3F5CFB;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        left: 0;
+        top: 40%;
+        opacity: 1;
+    }
+
+    .section_3::before{
+        content: url(/images/voyage-strategy-guide-2-mob.svg);
+        position: absolute;
+        right: -1px;
+        top: -40px;
+        z-index: 2;
+    }
+/* 
+    .section_3::after{
+        content: url(/images/voyage-strategy-guide-3.svg);
+        position: absolute;
+        right: 0;
+        top: 10px;
+        z-index: 2;
+    } */
+
+
+
+    /* SECTION 3 MOBILE */
+    .section_3 h4{
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6.75vw;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 2.5333vw;
+    }
+
+    .section_3 img{
+        width: 100%;
+        margin-bottom: 4.2666vw;
+    }
+
+    .section_3 h5{
+        font-size: 4.55vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.75vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 1.5333vw;
+        color: #3F5CFB;
+    }
+
+    .section_3 p{
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        opacity: .5;
     }
 
 }

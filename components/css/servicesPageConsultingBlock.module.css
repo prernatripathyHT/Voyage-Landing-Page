@@ -46,3 +46,53 @@
         opacity: .8;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .servicesPageConsultingBlock{
+        padding-top: 20.944vw;
+        padding-bottom: 10.222vw;
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+
+    .consultingBlock_innerWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftBlock{
+        width: 100%;
+    }
+
+    .leftBlock h2{
+        font-size: 8vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 8.97vw;
+        letter-spacing: 0em;
+        text-align: left;
+        position: relative;
+        margin-bottom: 8.5333vw;
+    }
+
+    .leftBlock h2::before{
+        position: absolute;
+        content: url(/images/services-consulting-arrow-mob.svg);
+        left: 0;
+        top: -14.20833vw;
+    }
+
+    .rightBlock{
+        width: 100%;
+    }
+
+    .rightBlock p{
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left; 
+        margin-bottom: 5.3333vw;
+        opacity: .8;
+    }
+}

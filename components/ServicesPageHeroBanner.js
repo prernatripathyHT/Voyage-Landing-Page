@@ -1,5 +1,15 @@
 import {useState, useEffect} from 'react';
 import styles from './css/servicesPageHeroBanner.module.css';
+import { createMedia } from "@artsy/fresnel";
+
+const { MediaContextProvider, Media } = createMedia({
+    breakpoints: {
+      sm: 0,
+      md: 769,
+      lg: 1024,
+      xl: 1192,
+    },
+  });
 
 
 export default function ServicesPageHeroBanner(){
@@ -14,11 +24,13 @@ export default function ServicesPageHeroBanner(){
 
 
     return (
+        <MediaContextProvider>
         <section className={styles.servicesPageHeroBanner}>
             <div className={`${styles.heroBanner_innerWrapper}`}>
                 <div className={styles.textBlock} style={{transform: `translateY(${offsetY * -.15}px)`}}>
                     <h1 className={styles.heroTitle}>Voyage <br /> Compass</h1>
                 </div>
+                <Media greaterThanOrEqual="md">
                 <div className={styles.designBlock}>
 
                     <svg width="159" height="177" viewBox="0 0 159 177" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,8 +70,30 @@ export default function ServicesPageHeroBanner(){
                     {/* </div> */}
 
                 </div>
+                </Media>
+                <Media lessThan="md">
+                    <div className={styles.designBlock}>
+                        <svg width="100" height="182" viewBox="0 0 345 482" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="167.076" transform="matrix(0.359412 -0.933179 -0.933179 -0.359412 235 216.37)" fill="#1C345C"/>
+                            <path d="M304.032 308.268L264.825 203.622L220.05 234.545L304.032 308.268Z" fill="#5BEBC1"/>
+                            <path d="M171.243 119.69L255.226 193.413L210.451 224.337L171.243 119.69Z" fill="#02D9FC"/>
+                            <ellipse rx="46" ry="44.5" transform="matrix(0.359412 -0.933179 -0.933179 -0.359412 126.059 360.92)" fill="#3F5CFB"/>
+                        </svg>
+                        <svg width="75" height="70" viewBox="0 0 159 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.775391" y="79.4914" width="157.252" height="96.5799" fill="#162740"/>
+                            <path d="M0.775391 79.119L79.2912 32.7709L158.027 79.4911L79.5115 125.839L0.775391 79.119Z" fill="#5BEBC1"/>
+                        </svg>
+                        <svg width="40" height="52" viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M57.8672 25.5594L28.932 -3.46965e-06L28.932 51.1188L57.8672 25.5594Z" fill="#02D9FC"/>
+                            <path d="M28.9355 25.5594L0.000365601 -3.46965e-06L0.000366211 51.1188L28.9355 25.5594Z" fill="#5BEBC1"/>
+                        </svg>
+                        <img src="/images/services-dots-dark-blue.svg" alt="services-dots-2" />
+
+                    </div>
+                </Media>
             </div>
         </section>
+        </MediaContextProvider>
     )
 }
 

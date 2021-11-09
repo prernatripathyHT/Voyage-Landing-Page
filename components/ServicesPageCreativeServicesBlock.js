@@ -1,6 +1,32 @@
 import { ServicesPageCreativeServicesBlockData } from '../data/ServicesPageCreativeServicesBlock';
 import styles from './css/servicesPageCreativeServicesBlock.module.css';
 import {useState} from 'react';
+import { createMedia } from "@artsy/fresnel";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const { MediaContextProvider, Media } = createMedia({
+    breakpoints: {
+      sm: 0,
+      md: 769,
+      lg: 1024,
+      xl: 1192,
+    },
+  });
+
+
+const settings = {
+    dots: true,
+    infinite: false,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth:false,
+    cssEase:`cubic-bezier(.51,.11,.44,.96)`,
+  };
 
 export default function ServicesPageCreativeServicesBlock(){
     const [selected, setSelected] = useState(ServicesPageCreativeServicesBlockData.subBlockData_1[0]);
@@ -25,6 +51,7 @@ export default function ServicesPageCreativeServicesBlock(){
     
     
     return (
+        <MediaContextProvider>
         <section className={styles.servicesPageCreativeServicesBlock}>
 
               <div className={styles.section_1}>
@@ -37,7 +64,7 @@ export default function ServicesPageCreativeServicesBlock(){
                       </div>
                   </div>
               </div>
-
+              <Media greaterThanOrEqual="md">
               <div className={styles.section_2}>
                <div className={`container ${styles.section_2_innerWrapper}`}>
                     <div className={styles.leftBlock}>
@@ -89,7 +116,35 @@ export default function ServicesPageCreativeServicesBlock(){
                     </div>
                 </div>
               </div>
+              </Media>
+              <Media lessThan="md">
+              <div className={styles.section_2}>
+              <h4 className="container">{ServicesPageCreativeServicesBlockData.subBlockTitle_1}</h4>
+                <Slider {...settings} className={`container ${styles.innerStatsBlock}`} data-scroll >
+                            {ServicesPageCreativeServicesBlockData.subBlockData_1.map((item, index) => (
+                                <div className={styles.accordianItem} key={index}>
+                                    <img src={item.image} alt={item.title}/>
+                                    <h5>{item.title}</h5>
+                                    <p>{item.text}</p>
+                                </div>
+                            ))}
+                </Slider>
+              </div>
+              <div className={styles.section_3}>
+              <h4 className="container">{ServicesPageCreativeServicesBlockData.subBlockTitle_2}</h4>
+                <Slider {...settings} className={`container ${styles.innerStatsBlock}`} data-scroll >
+                            {ServicesPageCreativeServicesBlockData.subBlockData_2.map((item, index) => (
+                                <div className={styles.accordianItem} key={index}>
+                                    <img src={item.image} alt={item.title}/>
+                                    <h5>{item.title}</h5>
+                                    <p>{item.text}</p>
+                                </div>
+                            ))}
+                </Slider>
+              </div>
+              </Media>
  
         </section>
+        </MediaContextProvider>
     )
 }

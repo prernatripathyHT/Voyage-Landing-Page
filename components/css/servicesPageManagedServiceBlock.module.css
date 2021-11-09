@@ -81,3 +81,91 @@
   
 
 }
+
+
+@media screen and (max-width: 768px) {
+    .servicesPageManagedServiceBlock{
+        font-family: "neue-haas-grotesk-display-pro", sans-serif;
+    }
+    .section_1{
+        background-color: #FAFAFA;
+        padding-top: 6.5277vw;
+        padding-bottom: 6.5277vw;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .section_1::before{
+        content: url(/images/voyage-managed-service-dots.svg);
+        position: absolute;
+        bottom: -36px;
+        left: -36px;
+    }
+
+    .managedService_innerWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftBlock, .rightBlock{
+        width: 100%;
+    }
+
+    .managedService_innerWrapper h3{
+        font-size: 6.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 7.97vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 8.5333vw;
+    }
+
+    .managedService_innerWrapper p, .managedService_innerWrapper ul li{
+        font-size: 3.73333vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5.6vw;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 4.2666vw;
+    }
+
+    .managedService_innerWrapper p, .managedService_innerWrapper ul li span{
+        opacity: .5;
+    }
+
+    .managedService_innerWrapper  ul li{
+        list-style: none;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .managedService_innerWrapper  ul li::before{
+        position: absolute;
+        content: '';
+        background-color: #3F5CFB;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        left: 0;
+        top: 40%;
+        opacity: 1;
+    }
+
+    .managedService_innerWrapper p span{
+        opacity: .7;
+    }
+
+    
+
+    .managedService_innerWrapper img{
+        width: 100%;
+        position: relative;
+        left: -20px;
+       
+    }
+
+  
+
+}
