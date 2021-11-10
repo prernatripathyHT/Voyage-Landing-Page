@@ -56,7 +56,7 @@ const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth:false,
-    // adaptiveHeight: true,
+    adaptiveHeight: true,
     cssEase:`cubic-bezier(.51,.11,.44,.96)`,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />

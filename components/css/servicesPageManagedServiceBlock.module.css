@@ -118,7 +118,7 @@
         line-height: 10.1333vw;
         letter-spacing: 0em;
         text-align: left;
-        margin-bottom: 0.5333vw;
+        margin-bottom: 8.5333vw;
     }
 
     .managedService_innerWrapper p, .managedService_innerWrapper ul li{
@@ -163,6 +163,7 @@
         width: 100%;
         position: relative;
         /* left: -20px; */
+        margin-bottom: 6.4vw;
        
     }
 

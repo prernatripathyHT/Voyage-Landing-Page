@@ -20,26 +20,28 @@ button {
 }
 
 .slick-arrow {
-  display: none ;
+  display: none!important ;
 }
 
 .custom-arrow-prev.slick-prev{
   left: -16px;
   transform: translate(-0,-154px);
   z-index: 1;
-  display: flex;
+  display: flex!important;
 }
 
 .custom-arrow-next.slick-next{
   right: -16px;
   transform: translate(-0,-154px);
   z-index: 1;
-  display: flex;
+  display: flex!important;
 }
 
 .custom-arrow-prev.slick-prev::before, .custom-arrow-next.slick-next::before{
   content: unset;
 }
+
+
 @media screen and (min-width: 769px) {
   .slideIn {
     transform: translateY(-20%);

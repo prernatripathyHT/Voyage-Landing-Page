@@ -40,7 +40,7 @@ export const ServicesPageStrategyGuideBlockData = {
       {
          title: "Segmentation",
          text: `One thing we want to see more of out on the open seas of SMS marketing is smarter, and more precise segmentation. This is where your Voyage experience differs from what those other rudderless SMS marketing platforms offer. We'll get you started on ways both perfectly logical (see Automations below) and creative (ahoy, micro-marketing to VIP lists) to segment better.`,
-         image: "images/service-strategy-guide-sub-2.3.png"
+         image: "images/service-strategy-guide-sub-2.3-new.png"
       },
       {
          title: "Automations",
