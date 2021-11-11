@@ -180,6 +180,8 @@
     }
     .accordianImage img{
         width: 100%;
+        -webkit-filter: drop-shadow(6px 43px 93px rgba(0, 0, 0, 0.12));
+        filter: drop-shadow(6px 43px 93px rgba(0, 0, 0, 0.12));
     }
 
     .accordianImage.show{
@@ -268,6 +270,8 @@
      .section_2 img, .section_3 img{
         width: 100%;
         margin-bottom: 6.4vw;
+        -webkit-filter: drop-shadow(6px 43px 93px rgba(0, 0, 0, 0.12));
+        filter: drop-shadow(6px 43px 93px rgba(0, 0, 0, 0.12));
     }
 
     .section_2 h5, .section_3 h5{

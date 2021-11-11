@@ -276,6 +276,8 @@
     }
     .accordianImage img{
         width: 100%;
+        -webkit-filter: drop-shadow(6px 43px 93px rgba(0, 0, 0, 0.12));
+        filter: drop-shadow(6px 43px 93px rgba(0, 0, 0, 0.12));
     }
 
     .accordianImage.show{
@@ -471,6 +473,8 @@
     .section_3 img{
         width: 100%;
         margin-bottom: 4.2666vw;
+        -webkit-filter: drop-shadow(6px 43px 93px rgba(0, 0, 0, 0.12));
+        filter: drop-shadow(6px 43px 93px rgba(0, 0, 0, 0.12));
     }
 
     .section_3 h5{

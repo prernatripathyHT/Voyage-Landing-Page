@@ -25,14 +25,14 @@ button {
 
 .custom-arrow-prev.slick-prev{
   left: -16px;
-  transform: translate(-0,-154px);
+  transform: translate(-0,-134px);
   z-index: 1;
   display: flex!important;
 }
 
 .custom-arrow-next.slick-next{
   right: -16px;
-  transform: translate(-0,-154px);
+  transform: translate(-0,-134px);
   z-index: 1;
   display: flex!important;
 }
