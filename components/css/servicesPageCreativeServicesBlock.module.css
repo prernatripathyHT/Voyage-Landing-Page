@@ -12,14 +12,14 @@
     .section_1::before{
         position: absolute;
         content: url(/images/voyage-creative-service-1.svg);
-        bottom: 170px;
+        bottom: 9vw;
         left: 0;
     }
 
     .section_1::after{
         position: absolute;
         content: url(/images/voyage-creative-service-2.svg);
-        bottom: 122px;
+        bottom: 65px;
         left: 41.04vw;
     }
 
@@ -30,6 +30,10 @@
 
     .leftBlock, .rightBlock{
         width: 50%;
+    }
+
+    .section_1 .leftBlock{
+        padding-right: 50px;
     }
 
     .section_1 h3{

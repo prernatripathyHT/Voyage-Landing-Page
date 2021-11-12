@@ -87,7 +87,7 @@
         margin-bottom: 2.222vw;
     }
     .rightSegment p span{
-        opacity: .7;
+        /* opacity: .7; */
     }
 
     .bottomBlock{
@@ -217,7 +217,7 @@
         margin-bottom: 4.2666vw;
     }
     .rightSegment p span{
-        opacity: .5;
+        /* opacity: .5; */
     }
 
     .bottomBlock{

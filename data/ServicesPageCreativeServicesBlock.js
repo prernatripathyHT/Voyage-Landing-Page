@@ -1,5 +1,5 @@
 export const ServicesPageCreativeServicesBlockData = {
-    mainBlockTitle: "SMS Shipbuilding: Creative Services",
+    mainBlockTitle: "SMS Shipbuild: Creative and Developer Services",
     mainBlockData: 
     `<p>At Voyage, we don't leave you to row it alone with your SMS marketing. Development resourcing should never block your brand from capitalizing on the highest-quality channel of SMS. Our team has built and managed over 200 eCommerce stores, collectively. Our  engineering leaders are plugged into talent pipelines that your brand can leverage to ramp up quickly. </p>
      <p>And when it comes to creative, don't forgot the human in the loop, when focusing on SMS campaign structure and targeting. With data leading the way, Voyage's creative team can steer you towards messaging and imagery that engages, converts, and delights. Hello, ROAS.</p>

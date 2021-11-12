@@ -1,5 +1,5 @@
 export const ServicesPageStrategyGuideBlockData = {
-    mainBlockTitle: "Navigating Your Voyage: Strategy Guide",
+    mainBlockTitle: "Navigating Your Voyage: Strategy",
     mainBlockData: 
     `<p>Voyage brands see ROAS of 100X or higher 📈. </p>
      <p><span>There's a reason for this runaway success. Unlike other SMS platforms ordered by executives, Voyage was</span> built by marketers<span> and technologists – </span>for today's sophisticated marketers.</p>
