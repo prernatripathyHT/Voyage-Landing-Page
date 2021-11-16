@@ -8,8 +8,8 @@ import Head from "next/head";
 import RequestForm from "../../components/RequestForm";
 import { useState } from "react";
 
-const LEVER_URL = process.env.LEVER_URL;
-const LEVER_API_KEY = process.env.LEVER_API_KEY;
+const LEVER_URL = process.env.NEXT_PUBLIC_LEVER_URL;
+const LEVER_API_KEY = process.env.NEXT_PUBLIC_LEVER_API_KEY;
 
 
 
