@@ -82,15 +82,15 @@ export default function BlogPostPage({posts, currentPost}) {
         const [allRelatedPosts, setAllPosts] = useState({posts})
         const [formState, setFormState] = useState("close");
 
-        // if(router.isFallback) {
-        //     return (
-        //         <div>
-        //             <>
-        //                 Loading ...
-        //             </>
-        //         </div>
-        //     )
-        // } 
+        if(router.isFallback) {
+            return (
+                <div>
+                    <>
+                        Loading ...
+                    </>
+                </div>
+            )
+        } 
 
         if(!posts) return null;
   
