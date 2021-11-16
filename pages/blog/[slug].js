@@ -15,8 +15,8 @@ import {useQueries, useQuery, useQueryClient} from 'react-query';
 // const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
 // const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
 
-const CONTENT_API_KEY = process.env.CONTENT_API_KEY;
-const BLOG_URL = process.env.BLOG_URL;
+const CONTENT_API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const BLOG_URL = process.env.NEXT_PUBLIC_BLOG_URL;
 
 
 

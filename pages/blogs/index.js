@@ -16,8 +16,8 @@ import {useQueries, useQuery, useQueryClient, useQueryErrorResetBoundary} from '
 // const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
 // const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
 
-const CONTENT_API_KEY = process.env.CONTENT_API_KEY;
-const BLOG_URL = process.env.BLOG_URL;
+const CONTENT_API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const BLOG_URL = process.env.NEXT_PUBLIC_BLOG_URL;
 
 
 
@@ -26,7 +26,7 @@ const BLOG_URL = process.env.BLOG_URL;
 
 export const getStaticProps = async () => {
  
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog]`);
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);
   const posts = await res.json();
 
 
@@ -56,7 +56,7 @@ const getFilteredPosts = async(key) => {
     return newRes;
   }
 
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);
   return res.json();
 
 }
