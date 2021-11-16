@@ -8,6 +8,7 @@ import BlogArticlePageSignupBlock from "../../components/BlogArticlePageSignupBl
 import BlogPageBottomBlock from "../../components/BlogPageBottomBlock";
 import { useState } from "react";
 import {useQueries, useQuery, useQueryClient} from 'react-query';
+import { useRouter } from 'next/router'
 
 
 //const {CONTENT_API_KEY, BLOG_URL} = process.env;
@@ -78,7 +79,7 @@ const getRelatedPosts = async(key) => {
 
 
 export default function BlogPostPage({posts, currentPost}) {
-
+        const router = useRouter()
         const [allRelatedPosts, setAllPosts] = useState({posts})
         const [formState, setFormState] = useState("close");
 
@@ -92,7 +93,7 @@ export default function BlogPostPage({posts, currentPost}) {
             )
         } 
 
-        if(!posts) return null;
+        // if(!posts) return null;
   
 
        //filter the posts based on the tag/category
