@@ -41,7 +41,8 @@ export const getStaticProps = async ({params}) => {
       props: {
           posts: allPosts[1].posts,
           currentPost: allPosts[0].posts
-        }
+        },
+        revalidate: 60
     }
   }
 
@@ -53,7 +54,7 @@ export const getStaticPaths = async () => {
     const paths = ids.map(slug => ({params: {slug : slug.toString()}}))
     return {
         paths,
-        fallback:false,
+        fallback:true
     }
 }
 

@@ -1,159 +1,987 @@
-/*
- * ATTENTION: An "eval-source-map" devtool has been used.
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 (function() {
 var exports = {};
-exports.id = "pages/blogs";
-exports.ids = ["pages/blogs"];
+exports.id = 55;
+exports.ids = [55];
 exports.modules = {
 
-/***/ "./components/BlogPageAllPosts.js":
-/*!****************************************!*\
-  !*** ./components/BlogPageAllPosts.js ***!
-  \****************************************/
+/***/ 1505:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ BlogPageAllPosts; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _css_blogPageAllPosts_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/blogPageAllPosts.module.css */ \"./components/css/blogPageAllPosts.module.css\");\n/* harmony import */ var _css_blogPageAllPosts_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_blogPageAllPosts_module_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _BlogItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BlogItem */ \"./components/BlogItem.js\");\n\nvar _jsxFileName = \"/Users/Prernat/Documents/HOUNDSTOOTH - GUILD CAPITAL/DEV-PROJECTS/voyage-web-updated/components/BlogPageAllPosts.js\";\n\n\n\nfunction BlogPageAllPosts({\n  posts\n}) {\n  // const [items, setItems] = useState([]);\n  const {\n    0: visible,\n    1: setVisible\n  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(9); // const featuredPosts = {posts};\n\n  const noOfPosts = {\n    posts\n  }.posts.posts.length; // console.log(\"no. of all posts\", noOfPosts)\n\n  const showMoreItems = () => {\n    setVisible(prevValue => prevValue + 9);\n  }; // useEffect(() => {\n  //     setItems(featuredPosts.posts.posts);\n  // }, []);\n  // console.log(\"no. of visible blogs\",visible)\n\n\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n    id: (_css_blogPageAllPosts_module_css__WEBPACK_IMPORTED_MODULE_3___default().allPosts),\n    className: (_css_blogPageAllPosts_module_css__WEBPACK_IMPORTED_MODULE_3___default().allPosts),\n    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n      className: `container ${(_css_blogPageAllPosts_module_css__WEBPACK_IMPORTED_MODULE_3___default().sectionContainer)}`,\n      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: (_css_blogPageAllPosts_module_css__WEBPACK_IMPORTED_MODULE_3___default().allPostsContainer),\n        children: {\n          posts\n        }.posts.posts.slice(6, visible).map(post => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_BlogItem__WEBPACK_IMPORTED_MODULE_2__.default, {\n          post: post\n        }, post.id, false, {\n          fileName: _jsxFileName,\n          lineNumber: 32,\n          columnNumber: 17\n        }, this))\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 30,\n        columnNumber: 14\n      }, this), visible < 18 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n        className: (_css_blogPageAllPosts_module_css__WEBPACK_IMPORTED_MODULE_3___default().showMoreButton),\n        onClick: showMoreItems,\n        children: \"Load More\"\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 35,\n        columnNumber: 29\n      }, this)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 29,\n      columnNumber: 13\n    }, this)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 28,\n    columnNumber: 9\n  }, this);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL0Jsb2dQYWdlQWxsUG9zdHMuanM/M2M0NiJdLCJuYW1lcyI6WyJCbG9nUGFnZUFsbFBvc3RzIiwicG9zdHMiLCJ2aXNpYmxlIiwic2V0VmlzaWJsZSIsInVzZVN0YXRlIiwibm9PZlBvc3RzIiwibGVuZ3RoIiwic2hvd01vcmVJdGVtcyIsInByZXZWYWx1ZSIsInN0eWxlcyIsInNsaWNlIiwibWFwIiwicG9zdCIsImlkIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBQUE7QUFDQTtBQUNBO0FBSWUsU0FBU0EsZ0JBQVQsQ0FBMEI7QUFBQ0M7QUFBRCxDQUExQixFQUFtQztBQUM5QztBQUNBLFFBQU07QUFBQSxPQUFDQyxPQUFEO0FBQUEsT0FBVUM7QUFBVixNQUF3QkMsK0NBQVEsQ0FBQyxDQUFELENBQXRDLENBRjhDLENBRzlDOztBQUNBLFFBQU1DLFNBQVMsR0FBRztBQUFDSjtBQUFELElBQVFBLEtBQVIsQ0FBY0EsS0FBZCxDQUFvQkssTUFBdEMsQ0FKOEMsQ0FLL0M7O0FBRUMsUUFBTUMsYUFBYSxHQUFHLE1BQU07QUFDeEJKLGNBQVUsQ0FBQ0ssU0FBUyxJQUFJQSxTQUFTLEdBQUcsQ0FBMUIsQ0FBVjtBQUNILEdBRkQsQ0FQOEMsQ0FXOUM7QUFFQTtBQUVBO0FBR0E7OztBQUVBLHNCQUNJO0FBQVMsTUFBRSxFQUFFQyxrRkFBYjtBQUE4QixhQUFTLEVBQUVBLGtGQUF6QztBQUFBLDJCQUNJO0FBQUssZUFBUyxFQUFHLGFBQVlBLDBGQUF3QixFQUFyRDtBQUFBLDhCQUNDO0FBQUssaUJBQVMsRUFBRUEsMkZBQWhCO0FBQUEsa0JBQ0k7QUFBQ1I7QUFBRCxVQUFRQSxLQUFSLENBQWNBLEtBQWQsQ0FBb0JTLEtBQXBCLENBQTBCLENBQTFCLEVBQTZCUixPQUE3QixFQUFzQ1MsR0FBdEMsQ0FBMENDLElBQUksaUJBQy9DLDhEQUFDLDhDQUFEO0FBQXdCLGNBQUksRUFBRUE7QUFBOUIsV0FBZUEsSUFBSSxDQUFDQyxFQUFwQjtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQURDO0FBREo7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQURELEVBTUFYLE9BQU8sR0FBRyxFQUFWLGlCQUFnQjtBQUFRLGlCQUFTLEVBQUVPLHdGQUFuQjtBQUEwQyxlQUFPLEVBQUVGLGFBQW5EO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBTmhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURKO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFESjtBQWFIIiwiZmlsZSI6Ii4vY29tcG9uZW50cy9CbG9nUGFnZUFsbFBvc3RzLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHt1c2VTdGF0ZSwgdXNlRWZmZWN0fSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgc3R5bGVzIGZyb20gXCIuL2Nzcy9ibG9nUGFnZUFsbFBvc3RzLm1vZHVsZS5jc3NcIjtcbmltcG9ydCBCbG9nSXRlbSBmcm9tIFwiLi9CbG9nSXRlbVwiO1xuXG5cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQmxvZ1BhZ2VBbGxQb3N0cyh7cG9zdHN9KSB7XG4gICAgLy8gY29uc3QgW2l0ZW1zLCBzZXRJdGVtc10gPSB1c2VTdGF0ZShbXSk7XG4gICAgY29uc3QgW3Zpc2libGUsIHNldFZpc2libGVdID0gdXNlU3RhdGUoOSk7XG4gICAgLy8gY29uc3QgZmVhdHVyZWRQb3N0cyA9IHtwb3N0c307XG4gICAgY29uc3Qgbm9PZlBvc3RzID0ge3Bvc3RzfS5wb3N0cy5wb3N0cy5sZW5ndGg7XG4gICAvLyBjb25zb2xlLmxvZyhcIm5vLiBvZiBhbGwgcG9zdHNcIiwgbm9PZlBvc3RzKVxuXG4gICAgY29uc3Qgc2hvd01vcmVJdGVtcyA9ICgpID0+IHtcbiAgICAgICAgc2V0VmlzaWJsZShwcmV2VmFsdWUgPT4gcHJldlZhbHVlICsgOSk7XG4gICAgfSAgIFxuXG4gICAgLy8gdXNlRWZmZWN0KCgpID0+IHtcbiAgICAgICAgXG4gICAgLy8gICAgIHNldEl0ZW1zKGZlYXR1cmVkUG9zdHMucG9zdHMucG9zdHMpO1xuICAgICAgIFxuICAgIC8vIH0sIFtdKTtcblxuXG4gICAgLy8gY29uc29sZS5sb2coXCJuby4gb2YgdmlzaWJsZSBibG9nc1wiLHZpc2libGUpXG4gXG4gICAgcmV0dXJuIChcbiAgICAgICAgPHNlY3Rpb24gaWQ9e3N0eWxlcy5hbGxQb3N0c30gY2xhc3NOYW1lPXtzdHlsZXMuYWxsUG9zdHN9PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2Bjb250YWluZXIgJHtzdHlsZXMuc2VjdGlvbkNvbnRhaW5lcn1gfT5cbiAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmFsbFBvc3RzQ29udGFpbmVyfT5cbiAgICAgICAgICAgICAgICB7e3Bvc3RzfS5wb3N0cy5wb3N0cy5zbGljZSg2LCB2aXNpYmxlKS5tYXAocG9zdCA9PiAoXG4gICAgICAgICAgICAgICAgPEJsb2dJdGVtIGtleT17cG9zdC5pZH0gcG9zdD17cG9zdH0gLz4gXG4gICAgICAgICAgICAgICAgKSl9ICAgICAgICBcbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICB7dmlzaWJsZSA8IDE4ICYmIDxidXR0b24gY2xhc3NOYW1lPXtzdHlsZXMuc2hvd01vcmVCdXR0b259IG9uQ2xpY2s9e3Nob3dNb3JlSXRlbXN9PkxvYWQgTW9yZTwvYnV0dG9uPn1cbiAgICAgICAgICAgey8qIDxidXR0b24gY2xhc3NOYW1lPXtzdHlsZXMuc2hvd01vcmVCdXR0b259IG9uQ2xpY2s9e3Nob3dNb3JlSXRlbXN9PkxvYWQgTW9yZTwvYnV0dG9uPiAqL31cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L3NlY3Rpb24+XG4gICAgKVxufVxuXG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/BlogPageAllPosts.js\n");
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "default": function() { return /* binding */ Home; },
+  "getStaticProps": function() { return /* binding */ getStaticProps; }
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(5282);
+// EXTERNAL MODULE: ./components/Header.js
+var Header = __webpack_require__(5284);
+// EXTERNAL MODULE: ./components/Footer.js + 1 modules
+var Footer = __webpack_require__(9183);
+// EXTERNAL MODULE: ./components/css/blogPageTagFilteringBlock.module.css
+var blogPageTagFilteringBlock_module = __webpack_require__(8804);
+var blogPageTagFilteringBlock_module_default = /*#__PURE__*/__webpack_require__.n(blogPageTagFilteringBlock_module);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1664);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(9297);
+;// CONCATENATED MODULE: external "lodash.debounce"
+var external_lodash_debounce_namespaceObject = require("lodash.debounce");;
+var external_lodash_debounce_default = /*#__PURE__*/__webpack_require__.n(external_lodash_debounce_namespaceObject);
+;// CONCATENATED MODULE: ./data/BlogPageTagFilteringBlock.js
+const BlogPageCategoriesData = [{
+  id: '1',
+  title: "SMS Marketing Best Practices",
+  display_title: "SMS Best Practices",
+  slug: "sms-marketing-best-practices",
+  subcategories: []
+}, {
+  id: '2',
+  title: "eCommerce Digital Marketing 101",
+  display_title: "Digital Marketing 101",
+  slug: "ecommerce-digital-marketing-101",
+  subcategories: []
+}, {
+  id: '3',
+  title: "SMS Marketing Industry News",
+  display_title: "Industry News",
+  slug: "sms-marketing-industry-news",
+  subcategories: []
+}, {
+  id: '4',
+  title: "SMS Template Creative Library",
+  display_title: "Creative Library",
+  slug: "sms-template-creative-library",
+  subcategories: []
+}, {
+  id: '5',
+  title: "Voyage SMS News",
+  display_title: "Voyage News",
+  slug: "",
+  subcategories: [{
+    id: '1',
+    title: "Integration Announcements",
+    slug: "voyage-sms-news, integrations-announcements"
+  }, {
+    id: '2',
+    title: "Feature Highlights",
+    slug: "voyage-sms-news,feature-highlights"
+  }, {
+    id: '3',
+    title: "Case Studies",
+    slug: "voyage-sms-news, case-studies"
+  }, {
+    id: '4',
+    title: "Team",
+    slug: "voyage-sms-news,team"
+  }, {
+    id: '5',
+    title: "Recruiting",
+    slug: "voyage-sms-news,recruiting"
+  }]
+}];
+;// CONCATENATED MODULE: external "react-outside-click-handler"
+var external_react_outside_click_handler_namespaceObject = require("react-outside-click-handler");;
+var external_react_outside_click_handler_default = /*#__PURE__*/__webpack_require__.n(external_react_outside_click_handler_namespaceObject);
+;// CONCATENATED MODULE: ./components/BlogPageTagFilteringBlock.js
+
+
+
+
+
+
+
+
+function BlogPageFilteringBlock({
+  posts,
+  handleTagClick,
+  handleSearch
+}) {
+  const {
+    0: filteredTitles,
+    1: setFilteredTitles
+  } = (0,external_react_.useState)([]);
+  const {
+    0: isCategoryActive,
+    1: setCategoryActive
+  } = (0,external_react_.useState)("all");
+  const {
+    0: searchValue,
+    1: setSearchValue
+  } = (0,external_react_.useState)('');
+  const {
+    0: subTagsVisible,
+    1: setSubTagsVisible
+  } = (0,external_react_.useState)(false);
+  const {
+    0: subTagsChecked,
+    1: setSubTagsChecked
+  } = (0,external_react_.useState)([false, false, false, false, false]);
+  const {
+    0: subTagSVG,
+    1: setSubTagSVG
+  } = (0,external_react_.useState)('180deg');
+  const subCategoryTags = BlogPageCategoriesData[4].subcategories.map(slug => slug); //debouncing the search term displayed 
+  // const debouncedSave = debounce(() => setSearchValue(searchVal), 1000 )
+
+  const debouncedSave = (0,external_react_.useCallback)(external_lodash_debounce_default()(searchVal => setSearchValue(searchVal), 500), []);
+
+  const filterTitles = searchVal => {
+    //console.log("search val is", searchVal);
+    debouncedSave(searchVal);
+    const filteredTitles = posts.posts.filter(val => {
+      return val.title.toLowerCase().includes(searchVal.toLowerCase());
+    });
+
+    if (searchVal == "") {
+      setFilteredTitles([]);
+    } else {
+      setFilteredTitles(filteredTitles);
+    }
+  };
+
+  const toggleCategoryClass = slugName => {
+    setCategoryActive(slugName);
+
+    if (slugName === "voyage-sms-news") {
+      let allSubTagsUnchecked1 = subTagsChecked.every(v => v === false); // console.log("are all subtags unchecked ?", allSubTagsUnchecked1)
+
+      if (allSubTagsUnchecked1) setCategoryActive(null);else {
+        setCategoryActive(slugName);
+      }
+    }
+  }; //open and close the subcategory section
+
+
+  const handleSubTags = () => {
+    setSubTagsVisible(!subTagsVisible);
+    subTagSVG === "180deg" ? setSubTagSVG("0deg") : setSubTagSVG("180deg");
+  }; //create an array from the checked subcategories for API call
+
+
+  const handleCheckedTags = (position, checkedTagSlug) => {
+    //console.log("checked tag is", checkedTag);
+    //setSubTagsChecked(subTagsChecked => [...subTagsChecked, checkedTag] );
+    const updatedTagsState = subTagsChecked.map((item, index) => index === position ? !item : item); //console.log("current checked tags", updatedTagsState);
+
+    setSubTagsChecked(updatedTagsState); //Array Reduce method to map the checked values to the tag Slugs
+
+    const tagURL = updatedTagsState.reduce((url, currentState, index) => {
+      if (currentState == true) {
+        return url + ` ${subCategoryTags[index].slug} ,`;
+      }
+
+      return url;
+    }, ""); //console.log("current Tag URL", (tagURL).replace(/,\s*$/, "").replaceAll(" ", ""))
+
+    handleTagClick(tagURL.replace(/,\s*$/, "").replaceAll(" ", ""));
+  };
+
+  const handleOutsideClick = () => {
+    setSubTagsVisible(false);
+    setSubTagSVG("180deg");
+    let allSubTagsUnchecked = subTagsChecked.every(v => v === false); //console.log("are all subtags unchecked ?", allSubTagsUnchecked)
+
+    if (allSubTagsUnchecked) setCategoryActive(null);else {
+      setCategoryActive("voyage-sms-news");
+    }
+  };
+
+  return /*#__PURE__*/jsx_runtime_.jsx("section", {
+    className: (blogPageTagFilteringBlock_module_default()).tagFilteringSection,
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: `container ${(blogPageTagFilteringBlock_module_default()).filterSearchDiv}`,
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (blogPageTagFilteringBlock_module_default()).SearchDiv,
+        children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
+          className: (blogPageTagFilteringBlock_module_default()).searchIcon,
+          children: /*#__PURE__*/jsx_runtime_.jsx("svg", {
+            width: "18",
+            height: "19",
+            viewBox: "0 0 18 19",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            children: /*#__PURE__*/jsx_runtime_.jsx("path", {
+              d: "M17.8594 16.7383L13.6055 12.4844C13.5 12.4141 13.3945 12.3438 13.2891 12.3438H12.832C13.9219 11.0781 14.625 9.39062 14.625 7.5625C14.625 3.55469 11.3203 0.25 7.3125 0.25C3.26953 0.25 0 3.55469 0 7.5625C0 11.6055 3.26953 14.875 7.3125 14.875C9.14062 14.875 10.793 14.207 12.0938 13.1172V13.5742C12.0938 13.6797 12.1289 13.7852 12.1992 13.8906L16.4531 18.1445C16.6289 18.3203 16.9102 18.3203 17.0508 18.1445L17.8594 17.3359C18.0352 17.1953 18.0352 16.9141 17.8594 16.7383ZM7.3125 13.1875C4.18359 13.1875 1.6875 10.6914 1.6875 7.5625C1.6875 4.46875 4.18359 1.9375 7.3125 1.9375C10.4062 1.9375 12.9375 4.46875 12.9375 7.5625C12.9375 10.6914 10.4062 13.1875 7.3125 13.1875Z",
+              fill: "black"
+            })
+          })
+        }), /*#__PURE__*/jsx_runtime_.jsx("input", {
+          type: "text",
+          placeholder: "Search by title or any keyword",
+          onChange: e => filterTitles(e.target.value)
+        }), filteredTitles.length != 0 && /*#__PURE__*/jsx_runtime_.jsx((external_react_outside_click_handler_default()), {
+          onOutsideClick: () => {
+            setFilteredTitles([]);
+          },
+          children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+            className: (blogPageTagFilteringBlock_module_default()).searchBoxTitles,
+            children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
+              className: (blogPageTagFilteringBlock_module_default()).searchBoxHeader,
+              children: ["Showing Blogs related to ", /*#__PURE__*/(0,jsx_runtime_.jsxs)("span", {
+                children: ["\"", searchValue, "\""]
+              })]
+            }), filteredTitles.slice(0, 10).map((post, index) => {
+              return /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+                href: "/blog/[slug]",
+                as: `/blog/${post.slug}`,
+                children: /*#__PURE__*/jsx_runtime_.jsx("a", {
+                  children: /*#__PURE__*/jsx_runtime_.jsx("div", {
+                    className: (blogPageTagFilteringBlock_module_default()).postTitles,
+                    children: post.title
+                  })
+                })
+              }, index);
+            })]
+          })
+        })]
+      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (blogPageTagFilteringBlock_module_default()).FilterDiv,
+        children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
+          className: (blogPageTagFilteringBlock_module_default()).postTags,
+          children: /*#__PURE__*/jsx_runtime_.jsx("p", {
+            className: `${isCategoryActive == "all" ? (blogPageTagFilteringBlock_module_default()).categoryActive : null}`,
+            onClick: () => {
+              handleTagClick(null);
+              toggleCategoryClass("all");
+              setSubTagsVisible(false);
+              setSubTagsChecked([false, false, false, false, false]);
+              setSubTagSVG("180deg");
+            },
+            children: "All"
+          })
+        }), BlogPageCategoriesData.map((category, index) => category.subcategories.length < 1 ? /*#__PURE__*/jsx_runtime_.jsx("div", {
+          className: (blogPageTagFilteringBlock_module_default()).postTags,
+          children: /*#__PURE__*/jsx_runtime_.jsx("p", {
+            className: isCategoryActive === `${category.slug}` ? (blogPageTagFilteringBlock_module_default()).categoryActive : null,
+            onClick: () => {
+              handleTagClick(category.slug);
+              toggleCategoryClass(category.slug);
+              setSubTagsVisible(false);
+              setSubTagsChecked([false, false, false, false, false]);
+              setSubTagSVG("180deg");
+            },
+            children: category.display_title
+          })
+        }, index) : /*#__PURE__*/jsx_runtime_.jsx("div", {
+          className: ` ${(blogPageTagFilteringBlock_module_default()).postTags} ${(blogPageTagFilteringBlock_module_default()).subTag}`,
+          children: /*#__PURE__*/(0,jsx_runtime_.jsxs)((external_react_outside_click_handler_default()), {
+            onOutsideClick: handleOutsideClick,
+            children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
+              className: isCategoryActive === "voyage-sms-news" ? (blogPageTagFilteringBlock_module_default()).categoryActive : null,
+              onClick: () => {
+                handleSubTags();
+                toggleCategoryClass("voyage-sms-news");
+              },
+              children: [category.display_title, /*#__PURE__*/jsx_runtime_.jsx("svg", {
+                style: {
+                  transform: `rotate(${subTagSVG})`
+                },
+                width: "15",
+                height: "10",
+                viewBox: "0 0 15 10",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: /*#__PURE__*/jsx_runtime_.jsx("path", {
+                  d: "M7.08838 1.12041L0.169625 8.05835C-0.0569267 8.28566 -0.0565459 8.65369 0.170797 8.88062C0.398111 9.10738 0.766342 9.10679 0.993069 8.87945L7.50003 2.35448L14.007 8.87969C14.2337 9.107 14.6017 9.10759 14.8291 8.88086C14.943 8.7671 15 8.61807 15 8.46903C15 8.32038 14.9434 8.17193 14.8302 8.05838L7.91165 1.12041C7.80272 1.01093 7.65448 0.94949 7.50003 0.94949C7.34558 0.94949 7.19751 1.0111 7.08838 1.12041Z",
+                  fill: "black"
+                })
+              })]
+            }), subTagsVisible && /*#__PURE__*/jsx_runtime_.jsx("div", {
+              className: (blogPageTagFilteringBlock_module_default()).subCategoryBox,
+              children: category.subcategories.map((subcategory, index) => /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+                className: `${(blogPageTagFilteringBlock_module_default()).subCategories}`,
+                children: [/*#__PURE__*/jsx_runtime_.jsx("input", {
+                  type: "checkbox",
+                  id: `${subcategory.id}`,
+                  name: subcategory.title,
+                  value: subcategory.title,
+                  checked: subTagsChecked[index],
+                  onChange: () => {
+                    handleCheckedTags(index, subcategory.slug);
+                  }
+                }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("label", {
+                  htmlFor: `${subcategory.id}`,
+                  children: [" ", subcategory.title]
+                })]
+              }, index))
+            })]
+          })
+        }, index))]
+      })]
+    })
+  });
+}
+;// CONCATENATED MODULE: ./data/BlogPageHeroBanner.js
+const BlogPageHeroBannerData = {
+  titleText: "SMS Marketing Resources",
+  subHeading: "BLOG"
+};
+// EXTERNAL MODULE: ./components/css/blogPageHeroBanner.module.css
+var blogPageHeroBanner_module = __webpack_require__(31);
+var blogPageHeroBanner_module_default = /*#__PURE__*/__webpack_require__.n(blogPageHeroBanner_module);
+// EXTERNAL MODULE: external "gsap"
+var external_gsap_ = __webpack_require__(9015);
+;// CONCATENATED MODULE: ./components/BlogPageHeroBanner.js
+
+
+
+
+
+
+
+function BlogPageHeroBanner({
+  posts
+}) {
+  //console.log("voyage posts", {posts})
+  const post = {
+    posts
+  };
+  const featuredPost = post.posts.posts[0]; //console.log("featured post", featuredPost)
+
+  return /*#__PURE__*/jsx_runtime_.jsx("section", {
+    id: (blogPageHeroBanner_module_default()).heroBanner,
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: (blogPageHeroBanner_module_default()).mainDiv,
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: `container ${(blogPageHeroBanner_module_default()).heroBannerContainer}`,
+        children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+          className: (blogPageHeroBanner_module_default()).leftBlock,
+          children: [/*#__PURE__*/jsx_runtime_.jsx("p", {
+            id: "homePageSubtext",
+            className: (blogPageHeroBanner_module_default()).bannerText,
+            "data-scroll": true,
+            children: BlogPageHeroBannerData.subHeading
+          }), /*#__PURE__*/jsx_runtime_.jsx("h1", {
+            id: "homePageTitle",
+            className: (blogPageHeroBanner_module_default()).bannerTitle,
+            "data-scroll": true,
+            children: BlogPageHeroBannerData.titleText
+          })]
+        }), /*#__PURE__*/jsx_runtime_.jsx("div", {
+          className: (blogPageHeroBanner_module_default()).rightBlock,
+          children: /*#__PURE__*/jsx_runtime_.jsx(next_link.default, {
+            href: "/blog/[slug]",
+            as: `/blog/${featuredPost.slug}`,
+            children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("a", {
+              className: (blogPageHeroBanner_module_default()).featuredLink,
+              children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
+                className: (blogPageHeroBanner_module_default()).featuredImage,
+                children: /*#__PURE__*/jsx_runtime_.jsx("img", {
+                  src: `${featuredPost.feature_image}`
+                })
+              }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+                className: (blogPageHeroBanner_module_default()).featuredBlogDetails,
+                children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+                  className: (blogPageHeroBanner_module_default()).featuredTagAndTime,
+                  children: [/*#__PURE__*/jsx_runtime_.jsx("p", {
+                    children: featuredPost.tags.length > 0 ? featuredPost.tags[0].name : "Voyage"
+                  }), /*#__PURE__*/jsx_runtime_.jsx("svg", {
+                    width: "3",
+                    height: "4",
+                    viewBox: "0 0 3 4",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    children: /*#__PURE__*/jsx_runtime_.jsx("circle", {
+                      cx: "1.5",
+                      cy: "2",
+                      r: "1.5",
+                      fill: "#CBCBCB"
+                    })
+                  }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
+                    children: [featuredPost.reading_time, " min read"]
+                  })]
+                }), /*#__PURE__*/jsx_runtime_.jsx("h2", {
+                  className: (blogPageHeroBanner_module_default()).featuredTitle,
+                  children: featuredPost.title
+                }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
+                  className: (blogPageHeroBanner_module_default()).featuredExcerpt,
+                  children: [" ", featuredPost.excerpt, " "]
+                }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
+                  className: (blogPageHeroBanner_module_default()).featuredReadMore,
+                  children: ["READ MORE", /*#__PURE__*/jsx_runtime_.jsx("svg", {
+                    width: "7",
+                    height: "12",
+                    viewBox: "0 0 7 12",
+                    fill: "none",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    children: /*#__PURE__*/jsx_runtime_.jsx("path", {
+                      opacity: "0.5",
+                      d: "M6.3441 6.3293L0.793749 11.8643C0.611898 12.0455 0.317478 12.0452 0.135932 11.8634C-0.0454738 11.6815 -0.0450051 11.3869 0.136869 11.2055L5.35685 5.99998L0.136682 0.794436C-0.0451692 0.613031 -0.045638 0.318633 0.135744 0.136759C0.226752 0.0455875 0.345978 1.90735e-06 0.465204 1.90735e-06C0.584125 1.90735e-06 0.702883 0.0452824 0.793726 0.135821L6.3441 5.67068C6.43169 5.75782 6.48084 5.87642 6.48084 5.99998C6.48084 6.12354 6.43155 6.24199 6.3441 6.3293Z",
+                      fill: "white"
+                    })
+                  })]
+                })]
+              })]
+            })
+          })
+        })]
+      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (blogPageHeroBanner_module_default()).heroBannerBgElements,
+        children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", {
+          width: "50",
+          height: "110",
+          viewBox: "0 0 50 110",
+          fill: "none",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: [/*#__PURE__*/jsx_runtime_.jsx("path", {
+            d: "M0.583553 2.70299e-06L-47.9998 55L49.1669 55L0.583553 2.70299e-06Z",
+            fill: "#02D9FC"
+          }), /*#__PURE__*/jsx_runtime_.jsx("path", {
+            d: "M0.583553 55L-47.9998 110L49.1669 110L0.583553 55Z",
+            fill: "#02D9FC"
+          })]
+        }), /*#__PURE__*/jsx_runtime_.jsx("svg", {
+          width: "467",
+          height: "504",
+          viewBox: "0 0 467 504",
+          fill: "none",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("g", {
+            opacity: "0.5",
+            children: [/*#__PURE__*/jsx_runtime_.jsx("rect", {
+              x: "86",
+              y: "403",
+              width: "381",
+              height: "101",
+              fill: "#405CFB"
+            }), /*#__PURE__*/jsx_runtime_.jsx("path", {
+              d: "M85.9946 429V504.246H-0.000244141L85.9946 429Z",
+              fill: "white"
+            }), /*#__PURE__*/jsx_runtime_.jsx("path", {
+              d: "M404.618 156.88L466.402 207.598V-5H212V156.88H404.618Z",
+              fill: "#02D9FC"
+            }), /*#__PURE__*/jsx_runtime_.jsx("rect", {
+              width: "169.601",
+              height: "50.1637",
+              transform: "matrix(-1 0 0 1 255.591 322.435)",
+              fill: "#162740"
+            }), /*#__PURE__*/jsx_runtime_.jsx("ellipse", {
+              rx: "26.8734",
+              ry: "26.2762",
+              transform: "matrix(-1 0 0 1 136.75 296.159)",
+              fill: "#5BEBC1"
+            }), /*#__PURE__*/jsx_runtime_.jsx("rect", {
+              width: "76.4399",
+              height: "15.5269",
+              transform: "matrix(-1 0 0 1 160.041 254.355)",
+              fill: "#02D9FC"
+            })]
+          })
+        })]
+      })]
+    })
+  });
+}
+// EXTERNAL MODULE: ./components/css/blogPageFeaturedPosts.module.css
+var blogPageFeaturedPosts_module = __webpack_require__(8810);
+var blogPageFeaturedPosts_module_default = /*#__PURE__*/__webpack_require__.n(blogPageFeaturedPosts_module);
+// EXTERNAL MODULE: ./components/BlogItem.js
+var BlogItem = __webpack_require__(7463);
+;// CONCATENATED MODULE: ./components/BlogPageFeaturedPosts.js
+
+
+
+function BlogPageFeaturedPosts({
+  posts
+}) {
+  //console.log("posts inside featured component", posts)
+  const featuredPosts = {
+    posts
+  };
+  return /*#__PURE__*/jsx_runtime_.jsx("section", {
+    id: (blogPageFeaturedPosts_module_default()).featuredPosts,
+    className: (blogPageFeaturedPosts_module_default()).featuredPosts,
+    children: /*#__PURE__*/jsx_runtime_.jsx("div", {
+      className: "container",
+      children: /*#__PURE__*/jsx_runtime_.jsx("div", {
+        className: (blogPageFeaturedPosts_module_default()).featuredPostsContainer,
+        children: featuredPosts.posts.posts.slice(0, 6).map(post => /*#__PURE__*/jsx_runtime_.jsx(BlogItem/* default */.Z, {
+          post: post
+        }, post.id))
+      })
+    })
+  });
+}
+// EXTERNAL MODULE: ./components/css/blogPageSignupBlock.module.css
+var blogPageSignupBlock_module = __webpack_require__(4050);
+var blogPageSignupBlock_module_default = /*#__PURE__*/__webpack_require__.n(blogPageSignupBlock_module);
+// EXTERNAL MODULE: ./services/index.js
+var services = __webpack_require__(7482);
+;// CONCATENATED MODULE: ./components/BlogPageSignupBlock.js
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+function BlogPageSignupBlock() {
+  const emailRef = (0,external_react_.useRef)();
+  const emailErrorRef = (0,external_react_.useRef)();
+  const {
+    0: email,
+    1: setEmail
+  } = (0,external_react_.useState)("");
+  const {
+    0: isSubmitted,
+    1: setIsSubmitted
+  } = (0,external_react_.useState)(false);
+  const ePattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+  const emailSignUp = () => {
+    let email = emailRef.current.value;
+
+    if (email.length == 0 || !ePattern.test(email)) {
+      emailErrorRef.current.textContent = "Invalid Email Address";
+      return false;
+    }
+
+    emailErrorRef.current.textContent = "";
+    setEmail("");
+
+    try {
+      const utm = (0,services/* getUtm */.PB)() || {};
+      (0,services/* createOrUpdateRegistration */.jt)(_objectSpread({
+        email
+      }, utm));
+    } catch (error) {
+      console.error(error);
+    }
+
+    setIsSubmitted(true);
+  };
+
+  (0,external_react_.useEffect)(() => {
+    emailErrorRef.current.textContent = "";
+  }, [email]);
+  return /*#__PURE__*/jsx_runtime_.jsx("section", {
+    className: (blogPageSignupBlock_module_default()).signupBlock,
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: `container ${(blogPageSignupBlock_module_default()).signupWrapper}`,
+      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (blogPageSignupBlock_module_default()).signupBlockBgElements,
+        children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", {
+          width: "42",
+          height: "62",
+          viewBox: "0 0 42 62",
+          fill: "none",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: [/*#__PURE__*/jsx_runtime_.jsx("path", {
+            d: "M4.59404 15.0484L19.6185 0.0239234L34.6424 15.0478L4.59404 15.0484Z",
+            fill: "#02D9FC"
+          }), /*#__PURE__*/jsx_runtime_.jsx("path", {
+            d: "M4.35771 29.9996L19.3822 14.9751L34.4061 29.999L4.35771 29.9996Z",
+            fill: "#02D9FC"
+          }), /*#__PURE__*/jsx_runtime_.jsx("circle", {
+            cx: "20.037",
+            cy: "45.5094",
+            r: "15.5716",
+            fill: "#5AEBC0"
+          })]
+        }), /*#__PURE__*/jsx_runtime_.jsx("svg", {
+          width: "53",
+          height: "45",
+          viewBox: "0 0 53 45",
+          fill: "none",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/jsx_runtime_.jsx("path", {
+            d: "M40.1285 34.2646L53 45V0H0V34.2646H40.1285Z",
+            fill: "#02D9FC"
+          })
+        }), /*#__PURE__*/jsx_runtime_.jsx("svg", {
+          width: "66",
+          height: "34",
+          viewBox: "0 0 66 34",
+          fill: "none",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: /*#__PURE__*/jsx_runtime_.jsx("path", {
+            d: "M-0.000122137 33.2474L33.2474 -7.66688e-05L66.4936 33.2461L-0.000122137 33.2474Z",
+            fill: "#58EDC0"
+          })
+        }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", {
+          width: "18",
+          height: "41",
+          viewBox: "0 0 18 41",
+          fill: "none",
+          xmlns: "http://www.w3.org/2000/svg",
+          children: [/*#__PURE__*/jsx_runtime_.jsx("path", {
+            d: "M-11.7335 12.2614L0.0978747 0.429981L11.9288 12.2609L-11.7335 12.2614Z",
+            fill: "#02D9FC"
+          }), /*#__PURE__*/jsx_runtime_.jsx("path", {
+            d: "M-11.9198 24.035L-0.0884046 12.2037L11.7425 24.0346L-11.9198 24.035Z",
+            fill: "#02D9FC"
+          }), /*#__PURE__*/jsx_runtime_.jsx("circle", {
+            cx: "0.427297",
+            cy: "36.2486",
+            r: "12.2623",
+            fill: "#5AEBC0"
+          })]
+        }), /*#__PURE__*/jsx_runtime_.jsx("img", {
+          src: `/images/blog-signup-vector-2.svg`
+        }), /*#__PURE__*/jsx_runtime_.jsx("img", {
+          src: `/images/blog-signup-vector-1.svg`
+        })]
+      }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+        className: (blogPageSignupBlock_module_default()).blogPageSignupBox,
+        "data-scroll": true,
+        children: [/*#__PURE__*/jsx_runtime_.jsx("h3", {
+          children: "Subscribe to the SMS Marketing Resources news letter"
+        }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+          className: (blogPageSignupBlock_module_default()).blogPageInputBox,
+          children: [isSubmitted && /*#__PURE__*/jsx_runtime_.jsx("p", {
+            className: (blogPageSignupBlock_module_default()).thankYou,
+            children: /*#__PURE__*/jsx_runtime_.jsx("span", {
+              children: "Great! Thanks so much for filling out our form. One of our amazing team members will reach out to you shortly!"
+            })
+          }), /*#__PURE__*/jsx_runtime_.jsx("span", {
+            id: "smailSignUpError",
+            ref: emailErrorRef,
+            className: (blogPageSignupBlock_module_default()).emailError
+          }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+            id: (blogPageSignupBlock_module_default()).inputWrapper,
+            children: [/*#__PURE__*/jsx_runtime_.jsx("input", {
+              ref: emailRef,
+              value: email,
+              onChange: e => setEmail(e.target.value),
+              type: "text",
+              name: "email",
+              id: "emailSignUp",
+              autoComplete: "off",
+              placeholder: "ENTER YOUR EMAIL"
+            }), /*#__PURE__*/jsx_runtime_.jsx("button", {
+              onClick: () => emailSignUp(),
+              id: "emailSubmit",
+              children: "SUBSCRIBE"
+            })]
+          })]
+        })]
+      })]
+    })
+  });
+}
+// EXTERNAL MODULE: ./components/css/blogPageAllPosts.module.css
+var blogPageAllPosts_module = __webpack_require__(6874);
+var blogPageAllPosts_module_default = /*#__PURE__*/__webpack_require__.n(blogPageAllPosts_module);
+;// CONCATENATED MODULE: ./components/BlogPageAllPosts.js
+
+
+
+
+
+function BlogPageAllPosts({
+  posts
+}) {
+  // const [items, setItems] = useState([]);
+  const {
+    0: visible,
+    1: setVisible
+  } = (0,external_react_.useState)(9); // const featuredPosts = {posts};
+
+  const noOfPosts = {
+    posts
+  }.posts.posts.length; // console.log("no. of all posts", noOfPosts)
+
+  const showMoreItems = () => {
+    setVisible(prevValue => prevValue + 9);
+  }; // useEffect(() => {
+  //     setItems(featuredPosts.posts.posts);
+  // }, []);
+  // console.log("no. of visible blogs",visible)
+
+
+  return /*#__PURE__*/jsx_runtime_.jsx("section", {
+    id: (blogPageAllPosts_module_default()).allPosts,
+    className: (blogPageAllPosts_module_default()).allPosts,
+    children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: `container ${(blogPageAllPosts_module_default()).sectionContainer}`,
+      children: [/*#__PURE__*/jsx_runtime_.jsx("div", {
+        className: (blogPageAllPosts_module_default()).allPostsContainer,
+        children: {
+          posts
+        }.posts.posts.slice(6, visible).map(post => /*#__PURE__*/jsx_runtime_.jsx(BlogItem/* default */.Z, {
+          post: post
+        }, post.id))
+      }), visible < 18 && /*#__PURE__*/jsx_runtime_.jsx("button", {
+        className: (blogPageAllPosts_module_default()).showMoreButton,
+        onClick: showMoreItems,
+        children: "Load More"
+      })]
+    })
+  });
+}
+// EXTERNAL MODULE: ./components/BlogPageBottomBlock.js
+var BlogPageBottomBlock = __webpack_require__(1563);
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__(701);
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+// EXTERNAL MODULE: ./components/RequestForm.js + 1 modules
+var RequestForm = __webpack_require__(7081);
+// EXTERNAL MODULE: external "react-query"
+var external_react_query_ = __webpack_require__(2585);
+;// CONCATENATED MODULE: ./pages/blogs/index.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // const {CONTENT_API_KEY, BLOG_URL} = process.env;
+// const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';
+// const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';
+
+const CONTENT_API_KEY = "c7bafa2c2c579763b605f57fb6";
+const BLOG_URL = "https://sms-marketing-resources.ghost.io";
+const getStaticProps = async () => {
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);
+  const posts = await res.json();
+  return {
+    props: {
+      posts
+    }
+  };
+};
+
+const getFeaturedPosts = () => {
+  return fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=featured:true`).then(res => res.json());
+};
+
+const getFilteredPosts = async key => {
+  const tagName = key.queryKey[1].tag; //console.log("current tag name : ", tagName);
+
+  if (tagName) {
+    //if tags are present - this is where we are going to filter the posts
+    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]`;
+    console.log("URL ", myURL);
+    const res = await fetch(myURL);
+    const newRes = res.json();
+    return newRes;
+  }
+
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);
+  return res.json();
+};
+
+const getFilteredPostsWithSearch = async key => {
+  //console.log("current Key", key);
+  const searchTitle = key.queryKey[1].search;
+
+  if (searchTitle) {
+    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=slug:'${searchTitle}'`;
+    const res = await fetch(myURL);
+    const newRes = res.json();
+    return newRes;
+  }
+
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);
+  return res.json();
+};
+
+function Home({
+  posts
+}) {
+  const {
+    0: formState,
+    1: setFormState
+  } = (0,external_react_.useState)("close");
+  const {
+    0: tagName,
+    1: setTagName
+  } = (0,external_react_.useState)('');
+  const {
+    0: searchTerm,
+    1: setSearchTerm
+  } = (0,external_react_.useState)(''); //REACT - QUERY : Featured Posts in the Hero Banner
+  //const {data:featuredPosts,error} = useQuery(['featured posts'], () => getFeaturedPosts());
+  //console.log("featuredPosts", featuredPosts);
+  //For filtering with TAGS
+
+  const {
+    isLoading,
+    data: filteredPosts,
+    status
+  } = (0,external_react_query_.useQuery)(['filtered posts', {
+    tag: tagName
+  }], getFilteredPosts, {
+    initialData: posts
+  }); //to remove the loading page add the initialdata value here
+  // console.log("filteredPosts are", filteredPosts, "status", status);
+
+  var allPosts = filteredPosts;
+
+  if (isLoading) {
+    return /*#__PURE__*/jsx_runtime_.jsx("div", {
+      className: "App",
+      children: /*#__PURE__*/jsx_runtime_.jsx("h2", {
+        style: {
+          width: "100vw",
+          height: "100vh",
+          opacity: ".5",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
+        },
+        children: "fetching posts..."
+      })
+    });
+  }
+
+  return /*#__PURE__*/(0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+    children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)((head_default()), {
+      children: [/*#__PURE__*/jsx_runtime_.jsx("meta", {
+        name: "description",
+        content: "SMS marketing and text messaging for your ecommerce business. Get 40%+ CTR and 90%+ open rates. Get a demo today!"
+      }), /*#__PURE__*/jsx_runtime_.jsx("meta", {
+        name: "robots",
+        content: "index, follow"
+      }), /*#__PURE__*/jsx_runtime_.jsx("meta", {
+        property: "og:title",
+        content: "SMS Marketing for Ecommerce | Voyage Mobile"
+      }), /*#__PURE__*/jsx_runtime_.jsx("meta", {
+        content: "width=device-width, initial-scale=1.0,maximum-scale=1.0, viewport-fit=cover",
+        name: "viewport"
+      }), /*#__PURE__*/jsx_runtime_.jsx("title", {
+        children: "Voyage SMS: Text Marketing for eCommerce"
+      })]
+    }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
+      className: "main",
+      id: "main-target",
+      "data-scroll-container": true,
+      children: [/*#__PURE__*/jsx_runtime_.jsx(RequestForm/* default */.Z, {
+        formState: formState,
+        setFormState: setFormState
+      }), /*#__PURE__*/jsx_runtime_.jsx(Header/* default */.Z, {
+        setFormState: setFormState
+      }), /*#__PURE__*/jsx_runtime_.jsx(BlogPageHeroBanner, {
+        posts: posts
+      }), /*#__PURE__*/jsx_runtime_.jsx(BlogPageFilteringBlock, {
+        posts: posts,
+        handleTagClick: setTagName,
+        handleSearch: setSearchTerm
+      }), /*#__PURE__*/jsx_runtime_.jsx(BlogPageFeaturedPosts, {
+        posts: allPosts
+      }), /*#__PURE__*/jsx_runtime_.jsx(BlogPageSignupBlock, {}), allPosts.posts.length > 6 && /*#__PURE__*/jsx_runtime_.jsx(BlogPageAllPosts, {
+        posts: allPosts
+      }), /*#__PURE__*/jsx_runtime_.jsx(BlogPageBottomBlock/* default */.Z, {}), /*#__PURE__*/jsx_runtime_.jsx(Footer/* default */.Z, {
+        setFormState: setFormState
+      })]
+    })]
+  });
+}
 
 /***/ }),
 
-/***/ "./components/BlogPageFeaturedPosts.js":
-/*!*********************************************!*\
-  !*** ./components/BlogPageFeaturedPosts.js ***!
-  \*********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ BlogPageFeaturedPosts; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_blogPageFeaturedPosts_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/blogPageFeaturedPosts.module.css */ \"./components/css/blogPageFeaturedPosts.module.css\");\n/* harmony import */ var _css_blogPageFeaturedPosts_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_blogPageFeaturedPosts_module_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _BlogItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BlogItem */ \"./components/BlogItem.js\");\n\nvar _jsxFileName = \"/Users/Prernat/Documents/HOUNDSTOOTH - GUILD CAPITAL/DEV-PROJECTS/voyage-web-updated/components/BlogPageFeaturedPosts.js\";\n\n\nfunction BlogPageFeaturedPosts({\n  posts\n}) {\n  //console.log(\"posts inside featured component\", posts)\n  const featuredPosts = {\n    posts\n  };\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n    id: (_css_blogPageFeaturedPosts_module_css__WEBPACK_IMPORTED_MODULE_2___default().featuredPosts),\n    className: (_css_blogPageFeaturedPosts_module_css__WEBPACK_IMPORTED_MODULE_2___default().featuredPosts),\n    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n      className: \"container\",\n      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: (_css_blogPageFeaturedPosts_module_css__WEBPACK_IMPORTED_MODULE_2___default().featuredPostsContainer),\n        children: featuredPosts.posts.posts.slice(0, 6).map(post => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_BlogItem__WEBPACK_IMPORTED_MODULE_1__.default, {\n          post: post\n        }, post.id, false, {\n          fileName: _jsxFileName,\n          lineNumber: 17,\n          columnNumber: 17\n        }, this))\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 15,\n        columnNumber: 14\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 14,\n      columnNumber: 13\n    }, this)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 13,\n    columnNumber: 9\n  }, this);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL0Jsb2dQYWdlRmVhdHVyZWRQb3N0cy5qcz8xZmYwIl0sIm5hbWVzIjpbIkJsb2dQYWdlRmVhdHVyZWRQb3N0cyIsInBvc3RzIiwiZmVhdHVyZWRQb3N0cyIsInN0eWxlcyIsInNsaWNlIiwibWFwIiwicG9zdCIsImlkIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUNBO0FBQ0E7QUFHZSxTQUFTQSxxQkFBVCxDQUErQjtBQUFDQztBQUFELENBQS9CLEVBQXdDO0FBRW5EO0FBRUEsUUFBTUMsYUFBYSxHQUFHO0FBQUNEO0FBQUQsR0FBdEI7QUFFQSxzQkFDSTtBQUFTLE1BQUUsRUFBRUUsNEZBQWI7QUFBbUMsYUFBUyxFQUFFQSw0RkFBOUM7QUFBQSwyQkFDSTtBQUFLLGVBQVMsRUFBQyxXQUFmO0FBQUEsNkJBQ0M7QUFBSyxpQkFBUyxFQUFFQSxxR0FBaEI7QUFBQSxrQkFDSUQsYUFBYSxDQUFDRCxLQUFkLENBQW9CQSxLQUFwQixDQUEwQkcsS0FBMUIsQ0FBZ0MsQ0FBaEMsRUFBbUMsQ0FBbkMsRUFBc0NDLEdBQXRDLENBQTBDQyxJQUFJLGlCQUMvQyw4REFBQyw4Q0FBRDtBQUF3QixjQUFJLEVBQUVBO0FBQTlCLFdBQWVBLElBQUksQ0FBQ0MsRUFBcEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxnQkFEQztBQURKO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBREo7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQURKO0FBWUgiLCJmaWxlIjoiLi9jb21wb25lbnRzL0Jsb2dQYWdlRmVhdHVyZWRQb3N0cy5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IHN0eWxlcyBmcm9tIFwiLi9jc3MvYmxvZ1BhZ2VGZWF0dXJlZFBvc3RzLm1vZHVsZS5jc3NcIjtcbmltcG9ydCBCbG9nSXRlbSBmcm9tIFwiLi9CbG9nSXRlbVwiXG5cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQmxvZ1BhZ2VGZWF0dXJlZFBvc3RzKHtwb3N0c30pIHtcblxuICAgIC8vY29uc29sZS5sb2coXCJwb3N0cyBpbnNpZGUgZmVhdHVyZWQgY29tcG9uZW50XCIsIHBvc3RzKVxuXG4gICAgY29uc3QgZmVhdHVyZWRQb3N0cyA9IHtwb3N0c307XG4gXG4gICAgcmV0dXJuIChcbiAgICAgICAgPHNlY3Rpb24gaWQ9e3N0eWxlcy5mZWF0dXJlZFBvc3RzfSBjbGFzc05hbWU9e3N0eWxlcy5mZWF0dXJlZFBvc3RzfT5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5mZWF0dXJlZFBvc3RzQ29udGFpbmVyfT5cbiAgICAgICAgICAgICAgICB7ZmVhdHVyZWRQb3N0cy5wb3N0cy5wb3N0cy5zbGljZSgwLCA2KS5tYXAocG9zdCA9PiAoXG4gICAgICAgICAgICAgICAgPEJsb2dJdGVtIGtleT17cG9zdC5pZH0gcG9zdD17cG9zdH0gLz4gXG4gICAgICAgICAgICAgICAgKSl9XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgXG4gICAgICAgIDwvc2VjdGlvbj5cbiAgICApXG59XG5cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/BlogPageFeaturedPosts.js\n");
-
-/***/ }),
-
-/***/ "./components/BlogPageHeroBanner.js":
-/*!******************************************!*\
-  !*** ./components/BlogPageHeroBanner.js ***!
-  \******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ BlogPageHeroBanner; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _data_BlogPageHeroBanner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data/BlogPageHeroBanner */ \"./data/BlogPageHeroBanner.js\");\n/* harmony import */ var _css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./css/blogPageHeroBanner.module.css */ \"./components/css/blogPageHeroBanner.module.css\");\n/* harmony import */ var _css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ \"./node_modules/next/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gsap */ \"gsap\");\n/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(gsap__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);\n\nvar _jsxFileName = \"/Users/Prernat/Documents/HOUNDSTOOTH - GUILD CAPITAL/DEV-PROJECTS/voyage-web-updated/components/BlogPageHeroBanner.js\";\n\n\n\n\n\nfunction BlogPageHeroBanner({\n  posts\n}) {\n  //console.log(\"voyage posts\", {posts})\n  const post = {\n    posts\n  };\n  const featuredPost = post.posts.posts[0]; //console.log(\"featured post\", featuredPost)\n\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n    id: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().heroBanner),\n    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n      className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().mainDiv),\n      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: `container ${(_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().heroBannerContainer)}`,\n        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n          className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().leftBlock),\n          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n            id: \"homePageSubtext\",\n            className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().bannerText),\n            \"data-scroll\": true,\n            children: _data_BlogPageHeroBanner__WEBPACK_IMPORTED_MODULE_1__.BlogPageHeroBannerData.subHeading\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 21,\n            columnNumber: 9\n          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n            id: \"homePageTitle\",\n            className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().bannerTitle),\n            \"data-scroll\": true,\n            children: _data_BlogPageHeroBanner__WEBPACK_IMPORTED_MODULE_1__.BlogPageHeroBannerData.titleText\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 24,\n            columnNumber: 9\n          }, this)]\n        }, void 0, true, {\n          fileName: _jsxFileName,\n          lineNumber: 20,\n          columnNumber: 7\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n          className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().rightBlock),\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {\n            href: \"/blog/[slug]\",\n            as: `/blog/${featuredPost.slug}`,\n            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n              className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().featuredLink),\n              children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().featuredImage),\n                children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                  src: `${featuredPost.feature_image}`\n                }, void 0, false, {\n                  fileName: _jsxFileName,\n                  lineNumber: 32,\n                  columnNumber: 13\n                }, this)\n              }, void 0, false, {\n                fileName: _jsxFileName,\n                lineNumber: 31,\n                columnNumber: 9\n              }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().featuredBlogDetails),\n                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                  className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().featuredTagAndTime),\n                  children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    children: featuredPost.tags.length > 0 ? featuredPost.tags[0].name : \"Voyage\"\n                  }, void 0, false, {\n                    fileName: _jsxFileName,\n                    lineNumber: 36,\n                    columnNumber: 17\n                  }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n                    width: \"3\",\n                    height: \"4\",\n                    viewBox: \"0 0 3 4\",\n                    fill: \"none\",\n                    xmlns: \"http://www.w3.org/2000/svg\",\n                    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"circle\", {\n                      cx: \"1.5\",\n                      cy: \"2\",\n                      r: \"1.5\",\n                      fill: \"#CBCBCB\"\n                    }, void 0, false, {\n                      fileName: _jsxFileName,\n                      lineNumber: 38,\n                      columnNumber: 19\n                    }, this)\n                  }, void 0, false, {\n                    fileName: _jsxFileName,\n                    lineNumber: 37,\n                    columnNumber: 17\n                  }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    children: [featuredPost.reading_time, \" min read\"]\n                  }, void 0, true, {\n                    fileName: _jsxFileName,\n                    lineNumber: 40,\n                    columnNumber: 17\n                  }, this)]\n                }, void 0, true, {\n                  fileName: _jsxFileName,\n                  lineNumber: 35,\n                  columnNumber: 13\n                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                  className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().featuredTitle),\n                  children: featuredPost.title\n                }, void 0, false, {\n                  fileName: _jsxFileName,\n                  lineNumber: 43,\n                  columnNumber: 13\n                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                  className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().featuredExcerpt),\n                  children: [\" \", featuredPost.excerpt, \" \"]\n                }, void 0, true, {\n                  fileName: _jsxFileName,\n                  lineNumber: 44,\n                  columnNumber: 13\n                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                  className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().featuredReadMore),\n                  children: [\"READ MORE\", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n                    width: \"7\",\n                    height: \"12\",\n                    viewBox: \"0 0 7 12\",\n                    fill: \"none\",\n                    xmlns: \"http://www.w3.org/2000/svg\",\n                    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n                      opacity: \"0.5\",\n                      d: \"M6.3441 6.3293L0.793749 11.8643C0.611898 12.0455 0.317478 12.0452 0.135932 11.8634C-0.0454738 11.6815 -0.0450051 11.3869 0.136869 11.2055L5.35685 5.99998L0.136682 0.794436C-0.0451692 0.613031 -0.045638 0.318633 0.135744 0.136759C0.226752 0.0455875 0.345978 1.90735e-06 0.465204 1.90735e-06C0.584125 1.90735e-06 0.702883 0.0452824 0.793726 0.135821L6.3441 5.67068C6.43169 5.75782 6.48084 5.87642 6.48084 5.99998C6.48084 6.12354 6.43155 6.24199 6.3441 6.3293Z\",\n                      fill: \"white\"\n                    }, void 0, false, {\n                      fileName: _jsxFileName,\n                      lineNumber: 49,\n                      columnNumber: 25\n                    }, this)\n                  }, void 0, false, {\n                    fileName: _jsxFileName,\n                    lineNumber: 48,\n                    columnNumber: 21\n                  }, this)]\n                }, void 0, true, {\n                  fileName: _jsxFileName,\n                  lineNumber: 46,\n                  columnNumber: 13\n                }, this)]\n              }, void 0, true, {\n                fileName: _jsxFileName,\n                lineNumber: 34,\n                columnNumber: 9\n              }, this)]\n            }, void 0, true, {\n              fileName: _jsxFileName,\n              lineNumber: 30,\n              columnNumber: 66\n            }, this)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 30,\n            columnNumber: 6\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 29,\n          columnNumber: 7\n        }, this)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 19,\n        columnNumber: 5\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: (_css_blogPageHeroBanner_module_css__WEBPACK_IMPORTED_MODULE_5___default().heroBannerBgElements),\n        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n          width: \"50\",\n          height: \"110\",\n          viewBox: \"0 0 50 110\",\n          fill: \"none\",\n          xmlns: \"http://www.w3.org/2000/svg\",\n          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n            d: \"M0.583553 2.70299e-06L-47.9998 55L49.1669 55L0.583553 2.70299e-06Z\",\n            fill: \"#02D9FC\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 60,\n            columnNumber: 9\n          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n            d: \"M0.583553 55L-47.9998 110L49.1669 110L0.583553 55Z\",\n            fill: \"#02D9FC\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 61,\n            columnNumber: 9\n          }, this)]\n        }, void 0, true, {\n          fileName: _jsxFileName,\n          lineNumber: 59,\n          columnNumber: 7\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n          width: \"467\",\n          height: \"504\",\n          viewBox: \"0 0 467 504\",\n          fill: \"none\",\n          xmlns: \"http://www.w3.org/2000/svg\",\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"g\", {\n            opacity: \"0.5\",\n            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"rect\", {\n              x: \"86\",\n              y: \"403\",\n              width: \"381\",\n              height: \"101\",\n              fill: \"#405CFB\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 65,\n              columnNumber: 9\n            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n              d: \"M85.9946 429V504.246H-0.000244141L85.9946 429Z\",\n              fill: \"white\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 66,\n              columnNumber: 9\n            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n              d: \"M404.618 156.88L466.402 207.598V-5H212V156.88H404.618Z\",\n              fill: \"#02D9FC\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 67,\n              columnNumber: 9\n            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"rect\", {\n              width: \"169.601\",\n              height: \"50.1637\",\n              transform: \"matrix(-1 0 0 1 255.591 322.435)\",\n              fill: \"#162740\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 68,\n              columnNumber: 9\n            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"ellipse\", {\n              rx: \"26.8734\",\n              ry: \"26.2762\",\n              transform: \"matrix(-1 0 0 1 136.75 296.159)\",\n              fill: \"#5BEBC1\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 69,\n              columnNumber: 9\n            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"rect\", {\n              width: \"76.4399\",\n              height: \"15.5269\",\n              transform: \"matrix(-1 0 0 1 160.041 254.355)\",\n              fill: \"#02D9FC\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 70,\n              columnNumber: 9\n            }, this)]\n          }, void 0, true, {\n            fileName: _jsxFileName,\n            lineNumber: 64,\n            columnNumber: 9\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 63,\n          columnNumber: 7\n        }, this)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 58,\n        columnNumber: 5\n      }, this)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 18,\n      columnNumber: 7\n    }, this)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 17,\n    columnNumber: 5\n  }, this);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL0Jsb2dQYWdlSGVyb0Jhbm5lci5qcz80ODdhIl0sIm5hbWVzIjpbIkJsb2dQYWdlSGVyb0Jhbm5lciIsInBvc3RzIiwicG9zdCIsImZlYXR1cmVkUG9zdCIsInN0eWxlcyIsIkJsb2dQYWdlSGVyb0Jhbm5lckRhdGEiLCJzdWJIZWFkaW5nIiwidGl0bGVUZXh0Iiwic2x1ZyIsImZlYXR1cmVfaW1hZ2UiLCJ0YWdzIiwibGVuZ3RoIiwibmFtZSIsInJlYWRpbmdfdGltZSIsInRpdGxlIiwiZXhjZXJwdCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBR2UsU0FBU0Esa0JBQVQsQ0FBNEI7QUFBQ0M7QUFBRCxDQUE1QixFQUFxQztBQUVsRDtBQUNBLFFBQU1DLElBQUksR0FBRztBQUFDRDtBQUFELEdBQWI7QUFDQSxRQUFNRSxZQUFZLEdBQUdELElBQUksQ0FBQ0QsS0FBTCxDQUFXQSxLQUFYLENBQWlCLENBQWpCLENBQXJCLENBSmtELENBS2xEOztBQUdBLHNCQUNFO0FBQVMsTUFBRSxFQUFFRyxzRkFBYjtBQUFBLDJCQUNFO0FBQUssZUFBUyxFQUFFQSxtRkFBaEI7QUFBQSw4QkFDRjtBQUFLLGlCQUFTLEVBQUcsYUFBWUEsK0ZBQTJCLEVBQXhEO0FBQUEsZ0NBQ0U7QUFBSyxtQkFBUyxFQUFFQSxxRkFBaEI7QUFBQSxrQ0FDRTtBQUFHLGNBQUUsRUFBQyxpQkFBTjtBQUF3QixxQkFBUyxFQUFFQSxzRkFBbkM7QUFBc0QsK0JBQXREO0FBQUEsc0JBQ0tDLHVGQUFpQ0M7QUFEdEM7QUFBQTtBQUFBO0FBQUE7QUFBQSxrQkFERixlQUlFO0FBQUksY0FBRSxFQUFDLGVBQVA7QUFBdUIscUJBQVMsRUFBRUYsdUZBQWxDO0FBQXNELCtCQUF0RDtBQUFBLHNCQUNLQyxzRkFBZ0NFO0FBRHJDO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBSkY7QUFBQTtBQUFB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QTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsZ0JBTEY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBeENFO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQURGO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFERjtBQTZERCIsImZpbGUiOiIuL2NvbXBvbmVudHMvQmxvZ1BhZ2VIZXJvQmFubmVyLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQmxvZ1BhZ2VIZXJvQmFubmVyRGF0YSB9IGZyb20gXCIuLi9kYXRhL0Jsb2dQYWdlSGVyb0Jhbm5lclwiO1xuaW1wb3J0IHN0eWxlcyBmcm9tIFwiLi9jc3MvYmxvZ1BhZ2VIZXJvQmFubmVyLm1vZHVsZS5jc3NcIjtcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5pbXBvcnQgZ3NhcCBmcm9tIFwiZ3NhcFwiO1xuaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSwgdXNlUmVmIH0gZnJvbSBcInJlYWN0XCI7XG5cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQmxvZ1BhZ2VIZXJvQmFubmVyKHtwb3N0c30pIHtcblxuICAvL2NvbnNvbGUubG9nKFwidm95YWdlIHBvc3RzXCIsIHtwb3N0c30pXG4gIGNvbnN0IHBvc3QgPSB7cG9zdHN9O1xuICBjb25zdCBmZWF0dXJlZFBvc3QgPSBwb3N0LnBvc3RzLnBvc3RzWzBdO1xuICAvL2NvbnNvbGUubG9nKFwiZmVhdHVyZWQgcG9zdFwiLCBmZWF0dXJlZFBvc3QpXG5cblxuICByZXR1cm4gKFxuICAgIDxzZWN0aW9uIGlkPXtzdHlsZXMuaGVyb0Jhbm5lcn0+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLm1haW5EaXZ9PlxuICAgIDxkaXYgY2xhc3NOYW1lPXtgY29udGFpbmVyICR7c3R5bGVzLmhlcm9CYW5uZXJDb250YWluZXJ9YH0+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLmxlZnRCbG9ja30+XG4gICAgICAgIDxwIGlkPVwiaG9tZVBhZ2VTdWJ0ZXh0XCIgY2xhc3NOYW1lPXtzdHlsZXMuYmFubmVyVGV4dH0gZGF0YS1zY3JvbGw+XG4gICAgICAgICAgICB7QmxvZ1BhZ2VIZXJvQmFubmVyRGF0YS5zdWJIZWFkaW5nfVxuICAgICAgICA8L3A+XG4gICAgICAgIDxoMSBpZD1cImhvbWVQYWdlVGl0bGVcIiBjbGFzc05hbWU9e3N0eWxlcy5iYW5uZXJUaXRsZX0gZGF0YS1zY3JvbGw+XG4gICAgICAgICAgICB7QmxvZ1BhZ2VIZXJvQmFubmVyRGF0YS50aXRsZVRleHR9XG4gICAgICAgIDwvaDE+XG4gICAgICA8L2Rpdj5cbiBcbiAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMucmlnaHRCbG9ja30+XG4gICAgIDxMaW5rIGhyZWY9XCIvYmxvZy9bc2x1Z11cIiBhcz17YC9ibG9nLyR7ZmVhdHVyZWRQb3N0LnNsdWd9YH0+PGEgY2xhc3NOYW1lPXtzdHlsZXMuZmVhdHVyZWRMaW5rfT5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5mZWF0dXJlZEltYWdlfT5cbiAgICAgICAgICAgIDxpbWcgc3JjPXtgJHtmZWF0dXJlZFBvc3QuZmVhdHVyZV9pbWFnZX1gfSAvPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5mZWF0dXJlZEJsb2dEZXRhaWxzfT5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMuZmVhdHVyZWRUYWdBbmRUaW1lfT5cbiAgICAgICAgICAgICAgICA8cD57ZmVhdHVyZWRQb3N0LnRhZ3MubGVuZ3RoID4gMCA/IGZlYXR1cmVkUG9zdC50YWdzWzBdLm5hbWUgOiBcIlZveWFnZVwifTwvcD5cbiAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPVwiM1wiIGhlaWdodD1cIjRcIiB2aWV3Qm94PVwiMCAwIDMgNFwiIGZpbGw9XCJub25lXCIgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Z1wiPlxuICAgICAgICAgICAgICAgICAgPGNpcmNsZSBjeD1cIjEuNVwiIGN5PVwiMlwiIHI9XCIxLjVcIiBmaWxsPVwiI0NCQ0JDQlwiLz5cbiAgICAgICAgICAgICAgICA8L3N2Zz5cbiAgICAgICAgICAgICAgICA8cD57ZmVhdHVyZWRQb3N0LnJlYWRpbmdfdGltZX0gbWluIHJlYWQ8L3A+XG4gICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT17c3R5bGVzLmZlYXR1cmVkVGl0bGV9PntmZWF0dXJlZFBvc3QudGl0bGV9PC9oMj5cbiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT17c3R5bGVzLmZlYXR1cmVkRXhjZXJwdH0+IHtmZWF0dXJlZFBvc3QuZXhjZXJwdH0gPC9wPlxuXG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9e3N0eWxlcy5mZWF0dXJlZFJlYWRNb3JlfT5SRUFEIE1PUkUgXG4gICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgIDxzdmcgd2lkdGg9XCI3XCIgaGVpZ2h0PVwiMTJcIiB2aWV3Qm94PVwiMCAwIDcgMTJcIiBmaWxsPVwibm9uZVwiIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIG9wYWNpdHk9XCIwLjVcIiBkPVwiTTYuMzQ0MSA2LjMyOTNMMC43OTM3NDkgMTEuODY0M0MwLjYxMTg5OCAxMi4wNDU1IDAuMzE3NDc4IDEyLjA0NTIgMC4xMzU5MzIgMTEuODYzNEMtMC4wNDU0NzM4IDExLjY4MTUgLTAuMDQ1MDA1MSAxMS4zODY5IDAuMTM2ODY5IDExLjIwNTVMNS4zNTY4NSA1Ljk5OTk4TDAuMTM2NjgyIDAuNzk0NDM2Qy0wLjA0NTE2OTIgMC42MTMwMzEgLTAuMDQ1NjM4IDAuMzE4NjMzIDAuMTM1NzQ0IDAuMTM2NzU5QzAuMjI2NzUyIDAuMDQ1NTg3NSAwLjM0NTk3OCAxLjkwNzM1ZS0wNiAwLjQ2NTIwNCAxLjkwNzM1ZS0wNkMwLjU4NDEyNSAxLjkwNzM1ZS0wNiAwLjcwMjg4MyAwLjA0NTI4MjQgMC43OTM3MjYgMC4xMzU4MjFMNi4zNDQxIDUuNjcwNjhDNi40MzE2OSA1Ljc1NzgyIDYuNDgwODQgNS44NzY0MiA2LjQ4MDg0IDUuOTk5OThDNi40ODA4NCA2LjEyMzU0IDYuNDMxNTUgNi4yNDE5OSA2LjM0NDEgNi4zMjkzWlwiIGZpbGw9XCJ3aGl0ZVwiLz5cbiAgICAgICAgICAgICAgICAgICAgPC9zdmc+XG4gICAgICAgICAgIFxuICAgICAgICAgICAgPC9wPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9hPjwvTGluaz5cbiAgICAgIDwvZGl2PlxuICAgICAgXG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5oZXJvQmFubmVyQmdFbGVtZW50c30+XG4gICAgICA8c3ZnIHdpZHRoPVwiNTBcIiBoZWlnaHQ9XCIxMTBcIiB2aWV3Qm94PVwiMCAwIDUwIDExMFwiIGZpbGw9XCJub25lXCIgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Z1wiPlxuICAgICAgICA8cGF0aCBkPVwiTTAuNTgzNTUzIDIuNzAyOTllLTA2TC00Ny45OTk4IDU1TDQ5LjE2NjkgNTVMMC41ODM1NTMgMi43MDI5OWUtMDZaXCIgZmlsbD1cIiMwMkQ5RkNcIi8+XG4gICAgICAgIDxwYXRoIGQ9XCJNMC41ODM1NTMgNTVMLTQ3Ljk5OTggMTEwTDQ5LjE2NjkgMTEwTDAuNTgzNTUzIDU1WlwiIGZpbGw9XCIjMDJEOUZDXCIvPlxuICAgICAgPC9zdmc+XG4gICAgICA8c3ZnIHdpZHRoPVwiNDY3XCIgaGVpZ2h0PVwiNTA0XCIgdmlld0JveD1cIjAgMCA0NjcgNTA0XCIgZmlsbD1cIm5vbmVcIiB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCI+XG4gICAgICAgIDxnIG9wYWNpdHk9XCIwLjVcIj5cbiAgICAgICAgPHJlY3QgeD1cIjg2XCIgeT1cIjQwM1wiIHdpZHRoPVwiMzgxXCIgaGVpZ2h0PVwiMTAxXCIgZmlsbD1cIiM0MDVDRkJcIi8+XG4gICAgICAgIDxwYXRoIGQ9XCJNODUuOTk0NiA0MjlWNTA0LjI0NkgtMC4wMDAyNDQxNDFMODUuOTk0NiA0MjlaXCIgZmlsbD1cIndoaXRlXCIvPlxuICAgICAgICA8cGF0aCBkPVwiTTQwNC42MTggMTU2Ljg4TDQ2Ni40MDIgMjA3LjU5OFYtNUgyMTJWMTU2Ljg4SDQwNC42MThaXCIgZmlsbD1cIiMwMkQ5RkNcIi8+XG4gICAgICAgIDxyZWN0IHdpZHRoPVwiMTY5LjYwMVwiIGhlaWdodD1cIjUwLjE2MzdcIiB0cmFuc2Zvcm09XCJtYXRyaXgoLTEgMCAwIDEgMjU1LjU5MSAzMjIuNDM1KVwiIGZpbGw9XCIjMTYyNzQwXCIvPlxuICAgICAgICA8ZWxsaXBzZSByeD1cIjI2Ljg3MzRcIiByeT1cIjI2LjI3NjJcIiB0cmFuc2Zvcm09XCJtYXRyaXgoLTEgMCAwIDEgMTM2Ljc1IDI5Ni4xNTkpXCIgZmlsbD1cIiM1QkVCQzFcIi8+XG4gICAgICAgIDxyZWN0IHdpZHRoPVwiNzYuNDM5OVwiIGhlaWdodD1cIjE1LjUyNjlcIiB0cmFuc2Zvcm09XCJtYXRyaXgoLTEgMCAwIDEgMTYwLjA0MSAyNTQuMzU1KVwiIGZpbGw9XCIjMDJEOUZDXCIvPlxuICAgICAgICA8L2c+XG4gICAgICA8L3N2Zz5cbiAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/BlogPageHeroBanner.js\n");
-
-/***/ }),
-
-/***/ "./components/BlogPageSignupBlock.js":
-/*!*******************************************!*\
-  !*** ./components/BlogPageSignupBlock.js ***!
-  \*******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ BlogPageSignupBlock; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/blogPageSignupBlock.module.css */ \"./components/css/blogPageSignupBlock.module.css\");\n/* harmony import */ var _css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services */ \"./services/index.js\");\n\nvar _jsxFileName = \"/Users/Prernat/Documents/HOUNDSTOOTH - GUILD CAPITAL/DEV-PROJECTS/voyage-web-updated/components/BlogPageSignupBlock.js\";\n\nfunction ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\n\n\n\nfunction BlogPageSignupBlock() {\n  const emailRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n  const emailErrorRef = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)();\n  const {\n    0: email,\n    1: setEmail\n  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"\");\n  const {\n    0: isSubmitted,\n    1: setIsSubmitted\n  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n  const ePattern = /^([\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4})?$/;\n\n  const emailSignUp = () => {\n    let email = emailRef.current.value;\n\n    if (email.length == 0 || !ePattern.test(email)) {\n      emailErrorRef.current.textContent = \"Invalid Email Address\";\n      return false;\n    }\n\n    emailErrorRef.current.textContent = \"\";\n    setEmail(\"\");\n\n    try {\n      const utm = (0,_services__WEBPACK_IMPORTED_MODULE_2__.getUtm)() || {};\n      (0,_services__WEBPACK_IMPORTED_MODULE_2__.createOrUpdateRegistration)(_objectSpread({\n        email\n      }, utm));\n    } catch (error) {\n      console.error(error);\n    }\n\n    setIsSubmitted(true);\n  };\n\n  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(() => {\n    emailErrorRef.current.textContent = \"\";\n  }, [email]);\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n    className: (_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default().signupBlock),\n    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n      className: `container ${(_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default().signupWrapper)}`,\n      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: (_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default().signupBlockBgElements),\n        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n          width: \"42\",\n          height: \"62\",\n          viewBox: \"0 0 42 62\",\n          fill: \"none\",\n          xmlns: \"http://www.w3.org/2000/svg\",\n          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n            d: \"M4.59404 15.0484L19.6185 0.0239234L34.6424 15.0478L4.59404 15.0484Z\",\n            fill: \"#02D9FC\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 39,\n            columnNumber: 17\n          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n            d: \"M4.35771 29.9996L19.3822 14.9751L34.4061 29.999L4.35771 29.9996Z\",\n            fill: \"#02D9FC\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 40,\n            columnNumber: 17\n          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"circle\", {\n            cx: \"20.037\",\n            cy: \"45.5094\",\n            r: \"15.5716\",\n            fill: \"#5AEBC0\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 41,\n            columnNumber: 17\n          }, this)]\n        }, void 0, true, {\n          fileName: _jsxFileName,\n          lineNumber: 38,\n          columnNumber: 13\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n          width: \"53\",\n          height: \"45\",\n          viewBox: \"0 0 53 45\",\n          fill: \"none\",\n          xmlns: \"http://www.w3.org/2000/svg\",\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n            d: \"M40.1285 34.2646L53 45V0H0V34.2646H40.1285Z\",\n            fill: \"#02D9FC\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 44,\n            columnNumber: 17\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 43,\n          columnNumber: 13\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n          width: \"66\",\n          height: \"34\",\n          viewBox: \"0 0 66 34\",\n          fill: \"none\",\n          xmlns: \"http://www.w3.org/2000/svg\",\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n            d: \"M-0.000122137 33.2474L33.2474 -7.66688e-05L66.4936 33.2461L-0.000122137 33.2474Z\",\n            fill: \"#58EDC0\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 47,\n            columnNumber: 17\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 46,\n          columnNumber: 13\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n          width: \"18\",\n          height: \"41\",\n          viewBox: \"0 0 18 41\",\n          fill: \"none\",\n          xmlns: \"http://www.w3.org/2000/svg\",\n          children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n            d: \"M-11.7335 12.2614L0.0978747 0.429981L11.9288 12.2609L-11.7335 12.2614Z\",\n            fill: \"#02D9FC\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 50,\n            columnNumber: 15\n          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n            d: \"M-11.9198 24.035L-0.0884046 12.2037L11.7425 24.0346L-11.9198 24.035Z\",\n            fill: \"#02D9FC\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 51,\n            columnNumber: 15\n          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"circle\", {\n            cx: \"0.427297\",\n            cy: \"36.2486\",\n            r: \"12.2623\",\n            fill: \"#5AEBC0\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 52,\n            columnNumber: 15\n          }, this)]\n        }, void 0, true, {\n          fileName: _jsxFileName,\n          lineNumber: 49,\n          columnNumber: 13\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n          src: `/images/blog-signup-vector-2.svg`\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 56,\n          columnNumber: 13\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n          src: `/images/blog-signup-vector-1.svg`\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 57,\n          columnNumber: 13\n        }, this)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 37,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: (_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default().blogPageSignupBox),\n        \"data-scroll\": true,\n        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h3\", {\n          children: \"Subscribe to the SMS Marketing Resources news letter\"\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 61,\n          columnNumber: 11\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n          className: (_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default().blogPageInputBox),\n          children: [isSubmitted && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n            className: (_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default().thankYou),\n            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n              children: \"Great! Thanks so much for filling out our form. One of our amazing team members will reach out to you shortly!\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 65,\n              columnNumber: 17\n            }, this)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 64,\n            columnNumber: 15\n          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n            id: \"smailSignUpError\",\n            ref: emailErrorRef,\n            className: (_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default().emailError)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 71,\n            columnNumber: 13\n          }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            id: (_css_blogPageSignupBlock_module_css__WEBPACK_IMPORTED_MODULE_3___default().inputWrapper),\n            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n              ref: emailRef,\n              value: email,\n              onChange: e => setEmail(e.target.value),\n              type: \"text\",\n              name: \"email\",\n              id: \"emailSignUp\",\n              autoComplete: \"off\",\n              placeholder: \"ENTER YOUR EMAIL\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 77,\n              columnNumber: 15\n            }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n              onClick: () => emailSignUp(),\n              id: \"emailSubmit\",\n              children: \"SUBSCRIBE\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 87,\n              columnNumber: 15\n            }, this)]\n          }, void 0, true, {\n            fileName: _jsxFileName,\n            lineNumber: 76,\n            columnNumber: 13\n          }, this)]\n        }, void 0, true, {\n          fileName: _jsxFileName,\n          lineNumber: 62,\n          columnNumber: 11\n        }, this)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 60,\n        columnNumber: 9\n      }, this)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 36,\n      columnNumber: 7\n    }, this)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 35,\n    columnNumber: 5\n  }, this);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL0Jsb2dQYWdlU2lnbnVwQmxvY2suanM/NDlmNSJdLCJuYW1lcyI6WyJCbG9nUGFnZVNpZ251cEJsb2NrIiwiZW1haWxSZWYiLCJ1c2VSZWYiLCJlbWFpbEVycm9yUmVmIiwiZW1haWwiLCJzZXRFbWFpbCIsInVzZVN0YXRlIiwiaXNTdWJtaXR0ZWQiLCJzZXRJc1N1Ym1pdHRlZCIsImVQYXR0ZXJuIiwiZW1haWxTaWduVXAiLCJjdXJyZW50IiwidmFsdWUiLCJsZW5ndGgiLCJ0ZXN0IiwidGV4dENvbnRlbnQiLCJ1dG0iLCJnZXRVdG0iLCJjcmVhdGVPclVwZGF0ZVJlZ2lzdHJhdGlvbiIsImVycm9yIiwiY29uc29sZSIsInVzZUVmZmVjdCIsInN0eWxlcyIsImVtYWlsRXJyb3IiLCJlIiwidGFyZ2V0Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFDQTtBQUVlLFNBQVNBLG1CQUFULEdBQStCO0FBQzVDLFFBQU1DLFFBQVEsR0FBR0MsNkNBQU0sRUFBdkI7QUFDQSxRQUFNQyxhQUFhLEdBQUdELDZDQUFNLEVBQTVCO0FBRUEsUUFBTTtBQUFBLE9BQUNFLEtBQUQ7QUFBQSxPQUFRQztBQUFSLE1BQW9CQywrQ0FBUSxDQUFDLEVBQUQsQ0FBbEM7QUFDQSxRQUFNO0FBQUEsT0FBQ0MsV0FBRDtBQUFBLE9BQWNDO0FBQWQsTUFBZ0NGLCtDQUFRLENBQUMsS0FBRCxDQUE5QztBQUVBLFFBQU1HLFFBQVEsR0FBRyxxQ0FBakI7O0FBQ0EsUUFBTUMsV0FBVyxHQUFHLE1BQU07QUFDeEIsUUFBSU4sS0FBSyxHQUFHSCxRQUFRLENBQUNVLE9BQVQsQ0FBaUJDLEtBQTdCOztBQUNBLFFBQUlSLEtBQUssQ0FBQ1MsTUFBTixJQUFnQixDQUFoQixJQUFxQixDQUFDSixRQUFRLENBQUNLLElBQVQsQ0FBY1YsS0FBZCxDQUExQixFQUFnRDtBQUM5Q0QsbUJBQWEsQ0FBQ1EsT0FBZCxD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QUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBZEY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQUZGO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQXhCRjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFERjtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREY7QUE4REQiLCJmaWxlIjoiLi9jb21wb25lbnRzL0Jsb2dQYWdlU2lnbnVwQmxvY2suanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVzIGZyb20gXCIuL2Nzcy9ibG9nUGFnZVNpZ251cEJsb2NrLm1vZHVsZS5jc3NcIjtcbmltcG9ydCB7IHVzZVJlZiwgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHsgY3JlYXRlT3JVcGRhdGVSZWdpc3RyYXRpb24sIGdldFV0bSB9IGZyb20gXCIuLi9zZXJ2aWNlc1wiO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBCbG9nUGFnZVNpZ251cEJsb2NrKCkge1xuICBjb25zdCBlbWFpbFJlZiA9IHVzZVJlZigpO1xuICBjb25zdCBlbWFpbEVycm9yUmVmID0gdXNlUmVmKCk7XG5cbiAgY29uc3QgW2VtYWlsLCBzZXRFbWFpbF0gPSB1c2VTdGF0ZShcIlwiKTtcbiAgY29uc3QgW2lzU3VibWl0dGVkLCBzZXRJc1N1Ym1pdHRlZF0gPSB1c2VTdGF0ZShmYWxzZSk7XG5cbiAgY29uc3QgZVBhdHRlcm4gPSAvXihbXFx3LVxcLl0rQChbXFx3LV0rXFwuKStbXFx3LV17Miw0fSk/JC87XG4gIGNvbnN0IGVtYWlsU2lnblVwID0gKCkgPT4ge1xuICAgIGxldCBlbWFpbCA9IGVtYWlsUmVmLmN1cnJlbnQudmFsdWU7XG4gICAgaWYgKGVtYWlsLmxlbmd0aCA9PSAwIHx8ICFlUGF0dGVybi50ZXN0KGVtYWlsKSkge1xuICAgICAgZW1haWxFcnJvclJlZi5jdXJyZW50LnRleHRDb250ZW50ID0gXCJJbnZhbGlkIEVtYWlsIEFkZHJlc3NcIjtcbiAgICAgIHJldHVybiBmYWxzZTtcbiAgICB9XG4gICAgZW1haWxFcnJvclJlZi5jdXJyZW50LnRleHRDb250ZW50ID0gXCJcIjtcbiAgICBzZXRFbWFpbChcIlwiKTtcbiAgICB0cnkge1xuICAgICAgY29uc3QgdXRtID0gZ2V0VXRtKCkgfHwge307XG4gICAgICBjcmVhdGVPclVwZGF0ZVJlZ2lzdHJhdGlvbih7IGVtYWlsLCAuLi51dG0gfSk7XG4gICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgIGNvbnNvbGUuZXJyb3IoZXJyb3IpO1xuICAgIH1cbiAgICBzZXRJc1N1Ym1pdHRlZCh0cnVlKTtcbiAgfTtcblxuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIGVtYWlsRXJyb3JSZWYuY3VycmVudC50ZXh0Q29udGVudCA9IFwiXCI7XG4gIH0sIFtlbWFpbF0pO1xuXG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gY2xhc3NOYW1lPXtzdHlsZXMuc2lnbnVwQmxvY2t9PlxuICAgICAgPGRpdiBjbGFzc05hbWU9e2Bjb250YWluZXIgJHtzdHlsZXMuc2lnbnVwV3JhcHBlcn1gfT5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5zaWdudXBCbG9ja0JnRWxlbWVudHN9PlxuICAgICAgICAgICAgPHN2ZyB3aWR0aD1cIjQyXCIgaGVpZ2h0PVwiNjJcIiB2aWV3Qm94PVwiMCAwIDQyIDYyXCIgZmlsbD1cIm5vbmVcIiB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCI+XG4gICAgICAgICAgICAgICAgPHBhdGggZD1cIk00LjU5NDA0IDE1LjA0ODRMMTkuNjE4NSAwLjAyMzkyMzRMMzQuNjQyNCAxNS4wNDc4TDQuNTk0MDQgMTUuMDQ4NFpcIiBmaWxsPVwiIzAyRDlGQ1wiLz5cbiAgICAgICAgICAgICAgICA8cGF0aCBkPVwiTTQuMzU3NzEgMjkuOTk5NkwxOS4zODIyIDE0Ljk3NTFMMzQuNDA2MSAyOS45OTlMNC4zNTc3MSAyOS45OTk2WlwiIGZpbGw9XCIjMDJEOUZDXCIvPlxuICAgICAgICAgICAgICAgIDxjaXJjbGUgY3g9XCIyMC4wMzdcIiBjeT1cIjQ1LjUwOTRcIiByPVwiMTUuNTcxNlwiIGZpbGw9XCIjNUFFQkMwXCIvPlxuICAgICAgICAgICAgPC9zdmc+XG4gICAgICAgICAgICA8c3ZnIHdpZHRoPVwiNTNcIiBoZWlnaHQ9XCI0NVwiIHZpZXdCb3g9XCIwIDAgNTMgNDVcIiBmaWxsPVwibm9uZVwiIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIj5cbiAgICAgICAgICAgICAgICA8cGF0aCBkPVwiTTQwLjEyODUgMzQuMjY0Nkw1MyA0NVYwSDBWMzQuMjY0Nkg0MC4xMjg1WlwiIGZpbGw9XCIjMDJEOUZDXCIvPlxuICAgICAgICAgICAgPC9zdmc+XG4gICAgICAgICAgICA8c3ZnIHdpZHRoPVwiNjZcIiBoZWlnaHQ9XCIzNFwiIHZpZXdCb3g9XCIwIDAgNjYgMzRcIiBmaWxsPVwibm9uZVwiIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIj5cbiAgICAgICAgICAgICAgICA8cGF0aCBkPVwiTS0wLjAwMDEyMjEzNyAzMy4yNDc0TDMzLjI0NzQgLTcuNjY2ODhlLTA1TDY2LjQ5MzYgMzMuMjQ2MUwtMC4wMDAxMjIxMzcgMzMuMjQ3NFpcIiBmaWxsPVwiIzU4RURDMFwiLz5cbiAgICAgICAgICAgIDwvc3ZnPlxuICAgICAgICAgICAgPHN2ZyB3aWR0aD1cIjE4XCIgaGVpZ2h0PVwiNDFcIiB2aWV3Qm94PVwiMCAwIDE4IDQxXCIgZmlsbD1cIm5vbmVcIiB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCI+XG4gICAgICAgICAgICAgIDxwYXRoIGQ9XCJNLTExLjczMzUgMTIuMjYxNEwwLjA5Nzg3NDcgMC40Mjk5ODFMMTEuOTI4OCAxMi4yNjA5TC0xMS43MzM1IDEyLjI2MTRaXCIgZmlsbD1cIiMwMkQ5RkNcIi8+XG4gICAgICAgICAgICAgIDxwYXRoIGQ9XCJNLTExLjkxOTggMjQuMDM1TC0wLjA4ODQwNDYgMTIuMjAzN0wxMS43NDI1IDI0LjAzNDZMLTExLjkxOTggMjQuMDM1WlwiIGZpbGw9XCIjMDJEOUZDXCIvPlxuICAgICAgICAgICAgICA8Y2lyY2xlIGN4PVwiMC40MjcyOTdcIiBjeT1cIjM2LjI0ODZcIiByPVwiMTIuMjYyM1wiIGZpbGw9XCIjNUFFQkMwXCIvPlxuICAgICAgICAgICAgPC9zdmc+XG5cblxuICAgICAgICAgICAgPGltZyBzcmM9e2AvaW1hZ2VzL2Jsb2ctc2lnbnVwLXZlY3Rvci0yLnN2Z2B9Lz5cbiAgICAgICAgICAgIDxpbWcgc3JjPXtgL2ltYWdlcy9ibG9nLXNpZ251cC12ZWN0b3ItMS5zdmdgfS8+XG4gICAgICAgICAgIFxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5ibG9nUGFnZVNpZ251cEJveH0gZGF0YS1zY3JvbGw+XG4gICAgICAgICAgPGgzPlN1YnNjcmliZSB0byB0aGUgU01TIE1hcmtldGluZyBSZXNvdXJjZXMgbmV3cyBsZXR0ZXI8L2gzPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMuYmxvZ1BhZ2VJbnB1dEJveH0+XG4gICAgICAgICAgICB7aXNTdWJtaXR0ZWQgJiYgKFxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9e3N0eWxlcy50aGFua1lvdX0+XG4gICAgICAgICAgICAgICAgPHNwYW4+XG4gICAgICAgICAgICAgICAgICBHcmVhdCEgVGhhbmtzIHNvIG11Y2ggZm9yIGZpbGxpbmcgb3V0IG91ciBmb3JtLiBPbmUgb2Ygb3VyXG4gICAgICAgICAgICAgICAgICBhbWF6aW5nIHRlYW0gbWVtYmVycyB3aWxsIHJlYWNoIG91dCB0byB5b3Ugc2hvcnRseSFcbiAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICl9XG4gICAgICAgICAgICA8c3BhblxuICAgICAgICAgICAgICBpZD1cInNtYWlsU2lnblVwRXJyb3JcIlxuICAgICAgICAgICAgICByZWY9e2VtYWlsRXJyb3JSZWZ9XG4gICAgICAgICAgICAgIGNsYXNzTmFtZT17c3R5bGVzLmVtYWlsRXJyb3J9XG4gICAgICAgICAgICA+PC9zcGFuPlxuICAgICAgICAgICAgPGRpdiBpZD17c3R5bGVzLmlucHV0V3JhcHBlcn0+XG4gICAgICAgICAgICAgIDxpbnB1dFxuICAgICAgICAgICAgICAgIHJlZj17ZW1haWxSZWZ9XG4gICAgICAgICAgICAgICAgdmFsdWU9e2VtYWlsfVxuICAgICAgICAgICAgICAgIG9uQ2hhbmdlPXsoZSkgPT4gc2V0RW1haWwoZS50YXJnZXQudmFsdWUpfVxuICAgICAgICAgICAgICAgIHR5cGU9XCJ0ZXh0XCJcbiAgICAgICAgICAgICAgICBuYW1lPVwiZW1haWxcIlxuICAgICAgICAgICAgICAgIGlkPVwiZW1haWxTaWduVXBcIlxuICAgICAgICAgICAgICAgIGF1dG9Db21wbGV0ZT1cIm9mZlwiXG4gICAgICAgICAgICAgICAgcGxhY2Vob2xkZXI9XCJFTlRFUiBZT1VSIEVNQUlMXCJcbiAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgPGJ1dHRvbiBvbkNsaWNrPXsoKSA9PiBlbWFpbFNpZ25VcCgpfSBpZD1cImVtYWlsU3VibWl0XCI+XG4gICAgICAgICAgICAgICAgU1VCU0NSSUJFXG4gICAgICAgICAgICAgIDwvYnV0dG9uPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/BlogPageSignupBlock.js\n");
-
-/***/ }),
-
-/***/ "./components/BlogPageTagFilteringBlock.js":
-/*!*************************************************!*\
-  !*** ./components/BlogPageTagFilteringBlock.js ***!
-  \*************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ BlogPageFilteringBlock; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./css/blogPageTagFilteringBlock.module.css */ \"./components/css/blogPageTagFilteringBlock.module.css\");\n/* harmony import */ var _css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ \"./node_modules/next/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash.debounce */ \"lodash.debounce\");\n/* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_debounce__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _data_BlogPageTagFilteringBlock__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../data/BlogPageTagFilteringBlock */ \"./data/BlogPageTagFilteringBlock.js\");\n/* harmony import */ var react_outside_click_handler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-outside-click-handler */ \"react-outside-click-handler\");\n/* harmony import */ var react_outside_click_handler__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_outside_click_handler__WEBPACK_IMPORTED_MODULE_5__);\n\nvar _jsxFileName = \"/Users/Prernat/Documents/HOUNDSTOOTH - GUILD CAPITAL/DEV-PROJECTS/voyage-web-updated/components/BlogPageTagFilteringBlock.js\";\n\n\n\n\n\n\nfunction BlogPageFilteringBlock({\n  posts,\n  handleTagClick,\n  handleSearch\n}) {\n  const {\n    0: filteredTitles,\n    1: setFilteredTitles\n  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]);\n  const {\n    0: isCategoryActive,\n    1: setCategoryActive\n  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(\"all\");\n  const {\n    0: searchValue,\n    1: setSearchValue\n  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)('');\n  const {\n    0: subTagsVisible,\n    1: setSubTagsVisible\n  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);\n  const {\n    0: subTagsChecked,\n    1: setSubTagsChecked\n  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([false, false, false, false, false]);\n  const {\n    0: subTagSVG,\n    1: setSubTagSVG\n  } = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)('180deg');\n  const subCategoryTags = _data_BlogPageTagFilteringBlock__WEBPACK_IMPORTED_MODULE_4__.BlogPageCategoriesData[4].subcategories.map(slug => slug); //debouncing the search term displayed \n  // const debouncedSave = debounce(() => setSearchValue(searchVal), 1000 )\n\n  const debouncedSave = (0,react__WEBPACK_IMPORTED_MODULE_2__.useCallback)(lodash_debounce__WEBPACK_IMPORTED_MODULE_3___default()(searchVal => setSearchValue(searchVal), 500), []);\n\n  const filterTitles = searchVal => {\n    //console.log(\"search val is\", searchVal);\n    debouncedSave(searchVal);\n    const filteredTitles = posts.posts.filter(val => {\n      return val.title.toLowerCase().includes(searchVal.toLowerCase());\n    });\n\n    if (searchVal == \"\") {\n      setFilteredTitles([]);\n    } else {\n      setFilteredTitles(filteredTitles);\n    }\n  };\n\n  const toggleCategoryClass = slugName => {\n    setCategoryActive(slugName);\n\n    if (slugName === \"voyage-sms-news\") {\n      let allSubTagsUnchecked1 = subTagsChecked.every(v => v === false); // console.log(\"are all subtags unchecked ?\", allSubTagsUnchecked1)\n\n      if (allSubTagsUnchecked1) setCategoryActive(null);else {\n        setCategoryActive(slugName);\n      }\n    }\n  }; //open and close the subcategory section\n\n\n  const handleSubTags = () => {\n    setSubTagsVisible(!subTagsVisible);\n    subTagSVG === \"180deg\" ? setSubTagSVG(\"0deg\") : setSubTagSVG(\"180deg\");\n  }; //create an array from the checked subcategories for API call\n\n\n  const handleCheckedTags = (position, checkedTagSlug) => {\n    //console.log(\"checked tag is\", checkedTag);\n    //setSubTagsChecked(subTagsChecked => [...subTagsChecked, checkedTag] );\n    const updatedTagsState = subTagsChecked.map((item, index) => index === position ? !item : item); //console.log(\"current checked tags\", updatedTagsState);\n\n    setSubTagsChecked(updatedTagsState); //Array Reduce method to map the checked values to the tag Slugs\n\n    const tagURL = updatedTagsState.reduce((url, currentState, index) => {\n      if (currentState == true) {\n        return url + ` ${subCategoryTags[index].slug} ,`;\n      }\n\n      return url;\n    }, \"\"); //console.log(\"current Tag URL\", (tagURL).replace(/,\\s*$/, \"\").replaceAll(\" \", \"\"))\n\n    handleTagClick(tagURL.replace(/,\\s*$/, \"\").replaceAll(\" \", \"\"));\n  };\n\n  const handleOutsideClick = () => {\n    setSubTagsVisible(false);\n    setSubTagSVG(\"180deg\");\n    let allSubTagsUnchecked = subTagsChecked.every(v => v === false); //console.log(\"are all subtags unchecked ?\", allSubTagsUnchecked)\n\n    if (allSubTagsUnchecked) setCategoryActive(null);else {\n      setCategoryActive(\"voyage-sms-news\");\n    }\n  };\n\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"section\", {\n    className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().tagFilteringSection),\n    children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n      className: `container ${(_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().filterSearchDiv)}`,\n      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().SearchDiv),\n        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n          className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().searchIcon),\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n            width: \"18\",\n            height: \"19\",\n            viewBox: \"0 0 18 19\",\n            fill: \"none\",\n            xmlns: \"http://www.w3.org/2000/svg\",\n            children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n              d: \"M17.8594 16.7383L13.6055 12.4844C13.5 12.4141 13.3945 12.3438 13.2891 12.3438H12.832C13.9219 11.0781 14.625 9.39062 14.625 7.5625C14.625 3.55469 11.3203 0.25 7.3125 0.25C3.26953 0.25 0 3.55469 0 7.5625C0 11.6055 3.26953 14.875 7.3125 14.875C9.14062 14.875 10.793 14.207 12.0938 13.1172V13.5742C12.0938 13.6797 12.1289 13.7852 12.1992 13.8906L16.4531 18.1445C16.6289 18.3203 16.9102 18.3203 17.0508 18.1445L17.8594 17.3359C18.0352 17.1953 18.0352 16.9141 17.8594 16.7383ZM7.3125 13.1875C4.18359 13.1875 1.6875 10.6914 1.6875 7.5625C1.6875 4.46875 4.18359 1.9375 7.3125 1.9375C10.4062 1.9375 12.9375 4.46875 12.9375 7.5625C12.9375 10.6914 10.4062 13.1875 7.3125 13.1875Z\",\n              fill: \"black\"\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 126,\n              columnNumber: 25\n            }, this)\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 125,\n            columnNumber: 21\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 124,\n          columnNumber: 21\n        }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n          type: \"text\",\n          placeholder: \"Search by title or any keyword\",\n          onChange: e => filterTitles(e.target.value)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 129,\n          columnNumber: 21\n        }, this), filteredTitles.length != 0 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((react_outside_click_handler__WEBPACK_IMPORTED_MODULE_5___default()), {\n          onOutsideClick: () => {\n            setFilteredTitles([]);\n          },\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().searchBoxTitles),\n            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n              className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().searchBoxHeader),\n              children: [\"Showing Blogs related to \", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                children: [\"\\\"\", searchValue, \"\\\"\"]\n              }, void 0, true, {\n                fileName: _jsxFileName,\n                lineNumber: 133,\n                columnNumber: 88\n              }, this)]\n            }, void 0, true, {\n              fileName: _jsxFileName,\n              lineNumber: 133,\n              columnNumber: 25\n            }, this), filteredTitles.slice(0, 10).map((post, index) => {\n              return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                href: \"/blog/[slug]\",\n                as: `/blog/${post.slug}`,\n                children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                  children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().postTitles),\n                    children: post.title\n                  }, void 0, false, {\n                    fileName: _jsxFileName,\n                    lineNumber: 135,\n                    columnNumber: 103\n                  }, this)\n                }, void 0, false, {\n                  fileName: _jsxFileName,\n                  lineNumber: 135,\n                  columnNumber: 100\n                }, this)\n              }, index, false, {\n                fileName: _jsxFileName,\n                lineNumber: 135,\n                columnNumber: 36\n              }, this);\n            })]\n          }, void 0, true, {\n            fileName: _jsxFileName,\n            lineNumber: 132,\n            columnNumber: 21\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 131,\n          columnNumber: 21\n        }, this)]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 123,\n        columnNumber: 17\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().FilterDiv),\n        children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n          className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().postTags),\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n            className: `${isCategoryActive == \"all\" ? (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().categoryActive) : null}`,\n            onClick: () => {\n              handleTagClick(null);\n              toggleCategoryClass(\"all\");\n              setSubTagsVisible(false);\n              setSubTagsChecked([false, false, false, false, false]);\n              setSubTagSVG(\"180deg\");\n            },\n            children: \"All\"\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 144,\n            columnNumber: 58\n          }, this)\n        }, void 0, false, {\n          fileName: _jsxFileName,\n          lineNumber: 144,\n          columnNumber: 25\n        }, this), _data_BlogPageTagFilteringBlock__WEBPACK_IMPORTED_MODULE_4__.BlogPageCategoriesData.map((category, index) => category.subcategories.length < 1 ? /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n          className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().postTags),\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n            className: isCategoryActive === `${category.slug}` ? (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().categoryActive) : null,\n            onClick: () => {\n              handleTagClick(category.slug);\n              toggleCategoryClass(category.slug);\n              setSubTagsVisible(false);\n              setSubTagsChecked([false, false, false, false, false]);\n              setSubTagSVG(\"180deg\");\n            },\n            children: category.display_title\n          }, void 0, false, {\n            fileName: _jsxFileName,\n            lineNumber: 148,\n            columnNumber: 33\n          }, this)\n        }, index, false, {\n          fileName: _jsxFileName,\n          lineNumber: 147,\n          columnNumber: 29\n        }, this) : /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n          className: ` ${(_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().postTags)} ${(_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().subTag)}`,\n          children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((react_outside_click_handler__WEBPACK_IMPORTED_MODULE_5___default()), {\n            onOutsideClick: handleOutsideClick,\n            children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n              className: isCategoryActive === \"voyage-sms-news\" ? (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().categoryActive) : null,\n              onClick: () => {\n                handleSubTags();\n                toggleCategoryClass(\"voyage-sms-news\");\n              },\n              children: [category.display_title, /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"svg\", {\n                style: {\n                  transform: `rotate(${subTagSVG})`\n                },\n                width: \"15\",\n                height: \"10\",\n                viewBox: \"0 0 15 10\",\n                fill: \"none\",\n                xmlns: \"http://www.w3.org/2000/svg\",\n                children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"path\", {\n                  d: \"M7.08838 1.12041L0.169625 8.05835C-0.0569267 8.28566 -0.0565459 8.65369 0.170797 8.88062C0.398111 9.10738 0.766342 9.10679 0.993069 8.87945L7.50003 2.35448L14.007 8.87969C14.2337 9.107 14.6017 9.10759 14.8291 8.88086C14.943 8.7671 15 8.61807 15 8.46903C15 8.32038 14.9434 8.17193 14.8302 8.05838L7.91165 1.12041C7.80272 1.01093 7.65448 0.94949 7.50003 0.94949C7.34558 0.94949 7.19751 1.0111 7.08838 1.12041Z\",\n                  fill: \"black\"\n                }, void 0, false, {\n                  fileName: _jsxFileName,\n                  lineNumber: 156,\n                  columnNumber: 37\n                }, this)\n              }, void 0, false, {\n                fileName: _jsxFileName,\n                lineNumber: 155,\n                columnNumber: 33\n              }, this)]\n            }, void 0, true, {\n              fileName: _jsxFileName,\n              lineNumber: 153,\n              columnNumber: 29\n            }, this), subTagsVisible && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n              className: (_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().subCategoryBox),\n              children: category.subcategories.map((subcategory, index) => /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: `${(_css_blogPageTagFilteringBlock_module_css__WEBPACK_IMPORTED_MODULE_6___default().subCategories)}`,\n                children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                  type: \"checkbox\",\n                  id: `${subcategory.id}`,\n                  name: subcategory.title,\n                  value: subcategory.title,\n                  checked: subTagsChecked[index],\n                  onChange: () => {\n                    handleCheckedTags(index, subcategory.slug);\n                  }\n                }, void 0, false, {\n                  fileName: _jsxFileName,\n                  lineNumber: 165,\n                  columnNumber: 35\n                }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"label\", {\n                  htmlFor: `${subcategory.id}`,\n                  children: [\" \", subcategory.title]\n                }, void 0, true, {\n                  fileName: _jsxFileName,\n                  lineNumber: 166,\n                  columnNumber: 35\n                }, this)]\n              }, index, true, {\n                fileName: _jsxFileName,\n                lineNumber: 164,\n                columnNumber: 33\n              }, this))\n            }, void 0, false, {\n              fileName: _jsxFileName,\n              lineNumber: 162,\n              columnNumber: 29\n            }, this)]\n          }, void 0, true, {\n            fileName: _jsxFileName,\n            lineNumber: 152,\n            columnNumber: 29\n          }, this)\n        }, index, false, {\n          fileName: _jsxFileName,\n          lineNumber: 151,\n          columnNumber: 29\n        }, this))]\n      }, void 0, true, {\n        fileName: _jsxFileName,\n        lineNumber: 142,\n        columnNumber: 17\n      }, this)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 121,\n      columnNumber: 14\n    }, this)\n  }, void 0, false, {\n    fileName: _jsxFileName,\n    lineNumber: 120,\n    columnNumber: 9\n  }, this);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL0Jsb2dQYWdlVGFnRmlsdGVyaW5nQmxvY2suanM/MmRhNSJdLCJuYW1lcyI6WyJCbG9nUGFnZUZpbHRlcmluZ0Jsb2NrIiwicG9zdHMiLCJoYW5kbGVUYWdDbGljayIsImhhbmRsZVNlYXJjaCIsImZpbHRlcmVkVGl0bGVzIiwic2V0RmlsdGVyZWRUaXRsZXMiLCJ1c2VTdGF0ZSIsImlzQ2F0ZWdvcnlBY3RpdmUiLCJzZXRDYXRlZ29yeUFjdGl2ZSIsInNlYXJjaFZhbHVlIiwic2V0U2VhcmNoVmFsdWUiLCJzdWJUYWdzVmlzaWJsZSIsInNldFN1YlRhZ3NWaXNpYmxlIiwic3ViVGFnc0NoZWNrZWQiLCJzZXRTdWJUYWdzQ2hlY2tlZCIsInN1YlRhZ1NWRyIsInNldFN1YlRhZ1NWRyIsInN1YkNhdGVnb3J5VGFncyIsIkJsb2dQYWdlQ2F0ZWdvcmllc0RhdGEiLCJzbHVnIiwiZGVib3VuY2VkU2F2ZSIsInVzZUNhbGxiYWNrIiwiZGVib3VuY2UiLCJzZWFyY2hWYWwiLCJmaWx0ZXJUaXRsZXMiLCJmaWx0ZXIiLCJ2YWwiLCJ0aXRsZSIsInRvTG93ZXJDYXNlIiwiaW5jbHVkZXMiLCJ0b2dnbGVDYXRlZ29yeUNsYXNzIiwic2x1Z05hbWUiLCJhbGxTdWJUYWdzVW5jaGVja2VkMSIsImV2ZXJ5IiwidiIsImhhbmRsZVN1YlRhZ3MiLCJoYW5kbGVDaGVja2VkVGFncyIsInBvc2l0aW9uIiwiY2hlY2tlZFRhZ1NsdWciLCJ1cGRhdGVkVGFnc1N0YXRlIiwibWFwIiwiaXRlbSIsImluZGV4IiwidGFnVVJMIiwicmVkdWNlIiwidXJsIiwiY3VycmVudFN0YXRlIiwicmVwbGFjZSIsInJlcGxhY2VBbGwiLCJoYW5kbGVPdXRzaWRlQ2xpY2siLCJhbGxTdWJUYWdzVW5jaGVja2VkIiwic3R5bGVzIiwiZSIsInRhcmdldCIsInZhbHVlIiwibGVuZ3RoIiwic2xpY2UiLCJwb3N0IiwiY2F0ZWdvcnkiLCJzdWJjYXRl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QSxjQXJCSDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFETDtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBREo7QUErREgiLCJmaWxlIjoiLi9jb21wb25lbnRzL0Jsb2dQYWdlVGFnRmlsdGVyaW5nQmxvY2suanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgc3R5bGVzIGZyb20gXCIuL2Nzcy9ibG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrLm1vZHVsZS5jc3NcIjtcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5pbXBvcnQge3VzZUNhbGxiYWNrLCB1c2VTdGF0ZX0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IGRlYm91bmNlIGZyb20gJ2xvZGFzaC5kZWJvdW5jZSc7XG5pbXBvcnQgeyBCbG9nUGFnZUNhdGVnb3JpZXNEYXRhIH0gZnJvbSBcIi4uL2RhdGEvQmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9ja1wiO1xuaW1wb3J0IE91dHNpZGVDbGlja0hhbmRsZXIgZnJvbSAncmVhY3Qtb3V0c2lkZS1jbGljay1oYW5kbGVyJztcblxuXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEJsb2dQYWdlRmlsdGVyaW5nQmxvY2soe3Bvc3RzLCBoYW5kbGVUYWdDbGljaywgaGFuZGxlU2VhcmNofSkge1xuICAgIGNvbnN0IFtmaWx0ZXJlZFRpdGxlcywgc2V0RmlsdGVyZWRUaXRsZXNdID0gdXNlU3RhdGUoW10pO1xuICAgIGNvbnN0IFtpc0NhdGVnb3J5QWN0aXZlLCBzZXRDYXRlZ29yeUFjdGl2ZV0gPSB1c2VTdGF0ZShcImFsbFwiKTtcbiAgICBjb25zdCBbc2VhcmNoVmFsdWUsIHNldFNlYXJjaFZhbHVlXSA9IHVzZVN0YXRlKCcnKTtcbiAgICBjb25zdCBbc3ViVGFnc1Zpc2libGUsIHNldFN1YlRhZ3NWaXNpYmxlXSA9IHVzZVN0YXRlKGZhbHNlKTtcbiAgICBjb25zdCBbc3ViVGFnc0NoZWNrZWQsIHNldFN1YlRhZ3NDaGVja2VkXSA9IHVzZVN0YXRlKFxuICAgICAgICBbZmFsc2UsIGZhbHNlLCBmYWxzZSwgZmFsc2UsIGZhbHNlXVxuICAgICk7XG4gICAgY29uc3QgW3N1YlRhZ1NWRywgc2V0U3ViVGFnU1ZHXSA9IHVzZVN0YXRlKCcxODBkZWcnKTtcbiAgICBjb25zdCBzdWJDYXRlZ29yeVRhZ3MgPSBCbG9nUGFnZUNhdGVnb3JpZXNEYXRhWzRdLnN1YmNhdGVnb3JpZXMubWFwKChzbHVnKSA9PiBzbHVnKTtcblxuICAgXG5cbiAgICAvL2RlYm91bmNpbmcgdGhlIHNlYXJjaCB0ZXJtIGRpc3BsYXllZCBcbiAgICAvLyBjb25zdCBkZWJvdW5jZWRTYXZlID0gZGVib3VuY2UoKCkgPT4gc2V0U2VhcmNoVmFsdWUoc2VhcmNoVmFsKSwgMTAwMCApXG4gICAgY29uc3QgZGVib3VuY2VkU2F2ZSA9IHVzZUNhbGxiYWNrKGRlYm91bmNlKChzZWFyY2hWYWwpID0+IHNldFNlYXJjaFZhbHVlKHNlYXJjaFZhbCksIDUwMCApLCBbXSlcblxuICAgIGNvbnN0IGZpbHRlclRpdGxlcyA9IChzZWFyY2hWYWwpID0+IHtcbiAgICAgICAgLy9jb25zb2xlLmxvZyhcInNlYXJjaCB2YWwgaXNcIiwgc2VhcmNoVmFsKTtcblxuXG4gICAgICAgIFxuICAgICAgICBkZWJvdW5jZWRTYXZlKHNlYXJjaFZhbCk7XG5cblxuICAgICAgICBjb25zdCBmaWx0ZXJlZFRpdGxlcyA9IHBvc3RzLnBvc3RzLmZpbHRlcigodmFsKSA9PiB7XG4gICAgICAgICAgIHJldHVybiB2YWwudGl0bGUudG9Mb3dlckNhc2UoKS5pbmNsdWRlcyhzZWFyY2hWYWwudG9Mb3dlckNhc2UoKSk7XG4gICAgICAgIH0pO1xuXG4gICAgICAgIGlmKHNlYXJjaFZhbCA9PSBcIlwiKXtcbiAgICAgICAgICAgIHNldEZpbHRlcmVkVGl0bGVzKFtdKTtcbiAgICAgICAgfWVsc2V7XG4gICAgICAgIHNldEZpbHRlcmVkVGl0bGVzKGZpbHRlcmVkVGl0bGVzKTtcbiAgICAgICAgfVxuICAgIH1cblxuICAgIGNvbnN0IHRvZ2dsZUNhdGVnb3J5Q2xhc3MgPSAoc2x1Z05hbWUpID0+IHtcbiAgICAgICAgc2V0Q2F0ZWdvcnlBY3RpdmUoc2x1Z05hbWUpO1xuXG4gICAgICAgIGlmKHNsdWdOYW1lID09PSBcInZveWFnZS1zbXMtbmV3c1wiKXtcblxuICAgICAgICBsZXQgYWxsU3ViVGFnc1VuY2hlY2tlZDEgPSBzdWJUYWdzQ2hlY2tlZC5ldmVyeSh2ID0+IHYgPT09IGZhbHNlKTtcbiAgICAgICAvLyBjb25zb2xlLmxvZyhcImFyZSBhbGwgc3VidGFncyB1bmNoZWNrZWQgP1wiLCBhbGxTdWJUYWdzVW5jaGVja2VkMSlcbiAgICAgICAgXG4gICAgICAgIGlmKGFsbFN1YlRhZ3NVbmNoZWNrZWQxKVxuICAgICAgICBzZXRDYXRlZ29yeUFjdGl2ZShudWxsKTtcbiAgICAgICAgZWxzZXtcbiAgICAgICAgICAgIHNldENhdGVnb3J5QWN0aXZlKHNsdWdOYW1lKTtcbiAgICAgICAgfVxuXG4gICAgICAgIH1cbiAgICAgIH07XG5cbiAgICAvL29wZW4gYW5kIGNsb3NlIHRoZSBzdWJjYXRlZ29yeSBzZWN0aW9uXG4gICAgY29uc3QgaGFuZGxlU3ViVGFncyA9ICgpID0+e1xuICAgICAgICBzZXRTdWJUYWdzVmlzaWJsZSghc3ViVGFnc1Zpc2libGUpO1xuXG4gICAgICAgIHN1YlRhZ1NWRyAgPT09IFwiMTgwZGVnXCIgPyBzZXRTdWJUYWdTVkcoXCIwZGVnXCIpIDogc2V0U3ViVGFnU1ZHKFwiMTgwZGVnXCIpO1xuXG4gICAgICAgXG4gICAgfVxuXG5cbiAgICAvL2NyZWF0ZSBhbiBhcnJheSBmcm9tIHRoZSBjaGVja2VkIHN1YmNhdGVnb3JpZXMgZm9yIEFQSSBjYWxsXG4gICAgY29uc3QgaGFuZGxlQ2hlY2tlZFRhZ3MgPSAocG9zaXRpb24sIGNoZWNrZWRUYWdTbHVnKSA9PiB7XG4gICAgICAgIC8vY29uc29sZS5sb2coXCJjaGVja2VkIHRhZyBpc1wiLCBjaGVja2VkVGFnKTtcbiAgICAgICAgLy9zZXRTdWJUYWdzQ2hlY2tlZChzdWJUYWdzQ2hlY2tlZCA9PiBbLi4uc3ViVGFnc0NoZWNrZWQsIGNoZWNrZWRUYWddICk7XG5cbiAgICAgICAgY29uc3QgdXBkYXRlZFRhZ3NTdGF0ZSA9IHN1YlRhZ3NDaGVja2VkLm1hcCgoaXRlbSwgaW5kZXgpID0+IFxuICAgICAgICAgICAgaW5kZXggPT09IHBvc2l0aW9uID8gIWl0ZW0gOiBpdGVtXG4gICAgICAgIClcbiAgICAgICAgLy9jb25zb2xlLmxvZyhcImN1cnJlbnQgY2hlY2tlZCB0YWdzXCIsIHVwZGF0ZWRUYWdzU3RhdGUpO1xuICAgICAgICBzZXRTdWJUYWdzQ2hlY2tlZCh1cGRhdGVkVGFnc1N0YXRlKTtcblxuXG4gICAgICAgIC8vQXJyYXkgUmVkdWNlIG1ldGhvZCB0byBtYXAgdGhlIGNoZWNrZWQgdmFsdWVzIHRvIHRoZSB0YWcgU2x1Z3NcbiAgICAgICAgY29uc3QgdGFnVVJMID0gdXBkYXRlZFRhZ3NTdGF0ZS5yZWR1Y2UoXG4gICAgICAgICAgICAodXJsLCBjdXJyZW50U3RhdGUsIGluZGV4KSA9PiB7XG4gICAgICAgICAgICAgICAgaWYoY3VycmVudFN0YXRlID09IHRydWUpe1xuICAgICAgICAgICAgICAgICAgICByZXR1cm4gdXJsICsgYCAke3N1YkNhdGVnb3J5VGFnc1tpbmRleF0uc2x1Z30gLGBcbiAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICByZXR1cm4gdXJsXG4gICAgICAgICAgICB9LFxuICAgICAgICAgICAgXCJcIlxuICAgICAgICApO1xuXG4gICAgICAgIC8vY29uc29sZS5sb2coXCJjdXJyZW50IFRhZyBVUkxcIiwgKHRhZ1VSTCkucmVwbGFjZSgvLFxccyokLywgXCJcIikucmVwbGFjZUFsbChcIiBcIiwgXCJcIikpXG4gICAgICAgXG4gICAgICAgIGhhbmRsZVRhZ0NsaWNrKCh0YWdVUkwpLnJlcGxhY2UoLyxcXHMqJC8sIFwiXCIpLnJlcGxhY2VBbGwoXCIgXCIsIFwiXCIpKTtcblxuICAgIH1cblxuXG4gICAgY29uc3QgaGFuZGxlT3V0c2lkZUNsaWNrID0gKCkgPT4ge1xuICAgICAgICBzZXRTdWJUYWdzVmlzaWJsZShmYWxzZSk7IFxuICAgICAgIFxuICAgICAgICBzZXRTdWJUYWdTVkcoXCIxODBkZWdcIik7XG5cbiAgICAgICAgbGV0IGFsbFN1YlRhZ3NVbmNoZWNrZWQgPSBzdWJUYWdzQ2hlY2tlZC5ldmVyeSh2ID0+IHYgPT09IGZhbHNlKTtcbiAgICAgICAgLy9jb25zb2xlLmxvZyhcImFyZSBhbGwgc3VidGFncyB1bmNoZWNrZWQgP1wiLCBhbGxTdWJUYWdzVW5jaGVja2VkKVxuXG4gICAgICAgIGlmKGFsbFN1YlRhZ3NVbmNoZWNrZWQpXG4gICAgICAgIHNldENhdGVnb3J5QWN0aXZlKG51bGwpO1xuICAgICAgICBlbHNle1xuICAgICAgICAgICAgc2V0Q2F0ZWdvcnlBY3RpdmUoXCJ2b3lhZ2Utc21zLW5ld3NcIik7XG4gICAgICAgIH1cbiAgICB9XG5cbiAgICByZXR1cm4gKFxuICAgICAgICA8c2VjdGlvbiBjbGFzc05hbWU9e3N0eWxlcy50YWdGaWx0ZXJpbmdTZWN0aW9ufT4gXG4gICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2Bjb250YWluZXIgJHtzdHlsZXMuZmlsdGVyU2VhcmNoRGl2fWB9PlxuXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5TZWFyY2hEaXZ9PlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17c3R5bGVzLnNlYXJjaEljb259PlxuICAgICAgICAgICAgICAgICAgICA8c3ZnIHdpZHRoPVwiMThcIiBoZWlnaHQ9XCIxOVwiIHZpZXdCb3g9XCIwIDAgMTggMTlcIiBmaWxsPVwibm9uZVwiIHhtbG5zPVwiaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmdcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9XCJNMTcuODU5NCAxNi43MzgzTDEzLjYwNTUgMTIuNDg0NEMxMy41IDEyLjQxNDEgMTMuMzk0NSAxMi4zNDM4IDEzLjI4OTEgMTIuMzQzOEgxMi44MzJDMTMuOTIxOSAxMS4wNzgxIDE0LjYyNSA5LjM5MDYyIDE0LjYyNSA3LjU2MjVDMTQuNjI1IDMuNTU0NjkgMTEuMzIwMyAwLjI1IDcuMzEyNSAwLjI1QzMuMjY5NTMgMC4yNSAwIDMuNTU0NjkgMCA3LjU2MjVDMCAxMS42MDU1IDMuMjY5NTMgMTQuODc1IDcuMzEyNSAxNC44NzVDOS4xNDA2MiAxNC44NzUgMTAuNzkzIDE0LjIwNyAxMi4wOTM4IDEzLjExNzJWMTMuNTc0MkMxMi4wOTM4IDEzLjY3OTcgMTIuMTI4OSAxMy43ODUyIDEyLjE5OTIgMTMuODkwNkwxNi40NTMxIDE4LjE0NDVDMTYuNjI4OSAxOC4zMjAzIDE2LjkxMDIgMTguMzIwMyAxNy4wNTA4IDE4LjE0NDVMMTcuODU5NCAxNy4zMzU5QzE4LjAzNTIgMTcuMTk1MyAxOC4wMzUyIDE2LjkxNDEgMTcuODU5NCAxNi43MzgzWk03LjMxMjUgMTMuMTg3NUM0LjE4MzU5IDEzLjE4NzUgMS42ODc1IDEwLjY5MTQgMS42ODc1IDcuNTYyNUMxLjY4NzUgNC40Njg3NSA0LjE4MzU5IDEuOTM3NSA3LjMxMjUgMS45Mzc1QzEwLjQwNjIgMS45Mzc1IDEyLjkzNzUgNC40Njg3NSAxMi45Mzc1IDcuNTYyNUMxMi45Mzc1IDEwLjY5MTQgMTAuNDA2MiAxMy4xODc1IDcuMzEyNSAxMy4xODc1WlwiIGZpbGw9XCJibGFja1wiLz5cbiAgICAgICAgICAgICAgICAgICAgPC9zdmc+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT1cInRleHRcIiBwbGFjZWhvbGRlcj1cIlNlYXJjaCBieSB0aXRsZSBvciBhbnkga2V5d29yZFwiIG9uQ2hhbmdlPXsoZSkgPT4gZmlsdGVyVGl0bGVzKGUudGFyZ2V0LnZhbHVlKX0vPlxuICAgICAgICAgICAgICAgICAgICB7IGZpbHRlcmVkVGl0bGVzLmxlbmd0aCAhPTAgJiYoXG4gICAgICAgICAgICAgICAgICAgIDxPdXRzaWRlQ2xpY2tIYW5kbGVyIG9uT3V0c2lkZUNsaWNrPXsoKSA9PiB7c2V0RmlsdGVyZWRUaXRsZXMoW10pfX0+XG4gICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMuc2VhcmNoQm94VGl0bGVzfT5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT17c3R5bGVzLnNlYXJjaEJveEhlYWRlcn0+U2hvd2luZyBCbG9ncyByZWxhdGVkIHRvIDxzcGFuPlwie3NlYXJjaFZhbHVlfVwiPC9zcGFuPjwvcD5cbiAgICAgICAgICAgICAgICAgICAgICAgIHtmaWx0ZXJlZFRpdGxlcy5zbGljZSgwLDEwKS5tYXAoKHBvc3QsaW5kZXgpID0+IHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gPExpbmsgaHJlZj1cIi9ibG9nL1tzbHVnXVwiIGFzPXtgL2Jsb2cvJHtwb3N0LnNsdWd9YH0ga2V5PXtpbmRleH0+PGE+PGRpdiAgY2xhc3NOYW1lPXtzdHlsZXMucG9zdFRpdGxlc30+e3Bvc3QudGl0bGV9PC9kaXY+PC9hPjwvTGluaz5cbiAgICAgICAgICAgICAgICAgICAgICAgIH0pfVxuICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPC9PdXRzaWRlQ2xpY2tIYW5kbGVyPlxuICAgICAgICAgICAgICAgICAgICApfSAgICAgIFxuICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e3N0eWxlcy5GaWx0ZXJEaXZ9PlxuICAgICAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMucG9zdFRhZ3N9PjxwIGNsYXNzTmFtZT17YCR7aXNDYXRlZ29yeUFjdGl2ZSA9PSBcImFsbFwiID8gc3R5bGVzLmNhdGVnb3J5QWN0aXZlIDogbnVsbH1gfSBvbkNsaWNrPXsoKT0+IHtoYW5kbGVUYWdDbGljayhudWxsKTsgdG9nZ2xlQ2F0ZWdvcnlDbGFzcyhcImFsbFwiKTtzZXRTdWJUYWdzVmlzaWJsZShmYWxzZSk7IHNldFN1YlRhZ3NDaGVja2VkKFtmYWxzZSwgZmFsc2UsIGZhbHNlLCBmYWxzZSwgZmFsc2VdKTsgc2V0U3ViVGFnU1ZHKFwiMTgwZGVnXCIpOyB9fT5BbGw8L3A+PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICB7QmxvZ1BhZ2VDYXRlZ29yaWVzRGF0YS5tYXAoKGNhdGVnb3J5LGluZGV4KSA9PiAoXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgY2F0ZWdvcnkuc3ViY2F0ZWdvcmllcy5sZW5ndGggPCAxID9cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGtleT17aW5kZXh9IGNsYXNzTmFtZT17c3R5bGVzLnBvc3RUYWdzfT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPXtpc0NhdGVnb3J5QWN0aXZlID09PSBgJHtjYXRlZ29yeS5zbHVnfWAgPyBzdHlsZXMuY2F0ZWdvcnlBY3RpdmUgOiBudWxsfSBvbkNsaWNrPXsoKT0+IHtoYW5kbGVUYWdDbGljayhjYXRlZ29yeS5zbHVnKTsgdG9nZ2xlQ2F0ZWdvcnlDbGFzcyhjYXRlZ29yeS5zbHVnKTtzZXRTdWJUYWdzVmlzaWJsZShmYWxzZSk7c2V0U3ViVGFnc0NoZWNrZWQoW2ZhbHNlLCBmYWxzZSwgZmFsc2UsIGZhbHNlLCBmYWxzZV0pOyBzZXRTdWJUYWdTVkcoXCIxODBkZWdcIik7IH19ID57Y2F0ZWdvcnkuZGlzcGxheV90aXRsZX08L3A+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+IFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDogXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBrZXk9e2luZGV4fSBjbGFzc05hbWU9e2AgJHtzdHlsZXMucG9zdFRhZ3N9ICR7c3R5bGVzLnN1YlRhZ31gfT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8T3V0c2lkZUNsaWNrSGFuZGxlciBvbk91dHNpZGVDbGljaz17aGFuZGxlT3V0c2lkZUNsaWNrfT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9e2lzQ2F0ZWdvcnlBY3RpdmUgPT09IFwidm95YWdlLXNtcy1uZXdzXCIgPyBzdHlsZXMuY2F0ZWdvcnlBY3RpdmUgOiBudWxsfSAgb25DbGljaz17KCkgPT4ge2hhbmRsZVN1YlRhZ3MoKTsgdG9nZ2xlQ2F0ZWdvcnlDbGFzcyhcInZveWFnZS1zbXMtbmV3c1wiKX19PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7Y2F0ZWdvcnkuZGlzcGxheV90aXRsZX0gXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzdmcgc3R5bGU9e3sgdHJhbnNmb3JtOiBgcm90YXRlKCR7c3ViVGFnU1ZHfSlgfX0gd2lkdGg9XCIxNVwiIGhlaWdodD1cIjEwXCIgdmlld0JveD1cIjAgMCAxNSAxMFwiIGZpbGw9XCJub25lXCIgeG1sbnM9XCJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Z1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD1cIk03LjA4ODM4IDEuMTIwNDFMMC4xNjk2MjUgOC4wNTgzNUMtMC4wNTY5MjY3IDguMjg1NjYgLTAuMDU2NTQ1OSA4LjY1MzY5IDAuMTcwNzk3IDguODgwNjJDMC4zOTgxMTEgOS4xMDczOCAwLjc2NjM0MiA5LjEwNjc5IDAuOTkzMDY5IDguODc5NDVMNy41MDAwMyAyLjM1NDQ4TDE0LjAwNyA4Ljg3OTY5QzE0LjIzMzcgOS4xMDcgMTQuNjAxNyA5LjEwNzU5IDE0LjgyOTEgOC44ODA4NkMxNC45NDMgOC43NjcxIDE1IDguNjE4MDcgMTUgOC40NjkwM0MxNSA4LjMyMDM4IDE0Ljk0MzQgOC4xNzE5MyAxNC44MzAyIDguMDU4MzhMNy45MTE2NSAxLjEyMDQxQzcuODAyNzIgMS4wMTA5MyA3LjY1NDQ4IDAuOTQ5NDkgNy41MDAwMyAwLjk0OTQ5QzcuMzQ1NTggMC45NDk0OSA3LjE5NzUxIDEuMDExMSA3LjA4ODM4IDEuMTIwNDFaXCIgZmlsbD1cImJsYWNrXCIvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9wPlxuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgeyBzdWJUYWdzVmlzaWJsZSAmJlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzdHlsZXMuc3ViQ2F0ZWdvcnlCb3h9PiAgXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAge2NhdGVnb3J5LnN1YmNhdGVnb3JpZXMubWFwKChzdWJjYXRlZ29yeSwgaW5kZXgpID0+IChcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiAga2V5PXtpbmRleH0gY2xhc3NOYW1lPXtgJHtzdHlsZXMuc3ViQ2F0ZWdvcmllc31gfT5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT1cImNoZWNrYm94XCIgaWQ9e2Ake3N1YmNhdGVnb3J5LmlkfWB9IG5hbWU9e3N1YmNhdGVnb3J5LnRpdGxlfSB2YWx1ZT17c3ViY2F0ZWdvcnkudGl0bGV9IGNoZWNrZWQ9e3N1YlRhZ3NDaGVja2VkW2luZGV4XX0gb25DaGFuZ2U9eygpPT4ge2hhbmRsZUNoZWNrZWRUYWdzKGluZGV4LCBzdWJjYXRlZ29yeS5zbHVnKTt9fSAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPXtgJHtzdWJjYXRlZ29yeS5pZH1gfT4ge3N1YmNhdGVnb3J5LnRpdGxlfTwvbGFiZWw+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L091dHNpZGVDbGlja0hhbmRsZXI+XG5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PiBcbiAgICAgICAgICAgICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgIFxuICAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvc2VjdGlvbj5cbiAgICApXG59Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./components/BlogPageTagFilteringBlock.js\n");
-
-/***/ }),
-
-/***/ "./data/BlogPageHeroBanner.js":
-/*!************************************!*\
-  !*** ./data/BlogPageHeroBanner.js ***!
-  \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"BlogPageHeroBannerData\": function() { return /* binding */ BlogPageHeroBannerData; }\n/* harmony export */ });\nconst BlogPageHeroBannerData = {\n  titleText: \"SMS Marketing Resources\",\n  subHeading: \"BLOG\"\n};//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9kYXRhL0Jsb2dQYWdlSGVyb0Jhbm5lci5qcz9hZDNlIl0sIm5hbWVzIjpbIkJsb2dQYWdlSGVyb0Jhbm5lckRhdGEiLCJ0aXRsZVRleHQiLCJzdWJIZWFkaW5nIl0sIm1hcHBpbmdzIjoiOzs7O0FBQU8sTUFBTUEsc0JBQXNCLEdBQUc7QUFDbENDLFdBQVMsRUFBRSx5QkFEdUI7QUFFbENDLFlBQVUsRUFDUjtBQUhnQyxDQUEvQiIsImZpbGUiOiIuL2RhdGEvQmxvZ1BhZ2VIZXJvQmFubmVyLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IEJsb2dQYWdlSGVyb0Jhbm5lckRhdGEgPSB7XG4gICAgdGl0bGVUZXh0OiBcIlNNUyBNYXJrZXRpbmcgUmVzb3VyY2VzXCIsXG4gICAgc3ViSGVhZGluZzpcbiAgICAgIFwiQkxPR1wiLFxuICAgICBcbiAgfTtcbiAgIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./data/BlogPageHeroBanner.js\n");
-
-/***/ }),
-
-/***/ "./data/BlogPageTagFilteringBlock.js":
-/*!*******************************************!*\
-  !*** ./data/BlogPageTagFilteringBlock.js ***!
-  \*******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"BlogPageCategoriesData\": function() { return /* binding */ BlogPageCategoriesData; }\n/* harmony export */ });\nconst BlogPageCategoriesData = [{\n  id: '1',\n  title: \"SMS Marketing Best Practices\",\n  display_title: \"SMS Best Practices\",\n  slug: \"sms-marketing-best-practices\",\n  subcategories: []\n}, {\n  id: '2',\n  title: \"eCommerce Digital Marketing 101\",\n  display_title: \"Digital Marketing 101\",\n  slug: \"ecommerce-digital-marketing-101\",\n  subcategories: []\n}, {\n  id: '3',\n  title: \"SMS Marketing Industry News\",\n  display_title: \"Industry News\",\n  slug: \"sms-marketing-industry-news\",\n  subcategories: []\n}, {\n  id: '4',\n  title: \"SMS Template Creative Library\",\n  display_title: \"Creative Library\",\n  slug: \"sms-template-creative-library\",\n  subcategories: []\n}, {\n  id: '5',\n  title: \"Voyage SMS News\",\n  display_title: \"Voyage News\",\n  slug: \"\",\n  subcategories: [{\n    id: '1',\n    title: \"Integration Announcements\",\n    slug: \"voyage-sms-news, integrations-announcements\"\n  }, {\n    id: '2',\n    title: \"Feature Highlights\",\n    slug: \"voyage-sms-news,feature-highlights\"\n  }, {\n    id: '3',\n    title: \"Case Studies\",\n    slug: \"voyage-sms-news, case-studies\"\n  }, {\n    id: '4',\n    title: \"Team\",\n    slug: \"voyage-sms-news,team\"\n  }, {\n    id: '5',\n    title: \"Recruiting\",\n    slug: \"voyage-sms-news,recruiting\"\n  }]\n}];//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9kYXRhL0Jsb2dQYWdlVGFnRmlsdGVyaW5nQmxvY2suanM/YThjMSJdLCJuYW1lcyI6WyJCbG9nUGFnZUNhdGVnb3JpZXNEYXRhIiwiaWQiLCJ0aXRsZSIsImRpc3BsYXlfdGl0bGUiLCJzbHVnIiwic3ViY2F0ZWdvcmllcyJdLCJtYXBwaW5ncyI6Ijs7OztBQUFPLE1BQU1BLHNCQUFzQixHQUFHLENBQ2xDO0FBQ0lDLElBQUUsRUFBRSxHQURSO0FBRUlDLE9BQUssRUFBRSw4QkFGWDtBQUdJQyxlQUFhLEVBQUUsb0JBSG5CO0FBSUlDLE1BQUksRUFBRSw4QkFKVjtBQUtJQyxlQUFhLEVBQUU7QUFMbkIsQ0FEa0MsRUFRbEM7QUFDSUosSUFBRSxFQUFFLEdBRFI7QUFFSUMsT0FBSyxFQUFFLGlDQUZYO0FBR0lDLGVBQWEsRUFBRSx1QkFIbkI7QUFJSUMsTUFBSSxFQUFFLGlDQUpWO0FBS0lDLGVBQWEsRUFBRTtBQUxuQixDQVJrQyxFQWVsQztBQUNJSixJQUFFLEVBQUUsR0FEUjtBQUVJQyxPQUFLLEVBQUUsNkJBRlg7QUFHSUMsZUFBYSxFQUFFLGVBSG5CO0FBSUlDLE1BQUksRUFBRSw2QkFKVjtBQUtJQyxlQUFhLEVBQUU7QUFMbkIsQ0Fma0MsRUFzQmxDO0FBQ0lKLElBQUUsRUFBRSxHQURSO0FBRUlDLE9BQUssRUFBRSwrQkFGWDtBQUdJQyxlQUFhLEVBQUUsa0JBSG5CO0FBSUlDLE1BQUksRUFBRSwrQkFKVjtBQUtJQyxlQUFhLEVBQUU7QUFMbkIsQ0F0QmtDLEVBNkJsQztBQUNJSixJQUFFLEVBQUUsR0FEUjtBQUVJQyxPQUFLLEVBQUUsaUJBRlg7QUFHSUMsZUFBYSxFQUFFLGFBSG5CO0FBSUlDLE1BQUksRUFBRSxFQUpWO0FBS0lDLGVBQWEsRUFBRSxDQUNYO0FBQ0lKLE1BQUUsRUFBRSxHQURSO0FBRUlDLFNBQUssRUFBRSwyQkFGWDtBQUdJRSxRQUFJLEVBQUU7QUFIVixHQURXLEVBTVg7QUFDSUgsTUFBRSxFQUFFLEdBRFI7QUFFSUMsU0FBSyxFQUFFLG9CQUZYO0FBR0lFLFFBQUksRUFBRTtBQUhWLEdBTlcsRUFXWDtBQUNJSCxNQUFFLEVBQUUsR0FEUjtBQUVJQyxTQUFLLEVBQUUsY0FGWDtBQUdJRSxRQUFJLEVBQUU7QUFIVixHQVhXLEVBZ0JYO0FBQ0lILE1BQUUsRUFBRSxHQURSO0FBRUlDLFNBQUssRUFBRSxNQUZYO0FBR0lFLFFBQUksRUFBRTtBQUhWLEdBaEJXLEVBcUJYO0FBQ0lILE1BQUUsRUFBRSxHQURSO0FBRUlDLFNBQUssRUFBRSxZQUZYO0FBR0lFLFFBQUksRUFBRTtBQUhWLEdBckJXO0FBTG5CLENBN0JrQyxDQUEvQiIsImZpbGUiOiIuL2RhdGEvQmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9jay5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCBCbG9nUGFnZUNhdGVnb3JpZXNEYXRhID0gW1xuICAgIHtcbiAgICAgICAgaWQ6ICcxJyxcbiAgICAgICAgdGl0bGU6IFwiU01TIE1hcmtldGluZyBCZXN0IFByYWN0aWNlc1wiLFxuICAgICAgICBkaXNwbGF5X3RpdGxlOiBcIlNNUyBCZXN0IFByYWN0aWNlc1wiLFxuICAgICAgICBzbHVnOiBcInNtcy1tYXJrZXRpbmctYmVzdC1wcmFjdGljZXNcIixcbiAgICAgICAgc3ViY2F0ZWdvcmllczogW11cbiAgICB9LFxuICAgIHtcbiAgICAgICAgaWQ6ICcyJyxcbiAgICAgICAgdGl0bGU6IFwiZUNvbW1lcmNlIERpZ2l0YWwgTWFya2V0aW5nIDEwMVwiLFxuICAgICAgICBkaXNwbGF5X3RpdGxlOiBcIkRpZ2l0YWwgTWFya2V0aW5nIDEwMVwiLFxuICAgICAgICBzbHVnOiBcImVjb21tZXJjZS1kaWdpdGFsLW1hcmtldGluZy0xMDFcIixcbiAgICAgICAgc3ViY2F0ZWdvcmllczogW11cbiAgICB9LFxuICAgIHtcbiAgICAgICAgaWQ6ICczJyxcbiAgICAgICAgdGl0bGU6IFwiU01TIE1hcmtldGluZyBJbmR1c3RyeSBOZXdzXCIsXG4gICAgICAgIGRpc3BsYXlfdGl0bGU6IFwiSW5kdXN0cnkgTmV3c1wiLFxuICAgICAgICBzbHVnOiBcInNtcy1tYXJrZXRpbmctaW5kdXN0cnktbmV3c1wiLFxuICAgICAgICBzdWJjYXRlZ29yaWVzOiBbXVxuICAgIH0sXG4gICAge1xuICAgICAgICBpZDogJzQnLFxuICAgICAgICB0aXRsZTogXCJTTVMgVGVtcGxhdGUgQ3JlYXRpdmUgTGlicmFyeVwiLFxuICAgICAgICBkaXNwbGF5X3RpdGxlOiBcIkNyZWF0aXZlIExpYnJhcnlcIixcbiAgICAgICAgc2x1ZzogXCJzbXMtdGVtcGxhdGUtY3JlYXRpdmUtbGlicmFyeVwiLFxuICAgICAgICBzdWJjYXRlZ29yaWVzOiBbXVxuICAgIH0sXG4gICAge1xuICAgICAgICBpZDogJzUnLFxuICAgICAgICB0aXRsZTogXCJWb3lhZ2UgU01TIE5ld3NcIixcbiAgICAgICAgZGlzcGxheV90aXRsZTogXCJWb3lhZ2UgTmV3c1wiLFxuICAgICAgICBzbHVnOiBcIlwiLFxuICAgICAgICBzdWJjYXRlZ29yaWVzOiBbXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6ICcxJyxcbiAgICAgICAgICAgICAgICB0aXRsZTogXCJJbnRlZ3JhdGlvbiBBbm5vdW5jZW1lbnRzXCIsXG4gICAgICAgICAgICAgICAgc2x1ZzogXCJ2b3lhZ2Utc21zLW5ld3MsIGludGVncmF0aW9ucy1hbm5vdW5jZW1lbnRzXCJcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6ICcyJyxcbiAgICAgICAgICAgICAgICB0aXRsZTogXCJGZWF0dXJlIEhpZ2hsaWdodHNcIixcbiAgICAgICAgICAgICAgICBzbHVnOiBcInZveWFnZS1zbXMtbmV3cyxmZWF0dXJlLWhpZ2hsaWdodHNcIlxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogJzMnLFxuICAgICAgICAgICAgICAgIHRpdGxlOiBcIkNhc2UgU3R1ZGllc1wiLFxuICAgICAgICAgICAgICAgIHNsdWc6IFwidm95YWdlLXNtcy1uZXdzLCBjYXNlLXN0dWRpZXNcIlxuICAgICAgICAgICAgfSxcbiAgICAgICAgICAgIHtcbiAgICAgICAgICAgICAgICBpZDogJzQnLFxuICAgICAgICAgICAgICAgIHRpdGxlOiBcIlRlYW1cIixcbiAgICAgICAgICAgICAgICBzbHVnOiBcInZveWFnZS1zbXMtbmV3cyx0ZWFtXCJcbiAgICAgICAgICAgIH0sXG4gICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgaWQ6ICc1JyxcbiAgICAgICAgICAgICAgICB0aXRsZTogXCJSZWNydWl0aW5nXCIsXG4gICAgICAgICAgICAgICAgc2x1ZzogXCJ2b3lhZ2Utc21zLW5ld3MscmVjcnVpdGluZ1wiXG4gICAgICAgICAgICB9LFxuICAgICAgICBdXG4gICAgfVxuXSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./data/BlogPageTagFilteringBlock.js\n");
-
-/***/ }),
-
-/***/ "./pages/blogs/index.js":
-/*!******************************!*\
-  !*** ./pages/blogs/index.js ***!
-  \******************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getStaticProps\": function() { return /* binding */ getStaticProps; },\n/* harmony export */   \"default\": function() { return /* binding */ Home; }\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/Header */ \"./components/Header.js\");\n/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Footer */ \"./components/Footer.js\");\n/* harmony import */ var _components_BlogPageTagFilteringBlock__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/BlogPageTagFilteringBlock */ \"./components/BlogPageTagFilteringBlock.js\");\n/* harmony import */ var _components_BlogPageHeroBanner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/BlogPageHeroBanner */ \"./components/BlogPageHeroBanner.js\");\n/* harmony import */ var _components_BlogPageFeaturedPosts__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/BlogPageFeaturedPosts */ \"./components/BlogPageFeaturedPosts.js\");\n/* harmony import */ var _components_BlogPageSignupBlock__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/BlogPageSignupBlock */ \"./components/BlogPageSignupBlock.js\");\n/* harmony import */ var _components_BlogPageAllPosts__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/BlogPageAllPosts */ \"./components/BlogPageAllPosts.js\");\n/* harmony import */ var _components_BlogPageBottomBlock__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/BlogPageBottomBlock */ \"./components/BlogPageBottomBlock.js\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _components_RequestForm__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/RequestForm */ \"./components/RequestForm.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-query */ \"react-query\");\n/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(react_query__WEBPACK_IMPORTED_MODULE_12__);\n\n\nvar _jsxFileName = \"/Users/Prernat/Documents/HOUNDSTOOTH - GUILD CAPITAL/DEV-PROJECTS/voyage-web-updated/pages/blogs/index.js\";\n\n\n\n\n\n\n\n\n\n\n\n // const {CONTENT_API_KEY, BLOG_URL} = process.env;\n// const CONTENT_API_KEY = 'c7bafa2c2c579763b605f57fb6';\n// const BLOG_URL = 'https://sms-marketing-resources.ghost.io/';\n\nconst CONTENT_API_KEY = \"c7bafa2c2c579763b605f57fb6\";\nconst BLOG_URL = \"https://sms-marketing-resources.ghost.io\";\nconst getStaticProps = async () => {\n  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);\n  const posts = await res.json();\n  return {\n    props: {\n      posts\n    }\n  };\n};\n\nconst getFeaturedPosts = () => {\n  return fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=featured:true`).then(res => res.json());\n};\n\nconst getFilteredPosts = async key => {\n  const tagName = key.queryKey[1].tag;\n  console.log(\"current tag name : \", tagName);\n\n  if (tagName) {\n    //if tags are present - this is where we are going to filter the posts\n    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]`;\n    console.log(\"URL \", myURL);\n    const res = await fetch(myURL);\n    const newRes = res.json();\n    return newRes;\n  }\n\n  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);\n  return res.json();\n};\n\nconst getFilteredPostsWithSearch = async key => {\n  console.log(\"current Key\", key);\n  const searchTitle = key.queryKey[1].search;\n\n  if (searchTitle) {\n    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=slug:'${searchTitle}'`;\n    const res = await fetch(myURL);\n    const newRes = res.json();\n    return newRes;\n  }\n\n  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`);\n  return res.json();\n};\n\nfunction Home({\n  posts\n}) {\n  const {\n    0: formState,\n    1: setFormState\n  } = (0,react__WEBPACK_IMPORTED_MODULE_11__.useState)(\"close\");\n  const {\n    0: tagName,\n    1: setTagName\n  } = (0,react__WEBPACK_IMPORTED_MODULE_11__.useState)('');\n  const {\n    0: searchTerm,\n    1: setSearchTerm\n  } = (0,react__WEBPACK_IMPORTED_MODULE_11__.useState)(''); //REACT - QUERY : Featured Posts in the Hero Banner\n  //const {data:featuredPosts,error} = useQuery(['featured posts'], () => getFeaturedPosts());\n  //console.log(\"featuredPosts\", featuredPosts);\n  //For filtering with TAGS\n\n  const {\n    isLoading,\n    data: filteredPosts,\n    status\n  } = (0,react_query__WEBPACK_IMPORTED_MODULE_12__.useQuery)(['filtered posts', {\n    tag: tagName\n  }], getFilteredPosts, {\n    initialData: posts\n  }); //to remove the loading page add the initialdata value here\n  // console.log(\"filteredPosts are\", filteredPosts, \"status\", status);\n\n  var allPosts = filteredPosts;\n\n  if (isLoading) {\n    return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n      className: \"App\",\n      children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n        style: {\n          width: \"100vw\",\n          height: \"100vh\",\n          opacity: \".5\",\n          display: \"flex\",\n          alignItems: \"center\",\n          justifyContent: \"center\"\n        },\n        children: \"fetching posts...\"\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 117,\n        columnNumber: 10\n      }, this)\n    }, void 0, false, {\n      fileName: _jsxFileName,\n      lineNumber: 116,\n      columnNumber: 7\n    }, this);\n  }\n\n  return /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n    children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_9___default()), {\n      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n        name: \"description\",\n        content: \"SMS marketing and text messaging for your ecommerce business. Get 40%+ CTR and 90%+ open rates. Get a demo today!\"\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 128,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n        name: \"robots\",\n        content: \"index, follow\"\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 132,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n        property: \"og:title\",\n        content: \"SMS Marketing for Ecommerce | Voyage Mobile\"\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 133,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n        content: \"width=device-width, initial-scale=1.0,maximum-scale=1.0, viewport-fit=cover\",\n        name: \"viewport\"\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 137,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n        children: \"Voyage SMS: Text Marketing for eCommerce\"\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 138,\n        columnNumber: 9\n      }, this)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 127,\n      columnNumber: 7\n    }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n      className: \"main\",\n      id: \"main-target\",\n      \"data-scroll-container\": true,\n      children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_RequestForm__WEBPACK_IMPORTED_MODULE_10__.default, {\n        formState: formState,\n        setFormState: setFormState\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 141,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Header__WEBPACK_IMPORTED_MODULE_1__.default, {\n        setFormState: setFormState\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 142,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_BlogPageHeroBanner__WEBPACK_IMPORTED_MODULE_4__.default, {\n        posts: posts\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 143,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_BlogPageTagFilteringBlock__WEBPACK_IMPORTED_MODULE_3__.default, {\n        posts: posts,\n        handleTagClick: setTagName,\n        handleSearch: setSearchTerm\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 144,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_BlogPageFeaturedPosts__WEBPACK_IMPORTED_MODULE_5__.default, {\n        posts: allPosts\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 145,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_BlogPageSignupBlock__WEBPACK_IMPORTED_MODULE_6__.default, {}, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 146,\n        columnNumber: 9\n      }, this), allPosts.posts.length > 6 && /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_BlogPageAllPosts__WEBPACK_IMPORTED_MODULE_7__.default, {\n        posts: allPosts\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 147,\n        columnNumber: 39\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_BlogPageBottomBlock__WEBPACK_IMPORTED_MODULE_8__.default, {}, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 148,\n        columnNumber: 9\n      }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Footer__WEBPACK_IMPORTED_MODULE_2__.default, {\n        setFormState: setFormState\n      }, void 0, false, {\n        fileName: _jsxFileName,\n        lineNumber: 149,\n        columnNumber: 9\n      }, this)]\n    }, void 0, true, {\n      fileName: _jsxFileName,\n      lineNumber: 140,\n      columnNumber: 7\n    }, this)]\n  }, void 0, true);\n}//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9wYWdlcy9ibG9ncy9pbmRleC5qcz9jMDQwIl0sIm5hbWVzIjpbIkNPTlRFTlRfQVBJX0tFWSIsInByb2Nlc3MiLCJCTE9HX1VSTCIsImdldFN0YXRpY1Byb3BzIiwicmVzIiwiZmV0Y2giLCJwb3N0cyIsImpzb24iLCJwcm9wcyIsImdldEZlYXR1cmVkUG9zdHMiLCJ0aGVuIiwiZ2V0RmlsdGVyZWRQb3N0cyIsImtleSIsInRhZ05hbWUiLCJxdWVyeUtleSIsInRhZyIsImNvbnNvbGUiLCJsb2ciLCJteVVSTCIsIm5ld1JlcyIsImdldEZpbHRlcmVkUG9zdHNXaXRoU2VhcmNoIiwic2VhcmNoVGl0bGUiLCJzZWFyY2giLCJIb21lIiwiZm9ybVN0YXRlIiwic2V0Rm9ybVN0YXRlIiwidXNlU3RhdGUiLCJzZXRUYWdOYW1lIiwic2VhcmNoVGVybSIsInNldFNlYXJjaFRlcm0iLCJpc0xvYWRpbmciLCJkYXRhIiwiZmlsdGVyZWRQb3N0cyIsInN0YXR1cyIsInVzZVF1ZXJ5IiwiaW5pdGlhbERhdGEiLCJhbGxQb3N0cyIsIndpZHRoIiwiaGVpZ2h0Iiwib3BhY2l0eSIsImRpc3BsYXkiLCJhbGlnbkl0ZW1zIiwianVzdGlmeUNvbnRlbnQiLCJsZW5ndGgiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0NBR0E7QUFFQTtBQUNBOztBQUVBLE1BQU1BLGVBQWUsR0FBR0MsNEJBQXhCO0FBQ0EsTUFBTUMsUUFBUSxHQUFHRCwwQ0FBakI7QUFPTyxNQUFNRSxjQUFjLEdBQUcsWUFBWTtBQUV4QyxRQUFNQyxHQUFHLEdBQUcsTUFBTUMsS0FBSyxDQUFFLEdBQUVILFFBQVMsb0NBQW1DRixlQUFnQix1Q0FBaEUsQ0FBdkI7QUFDQSxRQUFNTSxLQUFLLEdBQUcsTUFBTUYsR0FBRyxDQUFDRyxJQUFKLEVBQXBCO0FB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MEVBQUQ7QUFBMkIsYUFBSyxFQUFFQSxLQUFsQztBQUF5QyxzQkFBYyxFQUFFcUIsVUFBekQ7QUFBcUUsb0JBQVksRUFBRUU7QUFBbkY7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQUpGLGVBS0UsOERBQUMsc0VBQUQ7QUFBdUIsYUFBSyxFQUFFTztBQUE5QjtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBTEYsZUFNRSw4REFBQyxvRUFBRDtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBTkYsRUFPR0EsUUFBUSxDQUFDOUIsS0FBVCxDQUFlcUMsTUFBZixHQUF3QixDQUF4QixpQkFBNkIsOERBQUMsaUVBQUQ7QUFBa0IsYUFBSyxFQUFFUDtBQUF6QjtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBUGhDLGVBUUUsOERBQUMsb0VBQUQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxjQVJGLGVBU0UsOERBQUMsdURBQUQ7QUFBUSxvQkFBWSxFQUFFWDtBQUF0QjtBQUFBO0FBQUE7QUFBQTtBQUFBLGNBVEY7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFlBZEY7QUFBQSxrQkFERjtBQTRCRCIsImZpbGUiOiIuL3BhZ2VzL2Jsb2dzL2luZGV4LmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9IZWFkZXJcIjtcbmltcG9ydCBGb290ZXIgZnJvbSBcIi4uLy4uL2NvbXBvbmVudHMvRm9vdGVyXCI7XG5pbXBvcnQgQmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9jayBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9CbG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrXCI7XG5pbXBvcnQgQmxvZ1BhZ2VIZXJvQmFubmVyIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL0Jsb2dQYWdlSGVyb0Jhbm5lclwiO1xuaW1wb3J0IEJsb2dQYWdlRmVhdHVyZWRQb3N0cyBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9CbG9nUGFnZUZlYXR1cmVkUG9zdHNcIjtcbmltcG9ydCBCbG9nUGFnZVNpZ251cEJsb2NrIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL0Jsb2dQYWdlU2lnbnVwQmxvY2tcIjtcbmltcG9ydCBCbG9nUGFnZUFsbFBvc3RzIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL0Jsb2dQYWdlQWxsUG9zdHNcIjtcbmltcG9ydCBCbG9nUGFnZUJvdHRvbUJsb2NrIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL0Jsb2dQYWdlQm90dG9tQmxvY2tcIjtcbmltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcbmltcG9ydCBSZXF1ZXN0Rm9ybSBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9SZXF1ZXN0Rm9ybVwiO1xuaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7dXNlUXVlcmllcywgdXNlUXVlcnksIHVzZVF1ZXJ5Q2xpZW50LCB1c2VRdWVyeUVycm9yUmVzZXRCb3VuZGFyeX0gZnJvbSAncmVhY3QtcXVlcnknO1xuXG4vLyBjb25zdCB7Q09OVEVOVF9BUElfS0VZLCBCTE9HX1VSTH0gPSBwcm9jZXNzLmVudjtcblxuLy8gY29uc3QgQ09OVEVOVF9BUElfS0VZID0gJ2M3YmFmYTJjMmM1Nzk3NjNiNjA1ZjU3ZmI2Jztcbi8vIGNvbnN0IEJMT0dfVVJMID0gJ2h0dHBzOi8vc21zLW1hcmtldGluZy1yZXNvdXJjZXMuZ2hvc3QuaW8vJztcblxuY29uc3QgQ09OVEVOVF9BUElfS0VZID0gcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfQVBJX0tFWTtcbmNvbnN0IEJMT0dfVVJMID0gcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfQkxPR19VUkw7XG5cblxuXG5cblxuXG5leHBvcnQgY29uc3QgZ2V0U3RhdGljUHJvcHMgPSBhc3luYyAoKSA9PiB7XG4gXG4gIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAke0JMT0dfVVJMfS9naG9zdC9hcGkvdjMvY29udGVudC9wb3N0cy8/a2V5PSR7Q09OVEVOVF9BUElfS0VZfSZpbmNsdWRlPWF1dGhvcnMsdGFncyZmaWx0ZXI9dGFnOmJsb2dgKTtcbiAgY29uc3QgcG9zdHMgPSBhd2FpdCByZXMuanNvbigpO1xuXG5cbiAgcmV0dXJuIHtcbiAgICBwcm9wczoge3Bvc3RzfVxuICB9XG59XG5cblxuXG5cbmNvbnN0IGdldEZlYXR1cmVkUG9zdHMgPSAoKSA9PiB7XG4gIHJldHVybiAgZmV0Y2goYCR7QkxPR19VUkx9L2dob3N0L2FwaS92My9jb250ZW50L3Bvc3RzLz9rZXk9JHtDT05URU5UX0FQSV9LRVl9JmluY2x1ZGU9YXV0aG9ycyx0YWdzJmZpbHRlcj1mZWF0dXJlZDp0cnVlYCkudGhlbihyZXMgPT4gcmVzLmpzb24oKSk7XG59XG5cblxuXG5cbmNvbnN0IGdldEZpbHRlcmVkUG9zdHMgPSBhc3luYyhrZXkpID0+IHtcbiAgY29uc3QgdGFnTmFtZSA9IGtleS5xdWVyeUtleVsxXS50YWc7XG4gIGNvbnNvbGUubG9nKFwiY3VycmVudCB0YWcgbmFtZSA6IFwiLCB0YWdOYW1lKTtcbiAgaWYodGFnTmFtZSl7ICAgLy9pZiB0YWdzIGFyZSBwcmVzZW50IC0gdGhpcyBpcyB3aGVyZSB3ZSBhcmUgZ29pbmcgdG8gZmlsdGVyIHRoZSBwb3N0c1xuICAgIGNvbnN0IG15VVJMID0gYCR7QkxPR19VUkx9L2dob3N0L2FwaS92My9jb250ZW50L3Bvc3RzLz9rZXk9JHtDT05URU5UX0FQSV9LRVl9JmluY2x1ZGU9YXV0aG9ycyx0YWdzJmZpbHRlcj10YWc6W2Jsb2csJHt0YWdOYW1lfV1gO1xuICAgICBjb25zb2xlLmxvZyhcIlVSTCBcIiwgbXlVUkwpXG4gICAgY29uc3QgcmVzID0gYXdhaXQgZmV0Y2gobXlVUkwpO1xuICAgIGNvbnN0IG5ld1JlcyA9IHJlcy5qc29uKCk7XG4gICAgcmV0dXJuIG5ld1JlcztcbiAgfVxuXG4gIGNvbnN0IHJlcyA9IGF3YWl0IGZldGNoKGAke0JMT0dfVVJMfS9naG9zdC9hcGkvdjMvY29udGVudC9wb3N0cy8/a2V5PSR7Q09OVEVOVF9BUElfS0VZfSZpbmNsdWRlPWF1dGhvcnMsdGFncyZmaWx0ZXI9dGFnOmJsb2dgKTtcbiAgcmV0dXJuIHJlcy5qc29uKCk7XG5cbn1cblxuXG5cbmNvbnN0IGdldEZpbHRlcmVkUG9zdHNXaXRoU2VhcmNoID0gYXN5bmMoa2V5KSA9PiB7XG4gIGNvbnNvbGUubG9nKFwiY3VycmVudCBLZXlcIiwga2V5KTtcbiAgY29uc3Qgc2VhcmNoVGl0bGUgPSBrZXkucXVlcnlLZXlbMV0uc2VhcmNoO1xuXG4gIGlmKHNlYXJjaFRpdGxlKXsgICBcbiAgICBjb25zdCBteVVSTCA9IGAke0JMT0dfVVJMfS9naG9zdC9hcGkvdjMvY29udGVudC9wb3N0cy8/a2V5PSR7Q09OVEVOVF9BUElfS0VZfSZpbmNsdWRlPWF1dGhvcnMsdGFncyZmaWx0ZXI9c2x1ZzonJHtzZWFyY2hUaXRsZX0nYDtcbiAgICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChteVVSTCk7XG4gICAgY29uc3QgbmV3UmVzID0gcmVzLmpzb24oKTtcbiAgICByZXR1cm4gbmV3UmVzO1xuICB9XG5cblxuICBjb25zdCByZXMgPSBhd2FpdCBmZXRjaChgJHtCTE9HX1VSTH0vZ2hvc3QvYXBpL3YzL2NvbnRlbnQvcG9zdHMvP2tleT0ke0NPTlRFTlRfQVBJX0tFWX0maW5jbHVkZT1hdXRob3JzLHRhZ3NgKTtcbiAgcmV0dXJuIHJlcy5qc29uKCk7XG59XG5cblxuXG5cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSh7cG9zdHN9KSB7XG4gIGNvbnN0IFtmb3JtU3RhdGUsIHNldEZvcm1TdGF0ZV0gPSB1c2VTdGF0ZShcImNsb3NlXCIpO1xuICBjb25zdCBbdGFnTmFtZSwgc2V0VGFnTmFtZV0gPSB1c2VTdGF0ZSgnJyk7XG4gIGNvbnN0IFtzZWFyY2hUZXJtLCBzZXRTZWFyY2hUZXJtXSA9IHVzZVN0YXRlKCcnKTtcblxuXG5cbiAgICAvL1JFQUNUIC0gUVVFUlkgOiBGZWF0dXJlZCBQb3N0cyBpbiB0aGUgSGVybyBCYW5uZXJcbiAgICAvL2NvbnN0IHtkYXRhOmZlYXR1cmVkUG9zdHMsZXJyb3J9ID0gdXNlUXVlcnkoWydmZWF0dXJlZCBwb3N0cyddLCAoKSA9PiBnZXRGZWF0dXJlZFBvc3RzKCkpO1xuICAgIC8vY29uc29sZS5sb2coXCJmZWF0dXJlZFBvc3RzXCIsIGZlYXR1cmVkUG9zdHMpO1xuXG5cblxuICAgIC8vRm9yIGZpbHRlcmluZyB3aXRoIFRBR1NcbiAgICBjb25zdCB7aXNMb2FkaW5nLCBkYXRhOmZpbHRlcmVkUG9zdHMsIHN0YXR1c30gPSB1c2VRdWVyeShbJ2ZpbHRlcmVkIHBvc3RzJywge3RhZzogdGFnTmFtZX1dLCBnZXRGaWx0ZXJlZFBvc3RzLCB7aW5pdGlhbERhdGE6cG9zdHN9KSAvL3RvIHJlbW92ZSB0aGUgbG9hZGluZyBwYWdlIGFkZCB0aGUgaW5pdGlhbGRhdGEgdmFsdWUgaGVyZVxuICAgIC8vIGNvbnNvbGUubG9nKFwiZmlsdGVyZWRQb3N0cyBhcmVcIiwgZmlsdGVyZWRQb3N0cywgXCJzdGF0dXNcIiwgc3RhdHVzKTtcblxuXG5cbiAgICBcbiAgICB2YXIgYWxsUG9zdHMgPSBmaWx0ZXJlZFBvc3RzO1xuXG5cblxuICAgIFxuXG4gICAgIFxuXG4gICAgaWYoaXNMb2FkaW5nKXtcbiAgICAgIHJldHVybiAoXG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cIkFwcFwiPlxuICAgICAgICAgPGgyIHN0eWxlPXt7d2lkdGg6XCIxMDB2d1wiLGhlaWdodDpcIjEwMHZoXCIsb3BhY2l0eTpcIi41XCIsZGlzcGxheTpcImZsZXhcIiwgYWxpZ25JdGVtczpcImNlbnRlclwiLCBqdXN0aWZ5Q29udGVudDpcImNlbnRlclwifX0+ZmV0Y2hpbmcgcG9zdHMuLi48L2gyPlxuICAgICAgPC9kaXY+XG4gICAgICApXG4gICAgfVxuXG5cblxuXG4gIHJldHVybiAoXG4gICAgPD5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8bWV0YVxuICAgICAgICAgIG5hbWU9XCJkZXNjcmlwdGlvblwiXG4gICAgICAgICAgY29udGVudD1cIlNNUyBtYXJrZXRpbmcgYW5kIHRleHQgbWVzc2FnaW5nIGZvciB5b3VyIGVjb21tZXJjZSBidXNpbmVzcy4gR2V0IDQwJSsgQ1RSIGFuZCA5MCUrIG9wZW4gcmF0ZXMuIEdldCBhIGRlbW8gdG9kYXkhXCJcbiAgICAgICAgLz5cbiAgICAgICAgPG1ldGEgbmFtZT1cInJvYm90c1wiIGNvbnRlbnQ9XCJpbmRleCwgZm9sbG93XCIgLz5cbiAgICAgICAgPG1ldGFcbiAgICAgICAgICBwcm9wZXJ0eT1cIm9nOnRpdGxlXCJcbiAgICAgICAgICBjb250ZW50PVwiU01TIE1hcmtldGluZyBmb3IgRWNvbW1lcmNlIHwgVm95YWdlIE1vYmlsZVwiXG4gICAgICAgID48L21ldGE+XG4gICAgICAgIDxtZXRhIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wLG1heGltdW0tc2NhbGU9MS4wLCB2aWV3cG9ydC1maXQ9Y292ZXJcIiBuYW1lPVwidmlld3BvcnRcIi8+XG4gICAgICAgIDx0aXRsZT5Wb3lhZ2UgU01TOiBUZXh0IE1hcmtldGluZyBmb3IgZUNvbW1lcmNlPC90aXRsZT5cbiAgICAgIDwvSGVhZD5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWFpblwiIGlkPVwibWFpbi10YXJnZXRcIiBkYXRhLXNjcm9sbC1jb250YWluZXI+XG4gICAgICAgIDxSZXF1ZXN0Rm9ybSBmb3JtU3RhdGU9e2Zvcm1TdGF0ZX0gc2V0Rm9ybVN0YXRlPXtzZXRGb3JtU3RhdGV9IC8+XG4gICAgICAgIDxIZWFkZXIgc2V0Rm9ybVN0YXRlPXtzZXRGb3JtU3RhdGV9IC8+XG4gICAgICAgIDxCbG9nUGFnZUhlcm9CYW5uZXIgcG9zdHM9e3Bvc3RzfSAvPlxuICAgICAgICA8QmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9jayBwb3N0cz17cG9zdHN9IGhhbmRsZVRhZ0NsaWNrPXtzZXRUYWdOYW1lfSBoYW5kbGVTZWFyY2g9e3NldFNlYXJjaFRlcm19Lz5cbiAgICAgICAgPEJsb2dQYWdlRmVhdHVyZWRQb3N0cyBwb3N0cz17YWxsUG9zdHN9IC8+XG4gICAgICAgIDxCbG9nUGFnZVNpZ251cEJsb2NrIC8+XG4gICAgICAgIHthbGxQb3N0cy5wb3N0cy5sZW5ndGggPiA2ICYmIDxCbG9nUGFnZUFsbFBvc3RzIHBvc3RzPXthbGxQb3N0c30gLz59XG4gICAgICAgIDxCbG9nUGFnZUJvdHRvbUJsb2NrIC8+XG4gICAgICAgIDxGb290ZXIgc2V0Rm9ybVN0YXRlPXtzZXRGb3JtU3RhdGV9IC8+XG4gICAgICA8L2Rpdj5cbiAgICA8Lz5cbiAgKTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/blogs/index.js\n");
-
-/***/ }),
-
-/***/ "./components/css/blogPageAllPosts.module.css":
-/*!****************************************************!*\
-  !*** ./components/css/blogPageAllPosts.module.css ***!
-  \****************************************************/
+/***/ 6874:
 /***/ (function(module) {
 
-eval("// Exports\nmodule.exports = {\n\t\"allPosts\": \"blogPageAllPosts_allPosts__1JL0M\",\n\t\"sectionContainer\": \"blogPageAllPosts_sectionContainer__2WGNU\",\n\t\"allPostsContainer\": \"blogPageAllPosts_allPostsContainer__3uipj\",\n\t\"showMoreButton\": \"blogPageAllPosts_showMoreButton__1GwQF\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL2Nzcy9ibG9nUGFnZUFsbFBvc3RzLm1vZHVsZS5jc3M/YjY4MCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiIuL2NvbXBvbmVudHMvY3NzL2Jsb2dQYWdlQWxsUG9zdHMubW9kdWxlLmNzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcImFsbFBvc3RzXCI6IFwiYmxvZ1BhZ2VBbGxQb3N0c19hbGxQb3N0c19fMUpMME1cIixcblx0XCJzZWN0aW9uQ29udGFpbmVyXCI6IFwiYmxvZ1BhZ2VBbGxQb3N0c19zZWN0aW9uQ29udGFpbmVyX18yV0dOVVwiLFxuXHRcImFsbFBvc3RzQ29udGFpbmVyXCI6IFwiYmxvZ1BhZ2VBbGxQb3N0c19hbGxQb3N0c0NvbnRhaW5lcl9fM3VpcGpcIixcblx0XCJzaG93TW9yZUJ1dHRvblwiOiBcImJsb2dQYWdlQWxsUG9zdHNfc2hvd01vcmVCdXR0b25fXzFHd1FGXCJcbn07XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/css/blogPageAllPosts.module.css\n");
+// Exports
+module.exports = {
+	"allPosts": "blogPageAllPosts_allPosts__1JL0M",
+	"sectionContainer": "blogPageAllPosts_sectionContainer__2WGNU",
+	"allPostsContainer": "blogPageAllPosts_allPostsContainer__3uipj",
+	"showMoreButton": "blogPageAllPosts_showMoreButton__1GwQF"
+};
+
 
 /***/ }),
 
-/***/ "./components/css/blogPageFeaturedPosts.module.css":
-/*!*********************************************************!*\
-  !*** ./components/css/blogPageFeaturedPosts.module.css ***!
-  \*********************************************************/
+/***/ 8810:
 /***/ (function(module) {
 
-eval("// Exports\nmodule.exports = {\n\t\"featuredPosts\": \"blogPageFeaturedPosts_featuredPosts__mk8jR\",\n\t\"featuredPostsContainer\": \"blogPageFeaturedPosts_featuredPostsContainer__3ZLsG\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL2Nzcy9ibG9nUGFnZUZlYXR1cmVkUG9zdHMubW9kdWxlLmNzcz8xZjZlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJmaWxlIjoiLi9jb21wb25lbnRzL2Nzcy9ibG9nUGFnZUZlYXR1cmVkUG9zdHMubW9kdWxlLmNzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcImZlYXR1cmVkUG9zdHNcIjogXCJibG9nUGFnZUZlYXR1cmVkUG9zdHNfZmVhdHVyZWRQb3N0c19fbWs4alJcIixcblx0XCJmZWF0dXJlZFBvc3RzQ29udGFpbmVyXCI6IFwiYmxvZ1BhZ2VGZWF0dXJlZFBvc3RzX2ZlYXR1cmVkUG9zdHNDb250YWluZXJfXzNaTHNHXCJcbn07XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/css/blogPageFeaturedPosts.module.css\n");
+// Exports
+module.exports = {
+	"featuredPosts": "blogPageFeaturedPosts_featuredPosts__mk8jR",
+	"featuredPostsContainer": "blogPageFeaturedPosts_featuredPostsContainer__3ZLsG"
+};
+
 
 /***/ }),
 
-/***/ "./components/css/blogPageHeroBanner.module.css":
-/*!******************************************************!*\
-  !*** ./components/css/blogPageHeroBanner.module.css ***!
-  \******************************************************/
+/***/ 31:
 /***/ (function(module) {
 
-eval("// Exports\nmodule.exports = {\n\t\"heroBanner\": \"blogPageHeroBanner_heroBanner__1LbO6\",\n\t\"mainDiv\": \"blogPageHeroBanner_mainDiv__2NxFO\",\n\t\"heroBannerBgElements\": \"blogPageHeroBanner_heroBannerBgElements__165Iy\",\n\t\"heroBannerContainer\": \"blogPageHeroBanner_heroBannerContainer__2zOgH\",\n\t\"leftBlock\": \"blogPageHeroBanner_leftBlock__3Dft_\",\n\t\"rightBlock\": \"blogPageHeroBanner_rightBlock__3WvwG\",\n\t\"featuredLink\": \"blogPageHeroBanner_featuredLink__2D6SY\",\n\t\"bannerText\": \"blogPageHeroBanner_bannerText__2RxZI\",\n\t\"bannerTitle\": \"blogPageHeroBanner_bannerTitle__pZwC0\",\n\t\"featuredImage\": \"blogPageHeroBanner_featuredImage__BiUl9\",\n\t\"featuredBlogDetails\": \"blogPageHeroBanner_featuredBlogDetails__9JC84\",\n\t\"featuredTagAndTime\": \"blogPageHeroBanner_featuredTagAndTime__3G9Bz\",\n\t\"featuredTitle\": \"blogPageHeroBanner_featuredTitle__11D5U\",\n\t\"featuredExcerpt\": \"blogPageHeroBanner_featuredExcerpt__10Wym\",\n\t\"featuredReadMore\": \"blogPageHeroBanner_featuredReadMore__3Jxxi\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL2Nzcy9ibG9nUGFnZUhlcm9CYW5uZXIubW9kdWxlLmNzcz85NGUyIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiIuL2NvbXBvbmVudHMvY3NzL2Jsb2dQYWdlSGVyb0Jhbm5lci5tb2R1bGUuY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gRXhwb3J0c1xubW9kdWxlLmV4cG9ydHMgPSB7XG5cdFwiaGVyb0Jhbm5lclwiOiBcImJsb2dQYWdlSGVyb0Jhbm5lcl9oZXJvQmFubmVyX18xTGJPNlwiLFxuXHRcIm1haW5EaXZcIjogXCJibG9nUGFnZUhlcm9CYW5uZXJfbWFpbkRpdl9fMk54Rk9cIixcblx0XCJoZXJvQmFubmVyQmdFbGVtZW50c1wiOiBcImJsb2dQYWdlSGVyb0Jhbm5lcl9oZXJvQmFubmVyQmdFbGVtZW50c19fMTY1SXlcIixcblx0XCJoZXJvQmFubmVyQ29udGFpbmVyXCI6IFwiYmxvZ1BhZ2VIZXJvQmFubmVyX2hlcm9CYW5uZXJDb250YWluZXJfXzJ6T2dIXCIsXG5cdFwibGVmdEJsb2NrXCI6IFwiYmxvZ1BhZ2VIZXJvQmFubmVyX2xlZnRCbG9ja19fM0RmdF9cIixcblx0XCJyaWdodEJsb2NrXCI6IFwiYmxvZ1BhZ2VIZXJvQmFubmVyX3JpZ2h0QmxvY2tfXzNXdndHXCIsXG5cdFwiZmVhdHVyZWRMaW5rXCI6IFwiYmxvZ1BhZ2VIZXJvQmFubmVyX2ZlYXR1cmVkTGlua19fMkQ2U1lcIixcblx0XCJiYW5uZXJUZXh0XCI6IFwiYmxvZ1BhZ2VIZXJvQmFubmVyX2Jhbm5lclRleHRfXzJSeFpJXCIsXG5cdFwiYmFubmVyVGl0bGVcIjogXCJibG9nUGFnZUhlcm9CYW5uZXJfYmFubmVyVGl0bGVfX3Bad0MwXCIsXG5cdFwiZmVhdHVyZWRJbWFnZVwiOiBcImJsb2dQYWdlSGVyb0Jhbm5lcl9mZWF0dXJlZEltYWdlX19CaVVsOVwiLFxuXHRcImZlYXR1cmVkQmxvZ0RldGFpbHNcIjogXCJibG9nUGFnZUhlcm9CYW5uZXJfZmVhdHVyZWRCbG9nRGV0YWlsc19fOUpDODRcIixcblx0XCJmZWF0dXJlZFRhZ0FuZFRpbWVcIjogXCJibG9nUGFnZUhlcm9CYW5uZXJfZmVhdHVyZWRUYWdBbmRUaW1lX18zRzlCelwiLFxuXHRcImZlYXR1cmVkVGl0bGVcIjogXCJibG9nUGFnZUhlcm9CYW5uZXJfZmVhdHVyZWRUaXRsZV9fMTFENVVcIixcblx0XCJmZWF0dXJlZEV4Y2VycHRcIjogXCJibG9nUGFnZUhlcm9CYW5uZXJfZmVhdHVyZWRFeGNlcnB0X18xMFd5bVwiLFxuXHRcImZlYXR1cmVkUmVhZE1vcmVcIjogXCJibG9nUGFnZUhlcm9CYW5uZXJfZmVhdHVyZWRSZWFkTW9yZV9fM0p4eGlcIlxufTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./components/css/blogPageHeroBanner.module.css\n");
+// Exports
+module.exports = {
+	"heroBanner": "blogPageHeroBanner_heroBanner__1LbO6",
+	"mainDiv": "blogPageHeroBanner_mainDiv__2NxFO",
+	"heroBannerBgElements": "blogPageHeroBanner_heroBannerBgElements__165Iy",
+	"heroBannerContainer": "blogPageHeroBanner_heroBannerContainer__2zOgH",
+	"leftBlock": "blogPageHeroBanner_leftBlock__3Dft_",
+	"rightBlock": "blogPageHeroBanner_rightBlock__3WvwG",
+	"featuredLink": "blogPageHeroBanner_featuredLink__2D6SY",
+	"bannerText": "blogPageHeroBanner_bannerText__2RxZI",
+	"bannerTitle": "blogPageHeroBanner_bannerTitle__pZwC0",
+	"featuredImage": "blogPageHeroBanner_featuredImage__BiUl9",
+	"featuredBlogDetails": "blogPageHeroBanner_featuredBlogDetails__9JC84",
+	"featuredTagAndTime": "blogPageHeroBanner_featuredTagAndTime__3G9Bz",
+	"featuredTitle": "blogPageHeroBanner_featuredTitle__11D5U",
+	"featuredExcerpt": "blogPageHeroBanner_featuredExcerpt__10Wym",
+	"featuredReadMore": "blogPageHeroBanner_featuredReadMore__3Jxxi"
+};
+
 
 /***/ }),
 
-/***/ "./components/css/blogPageSignupBlock.module.css":
-/*!*******************************************************!*\
-  !*** ./components/css/blogPageSignupBlock.module.css ***!
-  \*******************************************************/
+/***/ 4050:
 /***/ (function(module) {
 
-eval("// Exports\nmodule.exports = {\n\t\"signupWrapper\": \"blogPageSignupBlock_signupWrapper__2L9Sl\",\n\t\"signupBlockBgElements\": \"blogPageSignupBlock_signupBlockBgElements__2Mjm7\",\n\t\"blogPageSignupBox\": \"blogPageSignupBlock_blogPageSignupBox__3JkYI\",\n\t\"blogPageInputBox\": \"blogPageSignupBlock_blogPageInputBox__3_vml\",\n\t\"emailError\": \"blogPageSignupBlock_emailError__3w06G\",\n\t\"inputWrapper\": \"blogPageSignupBlock_inputWrapper__1x7SD\",\n\t\"thankYou\": \"blogPageSignupBlock_thankYou__24r-t\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL2Nzcy9ibG9nUGFnZVNpZ251cEJsb2NrLm1vZHVsZS5jc3M/MDhjOCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsImZpbGUiOiIuL2NvbXBvbmVudHMvY3NzL2Jsb2dQYWdlU2lnbnVwQmxvY2subW9kdWxlLmNzcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIEV4cG9ydHNcbm1vZHVsZS5leHBvcnRzID0ge1xuXHRcInNpZ251cFdyYXBwZXJcIjogXCJibG9nUGFnZVNpZ251cEJsb2NrX3NpZ251cFdyYXBwZXJfXzJMOVNsXCIsXG5cdFwic2lnbnVwQmxvY2tCZ0VsZW1lbnRzXCI6IFwiYmxvZ1BhZ2VTaWdudXBCbG9ja19zaWdudXBCbG9ja0JnRWxlbWVudHNfXzJNam03XCIsXG5cdFwiYmxvZ1BhZ2VTaWdudXBCb3hcIjogXCJibG9nUGFnZVNpZ251cEJsb2NrX2Jsb2dQYWdlU2lnbnVwQm94X18zSmtZSVwiLFxuXHRcImJsb2dQYWdlSW5wdXRCb3hcIjogXCJibG9nUGFnZVNpZ251cEJsb2NrX2Jsb2dQYWdlSW5wdXRCb3hfXzNfdm1sXCIsXG5cdFwiZW1haWxFcnJvclwiOiBcImJsb2dQYWdlU2lnbnVwQmxvY2tfZW1haWxFcnJvcl9fM3cwNkdcIixcblx0XCJpbnB1dFdyYXBwZXJcIjogXCJibG9nUGFnZVNpZ251cEJsb2NrX2lucHV0V3JhcHBlcl9fMXg3U0RcIixcblx0XCJ0aGFua1lvdVwiOiBcImJsb2dQYWdlU2lnbnVwQmxvY2tfdGhhbmtZb3VfXzI0ci10XCJcbn07XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/css/blogPageSignupBlock.module.css\n");
+// Exports
+module.exports = {
+	"signupWrapper": "blogPageSignupBlock_signupWrapper__2L9Sl",
+	"signupBlockBgElements": "blogPageSignupBlock_signupBlockBgElements__2Mjm7",
+	"blogPageSignupBox": "blogPageSignupBlock_blogPageSignupBox__3JkYI",
+	"blogPageInputBox": "blogPageSignupBlock_blogPageInputBox__3_vml",
+	"emailError": "blogPageSignupBlock_emailError__3w06G",
+	"inputWrapper": "blogPageSignupBlock_inputWrapper__1x7SD",
+	"thankYou": "blogPageSignupBlock_thankYou__24r-t"
+};
+
 
 /***/ }),
 
-/***/ "./components/css/blogPageTagFilteringBlock.module.css":
-/*!*************************************************************!*\
-  !*** ./components/css/blogPageTagFilteringBlock.module.css ***!
-  \*************************************************************/
+/***/ 8804:
 /***/ (function(module) {
 
-eval("// Exports\nmodule.exports = {\n\t\"tagFilteringSection\": \"blogPageTagFilteringBlock_tagFilteringSection__vuVmF\",\n\t\"filterSearchDiv\": \"blogPageTagFilteringBlock_filterSearchDiv__3hp9J\",\n\t\"SearchDiv\": \"blogPageTagFilteringBlock_SearchDiv__ArapY\",\n\t\"searchIcon\": \"blogPageTagFilteringBlock_searchIcon__VSe5A\",\n\t\"searchBoxTitles\": \"blogPageTagFilteringBlock_searchBoxTitles__1zwvS\",\n\t\"searchBoxHeader\": \"blogPageTagFilteringBlock_searchBoxHeader__1za-b\",\n\t\"postTitles\": \"blogPageTagFilteringBlock_postTitles__3ade7\",\n\t\"FilterDiv\": \"blogPageTagFilteringBlock_FilterDiv__3p0e6\",\n\t\"subTag\": \"blogPageTagFilteringBlock_subTag__R48qg\",\n\t\"subCategoryBox\": \"blogPageTagFilteringBlock_subCategoryBox__3KuHR\",\n\t\"subCategories\": \"blogPageTagFilteringBlock_subCategories__u2YWn\",\n\t\"subCategoryActive\": \"blogPageTagFilteringBlock_subCategoryActive__1ho74\",\n\t\"postTags\": \"blogPageTagFilteringBlock_postTags__15lac\",\n\t\"categoryActive\": \"blogPageTagFilteringBlock_categoryActive__11cZU\"\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly92b3lhZ2UvLi9jb21wb25lbnRzL2Nzcy9ibG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrLm1vZHVsZS5jc3M/YmRjMiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBIiwiZmlsZSI6Ii4vY29tcG9uZW50cy9jc3MvYmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9jay5tb2R1bGUuY3NzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gRXhwb3J0c1xubW9kdWxlLmV4cG9ydHMgPSB7XG5cdFwidGFnRmlsdGVyaW5nU2VjdGlvblwiOiBcImJsb2dQYWdlVGFnRmlsdGVyaW5nQmxvY2tfdGFnRmlsdGVyaW5nU2VjdGlvbl9fdnVWbUZcIixcblx0XCJmaWx0ZXJTZWFyY2hEaXZcIjogXCJibG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrX2ZpbHRlclNlYXJjaERpdl9fM2hwOUpcIixcblx0XCJTZWFyY2hEaXZcIjogXCJibG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrX1NlYXJjaERpdl9fQXJhcFlcIixcblx0XCJzZWFyY2hJY29uXCI6IFwiYmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9ja19zZWFyY2hJY29uX19WU2U1QVwiLFxuXHRcInNlYXJjaEJveFRpdGxlc1wiOiBcImJsb2dQYWdlVGFnRmlsdGVyaW5nQmxvY2tfc2VhcmNoQm94VGl0bGVzX18xend2U1wiLFxuXHRcInNlYXJjaEJveEhlYWRlclwiOiBcImJsb2dQYWdlVGFnRmlsdGVyaW5nQmxvY2tfc2VhcmNoQm94SGVhZGVyX18xemEtYlwiLFxuXHRcInBvc3RUaXRsZXNcIjogXCJibG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrX3Bvc3RUaXRsZXNfXzNhZGU3XCIsXG5cdFwiRmlsdGVyRGl2XCI6IFwiYmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9ja19GaWx0ZXJEaXZfXzNwMGU2XCIsXG5cdFwic3ViVGFnXCI6IFwiYmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9ja19zdWJUYWdfX1I0OHFnXCIsXG5cdFwic3ViQ2F0ZWdvcnlCb3hcIjogXCJibG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrX3N1YkNhdGVnb3J5Qm94X18zS3VIUlwiLFxuXHRcInN1YkNhdGVnb3JpZXNcIjogXCJibG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrX3N1YkNhdGVnb3JpZXNfX3UyWVduXCIsXG5cdFwic3ViQ2F0ZWdvcnlBY3RpdmVcIjogXCJibG9nUGFnZVRhZ0ZpbHRlcmluZ0Jsb2NrX3N1YkNhdGVnb3J5QWN0aXZlX18xaG83NFwiLFxuXHRcInBvc3RUYWdzXCI6IFwiYmxvZ1BhZ2VUYWdGaWx0ZXJpbmdCbG9ja19wb3N0VGFnc19fMTVsYWNcIixcblx0XCJjYXRlZ29yeUFjdGl2ZVwiOiBcImJsb2dQYWdlVGFnRmlsdGVyaW5nQmxvY2tfY2F0ZWdvcnlBY3RpdmVfXzExY1pVXCJcbn07XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./components/css/blogPageTagFilteringBlock.module.css\n");
+// Exports
+module.exports = {
+	"tagFilteringSection": "blogPageTagFilteringBlock_tagFilteringSection__vuVmF",
+	"filterSearchDiv": "blogPageTagFilteringBlock_filterSearchDiv__3hp9J",
+	"SearchDiv": "blogPageTagFilteringBlock_SearchDiv__ArapY",
+	"searchIcon": "blogPageTagFilteringBlock_searchIcon__VSe5A",
+	"searchBoxTitles": "blogPageTagFilteringBlock_searchBoxTitles__1zwvS",
+	"searchBoxHeader": "blogPageTagFilteringBlock_searchBoxHeader__1za-b",
+	"postTitles": "blogPageTagFilteringBlock_postTitles__3ade7",
+	"FilterDiv": "blogPageTagFilteringBlock_FilterDiv__3p0e6",
+	"subTag": "blogPageTagFilteringBlock_subTag__R48qg",
+	"subCategoryBox": "blogPageTagFilteringBlock_subCategoryBox__3KuHR",
+	"subCategories": "blogPageTagFilteringBlock_subCategories__u2YWn",
+	"subCategoryActive": "blogPageTagFilteringBlock_subCategoryActive__1ho74",
+	"postTags": "blogPageTagFilteringBlock_postTags__15lac",
+	"categoryActive": "blogPageTagFilteringBlock_categoryActive__11cZU"
+};
+
 
 /***/ }),
 
-/***/ "@artsy/fresnel":
-/*!*********************************!*\
-  !*** external "@artsy/fresnel" ***!
-  \*********************************/
+/***/ 5136:
 /***/ (function(module) {
 
 "use strict";
@@ -161,10 +989,7 @@ module.exports = require("@artsy/fresnel");;
 
 /***/ }),
 
-/***/ "gsap":
-/*!***********************!*\
-  !*** external "gsap" ***!
-  \***********************/
+/***/ 9015:
 /***/ (function(module) {
 
 "use strict";
@@ -172,10 +997,7 @@ module.exports = require("gsap");;
 
 /***/ }),
 
-/***/ "gsap/dist/ScrollTrigger":
-/*!******************************************!*\
-  !*** external "gsap/dist/ScrollTrigger" ***!
-  \******************************************/
+/***/ 1498:
 /***/ (function(module) {
 
 "use strict";
@@ -183,21 +1005,7 @@ module.exports = require("gsap/dist/ScrollTrigger");;
 
 /***/ }),
 
-/***/ "lodash.debounce":
-/*!**********************************!*\
-  !*** external "lodash.debounce" ***!
-  \**********************************/
-/***/ (function(module) {
-
-"use strict";
-module.exports = require("lodash.debounce");;
-
-/***/ }),
-
-/***/ "../next-server/lib/router-context":
-/*!**************************************************************!*\
-  !*** external "next/dist/next-server/lib/router-context.js" ***!
-  \**************************************************************/
+/***/ 8417:
 /***/ (function(module) {
 
 "use strict";
@@ -205,10 +1013,7 @@ module.exports = require("next/dist/next-server/lib/router-context.js");;
 
 /***/ }),
 
-/***/ "../next-server/lib/router/utils/get-asset-path-from-route":
-/*!**************************************************************************************!*\
-  !*** external "next/dist/next-server/lib/router/utils/get-asset-path-from-route.js" ***!
-  \**************************************************************************************/
+/***/ 2238:
 /***/ (function(module) {
 
 "use strict";
@@ -216,10 +1021,7 @@ module.exports = require("next/dist/next-server/lib/router/utils/get-asset-path-
 
 /***/ }),
 
-/***/ "next/head":
-/*!****************************!*\
-  !*** external "next/head" ***!
-  \****************************/
+/***/ 701:
 /***/ (function(module) {
 
 "use strict";
@@ -227,10 +1029,7 @@ module.exports = require("next/head");;
 
 /***/ }),
 
-/***/ "react":
-/*!************************!*\
-  !*** external "react" ***!
-  \************************/
+/***/ 9297:
 /***/ (function(module) {
 
 "use strict";
@@ -238,32 +1037,7 @@ module.exports = require("react");;
 
 /***/ }),
 
-/***/ "react-is":
-/*!***************************!*\
-  !*** external "react-is" ***!
-  \***************************/
-/***/ (function(module) {
-
-"use strict";
-module.exports = require("react-is");;
-
-/***/ }),
-
-/***/ "react-outside-click-handler":
-/*!**********************************************!*\
-  !*** external "react-outside-click-handler" ***!
-  \**********************************************/
-/***/ (function(module) {
-
-"use strict";
-module.exports = require("react-outside-click-handler");;
-
-/***/ }),
-
-/***/ "react-query":
-/*!******************************!*\
-  !*** external "react-query" ***!
-  \******************************/
+/***/ 2585:
 /***/ (function(module) {
 
 "use strict";
@@ -271,14 +1045,11 @@ module.exports = require("react-query");;
 
 /***/ }),
 
-/***/ "react/jsx-dev-runtime":
-/*!****************************************!*\
-  !*** external "react/jsx-dev-runtime" ***!
-  \****************************************/
+/***/ 5282:
 /***/ (function(module) {
 
 "use strict";
-module.exports = require("react/jsx-dev-runtime");;
+module.exports = require("react/jsx-runtime");;
 
 /***/ })
 
@@ -289,7 +1060,7 @@ module.exports = require("react/jsx-dev-runtime");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, ["vendors-node_modules_next_link_js","services_index_js","components_BlogItem_js-components_BlogPageBottomBlock_js-components_Footer_js-components_Head-a51e09"], function() { return __webpack_exec__("./pages/blogs/index.js"); });
+var __webpack_exports__ = __webpack_require__.X(0, [664,472,482,81,563,463], function() { return __webpack_exec__(1505); });
 module.exports = __webpack_exports__;
 
 })();

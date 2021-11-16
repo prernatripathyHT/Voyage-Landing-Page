@@ -47,7 +47,7 @@ const getFeaturedPosts = () => {
 
 const getFilteredPosts = async(key) => {
   const tagName = key.queryKey[1].tag;
-  console.log("current tag name : ", tagName);
+  //console.log("current tag name : ", tagName);
   if(tagName){   //if tags are present - this is where we are going to filter the posts
     const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]`;
      console.log("URL ", myURL)
@@ -64,7 +64,7 @@ const getFilteredPosts = async(key) => {
 
 
 const getFilteredPostsWithSearch = async(key) => {
-  console.log("current Key", key);
+  //console.log("current Key", key);
   const searchTitle = key.queryKey[1].search;
 
   if(searchTitle){   
