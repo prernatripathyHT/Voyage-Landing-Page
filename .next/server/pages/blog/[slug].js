@@ -4,7 +4,7 @@ exports.id = 492;
 exports.ids = [492];
 exports.modules = {
 
-/***/ 2673:
+/***/ 3977:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14,8 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ _slug_BlogPostPage; },
-  "getStaticPaths": function() { return /* binding */ getStaticPaths; },
-  "getStaticProps": function() { return /* binding */ getStaticProps; }
+  "getServerSideProps": function() { return /* binding */ getServerSideProps; }
 });
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
@@ -322,7 +321,10 @@ function BlogArticlePageSignupBlock() {
 var BlogPageBottomBlock = __webpack_require__(1563);
 // EXTERNAL MODULE: external "react-query"
 var external_react_query_ = __webpack_require__(2585);
+;// CONCATENATED MODULE: external "next/router"
+var router_namespaceObject = require("next/router");;
 ;// CONCATENATED MODULE: ./pages/blog/[slug].js
+
 
 
 
@@ -348,7 +350,7 @@ function getPost(slug) {
   return Promise.all(allRequest);
 }
 
-const getStaticProps = async ({
+const getServerSideProps = async ({
   params
 }) => {
   // const {allPosts, currentPost} = getPost(params.slug);
@@ -359,24 +361,31 @@ const getStaticProps = async ({
     props: {
       posts: allPosts[1].posts,
       currentPost: allPosts[0].posts
-    },
-    revalidate: 60
-  };
-};
-const getStaticPaths = async () => {
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}`);
-  const posts = await res.json();
-  const ids = posts.posts.map(post => post.slug);
-  const paths = ids.map(slug => ({
-    params: {
-      slug: slug.toString()
     }
-  }));
-  return {
-    paths,
-    fallback: true
   };
-};
+}; // export const getStaticProps = async ({params}) => {
+//     // const {allPosts, currentPost} = getPost(params.slug);
+//     const allPosts = await getPost(params.slug).then(responses => {
+//             return responses;
+//         }
+//       );
+//     return {
+//       props: {
+//           posts: allPosts[1].posts,
+//           currentPost: allPosts[0].posts
+//         }
+//     }
+//   }
+// export const getStaticPaths = async () => {
+//     const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}`)
+//     const posts = await res.json();
+//     const ids = posts.posts.map(post => post.slug);
+//     const paths = ids.map(slug => ({params: {slug : slug.toString()}}))
+//     return {
+//         paths,
+//         fallback:true
+//     }
+// }
 
 const getRelatedPosts = async key => {
   const currentPostTags = key.queryKey[1].tags; //console.log("current tag names : ", currentPostTags);
@@ -394,6 +403,7 @@ function _slug_BlogPostPage({
   posts,
   currentPost
 }) {
+  const router = (0,router_namespaceObject.useRouter)();
   const {
     0: allRelatedPosts,
     1: setAllPosts
@@ -403,7 +413,14 @@ function _slug_BlogPostPage({
   const {
     0: formState,
     1: setFormState
-  } = (0,external_react_.useState)("close"); //filter the posts based on the tag/category
+  } = (0,external_react_.useState)("close");
+
+  if (router.isFallback) {
+    return /*#__PURE__*/jsx_runtime_.jsx("div", {
+      children: "Loading ..."
+    });
+  } //filter the posts based on the tag/category
+
 
   var currentPostTags = currentPost[0].tags.map(tag => {
     return tag.slug;
@@ -618,7 +635,7 @@ module.exports = require("react/jsx-runtime");;
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-var __webpack_exports__ = __webpack_require__.X(0, [664,472,482,81,563,463], function() { return __webpack_exec__(2673); });
+var __webpack_exports__ = __webpack_require__.X(0, [664,472,482,81,563,463], function() { return __webpack_exec__(3977); });
 module.exports = __webpack_exports__;
 
 })();

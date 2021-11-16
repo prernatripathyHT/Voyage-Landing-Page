@@ -46,6 +46,8 @@ export const getStaticProps = async ({params}) => {
     }
   }
 
+  
+
 
 export const getStaticPaths = async () => {
     const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}`)
@@ -86,14 +88,11 @@ export default function BlogPostPage({posts, currentPost}) {
         if(router.isFallback) {
             return (
                 <div>
-                    <>
                         Loading ...
-                    </>
                 </div>
             )
         } 
 
-        // if(!posts) return null;
   
 
        //filter the posts based on the tag/category
