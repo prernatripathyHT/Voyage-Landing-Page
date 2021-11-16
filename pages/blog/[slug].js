@@ -53,7 +53,7 @@ export const getStaticPaths = async () => {
     const paths = ids.map(slug => ({params: {slug : slug.toString()}}))
     return {
         paths,
-        fallback:false
+        fallback:true
     }
 }
 
@@ -82,6 +82,17 @@ export default function BlogPostPage({posts, currentPost}) {
         const [allRelatedPosts, setAllPosts] = useState({posts})
         const [formState, setFormState] = useState("close");
 
+        // if(router.isFallback) {
+        //     return (
+        //         <div>
+        //             <>
+        //                 Loading ...
+        //             </>
+        //         </div>
+        //     )
+        // } 
+
+        if(!posts) return null;
   
 
        //filter the posts based on the tag/category
