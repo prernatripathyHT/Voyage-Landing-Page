@@ -14,7 +14,7 @@ export default function BlogPostPage({currentPost}) {
     const getPath = () => {
         if(!(typeof window === "undefined")){
             var location = window.location.href;
-            console.log(location)
+            //console.log(location)
             return location;
        }
     }

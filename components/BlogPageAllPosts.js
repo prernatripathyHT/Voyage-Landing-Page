@@ -8,7 +8,7 @@ export default function BlogPageAllPosts({posts}) {
     // const [items, setItems] = useState([]);
 
     const noOfPosts = {posts}.posts.posts.length;
-     console.log("no. of all posts", noOfPosts)
+     //console.log("no. of all posts", noOfPosts)
     const [visible, setVisible] = useState(9);
     // const featuredPosts = {posts};
 

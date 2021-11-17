@@ -50,7 +50,7 @@ const getFilteredPosts = async(key) => {
   //console.log("current tag name : ", tagName);
   if(tagName){   //if tags are present - this is where we are going to filter the posts
     // const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]&limit=all`;
-    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[${tagName}]&limit=all`;
+    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag%3Ablog%2Btag%3A[${tagName}]&limit=all`;
 
      //console.log("URL ", myURL)
     const res = await fetch(myURL);
