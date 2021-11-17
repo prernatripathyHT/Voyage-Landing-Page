@@ -26,7 +26,7 @@ const BLOG_URL = process.env.NEXT_PUBLIC_BLOG_URL;
 
 export const getStaticProps = async () => {
  
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog&order=published_at%20desc&limit=all`);
   const posts = await res.json();
 
 
@@ -49,14 +49,16 @@ const getFilteredPosts = async(key) => {
   const tagName = key.queryKey[1].tag;
   //console.log("current tag name : ", tagName);
   if(tagName){   //if tags are present - this is where we are going to filter the posts
-    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]`;
-     console.log("URL ", myURL)
+    // const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]&limit=all`;
+    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[${tagName}]&limit=all`;
+
+     //console.log("URL ", myURL)
     const res = await fetch(myURL);
     const newRes = res.json();
     return newRes;
   }
 
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog&limit=all`);
   return res.json();
 
 }
@@ -98,7 +100,7 @@ export default function Home({posts}) {
 
     //For filtering with TAGS
     const {isLoading, data:filteredPosts, status} = useQuery(['filtered posts', {tag: tagName}], getFilteredPosts, {initialData:posts}) //to remove the loading page add the initialdata value here
-    // console.log("filteredPosts are", filteredPosts, "status", status);
+     //console.log("filteredPosts are", filteredPosts, "status", status);
 
 
 

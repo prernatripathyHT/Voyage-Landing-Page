@@ -23,8 +23,8 @@ const BLOG_URL = process.env.NEXT_PUBLIC_BLOG_URL;
 
 function getPost(slug){
     const urls = [
-        `${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&include=authors,tags`,
-        `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`
+        `${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&include=authors,tags&limit=all`,
+        `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&limit=all`
     ];
     const allRequest = urls.map(url => fetch(url).then(response => response.json()));
     return Promise.all(allRequest);
@@ -50,13 +50,13 @@ export const getStaticProps = async ({params}) => {
 
 
 export const getStaticPaths = async () => {
-    const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}`)
+    const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&limit=all`)
     const posts = await res.json();
     const ids = posts.posts.map(post => post.slug);
     const paths = ids.map(slug => ({params: {slug : slug.toString()}}))
     return {
         paths,
-        fallback:true
+        fallback:false
     }
 }
 

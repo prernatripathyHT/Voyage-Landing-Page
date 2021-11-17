@@ -14,7 +14,8 @@ __webpack_require__.r(__webpack_exports__);
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   "default": function() { return /* binding */ _slug_BlogPostPage; },
-  "getServerSideProps": function() { return /* binding */ getServerSideProps; }
+  "getStaticPaths": function() { return /* binding */ getStaticPaths; },
+  "getStaticProps": function() { return /* binding */ getStaticProps; }
 });
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
@@ -345,12 +346,12 @@ const CONTENT_API_KEY = "c7bafa2c2c579763b605f57fb6";
 const BLOG_URL = "https://sms-marketing-resources.ghost.io";
 
 function getPost(slug) {
-  const urls = [`${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&include=authors,tags`, `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags`];
+  const urls = [`${BLOG_URL}/ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}&include=authors,tags&limit=all`, `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&limit=all`];
   const allRequest = urls.map(url => fetch(url).then(response => response.json()));
   return Promise.all(allRequest);
 }
 
-const getServerSideProps = async ({
+const getStaticProps = async ({
   params
 }) => {
   // const {allPosts, currentPost} = getPost(params.slug);
@@ -363,29 +364,21 @@ const getServerSideProps = async ({
       currentPost: allPosts[0].posts
     }
   };
-}; // export const getStaticProps = async ({params}) => {
-//     // const {allPosts, currentPost} = getPost(params.slug);
-//     const allPosts = await getPost(params.slug).then(responses => {
-//             return responses;
-//         }
-//       );
-//     return {
-//       props: {
-//           posts: allPosts[1].posts,
-//           currentPost: allPosts[0].posts
-//         }
-//     }
-//   }
-// export const getStaticPaths = async () => {
-//     const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}`)
-//     const posts = await res.json();
-//     const ids = posts.posts.map(post => post.slug);
-//     const paths = ids.map(slug => ({params: {slug : slug.toString()}}))
-//     return {
-//         paths,
-//         fallback:true
-//     }
-// }
+};
+const getStaticPaths = async () => {
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&limit=all`);
+  const posts = await res.json();
+  const ids = posts.posts.map(post => post.slug);
+  const paths = ids.map(slug => ({
+    params: {
+      slug: slug.toString()
+    }
+  }));
+  return {
+    paths,
+    fallback: false
+  };
+};
 
 const getRelatedPosts = async key => {
   const currentPostTags = key.queryKey[1].tags; //console.log("current tag names : ", currentPostTags);

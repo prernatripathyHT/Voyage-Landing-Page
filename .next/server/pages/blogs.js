@@ -683,14 +683,14 @@ function BlogPageAllPosts({
   posts
 }) {
   // const [items, setItems] = useState([]);
+  const noOfPosts = {
+    posts
+  }.posts.posts.length;
+  console.log("no. of all posts", noOfPosts);
   const {
     0: visible,
     1: setVisible
   } = (0,external_react_.useState)(9); // const featuredPosts = {posts};
-
-  const noOfPosts = {
-    posts
-  }.posts.posts.length; // console.log("no. of all posts", noOfPosts)
 
   const showMoreItems = () => {
     setVisible(prevValue => prevValue + 9);
@@ -712,7 +712,7 @@ function BlogPageAllPosts({
         }.posts.posts.slice(6, visible).map(post => /*#__PURE__*/jsx_runtime_.jsx(BlogItem/* default */.Z, {
           post: post
         }, post.id))
-      }), visible < 18 && /*#__PURE__*/jsx_runtime_.jsx("button", {
+      }), visible < noOfPosts && /*#__PURE__*/jsx_runtime_.jsx("button", {
         className: (blogPageAllPosts_module_default()).showMoreButton,
         onClick: showMoreItems,
         children: "Load More"
@@ -751,7 +751,7 @@ var external_react_query_ = __webpack_require__(2585);
 const CONTENT_API_KEY = "c7bafa2c2c579763b605f57fb6";
 const BLOG_URL = "https://sms-marketing-resources.ghost.io";
 const getStaticProps = async () => {
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog&order=published_at%20desc&limit=all`);
   const posts = await res.json();
   return {
     props: {
@@ -769,14 +769,15 @@ const getFilteredPosts = async key => {
 
   if (tagName) {
     //if tags are present - this is where we are going to filter the posts
-    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]`;
-    console.log("URL ", myURL);
+    // const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[blog,${tagName}]&limit=all`;
+    const myURL = `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:[${tagName}]&limit=all`; //console.log("URL ", myURL)
+
     const res = await fetch(myURL);
     const newRes = res.json();
     return newRes;
   }
 
-  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog`);
+  const res = await fetch(`${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=authors,tags&filter=tag:blog&limit=all`);
   return res.json();
 };
 
@@ -823,7 +824,7 @@ function Home({
   }], getFilteredPosts, {
     initialData: posts
   }); //to remove the loading page add the initialdata value here
-  // console.log("filteredPosts are", filteredPosts, "status", status);
+  //console.log("filteredPosts are", filteredPosts, "status", status);
 
   var allPosts = filteredPosts;
 

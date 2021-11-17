@@ -6,10 +6,12 @@ import BlogItem from "./BlogItem";
 
 export default function BlogPageAllPosts({posts}) {
     // const [items, setItems] = useState([]);
+
+    const noOfPosts = {posts}.posts.posts.length;
+     console.log("no. of all posts", noOfPosts)
     const [visible, setVisible] = useState(9);
     // const featuredPosts = {posts};
-    const noOfPosts = {posts}.posts.posts.length;
-   // console.log("no. of all posts", noOfPosts)
+
 
     const showMoreItems = () => {
         setVisible(prevValue => prevValue + 9);
@@ -32,8 +34,7 @@ export default function BlogPageAllPosts({posts}) {
                 <BlogItem key={post.id} post={post} /> 
                 ))}        
             </div>
-           {visible < 18 && <button className={styles.showMoreButton} onClick={showMoreItems}>Load More</button>}
-           {/* <button className={styles.showMoreButton} onClick={showMoreItems}>Load More</button> */}
+           {visible < noOfPosts && <button className={styles.showMoreButton} onClick={showMoreItems}>Load More</button>}
             </div>
         </section>
     )
