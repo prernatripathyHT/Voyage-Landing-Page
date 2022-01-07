@@ -10,13 +10,6 @@ export const clientBlockData = {
             id: 'ruggable'
         },
         {
-            name: "zinsticka.png",
-            alt: "Zinsticka",
-            width: '11.093vw',
-            height:'4.437vw',
-            id: 'zinsticka'
-        },
-        {
             name: "dosenrose.png",
             alt: "Dose Of Roses",
             width: '16.309vw',
@@ -36,13 +29,6 @@ export const clientBlockData = {
             width: '14.227vw',
             height: '5.3vw',
             id: 'freshclean'
-        },
-        {
-            name: "tovala.png",
-            alt: "Tovala",
-            width: '7.634vw',
-            height:'8.31vw',
-            id: 'tovala'
         },
         {
             name: "honeybum.png",
