@@ -31,13 +31,6 @@ export const clientBlockData = {
             id: 'freshclean'
         },
         {
-            name: "honeybum.png",
-            alt: "Hobeybum",
-            width: '10.282vw',
-            height:'4.35vw',
-            id: 'honeybum'
-        },
-        {
             name: "lokai.png",
             alt: "Lokai",
             width: '8.467vw',

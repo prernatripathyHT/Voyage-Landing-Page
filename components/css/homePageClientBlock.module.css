@@ -27,15 +27,20 @@
         position: relative;
         z-index: 2;
     }
+    /* .desktopClientGrid{
+        display: grid!important;
+        grid-template-columns: repeat(5, 1fr);
+
+    } */
     .logoBlock{
-        margin-left:4.164vw;
+        margin-left:6.164vw;
         margin-bottom:3.123vw;
     }
-    .logoBlock:nth-child(n + 7){
+    .logoBlock:nth-child(n + 6){
         margin-bottom:0;
     }
     .logoBlock:first-child,
-    .logoBlock:nth-child(7)
+    .logoBlock:nth-child(6)
     {
         margin-left:0;
     }
