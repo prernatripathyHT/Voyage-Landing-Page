@@ -56,7 +56,7 @@ export default function HomePageClientBlock() {
                 <div className={`clientContainer container ${styles.innerClientBlock}`}>
                     <h2 className="clientTitleBlock">{clientBlockData.title}</h2>
                     <div className={styles.clientLogoWrapper} data-scroll>
-                    <Media greaterThanOrEqual="md" className={styles.desktopClientGrid}>
+                    <Media greaterThanOrEqual="md">
                         {
                             clientBlockData.clientLogos.map(data => ( <div key={data.alt} id={data.id} style={{width: data.width}} className={`clientAnimate ${styles.logoBlock}`}>
                                 <img src={`/images/client_logos/${data.name}`} alt={data.alt} />

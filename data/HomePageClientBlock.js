@@ -24,11 +24,11 @@ export const clientBlockData = {
             id: 'birthday'
         },
         {
-            name: "fresh_clean_tees.png",
-            alt: "Fresh Clean Tees",
-            width: '14.227vw',
-            height: '5.3vw',
-            id: 'freshclean'
+            name: "lumin.png",
+            alt: "Lumin",
+            width: '9.994vw',
+            height:'8.13vw',
+            id: 'lumin'
         },
         {
             name: "lokai.png",
@@ -66,13 +66,12 @@ export const clientBlockData = {
             id: 'moonpod'
         },
         {
-            name: "lumin.png",
-            alt: "Lumin",
-            width: '9.994vw',
-            height:'8.13vw',
-            id: 'lumin'
-        }
-        
+            name: "fresh_clean_tees.png",
+            alt: "Fresh Clean Tees",
+            width: '14.227vw',
+            height: '5.3vw',
+            id: 'freshclean'
+        },
 
     ]
 }

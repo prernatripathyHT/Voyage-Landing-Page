@@ -27,13 +27,8 @@
         position: relative;
         z-index: 2;
     }
-    /* .desktopClientGrid{
-        display: grid!important;
-        grid-template-columns: repeat(5, 1fr);
-
-    } */
     .logoBlock{
-        margin-left:6.164vw;
+        margin-left:7.164vw;
         margin-bottom:3.123vw;
     }
     .logoBlock:nth-child(n + 6){
